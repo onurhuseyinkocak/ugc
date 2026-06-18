@@ -348,13 +348,37 @@
       <div class="container contact-inner reveal">
         <span class="kicker" data-i18n="contact.kicker">Contact</span>
         <h2 data-i18n="contact.h">Want UGC videos for your product?</h2>
-        <p class="lead" data-i18n="contact.lead">Tell me about your product and goal — I’ll send angles and a scope.</p>
-        <div class="contact-cta">
-          <a href="mailto:info@vibecodingturkey.com?subject=UGC%20for%20our%20product" class="btn btn-primary" data-i18n="contact.email">Email Me</a>
-          <a href="https://instagram.com/onurhuseyinkocak.ai" target="_blank" rel="me noopener" class="btn btn-soft" data-i18n="contact.dm">Instagram DM</a>
-          <a href="https://www.linkedin.com/in/onurhuseyinkocak" target="_blank" rel="me noopener" class="btn btn-soft" data-i18n="contact.linkedin">LinkedIn</a>
-        </div>
-        <p class="contact-meta">info@vibecodingturkey.com · @onurhuseyinkocak.ai · linkedin.com/in/onurhuseyinkocak</p>
+        <p class="lead" data-i18n="contact.lead">Book a free 20-minute call. We map your product, audience, and the right UGC angles — no pitch, just a plan. I reply within 24 hours.</p>
+        <form class="lead-form reveal" id="leadForm" novalidate>
+          <div class="field-row">
+            <label class="field"><span data-i18n="form.name">Your name</span><input name="name" type="text" autocomplete="name" required /></label>
+            <label class="field"><span data-i18n="form.email">Email</span><input name="email" type="email" autocomplete="email" required /></label>
+          </div>
+          <div class="field-row">
+            <label class="field"><span data-i18n="form.company">Company / brand (optional)</span><input name="company" type="text" autocomplete="organization" /></label>
+            <label class="field"><span data-i18n="form.goal">Main goal</span>
+              <select name="goal">
+                <option value="" data-i18n="form.goal0">Select…</option>
+                <option data-i18n="form.goal1">App installs</option>
+                <option data-i18n="form.goal2">Signups / leads</option>
+                <option data-i18n="form.goal3">Brand awareness</option>
+                <option data-i18n="form.goal4">Sales / conversions</option>
+                <option data-i18n="form.goal5">Other</option>
+              </select>
+            </label>
+          </div>
+          <label class="field"><span data-i18n="form.product">What are you building or promoting?</span><input name="product" type="text" required /></label>
+          <label class="field"><span data-i18n="form.message">Anything else? (timeline, budget, links)</span><textarea name="message" rows="3"></textarea></label>
+          <input type="hidden" name="kind" value="booking" />
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn-primary btn-lg" data-i18n="form.submit">Request a 20-min call</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <p class="contact-alt"><span data-i18n="form.or">Prefer to reach me directly?</span>
+          <a href="mailto:info@vibecodingturkey.com?subject=UGC%20for%20our%20product">Email</a> ·
+          <a href="https://instagram.com/onurhuseyinkocak.ai" target="_blank" rel="me noopener">Instagram DM</a> ·
+          <a href="https://www.linkedin.com/in/onurhuseyinkocak" target="_blank" rel="me noopener">LinkedIn</a>
+        </p>
       </div>
     </section>
   </main>

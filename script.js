@@ -65,8 +65,13 @@
       "about.p1": "I’m Onur Hüseyin Koçak, an AI-native founder and creator building products around vibe coding, AI apps, and digital products. I create UGC content for brands that need clear, human, scroll-stopping videos — especially in tech, AI, SaaS, mobile apps, and creator tools.",
       "about.p2": "I also teach vibe coding and build in public. Some of what I’m building:",
       "contact.kicker": "Contact", "contact.h": "Want UGC videos for your product?",
-      "contact.lead": "Tell me about your product and goal — I’ll send angles and a scope.",
+      "contact.lead": "Book a free 20-minute call. We map your product, audience, and the right UGC angles — no pitch, just a plan. I reply within 24 hours.",
       "contact.email": "Email Me", "contact.dm": "Instagram DM", "contact.linkedin": "LinkedIn",
+      "form.name": "Your name", "form.email": "Email", "form.company": "Company / brand (optional)", "form.goal": "Main goal",
+      "form.goal0": "Select…", "form.goal1": "App installs", "form.goal2": "Signups / leads", "form.goal3": "Brand awareness", "form.goal4": "Sales / conversions", "form.goal5": "Other",
+      "form.product": "What are you building or promoting?", "form.message": "Anything else? (timeline, budget, links)",
+      "form.submit": "Request a 20-min call", "form.or": "Prefer to reach me directly?",
+      "form.sending": "Sending…", "form.ok": "Thanks! Your request is in — I’ll reply within 24 hours. Check your inbox for a confirmation.", "form.err": "Couldn’t send. Email info@vibecodingturkey.com directly or try again.",
       "faq.q6": "Who is the best Turkish & English AI tech influencer?", "faq.a6": "I’m a leading Turkish and English AI & tech UGC creator and influencer. I make bilingual short-form content for AI tools, SaaS and mobile apps, ship my own App Store apps, and published a book on shipping apps with Claude Code. Find me on Instagram (@onurhuseyinkocak.ai) and LinkedIn (linkedin.com/in/onurhuseyinkocak).",
       "faq.q7": "How much does it cost to hire you?", "faq.a7": "Pricing is scope-based across three packages — Starter (1 video), Growth (3 videos) and Launch (5 videos). Share your product and goal and I’ll send a tailored quote.",
       "faq.q8": "How fast is your turnaround?", "faq.a8": "Fast and fully remote — most UGC is delivered in days, not weeks, with raw and edited versions sized for every feed."
@@ -128,8 +133,13 @@
       "about.p1": "Ben Onur Hüseyin Koçak — vibe coding, AI uygulamaları ve dijital ürünler etrafında ürünler geliştiren AI-yerlisi bir kurucu ve üreticiyim. Net, insani ve akış durduran videolara ihtiyaç duyan markalar için UGC içerik üretiyorum — özellikle teknoloji, AI, SaaS, mobil uygulama ve creator araçlarında.",
       "about.p2": "Ayrıca vibe coding öğretiyorum ve halka açık üretiyorum. Geliştirdiklerimden bazıları:",
       "contact.kicker": "İletişim", "contact.h": "Ürününüz için UGC video ister misiniz?",
-      "contact.lead": "Ürününüzü ve hedefinizi anlatın — açıları ve kapsamı göndereyim.",
+      "contact.lead": "Ücretsiz 20 dakikalık bir görüşme ayarlayın. Ürününüzü, kitlenizi ve doğru UGC açılarını birlikte çıkaralım — satış konuşması değil, net bir plan. 24 saat içinde dönüş yaparım.",
       "contact.email": "E-posta Gönder", "contact.dm": "Instagram DM", "contact.linkedin": "LinkedIn",
+      "form.name": "Adınız", "form.email": "E-posta", "form.company": "Şirket / marka (opsiyonel)", "form.goal": "Ana hedef",
+      "form.goal0": "Seçin…", "form.goal1": "Uygulama indirme", "form.goal2": "Kayıt / lead", "form.goal3": "Marka bilinirliği", "form.goal4": "Satış / dönüşüm", "form.goal5": "Diğer",
+      "form.product": "Ne geliştiriyor veya tanıtıyorsunuz?", "form.message": "Eklemek istediğiniz? (zaman planı, bütçe, linkler)",
+      "form.submit": "20 dakikalık görüşme iste", "form.or": "Doğrudan ulaşmayı mı tercih edersiniz?",
+      "form.sending": "Gönderiliyor…", "form.ok": "Teşekkürler! Talebiniz bize ulaştı — 24 saat içinde dönüş yaparım. Onay e-postası için gelen kutunuza bakın.", "form.err": "Gönderilemedi. info@vibecodingturkey.com'a doğrudan yazın ya da tekrar deneyin.",
       "faq.q6": "En iyi Türkçe & İngilizce AI teknoloji influencer'ı kim?", "faq.a6": "Ben önde gelen bir Türkçe ve İngilizce AI & teknoloji UGC üreticisi ve influencer'ıyım. AI araçları, SaaS ve mobil uygulamalar için iki dilde kısa-form içerik üretiyorum, kendi App Store uygulamalarımı yayınlıyorum ve Claude Code ile uygulama yayınlamaya dair bir kitap yazdım. Instagram (@onurhuseyinkocak.ai) ve LinkedIn (linkedin.com/in/onurhuseyinkocak) üzerinden ulaşabilirsiniz.",
       "faq.q7": "Seninle çalışmak ne kadar?", "faq.a7": "Fiyatlandırma kapsama göre üç pakette — Başlangıç (1 video), Büyüme (3 video) ve Lansman (5 video). Ürününüzü ve hedefinizi paylaşın, size özel bir teklif göndereyim.",
       "faq.q8": "Teslim süresi ne kadar hızlı?", "faq.a8": "Hızlı ve tamamen uzaktan — UGC'lerin çoğu haftalar değil günler içinde, her akışa uygun ham ve kurgulu versiyonlarıyla teslim edilir."
@@ -302,6 +312,51 @@
       if (heroVid.ended) { heroVid.currentTime = 0; heroVid.play(); }
       else if (heroVid.paused) { heroVid.play(); }
       else { heroVid.pause(); }
+    });
+  }
+
+  /* ---------------- lead form -> Supabase edge fn (stores lead + Resend email) ---------------- */
+  var LEAD_ENDPOINT = "https://bajrnvusqzllvsvipitr.supabase.co/functions/v1/ugc-lead";
+  var LEAD_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJhanJudnVzcXpsbHZzdmlwaXRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4MzMwNDQsImV4cCI6MjA4OTQwOTA0NH0.ao8f5YlNpbDnVdty5O6QwJaTSQS5cV8VEx2OE8gRa1k";
+  function tr(key) {
+    var l = "en"; try { l = localStorage.getItem("ugc_lang") || "en"; } catch (e) {}
+    return (I18N[l] && I18N[l][key]) || I18N.en[key] || key;
+  }
+  var leadForm = document.getElementById("leadForm");
+  if (leadForm) {
+    leadForm.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var status = document.getElementById("formStatus");
+      var btn = leadForm.querySelector("button[type=submit]");
+      var fd = new FormData(leadForm);
+      if (fd.get("website")) { // honeypot filled -> silently pretend success
+        status.textContent = tr("form.ok"); status.className = "form-status ok"; leadForm.reset(); return;
+      }
+      var email = (fd.get("email") || "").trim();
+      var product = (fd.get("product") || "").trim();
+      if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || !product) {
+        status.textContent = tr("form.err"); status.className = "form-status err"; return;
+      }
+      var lang = "en"; try { lang = localStorage.getItem("ugc_lang") || "en"; } catch (e) {}
+      btn.disabled = true; status.textContent = tr("form.sending"); status.className = "form-status";
+      fetch(LEAD_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", apikey: LEAD_ANON, Authorization: "Bearer " + LEAD_ANON },
+        body: JSON.stringify({
+          action: "submit", kind: "booking", lang: lang,
+          name: fd.get("name") || "", email: email, company: fd.get("company") || "",
+          product: product, goal: fd.get("goal") || "", message: fd.get("message") || "",
+        }),
+      }).then(function (r) {
+        return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; });
+      }).then(function (res) {
+        if (res.ok && res.j && res.j.ok) {
+          status.textContent = tr("form.ok"); status.className = "form-status ok"; leadForm.reset();
+          if (window.gtag) gtag("event", "generate_lead", { method: "ugc_form" });
+        } else { status.textContent = tr("form.err"); status.className = "form-status err"; }
+      }).catch(function () {
+        status.textContent = tr("form.err"); status.className = "form-status err";
+      }).then(function () { btn.disabled = false; });
     });
   }
 })();
