@@ -55,6 +55,10 @@
     .lead-meta { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
     .badge { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; padding:3px 9px; border-radius:999px; }
     .badge.booking { background:#eef2ff; color:#4338ca; } .badge.contact { background:#f1f5f9; color:#475569; }
+    .badge.src { background:#ecfdf5; color:#047857; }
+    .srcbar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin:-8px 0 18px; font-size:13px; color:var(--muted); }
+    .srcbar .schip { background:#fff; border:1px solid var(--border); border-radius:999px; padding:4px 11px; font-weight:500; color:var(--ink); }
+    .srcbar .schip b { color:var(--brand-ink); }
     .pill { font-size:11px; font-weight:700; text-transform:uppercase; padding:3px 9px; border-radius:999px; color:#fff; }
     .pill.new { background:var(--new); } .pill.contacted { background:var(--contacted); } .pill.won { background:var(--won); } .pill.lost { background:var(--lost); }
     .lead-body { margin-top:10px; display:grid; gap:4px; font-size:14px; }
@@ -92,6 +96,7 @@
       </div>
     </div>
     <div class="stats" id="statCards"></div>
+    <div class="srcbar" id="srcbar"></div>
     <div class="tabs" id="tabs"></div>
     <div class="cards" id="cards"></div>
   </div>
@@ -119,6 +124,13 @@
       document.getElementById("statCards").innerHTML =
         statCard(c.total || 0, "Total leads") + statCard(c.new || 0, "New / unhandled") +
         statCard(c.booking || 0, "Call requests") + statCard(c.won || 0, "Won");
+      // leads-by-source summary (which channel actually brings deals)
+      var bySrc = {};
+      (ALL.leads || []).forEach(function (l) { var s = l.channel || "Unknown"; bySrc[s] = (bySrc[s] || 0) + 1; });
+      var srcKeys = Object.keys(bySrc).sort(function (a, b) { return bySrc[b] - bySrc[a]; });
+      document.getElementById("srcbar").innerHTML = srcKeys.length
+        ? "<span>Sources:</span>" + srcKeys.map(function (s) { return '<span class="schip">' + esc(s) + " <b>" + bySrc[s] + "</b></span>"; }).join("")
+        : "";
       var tabsDef = [["all", "All"], ["new", "New"], ["contacted", "Contacted"], ["won", "Won"], ["lost", "Lost"]];
       document.getElementById("tabs").innerHTML = tabsDef.map(function (t) {
         return '<button class="tab' + (FILTER === t[0] ? " on" : "") + '" data-f="' + t[0] + '">' + t[1] + "</button>";
@@ -134,7 +146,8 @@
         return '<div class="lead">' +
           '<div class="lead-h"><div class="who"><b>' + esc(l.name || "(no name)") + "</b> " +
           '<span>&lt;' + esc(l.email) + "&gt;</span></div>" +
-          '<div class="lead-meta"><span class="badge ' + (l.kind === "booking" ? "booking" : "contact") + '">' + (l.kind === "booking" ? "Call request" : "Message") + "</span>" +
+          '<div class="lead-meta">' + (l.channel ? '<span class="badge src">' + esc(l.channel) + "</span>" : "") +
+          '<span class="badge ' + (l.kind === "booking" ? "booking" : "contact") + '">' + (l.kind === "booking" ? "Call request" : "Message") + "</span>" +
           '<span class="pill ' + esc(l.status) + '">' + esc(l.status) + "</span></div></div>" +
           '<div class="lead-body">' + body + "</div>" +
           '<div class="lead-foot">' +

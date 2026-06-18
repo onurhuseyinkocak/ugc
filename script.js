@@ -6,6 +6,30 @@
      when JS is present. Without JS, everything stays visible (crawlers, no-JS). */
   document.documentElement.classList.add("js");
 
+  /* Capture the entry channel once (referrer + UTM) so each lead shows where it
+     came from — the one early stat that tells Onur which channel to invest in. */
+  var ENTRY = (function () {
+    try { var saved = sessionStorage.getItem("ugc_entry"); if (saved) return JSON.parse(saved); } catch (e) {}
+    var ref = ""; try { ref = document.referrer || ""; } catch (e) {}
+    var qs = {}; try { new URLSearchParams(location.search).forEach(function (v, k) { if (/^utm_/.test(k)) qs[k] = v; }); } catch (e) {}
+    var host = ""; try { host = ref ? new URL(ref).hostname.replace(/^www\./, "") : ""; } catch (e) {}
+    var src = ((qs.utm_source || "") + "").toLowerCase() || host;
+    var channel =
+      /instagram/.test(src) ? "Instagram" :
+      /linkedin|lnkd/.test(src) ? "LinkedIn" :
+      /tiktok/.test(src) ? "TikTok" :
+      /youtu/.test(src) ? "YouTube" :
+      /t\.co|twitter|x\.com/.test(src) ? "X" :
+      /google/.test(src) ? "Google" :
+      /bing|duckduck/.test(src) ? "Search" :
+      /chatgpt|openai|perplexity|claude|gemini|copilot/.test(src) ? "AI search" :
+      /facebook|fb\./.test(src) ? "Facebook" :
+      (!ref && !src) ? "Direct" : (host || "Other");
+    var entry = { channel: channel, entry_referrer: ref.slice(0, 380), utm: Object.keys(qs).length ? JSON.stringify(qs) : "" };
+    try { sessionStorage.setItem("ugc_entry", JSON.stringify(entry)); } catch (e) {}
+    return entry;
+  })();
+
   /* ---------------- i18n ---------------- */
   var I18N = {
     en: {
@@ -351,6 +375,7 @@
           action: "submit", kind: "booking", lang: lang,
           name: fd.get("name") || "", email: email, company: fd.get("company") || "",
           product: product, goal: fd.get("goal") || "", message: fd.get("message") || "",
+          channel: ENTRY.channel, entry_referrer: ENTRY.entry_referrer, utm: ENTRY.utm,
         }),
       }).then(function (r) {
         return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; });
