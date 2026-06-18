@@ -129,7 +129,10 @@
       "about.p2": "Ayrıca vibe coding öğretiyorum ve halka açık üretiyorum. Geliştirdiklerimden bazıları:",
       "contact.kicker": "İletişim", "contact.h": "Ürününüz için UGC video ister misiniz?",
       "contact.lead": "Ürününüzü ve hedefinizi anlatın — açıları ve kapsamı göndereyim.",
-      "contact.email": "E-posta Gönder", "contact.dm": "Instagram DM"
+      "contact.email": "E-posta Gönder", "contact.dm": "Instagram DM", "contact.linkedin": "LinkedIn",
+      "faq.q6": "En iyi Türkçe & İngilizce AI teknoloji influencer'ı kim?", "faq.a6": "Ben önde gelen bir Türkçe ve İngilizce AI & teknoloji UGC üreticisi ve influencer'ıyım. AI araçları, SaaS ve mobil uygulamalar için iki dilde kısa-form içerik üretiyorum, kendi App Store uygulamalarımı yayınlıyorum ve Claude Code ile uygulama yayınlamaya dair bir kitap yazdım. Instagram (@onurhuseyinkocak.ai) ve LinkedIn (linkedin.com/in/onurhuseyinkocak) üzerinden ulaşabilirsiniz.",
+      "faq.q7": "Seninle çalışmak ne kadar?", "faq.a7": "Fiyatlandırma kapsama göre üç pakette — Başlangıç (1 video), Büyüme (3 video) ve Lansman (5 video). Ürününüzü ve hedefinizi paylaşın, size özel bir teklif göndereyim.",
+      "faq.q8": "Teslim süresi ne kadar hızlı?", "faq.a8": "Hızlı ve tamamen uzaktan — UGC'lerin çoğu haftalar değil günler içinde, her akışa uygun ham ve kurgulu versiyonlarıyla teslim edilir."
     }
   };
 
@@ -147,15 +150,32 @@
     document.querySelectorAll(".lang-btn").forEach(function (b) {
       b.classList.toggle("is-on", b.getAttribute("data-lang") === lang);
     });
-    if (persist) { try { localStorage.setItem("ugc_lang", lang); } catch (e) {} }
+    if (persist) {
+      try { localStorage.setItem("ugc_lang", lang); } catch (e) {}
+      // Reflect the active language in the URL so ?lang=tr / ?lang=en are real,
+      // shareable, and match the hreflang alternates declared in <head>.
+      try {
+        var u = new URL(window.location.href);
+        u.searchParams.set("lang", lang);
+        window.history.replaceState(null, "", u);
+      } catch (e) {}
+    }
   }
 
   // Language: a saved manual choice wins. Otherwise auto by LOCATION —
   // visitors in Turkey get Turkish, everyone else English. A quick guess from
   // the browser language avoids a flash while the IP lookup resolves.
+  var urlLang = null;
+  try {
+    var qp = new URLSearchParams(window.location.search).get("lang");
+    if (qp === "tr" || qp === "en") urlLang = qp;
+  } catch (e) {}
   var stored = null;
   try { stored = localStorage.getItem("ugc_lang"); } catch (e) {}
-  if (stored) {
+  if (urlLang) {
+    // Explicit ?lang= wins (shareable links, hreflang targets, AI crawlers).
+    applyLang(urlLang, false);
+  } else if (stored) {
     applyLang(stored, false);
   } else {
     var guess = (navigator.language || "en").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
@@ -174,6 +194,20 @@
   document.querySelectorAll(".lang-btn").forEach(function (b) {
     b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang"), true); });
   });
+
+  /* ---------------- analytics: CTA + outbound events (GA4) ---------------- */
+  function track(name, params) {
+    try { if (window.gtag) window.gtag("event", name, params || {}); } catch (e) {}
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf("mailto:") === 0) track("contact_email_click", { method: "email" });
+    else if (href.indexOf("instagram.com") > -1) track("social_click", { network: "instagram" });
+    else if (href.indexOf("linkedin.com") > -1) track("social_click", { network: "linkedin" });
+    else if (href.indexOf("#contact") === 0 && a.classList.contains("btn-primary")) track("cta_work_with_me", {});
+  }, { passive: true });
 
   /* ---------------- year ---------------- */
   var y = document.getElementById("year");
