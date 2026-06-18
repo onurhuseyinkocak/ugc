@@ -11,9 +11,17 @@
       "hero.title": "UGC Videos That Make <span class=\"hl\">Tech Products</span> Feel Human",
       "hero.sub": "I create short-form UGC, educational reels, founder-style product videos, and AI-native content for apps, SaaS, AI tools, and digital products — in both English and Turkish.",
       "hero.cta1": "Work With Me", "hero.cta2": "View Portfolio",
+      "hero.lang": "UGC in Turkish & English", "hero.loc": "Bangkok, Thailand", "hero.world": "Brands worldwide",
       "strip.1": "AI Founder", "strip.2": "App Builder", "strip.3": "Short-Form Creator", "strip.4": "Tech Product Storytelling", "strip.5": "Turkish & English Content",
-      "stat.1": "Community on Instagram", "stat.2": "Tech videos shipped", "stat.3": "Comments on a single reel", "stat.4": "Bilingual content",
+      "stat.1": "Organic views (recent reels)", "stat.2": "Comments earned", "stat.3": "Tech videos shipped", "stat.4": "Content in both languages",
       "stat.note": "Pulled live from @onurhuseyinkocak.ai — real numbers, no inflated metrics.",
+      "badge.r4": "22K views · 1.4K comments", "badge.r2": "22K views · 138 comments", "badge.r3": "2.1K views", "badge.r5": "2K views",
+      "faq.kicker": "FAQ", "faq.h": "Questions brands ask",
+      "faq.q1": "What kind of content do you create?", "faq.a1": "Short-form UGC for tech: product videos, AI tool demos, app explainers, founder-led videos, educational reels, and ad creatives for apps, SaaS, AI tools, and digital products.",
+      "faq.q2": "Do you create content in both English and Turkish?", "faq.a2": "Yes. I produce UGC natively in both Turkish and English, so brands can reach the Turkish market and global audiences with the same creator.",
+      "faq.q3": "Which industries do you work with?", "faq.a3": "Tech-focused: AI tools, SaaS, mobile apps, developer and creator tools, and digital products. I understand the product side, not just the camera.",
+      "faq.q4": "Where are you based, and do you work with international brands?", "faq.a4": "I’m based in Bangkok, Thailand and work with brands worldwide — remotely, with fast turnaround.",
+      "faq.q5": "How do we start?", "faq.a5": "Email me or DM on Instagram with your product and goal. I’ll send content angles and a scope tailored to your launch or campaign.",
       "create.kicker": "What I Create", "create.h": "Content built for tech products",
       "create.lead": "Native short-form that explains, demos, and converts — without feeling like an ad.",
       "c1.t": "UGC Product Videos", "c1.d": "Authentic, hand-held style videos that make your product feel real and trusted.",
@@ -63,9 +71,17 @@
       "hero.title": "<span class=\"hl\">Teknoloji Ürünlerini</span> İnsani Hissettiren UGC Videolar",
       "hero.sub": "Uygulamalar, SaaS, AI araçları ve dijital ürünler için kısa-form UGC, eğitici reels, kurucu tarzı ürün videoları ve AI-yerlisi içerik üretiyorum — hem İngilizce hem Türkçe.",
       "hero.cta1": "Birlikte Çalışalım", "hero.cta2": "Portfolyoyu Gör",
+      "hero.lang": "Türkçe & İngilizce UGC", "hero.loc": "Bangkok, Tayland", "hero.world": "Dünya çapında markalar",
       "strip.1": "AI Kurucusu", "strip.2": "Uygulama Geliştirici", "strip.3": "Kısa-Form Üretici", "strip.4": "Teknoloji Ürün Hikâyeciliği", "strip.5": "Türkçe & İngilizce İçerik",
-      "stat.1": "Instagram topluluğu", "stat.2": "Yayınlanan tech video", "stat.3": "Tek reel'de yorum", "stat.4": "İki dilde içerik",
+      "stat.1": "Organik izlenme (son reels)", "stat.2": "Toplanan yorum", "stat.3": "Yayınlanan tech video", "stat.4": "İki dilde içerik",
       "stat.note": "@onurhuseyinkocak.ai'dan canlı çekildi — gerçek sayılar, şişirilmiş metrik yok.",
+      "badge.r4": "22B izlenme · 1.4B yorum", "badge.r2": "22B izlenme · 138 yorum", "badge.r3": "2.1B izlenme", "badge.r5": "2B izlenme",
+      "faq.kicker": "SSS", "faq.h": "Markaların sorduğu sorular",
+      "faq.q1": "Ne tür içerik üretiyorsun?", "faq.a1": "Teknoloji için kısa-form UGC: ürün videoları, AI araç tanıtımları, uygulama anlatımları, kurucu videoları, eğitici reels ve uygulama/SaaS/AI ürünleri için reklam kreatifleri.",
+      "faq.q2": "Hem İngilizce hem Türkçe içerik üretiyor musun?", "faq.a2": "Evet. Hem Türkçe hem İngilizce yerel UGC üretiyorum; markalar aynı üreticiyle hem Türkiye pazarına hem global kitleye ulaşır.",
+      "faq.q3": "Hangi sektörlerle çalışıyorsun?", "faq.a3": "Teknoloji odaklı: AI araçları, SaaS, mobil uygulamalar, geliştirici ve creator araçları, dijital ürünler. Sadece kamerayı değil ürün tarafını da anlıyorum.",
+      "faq.q4": "Nerede yaşıyorsun, uluslararası markalarla çalışır mısın?", "faq.a4": "Bangkok, Tayland merkezliyim ve dünya çapında markalarla uzaktan, hızlı teslimle çalışıyorum.",
+      "faq.q5": "Nasıl başlarız?", "faq.a5": "Ürününüz ve hedefinizle e-posta ya da Instagram DM atın. Lansman veya kampanyanıza özel içerik açıları ve kapsam göndereyim.",
       "create.kicker": "Ne Üretiyorum", "create.h": "Teknoloji ürünleri için içerik",
       "create.lead": "Anlatan, gösteren ve dönüştüren — reklam gibi hissettirmeyen yerel kısa-form içerik.",
       "c1.t": "UGC Ürün Videoları", "c1.d": "Ürününüzü gerçek ve güvenilir hissettiren samimi, el kamerası tarzı videolar.",
@@ -110,7 +126,7 @@
     }
   };
 
-  function applyLang(lang) {
+  function applyLang(lang, persist) {
     var dict = I18N[lang] || I18N.en;
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
@@ -124,15 +140,32 @@
     document.querySelectorAll(".lang-btn").forEach(function (b) {
       b.classList.toggle("is-on", b.getAttribute("data-lang") === lang);
     });
-    try { localStorage.setItem("ugc_lang", lang); } catch (e) {}
+    if (persist) { try { localStorage.setItem("ugc_lang", lang); } catch (e) {} }
   }
 
-  var saved = "en";
-  try { saved = localStorage.getItem("ugc_lang") || "en"; } catch (e) {}
-  if (saved !== "en") applyLang(saved); else applyLang("en");
+  // Language: a saved manual choice wins. Otherwise auto by LOCATION —
+  // visitors in Turkey get Turkish, everyone else English. A quick guess from
+  // the browser language avoids a flash while the IP lookup resolves.
+  var stored = null;
+  try { stored = localStorage.getItem("ugc_lang"); } catch (e) {}
+  if (stored) {
+    applyLang(stored, false);
+  } else {
+    var guess = (navigator.language || "en").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
+    applyLang(guess, false);
+    fetch("https://get.geojs.io/v1/ip/country.json")
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        var s = null; try { s = localStorage.getItem("ugc_lang"); } catch (e) {}
+        if (s) return; // user toggled in the meantime
+        var cc = d && (d.country || d.country_code || d.name);
+        applyLang(cc === "TR" || cc === "Turkey" ? "tr" : "en", false);
+      })
+      .catch(function () {});
+  }
 
   document.querySelectorAll(".lang-btn").forEach(function (b) {
-    b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang")); });
+    b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang"), true); });
   });
 
   /* ---------------- year ---------------- */
