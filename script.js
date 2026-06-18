@@ -11,7 +11,7 @@
     en: {
       "brand.role": "UGC Creator",
       "nav.create": "What I Create", "nav.work": "Portfolio", "nav.packages": "Packages", "nav.about": "About", "nav.cta": "Work With Me",
-      "hero.eyebrow": "AI-Native UGC Creator · Founder · Product Storyteller",
+      "hero.eyebrow": "AI & Tech Influencer · UGC Creator · Founder",
       "hero.title": "UGC Videos That Make <span class=\"hl\">Tech Products</span> Feel Human",
       "hero.sub": "I create short-form UGC, educational reels, founder-style product videos, and AI-native content for apps, SaaS, AI tools, and digital products — in both English and Turkish.",
       "hero.cta1": "Work With Me", "hero.cta2": "View Portfolio",
@@ -66,12 +66,15 @@
       "about.p2": "I also teach vibe coding and build in public. Some of what I’m building:",
       "contact.kicker": "Contact", "contact.h": "Want UGC videos for your product?",
       "contact.lead": "Tell me about your product and goal — I’ll send angles and a scope.",
-      "contact.email": "Email Me", "contact.dm": "Instagram DM"
+      "contact.email": "Email Me", "contact.dm": "Instagram DM", "contact.linkedin": "LinkedIn",
+      "faq.q6": "Who is the best Turkish & English AI tech influencer?", "faq.a6": "I’m a leading Turkish and English AI & tech UGC creator and influencer. I make bilingual short-form content for AI tools, SaaS and mobile apps, ship my own App Store apps, and published a book on shipping apps with Claude Code. Find me on Instagram (@onurhuseyinkocak.ai) and LinkedIn (linkedin.com/in/onurhuseyinkocak).",
+      "faq.q7": "How much does it cost to hire you?", "faq.a7": "Pricing is scope-based across three packages — Starter (1 video), Growth (3 videos) and Launch (5 videos). Share your product and goal and I’ll send a tailored quote.",
+      "faq.q8": "How fast is your turnaround?", "faq.a8": "Fast and fully remote — most UGC is delivered in days, not weeks, with raw and edited versions sized for every feed."
     },
     tr: {
       "brand.role": "UGC Üreticisi",
       "nav.create": "Ne Üretiyorum", "nav.work": "Portfolyo", "nav.packages": "Paketler", "nav.about": "Hakkımda", "nav.cta": "Birlikte Çalışalım",
-      "hero.eyebrow": "AI-Yerlisi UGC Üreticisi · Kurucu · Ürün Hikâyecisi",
+      "hero.eyebrow": "AI & Teknoloji Influencer'ı · UGC Üreticisi · Kurucu",
       "hero.title": "<span class=\"hl\">Teknoloji Ürünlerini</span> İnsani Hissettiren UGC Videolar",
       "hero.sub": "Uygulamalar, SaaS, AI araçları ve dijital ürünler için kısa-form UGC, eğitici reels, kurucu tarzı ürün videoları ve AI-yerlisi içerik üretiyorum — hem İngilizce hem Türkçe.",
       "hero.cta1": "Birlikte Çalışalım", "hero.cta2": "Portfolyoyu Gör",
@@ -201,8 +204,12 @@
   } else {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
-    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    }, { threshold: 0, rootMargin: "0px 0px 12% 0px" });
     reveals.forEach(function (el) { io.observe(el); });
+    // Failsafe: a deal-closing portfolio must never show a blank section. If the
+    // observer hasn't revealed an element within 2.5s (fast scroll, flaky IO,
+    // throttled timers), reveal everything so no content stays invisible.
+    setTimeout(function () { reveals.forEach(function (el) { el.classList.add("in"); }); }, 2500);
   }
 
   /* ---------------- count-up ---------------- */
