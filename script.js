@@ -34,7 +34,12 @@
   var I18N = {
     en: {
       "brand.role": "UGC Creator",
-      "nav.create": "What I Create", "nav.work": "Portfolio", "nav.packages": "Packages", "nav.about": "About", "nav.cta": "Work With Me",
+      "nav.create": "What I Create", "nav.work": "Portfolio", "nav.packages": "Packages", "nav.tools": "AI Tools", "nav.about": "About", "nav.cta": "Work With Me",
+      "tools.kicker": "My AI Stack", "tools.h": "Tools I build & create with", "tools.lead": "The AI tools I actually use to ship products and content. Some are referral links — they cost you nothing and support my work.",
+      "tools.note": "Affiliate disclosure: some links above are referral links. I only list tools I genuinely use.",
+      "tool.lovable.tag": "AI full-stack app builder", "tool.lovable.desc": "Describe an app in plain language and Lovable builds a working full-stack web app — fast.",
+      "tool.lovable.p1": "Full-stack apps straight from a prompt", "tool.lovable.p2": "Instant deploy + GitHub sync", "tool.lovable.p3": "Great for fast MVPs & landing pages",
+      "tool.lovable.c1": "Complex logic still needs hand-editing", "tool.lovable.c2": "Can get pricey as the app grows", "tool.lovable.cta": "Try Lovable",
       "hero.eyebrow": "AI & Tech Influencer · UGC Creator · Founder",
       "hero.title": "UGC Videos That Make <span class=\"hl\">Tech Products</span> Feel Human",
       "hero.sub": "I create short-form UGC, educational reels, founder-style product videos, and AI-native content for apps, SaaS, AI tools, and digital products — in both English and Turkish.",
@@ -102,7 +107,12 @@
     },
     tr: {
       "brand.role": "UGC Üreticisi",
-      "nav.create": "Ne Üretiyorum", "nav.work": "Portfolyo", "nav.packages": "Paketler", "nav.about": "Hakkımda", "nav.cta": "Birlikte Çalışalım",
+      "nav.create": "Ne Üretiyorum", "nav.work": "Portfolyo", "nav.packages": "Paketler", "nav.tools": "AI Araçları", "nav.about": "Hakkımda", "nav.cta": "Birlikte Çalışalım",
+      "tools.kicker": "Kullandığım AI Araçları", "tools.h": "Üretirken kullandığım araçlar", "tools.lead": "Ürün ve içerik üretirken gerçekten kullandığım AI araçları. Bazıları referral link — sana hiçbir maliyeti yok, beni desteklemiş olursun.",
+      "tools.note": "Affiliate bilgilendirmesi: yukarıdaki bazı linkler referral linkidir. Sadece gerçekten kullandığım araçları listeliyorum.",
+      "tool.lovable.tag": "AI full-stack uygulama geliştirici", "tool.lovable.desc": "Uygulamayı düz cümleyle anlat, Lovable çalışan bir full-stack web uygulaması kursun — hızlıca.",
+      "tool.lovable.p1": "Prompt'tan direkt full-stack uygulama", "tool.lovable.p2": "Anında deploy + GitHub sync", "tool.lovable.p3": "Hızlı MVP & landing page için ideal",
+      "tool.lovable.c1": "Karmaşık mantık hâlâ elle düzenleme ister", "tool.lovable.c2": "Uygulama büyüdükçe pahalılaşabilir", "tool.lovable.cta": "Lovable'ı Dene",
       "hero.eyebrow": "AI & Teknoloji Influencer'ı · UGC Üreticisi · Kurucu",
       "hero.title": "<span class=\"hl\">Teknoloji Ürünlerini</span> İnsani Hissettiren UGC Videolar",
       "hero.sub": "Uygulamalar, SaaS, AI araçları ve dijital ürünler için kısa-form UGC, eğitici reels, kurucu tarzı ürün videoları ve AI-yerlisi içerik üretiyorum — hem İngilizce hem Türkçe.",
@@ -389,4 +399,22 @@
       }).then(function () { btn.disabled = false; });
     });
   }
+
+  /* ---------------- affiliate click tracking ---------------- */
+  /* Every .tool-cta[data-tool] click is logged (tool + url) to the same edge fn,
+     then the link opens normally (target=_blank keeps this page alive, so the
+     fetch completes). Admin sees per-tool counts in /manager. */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest(".tool-cta[data-tool]");
+    if (!a) return;
+    var tool = a.getAttribute("data-tool");
+    try {
+      fetch(LEAD_ENDPOINT, {
+        method: "POST", keepalive: true,
+        headers: { "Content-Type": "application/json", apikey: LEAD_ANON, Authorization: "Bearer " + LEAD_ANON },
+        body: JSON.stringify({ action: "click", tool: tool, url: a.getAttribute("href") }),
+      }).catch(function () {});
+    } catch (e2) {}
+    if (window.gtag) gtag("event", "affiliate_click", { tool: tool });
+  });
 })();
