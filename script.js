@@ -2,6 +2,10 @@
 (function () {
   "use strict";
 
+  /* Progressive enhancement: mark JS so the reveal animation only hides content
+     when JS is present. Without JS, everything stays visible (crawlers, no-JS). */
+  document.documentElement.classList.add("js");
+
   /* ---------------- i18n ---------------- */
   var I18N = {
     en: {
@@ -14,7 +18,7 @@
       "hero.lang": "UGC in Turkish & English", "hero.loc": "Bangkok, Thailand", "hero.world": "Brands worldwide",
       "strip.1": "AI Founder", "strip.2": "App Builder", "strip.3": "Short-Form Creator", "strip.4": "Tech Product Storytelling", "strip.5": "Turkish & English Content",
       "stat.1": "Organic views (recent reels)", "stat.2": "Comments earned", "stat.3": "Tech videos shipped", "stat.4": "Content in both languages",
-      "stat.note": "Pulled live from @onurhuseyinkocak.ai — real numbers, no inflated metrics.",
+      "stat.note": "Real numbers from @onurhuseyinkocak.ai — no inflated or bought metrics. Plus real proof: shipped iOS apps on the App Store (Promtable, Didn't Happen, Dream Mining) and a published Claude Code book.",
       "badge.r4": "22K views · 1.4K comments", "badge.r2": "22K views · 138 comments", "badge.r3": "2.1K views", "badge.r5": "2K views",
       "faq.kicker": "FAQ", "faq.h": "Questions brands ask",
       "faq.q1": "What kind of content do you create?", "faq.a1": "Short-form UGC for tech: product videos, AI tool demos, app explainers, founder-led videos, educational reels, and ad creatives for apps, SaaS, AI tools, and digital products.",
@@ -74,7 +78,7 @@
       "hero.lang": "Türkçe & İngilizce UGC", "hero.loc": "Bangkok, Tayland", "hero.world": "Dünya çapında markalar",
       "strip.1": "AI Kurucusu", "strip.2": "Uygulama Geliştirici", "strip.3": "Kısa-Form Üretici", "strip.4": "Teknoloji Ürün Hikâyeciliği", "strip.5": "Türkçe & İngilizce İçerik",
       "stat.1": "Organik izlenme (son reels)", "stat.2": "Toplanan yorum", "stat.3": "Yayınlanan tech video", "stat.4": "İki dilde içerik",
-      "stat.note": "@onurhuseyinkocak.ai'dan canlı çekildi — gerçek sayılar, şişirilmiş metrik yok.",
+      "stat.note": "@onurhuseyinkocak.ai içeriklerinden gerçek sayılar — şişirilmiş veya satın alınmış metrik yok. Ayrıca gerçek kanıt: App Store'da yayınlanmış iOS uygulamaları (Promtable, Didn't Happen, Dream Mining) ve yayınlanmış bir Claude Code kitabı.",
       "badge.r4": "22B izlenme · 1.4B yorum", "badge.r2": "22B izlenme · 138 yorum", "badge.r3": "2.1B izlenme", "badge.r5": "2B izlenme",
       "faq.kicker": "SSS", "faq.h": "Markaların sorduğu sorular",
       "faq.q1": "Ne tür içerik üretiyorsun?", "faq.a1": "Teknoloji için kısa-form UGC: ürün videoları, AI araç tanıtımları, uygulama anlatımları, kurucu videoları, eğitici reels ve uygulama/SaaS/AI ürünleri için reklam kreatifleri.",

@@ -202,9 +202,11 @@ h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); font-weight: 800; line-height: 1.1
 .footer-inner a:hover { color: var(--brand); }
 
 /* ---------- Reveal ---------- */
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
-.reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+/* Reveal animation is JS-gated: without JS (AI crawlers, first paint, no-JS) all
+   content is fully visible — the animation only enhances, never hides. */
+html.js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+html.js .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { html.js .reveal { opacity: 1; transform: none; transition: none; } }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 920px) {
