@@ -16,6 +16,7 @@
       --new:#2563eb; --contacted:#b45309; --won:#15803d; --lost:#94a3b8; --radius:16px;
     }
     * { box-sizing:border-box; }
+    [hidden] { display:none !important; } /* author display rules below would otherwise defeat the hidden attribute */
     body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 "Inter",system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
     h1,h2 { font-family:"Plus Jakarta Sans",system-ui,sans-serif; margin:0; }
     a { color:var(--brand-ink); }
