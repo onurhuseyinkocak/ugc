@@ -243,17 +243,22 @@
 
   /* ---------------- reveal ---------------- */
   var reveals = document.querySelectorAll(".reveal");
+  function revealAll() { reveals.forEach(function (el) { el.classList.add("in"); }); }
   if (reduce || !("IntersectionObserver" in window)) {
-    reveals.forEach(function (el) { el.classList.add("in"); });
+    revealAll();
   } else {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
     }, { threshold: 0, rootMargin: "0px 0px 12% 0px" });
     reveals.forEach(function (el) { io.observe(el); });
-    // Failsafe: a deal-closing portfolio must never show a blank section. If the
-    // observer hasn't revealed an element within 2.5s (fast scroll, flaky IO,
-    // throttled timers), reveal everything so no content stays invisible.
-    setTimeout(function () { reveals.forEach(function (el) { el.classList.add("in"); }); }, 2500);
+    // Visibility guarantee — content must NEVER stay hidden for a renderer that
+    // runs JS but doesn't scroll (ChatGPT/AI crawlers, headless browsers, link
+    // unfurlers). The CSS hides .reveal at opacity:0 once the `js` class is on,
+    // and a no-scroll renderer only ever intersects the first viewport. So:
+    //  1) reveal everything on `load` (most headless fetchers snapshot at/after load),
+    //  2) a short 1.2s failsafe for anything that snapshots before load fires.
+    window.addEventListener("load", revealAll);
+    setTimeout(revealAll, 1200);
   }
 
   /* ---------------- count-up ---------------- */
