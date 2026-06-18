@@ -233,20 +233,30 @@
     vid.addEventListener("pause", function () { btn.classList.remove("hidden"); });
   });
 
-  /* ---------------- hero video (autoplay muted, button toggles sound) ---------------- */
+  /* ---------------- hero video (autoplay once, button = play/pause/replay) ---------------- */
   var heroVid = document.querySelector(".hero-video");
   var heroBtn = document.querySelector(".hero-phone-play");
+  var PLAY_SVG = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+  var PAUSE_SVG = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
   if (heroVid) {
     heroVid.muted = true;
     var p = heroVid.play();
     if (p && p.catch) p.catch(function () {});
   }
   if (heroVid && heroBtn) {
+    function syncHeroIcon() {
+      var paused = heroVid.paused || heroVid.ended;
+      heroBtn.innerHTML = paused ? PLAY_SVG : PAUSE_SVG;
+      heroBtn.setAttribute("aria-label", paused ? "Play preview" : "Pause preview");
+    }
+    heroVid.addEventListener("play", syncHeroIcon);
+    heroVid.addEventListener("pause", syncHeroIcon);
+    heroVid.addEventListener("ended", syncHeroIcon);
+    syncHeroIcon();
     heroBtn.addEventListener("click", function () {
-      heroVid.muted = !heroVid.muted;
-      if (heroVid.paused) heroVid.play();
-      heroBtn.style.background = heroVid.muted ? "rgba(255,255,255,.9)" : "#2563eb";
-      heroBtn.style.color = heroVid.muted ? "#1b4ed1" : "#fff";
+      if (heroVid.ended) { heroVid.currentTime = 0; heroVid.play(); }
+      else if (heroVid.paused) { heroVid.play(); }
+      else { heroVid.pause(); }
     });
   }
 })();
