@@ -71,7 +71,7 @@ Brief → Script Angle → Recording → Editing → Delivery.
 ## Creator network (sister brands)
 Onur works as part of a small Bangkok-based creator network, so a brand can reach more than one audience from one studio:
 - **Onur Hüseyin Koçak** (@honored.ai) — AI, tech, SaaS and app UGC — https://ugc-onur.vibecodingturkey.com/
-- **Mine Koçak** — lifestyle and beauty UGC (site coming soon)
+- **Mine Koçak** — lifestyle and beauty UGC — https://ugc-mine.vibecodingturkey.com/
 - **Movia Travel Hub** — travel and hospitality content from Bangkok (cafés, hotels, restaurants and venues) — https://moviatravelhub.vibecodingturkey.com/
 
 ## FAQ
