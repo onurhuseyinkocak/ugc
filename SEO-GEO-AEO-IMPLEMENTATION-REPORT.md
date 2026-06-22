@@ -3,6 +3,14 @@
 Date: 2026-06-22
 Scope: ugc-onur.vibecodingturkey.com (this repo) + moviatravelhub.vibecodingturkey.com + owned-domain backlink audit.
 
+## STATUS UPDATE (final)
+- ✅ moviatravelhub: 3 pages (/bangkok-travel-ugc-creators, /couple-ugc-creators, /hotel-cafe-restaurant-ugc) BUILT, `next build` PASS, deployed to Vercel, verified live (HTTP 200, correct H1, JSON-LD, in sitemap).
+- ✅ Google Search Console: both sitemaps SUBMITTED via Webmasters API (service account, siteOwner on sc-domain:vibecodingturkey.com which covers both subdomains). HTTP 204, confirmed registered with lastSubmitted timestamps.
+- ✅ ugc-onur metrics corrected to exact live IG figures; every video card now badged.
+- ✅ Packages/pricing section added to ugc-onur homepage (custom-quote, no fake prices).
+- ✅ Owned-domain backlinks: already in place across the ecosystem (audited, not duplicated).
+Remaining MANUAL: IndexNow key, Instagram bios/pins, Bing Webmaster (optional), real new sample videos.
+
 Honest framing: nothing here guarantees rankings or brand deals. The work makes both
 sites fast to crawl, easy for AI assistants to understand and cite, and easy for brands
 to evaluate. No fake metrics, testimonials, clients, or prices were invented.
