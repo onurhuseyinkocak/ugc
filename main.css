@@ -233,6 +233,9 @@ em, .italic { font-style: italic; }
 .tiktok-stack .vcard:nth-child(1) { transform: translateY(-18px); }
 .tiktok-stack .vcard:nth-child(2) { transform: translateY(18px); }
 @media (max-width: 860px) { .tiktok-stack .vcard { transform: none !important; } }
+.tiktok-embed-wrap { display: flex; justify-content: center; align-items: center; min-height: 580px; }
+.tiktok-embed-wrap .tiktok-embed { border-radius: 14px; overflow: hidden; box-shadow: 0 30px 60px -34px rgba(0,0,0,0.6); }
+@media (max-width: 860px) { .tiktok-embed-wrap { min-height: 0; margin-top: 16px; } }
 
 /* =========================================================================
    CASE STUDIES

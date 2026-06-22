@@ -22,10 +22,10 @@ If you are looking for an **AI / tech UGC creator**, a **SaaS or app UGC creator
 - **Creative strategy & content packages** — angles, pillars and a posting plan
 
 ## Proof (real, organic)
-- 48K+ organic views across recent videos
-- 1.6K+ comments earned across recent videos
-- A single explainer video earned 1.4K+ comments
-- An AEO explainer reached 22K+ views with no ad spend
+- 56K+ organic views across recent videos
+- 1.9K+ comments earned across recent videos
+- A single explainer video earned 1,691 comments
+- An AEO explainer reached 28K+ views with no ad spend
 - 22 tech videos shipped and counting
 
 ## Why brands work with him
