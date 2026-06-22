@@ -295,6 +295,23 @@ em, .italic { font-style: italic; }
 .svc p { margin-top: 12px; font-size: 14.5px; color: var(--ink-2); line-height: 1.6; max-width: 42ch; }
 
 /* =========================================================================
+   PACKAGES
+   ========================================================================= */
+.pkg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); border-radius: var(--radius-lg); overflow: hidden; }
+.pkg-card { background: var(--bg); padding: clamp(26px, 3vw, 40px); transition: background .4s var(--ease); display: block; }
+.pkg-card:hover { background: var(--white); }
+.pkg-top { display: flex; align-items: center; justify-content: space-between; }
+.pkg-price { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: var(--gold-deep); text-transform: uppercase; }
+.pkg-card h3 { font-size: clamp(20px, 2.3vw, 25px); margin-top: 22px; }
+.pkg-card p { margin-top: 12px; font-size: 14.5px; color: var(--ink-2); line-height: 1.6; }
+.pkg-cta { background: var(--ink); }
+.pkg-cta h3, .pkg-cta .svc-num { color: var(--bg); }
+.pkg-cta p { color: rgba(245,243,238,0.65); }
+.pkg-cta:hover { background: var(--ink); }
+@media (max-width: 860px) { .pkg-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pkg-grid { grid-template-columns: 1fr; } }
+
+/* =========================================================================
    RESULTS / WHY WORK WITH ME
    ========================================================================= */
 .why { background: var(--bg-2); }
