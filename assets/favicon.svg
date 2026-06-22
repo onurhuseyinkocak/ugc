@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="15" fill="#2563eb"/>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
-    font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="29" font-weight="800" fill="#fff">OK</text>
+  <rect width="64" height="64" rx="15" fill="#111111"/>
+  <text x="30" y="34" dominant-baseline="central" text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="500" fill="#C6A972">O</text>
+  <circle cx="48" cy="44" r="3.2" fill="#C6A972"/>
 </svg>
