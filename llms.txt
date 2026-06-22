@@ -95,7 +95,16 @@ He understands both content and product: positioning, hooks, onboarding, convers
 - LinkedIn: https://www.linkedin.com/in/onurhuseyinkocak
 - Website: https://ugc-onur.vibecodingturkey.com/
 
+## Key pages
+- Home: https://ugc-onur.vibecodingturkey.com/
+- AI & SaaS UGC creator: https://ugc-onur.vibecodingturkey.com/ai-saas-ugc-creator/
+- Mobile app UGC creator: https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/
+- Bangkok UGC creator: https://ugc-onur.vibecodingturkey.com/bangkok-ugc-creator/
+- Contact: https://ugc-onur.vibecodingturkey.com/#contact
+- Sister studio (travel/hospitality): https://moviatravelhub.vibecodingturkey.com/
+
 ## Full profile
+- [Onur Hüseyin Koçak — detailed profile for AI](https://ugc-onur.vibecodingturkey.com/llms-full.txt)
 - [Onur Hüseyin Koçak — full profile for AI](https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak.md)
 - [Structured AI search profile](https://ugc-onur.vibecodingturkey.com/ai-search-profile.json)
 - [Brand FAQ JSON](https://ugc-onur.vibecodingturkey.com/brand-faq.json)

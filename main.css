@@ -309,6 +309,33 @@ em, .italic { font-style: italic; }
 .pullquote cite { display: block; margin-top: 26px; font-style: normal; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
 
 /* =========================================================================
+   LANDING PAGES (SEO intent pages)
+   ========================================================================= */
+.lp-hero { padding-top: 132px; padding-bottom: clamp(40px, 6vw, 72px); }
+.lp-hero .kicker { margin-bottom: 26px; }
+.lp-hero h1 { font-size: clamp(38px, 6vw, 76px); letter-spacing: -0.03em; line-height: 1.02; max-width: 16ch; }
+.lp-hero h1 em { color: var(--gold-deep); font-style: italic; }
+.lp-hero .lede { margin-top: 28px; max-width: 60ch; }
+.lp-hero .hero-actions { margin-top: 36px; }
+.crumbs { padding-top: 110px; font-size: 13px; color: var(--ink-3); display: flex; gap: 8px; flex-wrap: wrap; }
+.crumbs a { color: var(--ink-2); border-bottom: 1px solid transparent; }
+.crumbs a:hover { border-bottom-color: var(--gold); }
+.prose p { color: var(--ink-2); font-size: 17px; line-height: 1.7; max-width: 65ch; margin-bottom: 18px; }
+.prose p strong { color: var(--ink); }
+.lp-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px; margin-top: 8px; }
+.lp-list li { list-style: none; display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; color: var(--ink); padding: 10px 0; border-top: 1px solid var(--line-soft); }
+.lp-list li svg { width: 18px; height: 18px; color: var(--gold-deep); flex-shrink: 0; margin-top: 3px; }
+@media (max-width: 720px) { .lp-list { grid-template-columns: 1fr; } }
+.cta-band { background: var(--ink); color: var(--bg); border-radius: clamp(20px, 4vw, 32px); padding: clamp(40px, 7vw, 80px); text-align: center; }
+.cta-band h2 { color: var(--bg); font-size: clamp(28px, 4.5vw, 50px); max-width: 18ch; margin: 0 auto; }
+.cta-band p { color: rgba(245,243,238,0.7); margin: 18px auto 0; max-width: 50ch; }
+.cta-band .hero-actions { justify-content: center; margin-top: 32px; }
+.cta-band .btn-primary { background: var(--gold); color: var(--ink); }
+.cta-band .btn-primary:hover { background: var(--bg); }
+.cta-band .btn-ghost { color: var(--bg); border-color: rgba(245,243,238,0.3); }
+.cta-band .btn-ghost:hover { border-color: var(--bg); }
+
+/* =========================================================================
    FAQ
    ========================================================================= */
 .faq-grid { border-top: 1px solid var(--line); }

@@ -51,5 +51,7 @@ User-agent: Bytespider
 Allow: /
 User-agent: DuckAssistBot
 Allow: /
+User-agent: DuckDuckBot
+Allow: /
 
 Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap.xml
