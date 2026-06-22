@@ -33,7 +33,7 @@
       "work.viral": "Viral",
       "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / Tools", "work.tag.apps": "Apps / No-code", "work.tag.story": "Tech / Story",
       "work.v4.t": "What GEO means for your product", "work.v4.d": "1,437 comments — top performer",
-      "work.v2.t": "Answer Engine Optimization, explained", "work.v2.d": "22,367 views — a complex topic made simple",
+      "work.v2.t": "Answer Engine Optimization, explained", "work.v2.d": "22K+ views — a complex topic made simple",
       "work.v3.t": "The viral AI video trend, for free", "work.v3.d": "Turning a trend into a how-to people save",
       "work.v5.t": "Anyone can build an app now", "work.v5.d": "A product story told in under a minute",
       "work.v1.t": "The 16-year-old who built an AI company", "work.v1.d": "Narrative hooks that hold attention",
@@ -56,7 +56,7 @@
       "case2.h": "22K views on a topic most people haven't heard of.",
       "case2.problem": "Answer Engine Optimization is a niche, jargon-heavy subject with near-zero search demand yet.",
       "case2.strategy": "Lead with the behaviour shift people already feel — “you ask ChatGPT instead of Google now” — then land the term on top of it.",
-      "case2.outcome": "Pure curiosity-driven reach: 22,367 views with no ad spend, proving demand for the topic before competitors caught on.",
+      "case2.outcome": "Pure curiosity-driven reach: 22K+ views with no ad spend, proving demand for the topic before competitors caught on.",
 
       "about.kicker": "About", "about.role": "AI &amp; UGC Creator · Bangkok",
       "about.h": "A creator who actually understands the products he films.",
@@ -104,8 +104,18 @@
       "form.send": "Send inquiry <span class=\"arrow\">→</span>",
       "form.sending": "Sending…", "form.ok": "Thanks — got it. I'll reply within 24 hours.", "form.err": "Add your email and product type, then try again.",
 
+      "net.kicker": "Creator network",
+      "net.h": "One studio, three audiences.",
+      "net.p": "Beyond AI and tech, our family of creators also covers lifestyle and travel — so a brand can reach the right audience with the right face, all from Bangkok.",
+      "net.mine.tag": "Lifestyle &amp; Beauty", "net.mine.t": "Mine Koçak",
+      "net.mine.d": "Lifestyle &amp; beauty UGC — authentic content for beauty, wellness and lifestyle brands.",
+      "net.mine.cta": "Visit the site <span class=\"arrow\">→</span>",
+      "net.movia.tag": "Travel &amp; Hospitality", "net.movia.t": "Movia Travel Hub",
+      "net.movia.d": "Travel &amp; hospitality content from Bangkok — cafés, hotels, restaurants and venues, brought to life on camera.",
+      "net.movia.cta": "Visit the site <span class=\"arrow\">→</span>",
+
       "footer.tag": "Bangkok-based AI &amp; UGC creator. Performance-driven short-form content in English and Turkish for modern internet brands.",
-      "footer.explore": "Explore", "footer.connect": "Connect", "footer.made": "Bangkok, Thailand · Working worldwide"
+      "footer.explore": "Explore", "footer.connect": "Connect", "footer.network": "Network", "footer.made": "Bangkok, Thailand · Working worldwide"
     },
 
     tr: {
@@ -134,7 +144,7 @@
       "work.viral": "Viral",
       "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / Araçlar", "work.tag.apps": "Uygulama / No-code", "work.tag.story": "Tech / Hikâye",
       "work.v4.t": "GEO senin ürünün için ne anlama geliyor", "work.v4.d": "1.437 yorum — en çok etkileşim alan",
-      "work.v2.t": "Answer Engine Optimization, sade anlatımla", "work.v2.d": "22.367 izlenme — karmaşık bir konu, basitçe",
+      "work.v2.t": "Answer Engine Optimization, sade anlatımla", "work.v2.d": "22B+ izlenme — karmaşık bir konu, basitçe",
       "work.v3.t": "Viral AI video trendi, ücretsiz", "work.v3.d": "Bir trendi, insanların kaydettiği bir rehbere çevirmek",
       "work.v5.t": "Artık herkes uygulama yapabilir", "work.v5.d": "Bir dakikadan kısa bir ürün hikâyesi",
       "work.v1.t": "16 yaşında AI şirketi kuran çocuk", "work.v1.d": "Dikkati tutan anlatı kancaları",
@@ -157,7 +167,7 @@
       "case2.h": "Çoğu kişinin duymadığı bir konuda 22B izlenme.",
       "case2.problem": "Answer Engine Optimization, henüz neredeyse hiç arama hacmi olmayan, jargon yüklü niş bir konu.",
       "case2.strategy": "İnsanların zaten hissettiği davranış değişimiyle başla — “artık Google yerine ChatGPT'ye soruyorsun” — terimi de bunun üzerine otur.",
-      "case2.outcome": "Tamamen meraktan gelen erişim: sıfır reklam harcamasıyla 22.367 izlenme. Rakipler fark etmeden konuya talep olduğunu kanıtladı.",
+      "case2.outcome": "Tamamen meraktan gelen erişim: sıfır reklam harcamasıyla 22B+ izlenme. Rakipler fark etmeden konuya talep olduğunu kanıtladı.",
 
       "about.kicker": "Hakkımda", "about.role": "AI &amp; UGC İçerik Üreticisi · Bangkok",
       "about.h": "Çektiği ürünleri gerçekten anlayan bir içerik üreticisi.",
@@ -205,8 +215,18 @@
       "form.send": "Mesaj gönder <span class=\"arrow\">→</span>",
       "form.sending": "Gönderiliyor…", "form.ok": "Teşekkürler — aldım. 24 saat içinde döneceğim.", "form.err": "E-posta ve ürün tipini ekleyip tekrar dene.",
 
+      "net.kicker": "İçerik ağı",
+      "net.h": "Tek stüdyo, üç kitle.",
+      "net.p": "AI ve teknolojinin ötesinde; ailecek yaşam tarzı ve seyahat içeriğini de kapsıyoruz — böylece bir marka doğru kitleye doğru yüzle ulaşır, hepsi Bangkok'tan.",
+      "net.mine.tag": "Lifestyle &amp; Güzellik", "net.mine.t": "Mine Koçak",
+      "net.mine.d": "Lifestyle &amp; güzellik UGC — güzellik, wellness ve yaşam tarzı markaları için samimi içerik.",
+      "net.mine.cta": "Siteyi gör <span class=\"arrow\">→</span>",
+      "net.movia.tag": "Seyahat &amp; Ağırlama", "net.movia.t": "Movia Travel Hub",
+      "net.movia.d": "Bangkok'tan seyahat &amp; ağırlama içeriği — kafeler, oteller, restoranlar ve mekanlar, kamera önünde.",
+      "net.movia.cta": "Siteyi gör <span class=\"arrow\">→</span>",
+
       "footer.tag": "Bangkok merkezli AI &amp; UGC içerik üreticisi. Modern internet markaları için İngilizce ve Türkçe, performans odaklı kısa video.",
-      "footer.explore": "Keşfet", "footer.connect": "Bağlan", "footer.made": "Bangkok, Tayland · Dünya geneli çalışıyorum"
+      "footer.explore": "Keşfet", "footer.connect": "Bağlan", "footer.network": "Ağ", "footer.made": "Bangkok, Tayland · Dünya geneli çalışıyorum"
     }
   };
 

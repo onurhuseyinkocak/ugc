@@ -118,6 +118,7 @@ em, .italic { font-style: italic; }
 .lang-toggle button { font-size: 12px; font-weight: 600; padding: 7px 13px; color: var(--ink-3); letter-spacing: 0.04em; transition: background .3s var(--ease), color .3s var(--ease); }
 .lang-toggle button.active { background: var(--ink); color: var(--bg); }
 .nav-cta { font-size: 14px; }
+.mobile-menu { display: none; }
 .nav-burger { display: none; width: 40px; height: 40px; flex-direction: column; gap: 5px; align-items: center; justify-content: center; }
 .nav-burger span { width: 22px; height: 1.5px; background: var(--ink); transition: transform .3s var(--ease), opacity .3s var(--ease); }
 .nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
@@ -305,6 +306,21 @@ em, .italic { font-style: italic; }
 .pullquote cite { display: block; margin-top: 26px; font-style: normal; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
 
 /* =========================================================================
+   NETWORK
+   ========================================================================= */
+.net-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(18px, 2.4vw, 28px); }
+.net-card {
+  display: block; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: clamp(28px, 3.4vw, 44px); transition: transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+}
+.net-card:hover { transform: translateY(-5px); box-shadow: 0 30px 60px -36px rgba(17,17,17,0.5); border-color: var(--gold); }
+.net-tag { font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-deep); }
+.net-card h3 { font-size: clamp(24px, 3vw, 34px); margin-top: 16px; }
+.net-card p { margin-top: 14px; font-size: 15px; color: var(--ink-2); line-height: 1.6; max-width: 44ch; }
+.net-card .link-arrow { margin-top: 24px; }
+@media (max-width: 720px) { .net-grid { grid-template-columns: 1fr; } }
+
+/* =========================================================================
    CONTACT
    ========================================================================= */
 .contact-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(40px, 6vw, 88px); align-items: start; }
@@ -349,7 +365,7 @@ em, .italic { font-style: italic; }
    FOOTER
    ========================================================================= */
 .footer { border-top: 1px solid var(--line); padding: clamp(48px, 7vw, 84px) 0 40px; }
-.footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+.footer-top { display: grid; grid-template-columns: 1.6fr 0.8fr 0.9fr 1.1fr; gap: 40px; }
 .footer-brand .b { font-family: var(--font-display); font-size: 26px; }
 .footer-brand p { margin-top: 16px; font-size: 14.5px; color: var(--ink-2); max-width: 38ch; }
 .footer-col h4 { font-family: var(--font-body); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; margin-bottom: 18px; }
