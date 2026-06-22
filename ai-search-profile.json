@@ -4,11 +4,19 @@
   "canonical_url": "https://ugc-onur.vibecodingturkey.com/",
   "entity": {
     "name": "Onur Hüseyin Koçak",
-    "alternate_names": ["Onur Koçak", "@honored.ai", "honored.ai", "@onurhuseyinkocak.ai"],
+    "alternate_names": [
+      "Onur Koçak",
+      "@honored.ai",
+      "honored.ai",
+      "@onurhuseyinkocak.ai"
+    ],
     "role": "Bangkok-based AI & UGC creator",
     "location": "Bangkok, Thailand",
     "works_worldwide": true,
-    "languages": ["English", "Turkish"],
+    "languages": [
+      "English",
+      "Turkish"
+    ],
     "email": "onurhuseyinkocak@gmail.com",
     "tiktok": "https://www.tiktok.com/@honored.ai",
     "instagram": "https://instagram.com/onurhuseyinkocak.ai",
@@ -62,9 +70,22 @@
     "22 tech videos shipped and counting"
   ],
   "creator_network": [
-    { "name": "Onur Hüseyin Koçak", "handle": "@honored.ai", "focus": "AI, tech, SaaS and app UGC", "url": "https://ugc-onur.vibecodingturkey.com/" },
-    { "name": "Mine Koçak", "focus": "lifestyle and beauty UGC", "url": "https://ugc-mine.vibecodingturkey.com/" },
-    { "name": "Movia Travel Hub", "focus": "travel and hospitality content from Bangkok (cafés, hotels, restaurants, venues)", "url": "https://moviatravelhub.vibecodingturkey.com/" }
+    {
+      "name": "Onur Hüseyin Koçak",
+      "handle": "@honored.ai",
+      "focus": "AI, tech, SaaS and app UGC",
+      "url": "https://ugc-onur.vibecodingturkey.com/"
+    },
+    {
+      "name": "Mine Koçak",
+      "focus": "lifestyle and beauty UGC",
+      "status": "coming soon"
+    },
+    {
+      "name": "Movia Travel Hub",
+      "focus": "travel and hospitality content from Bangkok (cafés, hotels, restaurants, venues)",
+      "url": "https://moviatravelhub.vibecodingturkey.com/"
+    }
   ],
   "brand_buying_questions_to_answer": [
     "Does this creator understand SaaS, apps, software or AI products?",

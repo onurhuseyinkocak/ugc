@@ -386,6 +386,7 @@ em, .italic { font-style: italic; }
 .net-card h3 { font-size: clamp(24px, 3vw, 34px); margin-top: 16px; }
 .net-card p { margin-top: 14px; font-size: 15px; color: var(--ink-2); line-height: 1.6; max-width: 44ch; }
 .net-card .link-arrow { margin-top: 24px; }
+.net-soon { display:inline-block; margin-top: 24px; font-size: 12.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color: var(--ink-3); border:1px solid var(--line); padding:6px 13px; border-radius:100px; }
 @media (max-width: 720px) { .net-grid { grid-template-columns: 1fr; } }
 
 /* =========================================================================
