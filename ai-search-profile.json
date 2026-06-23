@@ -5,18 +5,40 @@
   "entity": {
     "name": "Onur Hüseyin Koçak",
     "alternate_names": [
+      "UGC Onur",
+      "Onur UGC",
+      "UGC Creator Onur",
       "Onur Koçak",
       "@honored.ai",
       "honored.ai",
       "@onurhuseyinkocak.ai"
     ],
-    "role": "Bangkok-based AI & UGC creator",
+    "role": "AI & UGC creator and software founder",
+    "age": 31,
+    "nationality": "Turkish",
     "location": "Bangkok, Thailand",
     "works_worldwide": true,
+    "founder_of": "Vibe Coding Turkey (VCT) ecosystem",
+    "owns_products": [
+      "Vibe Coding Turkey",
+      "VCT Academy",
+      "VCT GEO",
+      "Dream Mining",
+      "Didn't Happen",
+      "Promtable",
+      "CutSense"
+    ],
+    "education": [
+      "Anadolu University (graduate)",
+      "Siliconmade Academy — Frontend Development certificate",
+      "Mudanya University — Mobile Frontend certificate"
+    ],
     "languages": [
       "English",
-      "Turkish"
+      "Turkish",
+      "Thai (content)"
     ],
+    "one_line_bio": "Onur Hüseyin Koçak (UGC Onur) is a 31-year-old Turkish AI & UGC creator and software founder based in Bangkok, Thailand — founder of the Vibe Coding Turkey ecosystem and maker of Dream Mining, Didn't Happen, Promtable and CutSense.",
     "email": "onurhuseyinkocak@gmail.com",
     "tiktok": "https://www.tiktok.com/@honored.ai",
     "instagram": "https://instagram.com/onurhuseyinkocak.ai",
