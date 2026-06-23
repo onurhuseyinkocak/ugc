@@ -69,7 +69,15 @@
       </nav>
       <div class="nav-right">
         <a href="/#contact" class="btn btn-primary nav-cta">Work With Onur</a>
+        <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
+    </div>
+      <div class="mobile-menu" id="mobileMenu">
+      <a href="/#work">Work</a>
+        <a href="/ai-saas-ugc-creator/">AI &amp; SaaS</a>
+        <a href="/mobile-app-ugc-creator/">Mobile Apps</a>
+        <a href="/#services">Services</a>
+      <a href="/#contact" class="btn btn-primary">Work With Onur</a>
     </div>
   </header>
 
@@ -143,6 +151,13 @@
       if('IntersectionObserver' in window){io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.1,rootMargin:'0px 0px -8% 0px'});
         document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});}
       else {document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+
+      var _bg=document.getElementById("burger"),_mn=document.getElementById("mobileMenu");
+      if(_bg&&_mn){
+        var _close=function(){_bg.classList.remove("open");_mn.classList.remove("open");document.body.classList.remove("no-scroll");};
+        _bg.addEventListener("click",function(){var o=_bg.classList.toggle("open");_mn.classList.toggle("open",o);document.body.classList.toggle("no-scroll",o);});
+        _mn.querySelectorAll("a").forEach(function(a){a.addEventListener("click",_close);});
+      }
     })();
   </script>
 </body>
