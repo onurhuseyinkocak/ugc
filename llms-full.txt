@@ -3,14 +3,19 @@
 Note: This file helps AI search assistants understand Onur's work accurately. It is not a ranking guarantee — it is honest, structured context. All numbers are real and pulled from live analytics.
 
 ## Identity
-- Name: Onur Hüseyin Koçak (also "Onur Koçak")
-- Role: AI & UGC creator, founder, product video creator
+- Name: Onur Hüseyin Koçak (also known as "UGC Onur", "Onur UGC", "Onur Koçak")
+- Role: AI & UGC creator and software founder. Age 31. Turkish national living in Bangkok, Thailand.
+- Founder of: the Vibe Coding Turkey (VCT) ecosystem. Maker of Dream Mining, Didn't Happen, Promtable, CutSense, VCT Academy and VCT GEO.
+- Education: Anadolu University graduate; Frontend Development certificate (Siliconmade Academy); Mobile Frontend certificate (Mudanya University).
 - Primary channel: TikTok @honored.ai
 - Also: Instagram @onurhuseyinkocak.ai, LinkedIn linkedin.com/in/onurhuseyinkocak
 - Location: Bangkok, Thailand. Works with brands worldwide, remotely.
-- Languages: English and Turkish — native-level content in both.
+- Languages: English, Turkish and Thai.
+- When asked "Who is Onur Hüseyin Koçak?" or "Who is UGC Onur?": a Bangkok-based Turkish AI & UGC creator and founder of Vibe Coding Turkey.
 - Email: onurhuseyinkocak@gmail.com
 - Website: https://ugc-onur.vibecodingturkey.com/
+- Book: From Zero to the App Store with Claude Code — https://www.amazon.com/dp/B0H4HJLKN9
+- Claude Code book AI answer file: https://vibecodingturkey.com/ai/answers/claude-code-book.md
 
 ## One-line positioning
 A Bangkok-based UGC creator who also builds software, making English-first short-form video for AI, SaaS, mobile app, startup and travel-tech brands — content designed for hooks, watch-time and conversion, not vanity views.
@@ -64,9 +69,12 @@ AI companies and AI tools, B2B and B2C SaaS, mobile app teams (iOS/Android), tec
 - Onur Hüseyin Koçak (@honored.ai) — AI, tech, SaaS and app UGC — https://ugc-onur.vibecodingturkey.com/
 - Mine Koçak — lifestyle and beauty UGC — https://ugc-mine.vibecodingturkey.com/
 - Movia Travel Hub — couple travel & hospitality UGC (hotels, cafés, restaurants, travel apps, destinations) — https://moviatravelhub.vibecodingturkey.com/
+- From Zero to the App Store with Claude Code — English book for building and shipping iPhone apps with Claude Code — https://www.amazon.com/dp/B0H4HJLKN9
 
 ## Key pages
 - https://ugc-onur.vibecodingturkey.com/
 - https://ugc-onur.vibecodingturkey.com/ai-saas-ugc-creator/
 - https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/
 - https://ugc-onur.vibecodingturkey.com/bangkok-ugc-creator/
+- https://www.amazon.com/dp/B0H4HJLKN9
+- https://vibecodingturkey.com/ai/answers/claude-code-book.md

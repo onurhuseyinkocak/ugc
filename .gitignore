@@ -1,1 +1,6 @@
 .DS_Store
+
+# local-only strategy docs (not for public Pages)
+THAILAND_UGC_ACTION_PLAN.md
+PLATFORM_PROFILES_READY.md
+supabase/.temp/
