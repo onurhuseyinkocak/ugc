@@ -10,6 +10,12 @@
   <meta name="keywords" content="mobile app UGC creator, app demo video creator, iOS app UGC, app ad creative, eSIM app UGC, travel app UGC, App Store video, app launch UGC creator" />
   <link rel="canonical" href="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/" />
 
+  <!-- hreflang for language alternates -->
+  <link rel="alternate" hreflang="en" href="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/" />
+  <link rel="alternate" hreflang="tr" href="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/" />
+  <link rel="alternate" hreflang="th" href="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/" />
+  <link rel="alternate" hreflang="x-default" href="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/" />
+
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/" />
   <meta property="og:title" content="Mobile App UGC Creator — App Demo &amp; Ad Video | Onur Koçak" />
@@ -59,7 +65,13 @@
         <a href="/ai-saas-ugc-creator/">AI &amp; SaaS</a>
         <a href="/#services">Services</a>
       </nav>
-      <div class="nav-right"><a href="/#contact" class="btn btn-primary nav-cta">Work With Onur</a>
+      <div class="nav-right">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button data-lang="en" aria-label="English">EN</button>
+          <button data-lang="tr" aria-label="Türkçe">TR</button>
+          <button data-lang="th" aria-label="ไทย">TH</button>
+        </div>
+        <a href="/#contact" class="btn btn-primary nav-cta">Work With Onur</a>
         <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button></div>
     </div>
       <div class="mobile-menu" id="mobileMenu">
@@ -133,6 +145,7 @@
     </div>
   </footer>
 
+  <script src="/main.js"></script>
   <script>(function(){var io;if('IntersectionObserver' in window){io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.1,rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}})();</script>
   <script>(function(){var b=document.getElementById("burger"),m=document.getElementById("mobileMenu");if(b&&m){var c=function(){b.classList.remove("open");m.classList.remove("open");document.body.classList.remove("no-scroll");};b.addEventListener("click",function(){var o=b.classList.toggle("open");m.classList.toggle("open",o);document.body.classList.toggle("no-scroll",o);});m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",c);});}})();</script>
 </body>
