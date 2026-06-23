@@ -405,6 +405,10 @@ em, .italic { font-style: italic; }
 .cc .l { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
 .cc .v { font-size: 16px; font-weight: 500; color: var(--ink); margin-top: 2px; }
 .cc .arrow { margin-left: auto; color: var(--ink-3); transition: transform .3s var(--ease), color .3s var(--ease); }
+/* Let the channel row shrink + the long email wrap on narrow phones (≤320px)
+   instead of forcing the whole contact column wider than the viewport. */
+.cc > span { min-width: 0; }
+.cc .v { overflow-wrap: anywhere; }
 .cc:hover .arrow { transform: translateX(4px); color: var(--ink); }
 .response { margin-top: 30px; display: inline-flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--ink-2); }
 .response .pulse { width: 9px; height: 9px; border-radius: 50%; background: #3fae6e; position: relative; }
