@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Content Admin</title>
+  <style>
+    :root { --b:#111; --bg:#f5f3ee; --line:#dcd8cf; --gold:#a98c52; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--b); }
+    .wrap { max-width:1000px; margin:0 auto; padding:24px 18px 80px; }
+    h1 { font-size:20px; font-weight:600; }
+    .muted { color:#777; font-size:13px; }
+    #login { max-width:360px; margin:14vh auto; text-align:center; }
+    #login input { width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:10px; font-size:15px; margin:14px 0; }
+    button { font:inherit; cursor:pointer; border:none; border-radius:10px; padding:11px 18px; background:var(--b); color:var(--bg); font-weight:600; }
+    button.ghost { background:transparent; color:var(--b); border:1px solid var(--line); }
+    .bar { position:sticky; top:0; z-index:5; background:var(--bg); padding:14px 0; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+    .tabs button { background:#fff; color:var(--b); border:1px solid var(--line); padding:7px 14px; font-size:13px; }
+    .tabs button.on { background:var(--b); color:var(--bg); }
+    .grp { margin-top:26px; }
+    .grp h3 { font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+    .row { display:grid; grid-template-columns:200px 1fr; gap:14px; padding:10px 0; border-bottom:1px solid #ece8df; align-items:start; }
+    .row .k { font-size:12px; color:#777; word-break:break-all; padding-top:8px; }
+    .row textarea { width:100%; border:1px solid var(--line); border-radius:8px; padding:9px 11px; font:inherit; font-size:14px; resize:vertical; min-height:42px; background:#fff; }
+    .row textarea.changed { border-color:var(--gold); background:#fffdf6; }
+    .save { position:fixed; right:20px; bottom:20px; box-shadow:0 10px 30px -10px rgba(0,0,0,.4); }
+    #status { font-size:13px; }
+    .err { color:#c0392b; } .ok { color:#2c8b58; }
+    iframe { display:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div id="login">
+      <h1>Content Admin</h1>
+      <p class="muted">Enter the admin password to edit this site.</p>
+      <input id="pw" type="password" placeholder="Password" autocomplete="current-password" />
+      <button id="loginBtn">Unlock</button>
+      <p id="loginStatus" class="muted"></p>
+    </div>
+
+    <div id="app" hidden>
+      <div class="bar">
+        <h1 style="margin-right:auto;">Editing: <span id="siteName"></span></h1>
+        <div class="tabs" id="langTabs">
+          <button data-l="en" class="on">EN</button>
+          <button data-l="tr">TR</button>
+          <button data-l="th">TH</button>
+        </div>
+        <span id="status" class="muted"></span>
+      </div>
+      <div id="fields"></div>
+      <button class="save" id="saveBtn">Save changes</button>
+    </div>
+  </div>
+
+  <iframe id="site" src="./index.html"></iframe>
+
+  <script>
+  (function () {
+    var FN = "https://bajrnvusqzllvsvipitr.supabase.co/functions/v1/ugc-content";
+    var SITE = window.UGC_ADMIN_SITE || "onur";
+    var LANGS = ["en", "tr", "th"];
+    var pw = "", curLang = "en";
+    var defaults = {};     // key -> {en,tr,th}
+    var overrides = {};    // key -> {lang -> value}
+    var edits = {};        // key -> {lang -> value} (pending, only changed)
+    var order = [];        // key order as they appear
+
+    document.getElementById("siteName").textContent = SITE;
+
+    function $(id){ return document.getElementById(id); }
+
+    $("loginBtn").onclick = function () {
+      pw = $("pw").value.trim();
+      if (!pw) return;
+      $("loginStatus").textContent = "Loading…";
+      // verify password with a no-op save (empty items rejected as bad request, wrong pw as 401)
+      fetch(FN, { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ site: SITE, password: pw, items: [] }) })
+        .then(function (r) {
+          if (r.status === 401) { $("loginStatus").innerHTML = '<span class="err">Wrong password.</span>'; return; }
+          // 400 (bad request: empty items) means password OK
+          startEditor();
+        })
+        .catch(function () { $("loginStatus").innerHTML = '<span class="err">Network error.</span>'; });
+    };
+    $("pw").addEventListener("keydown", function (e) { if (e.key === "Enter") $("loginBtn").click(); });
+
+    function startEditor() {
+      $("login").hidden = true; $("app").hidden = false;
+      Promise.all([extractDefaults(), fetchOverrides()]).then(render);
+    }
+
+    function fetchOverrides() {
+      return fetch(FN + "?site=" + encodeURIComponent(SITE))
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          (d.content || []).forEach(function (row) {
+            (overrides[row.key] = overrides[row.key] || {})[row.lang] = row.value;
+          });
+        }).catch(function () {});
+    }
+
+    // Load the site in the hidden iframe and read each [data-i18n] key's text per language.
+    function extractDefaults() {
+      return new Promise(function (resolve) {
+        var f = $("site");
+        function go() {
+          try {
+            var doc = f.contentDocument, win = f.contentWindow;
+            var btn = {};
+            doc.querySelectorAll(".lang-toggle button[data-lang]").forEach(function (b) { btn[b.getAttribute("data-lang")] = b; });
+            function readLang(l) {
+              if (btn[l]) btn[l].click();
+              doc.querySelectorAll("[data-i18n]").forEach(function (el) {
+                var k = el.getAttribute("data-i18n");
+                if (!defaults[k]) { defaults[k] = {}; order.push(k); }
+                defaults[k][l] = el.textContent;
+              });
+            }
+            // read in a stable order
+            readLang("en"); readLang("tr"); readLang("th");
+            if (btn.en) btn.en.click();
+            resolve();
+          } catch (e) { resolve(); }
+        }
+        if (f.contentDocument && f.contentDocument.readyState === "complete") setTimeout(go, 400);
+        else f.addEventListener("load", function () { setTimeout(go, 500); });
+      });
+    }
+
+    function val(key, lang) {
+      if (edits[key] && edits[key][lang] != null) return edits[key][lang];
+      if (overrides[key] && overrides[key][lang] != null) return overrides[key][lang];
+      return (defaults[key] && defaults[key][lang] != null) ? defaults[key][lang] : "";
+    }
+
+    function groupOf(key) { return (key.split(".")[0] || "other"); }
+
+    function render() {
+      curLang = "en";
+      drawTabs();
+      drawFields();
+      $("status").textContent = order.length + " editable fields";
+    }
+    function drawTabs() {
+      $("langTabs").querySelectorAll("button").forEach(function (b) {
+        b.classList.toggle("on", b.getAttribute("data-l") === curLang);
+        b.onclick = function () { curLang = b.getAttribute("data-l"); drawTabs(); drawFields(); };
+      });
+    }
+    function drawFields() {
+      var html = "", lastGrp = null;
+      order.forEach(function (key) {
+        var g = groupOf(key);
+        if (g !== lastGrp) { if (lastGrp) html += "</div>"; html += '<div class="grp"><h3>' + g + '</h3>'; lastGrp = g; }
+        var v = val(key, curLang).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+        var changed = edits[key] && edits[key][curLang] != null ? " changed" : "";
+        html += '<div class="row"><div class="k">' + key + '</div>' +
+          '<textarea class="' + changed.trim() + '" data-k="' + key + '">' + v + '</textarea></div>';
+      });
+      if (lastGrp) html += "</div>";
+      $("fields").innerHTML = html;
+      $("fields").querySelectorAll("textarea").forEach(function (t) {
+        t.addEventListener("input", function () {
+          var k = t.getAttribute("data-k");
+          (edits[k] = edits[k] || {})[curLang] = t.value;
+          t.classList.add("changed");
+        });
+      });
+    }
+
+    $("saveBtn").onclick = function () {
+      var items = [];
+      Object.keys(edits).forEach(function (k) {
+        Object.keys(edits[k]).forEach(function (l) { items.push({ key: k, lang: l, value: edits[k][l] }); });
+      });
+      if (!items.length) { $("status").innerHTML = '<span class="muted">No changes.</span>'; return; }
+      $("status").textContent = "Saving " + items.length + "…";
+      fetch(FN, { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ site: SITE, password: pw, items: items }) })
+        .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
+        .then(function (res) {
+          if (res.s === 200 && res.d.ok) {
+            items.forEach(function (it) { (overrides[it.key] = overrides[it.key] || {})[it.lang] = it.value; });
+            edits = {};
+            $("status").innerHTML = '<span class="ok">Saved ' + res.d.saved + '. Live in a few seconds.</span>';
+            drawFields();
+          } else if (res.s === 401) {
+            $("status").innerHTML = '<span class="err">Auth expired — reload.</span>';
+          } else {
+            $("status").innerHTML = '<span class="err">Save failed.</span>';
+          }
+        })
+        .catch(function () { $("status").innerHTML = '<span class="err">Network error.</span>'; });
+    };
+  })();
+  </script>
+</body>
+</html>
