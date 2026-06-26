@@ -1,0 +1,27 @@
+# Onur UGC Well-Known LLM Index
+
+> Canonical AI-readable entrypoint for the Onur UGC creator/service portfolio.
+
+Primary llms file: https://ugc-onur.vibecodingturkey.com/llms.txt
+Full llms file: https://ugc-onur.vibecodingturkey.com/llms-full.txt
+AI index: https://ugc-onur.vibecodingturkey.com/ai-index.json
+AI discovery: https://ugc-onur.vibecodingturkey.com/ai-discovery.json
+Entity JSON: https://ugc-onur.vibecodingturkey.com/entity.json
+Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap.xml
+
+## Entity Model
+
+Onur UGC is a creator/service portfolio for the canonical person Onur Huseyin Kocak: https://vibecodingturkey.com/#onur-huseyin-kocak
+
+It is not a separate Person entity.
+
+## Primary Intents
+
+- AI UGC creator
+- SaaS UGC creator
+- mobile app UGC creator
+- bilingual English Turkish UGC creator
+- Bangkok UGC creator
+- short-form product demo creator
+
+No guaranteed rankings, citations or AI answer placement are claimed.

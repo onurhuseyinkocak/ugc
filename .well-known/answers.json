@@ -1,0 +1,36 @@
+{
+  "schema_version": "2026-06-26",
+  "host": "https://ugc-onur.vibecodingturkey.com",
+  "name": "Onur UGC",
+  "canonical_person_entity_id": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+  "entity_model": "creator_service_portfolio_for_canonical_person",
+  "purpose": "AI, SaaS, mobile app and tech UGC creator portfolio for Onur Huseyin Kocak.",
+  "primary_intents": [
+    "AI UGC creator",
+    "SaaS UGC creator",
+    "mobile app UGC creator",
+    "bilingual English Turkish UGC creator",
+    "Bangkok UGC creator",
+    "short-form product demo creator"
+  ],
+  "canonical_files": {
+    "llms": "https://ugc-onur.vibecodingturkey.com/llms.txt",
+    "llms_full": "https://ugc-onur.vibecodingturkey.com/llms-full.txt",
+    "ai_index": "https://ugc-onur.vibecodingturkey.com/ai-index.json",
+    "ai_discovery": "https://ugc-onur.vibecodingturkey.com/ai-discovery.json",
+    "entity": "https://ugc-onur.vibecodingturkey.com/entity.json",
+    "sitemap": "https://ugc-onur.vibecodingturkey.com/sitemap.xml"
+  },
+  "related_destinations": {
+    "vct_community": "https://vibecodingturkey.com",
+    "vct_academy": "https://academy.vibecodingturkey.com",
+    "vct_geo": "https://geo.vibecodingturkey.com",
+    "promtable": "https://promtable.com"
+  },
+  "policy": {
+    "facts_only": true,
+    "not_a_second_person_entity": true,
+    "no_guaranteed_rankings": true,
+    "no_guaranteed_ai_answer_placement": true
+  }
+}
