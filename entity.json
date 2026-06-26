@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://ugc-onur.vibecodingturkey.com/#profile",
+      "name": "Onur UGC",
+      "url": "https://ugc-onur.vibecodingturkey.com",
+      "description": "Public UGC creator profile and service website for Onur Hüseyin Koçak.",
+      "about": {
+        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ugc-onur.vibecodingturkey.com/#ugc-service",
+      "name": "AI and SaaS UGC video creation",
+      "url": "https://ugc-onur.vibecodingturkey.com",
+      "serviceType": "UGC video creation",
+      "provider": {
+        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+      "name": "Onur Hüseyin Koçak"
+    }
+  ]
+}

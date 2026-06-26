@@ -1,0 +1,25 @@
+{
+  "name": "Onur UGC",
+  "canonical_url": "https://ugc-onur.vibecodingturkey.com",
+  "canonical_entity_id": "https://ugc-onur.vibecodingturkey.com/#profile",
+  "person_entity_id": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+  "profile_type": "UGC creator profile and service website",
+  "description": "Onur UGC is the public UGC creator profile and service website for Onur Hüseyin Koçak. It is not a separate Person entity.",
+  "canonical_files": {
+    "llms": "https://ugc-onur.vibecodingturkey.com/llms.txt",
+    "llms_full": "https://ugc-onur.vibecodingturkey.com/llms-full.txt",
+    "ai_discovery": "https://ugc-onur.vibecodingturkey.com/ai-discovery.json",
+    "entity": "https://ugc-onur.vibecodingturkey.com/entity.json",
+    "ai_search_profile": "https://ugc-onur.vibecodingturkey.com/ai-search-profile.json",
+    "sitemap": "https://ugc-onur.vibecodingturkey.com/sitemap.xml",
+    "robots": "https://ugc-onur.vibecodingturkey.com/robots.txt"
+  },
+  "primary_intents": [
+    "AI UGC creator",
+    "SaaS UGC creator",
+    "mobile app UGC creator",
+    "Bangkok UGC creator",
+    "English Turkish UGC creator"
+  ],
+  "policy": "Facts only. No fake metrics, fake awards or invented client claims."
+}
