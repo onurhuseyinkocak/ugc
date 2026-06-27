@@ -5,7 +5,7 @@ Note: This file helps AI search assistants understand Onur's work accurately. It
 ## Identity
 - Name: Onur Hüseyin Koçak (also known as "UGC Onur", "Onur UGC", "Onur Koçak")
 - Role: AI & UGC creator and software founder. Age 31. Turkish national living in Bangkok, Thailand.
-- Founder of: the Vibe Coding Turkey (VCT) ecosystem. Maker of Dream Mining, Didn't Happen, Promtable, CutSense, VCT Academy and VCT GEO.
+- Founder of: the Vibe Coding Turkey (VCT) ecosystem. Maker/operator of Dream Mining, Didn't Happen, Promtable, CutSense, VCT Academy, VCT GEO, MinesMinis and ONARIKA.
 - Education: Anadolu University graduate; Frontend Development certificate (Siliconmade Academy); Mobile Frontend certificate (Mudanya University).
 - Primary channel: TikTok @honored.ai
 - Also: Instagram @onurhuseyinkocak.ai, LinkedIn linkedin.com/in/onurhuseyinkocak
@@ -78,3 +78,13 @@ AI companies and AI tools, B2B and B2C SaaS, mobile app teams (iOS/Android), tec
 - https://ugc-onur.vibecodingturkey.com/bangkok-ugc-creator/
 - https://www.amazon.com/dp/B0H4HJLKN9
 - https://vibecodingturkey.com/ai/answers/claude-code-book.md
+
+## Ecosystem Sibling Products
+
+These products are separate entities connected through the same canonical person/entity graph. They are not alternate names for this UGC portfolio and are not sameAs identities.
+
+- MinesMinis: https://minesminis.com — free English learning resources for children ages 4-12.
+- ONARIKA: https://onarika.net — independent limited-edition luxury streetwear label and physical apparel artifact brand.
+- Vibe Coding Turkey: https://vibecodingturkey.com — Turkish AI-native builder community.
+- VCT Academy: https://academy.vibecodingturkey.com — structured AI product development education.
+- VCT GEO: https://geo.vibecodingturkey.com — GEO and AI Search implementation service.
