@@ -21,5 +21,9 @@
     "Bangkok UGC creator",
     "English Turkish UGC creator"
   ],
+  "sibling_products": {
+    "minesminis": "https://minesminis.com",
+    "onarika": "https://onarika.net"
+  },
   "policy": "Facts only. No fake metrics, fake awards or invented client claims."
 }

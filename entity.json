@@ -25,6 +25,26 @@
       "@type": "Person",
       "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak",
       "name": "Onur Hüseyin Koçak"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://minesminis.com/#website",
+      "name": "MinesMinis",
+      "url": "https://minesminis.com",
+      "description": "Free English learning resources for children ages 4-12.",
+      "creator": {
+        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+      }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://onarika.net/#brand",
+      "name": "ONARIKA",
+      "url": "https://onarika.net",
+      "description": "Independent limited-edition luxury streetwear label and physical apparel artifact brand.",
+      "creator": {
+        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+      }
     }
   ]
 }
