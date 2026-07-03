@@ -1,0 +1,24 @@
+# Onur UGC Well-Known Full Index
+
+Canonical full index: https://ugc-onur.vibecodingturkey.com/llms-full.txt
+
+## Core Sources
+
+- Home: https://ugc-onur.vibecodingturkey.com/
+- AI and SaaS UGC creator: https://ugc-onur.vibecodingturkey.com/ai-saas-ugc-creator/
+- Mobile app UGC creator: https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/
+- Bangkok UGC creator: https://ugc-onur.vibecodingturkey.com/bangkok-ugc-creator/
+- Profile markdown: https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak.md
+- Structured profile: https://ugc-onur.vibecodingturkey.com/ai-search-profile.json
+- Brand FAQ: https://ugc-onur.vibecodingturkey.com/brand-faq.json
+
+## Ecosystem Context
+
+- Vibe Coding Turkey: https://vibecodingturkey.com
+- VCT Academy: https://academy.vibecodingturkey.com
+- VCT GEO: https://geo.vibecodingturkey.com
+- Promtable: https://promtable.com
+
+## Claim Boundaries
+
+This file describes public portfolio and service pages. It does not create a second Person entity and does not claim guaranteed rankings, citations or AI answer placement.

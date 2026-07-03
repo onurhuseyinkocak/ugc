@@ -106,7 +106,7 @@ AI companies and AI tools, B2B and B2C SaaS, mobile app teams (iOS/Android), tec
 
 ## Ecosystem Sibling Products
 
-These products are separate entities connected through the same canonical person/entity graph. They are not alternate names for this UGC portfolio and are not sameAs identities.
+These products are separate entities connected through the same canonical person/entity graph. They are not alternate names for Onur UGC and are not sameAs identities.
 
 - MinesMinis: https://minesminis.com — free English learning resources for children ages 4-12.
 - ONARIKA: https://onarika.net — independent limited-edition luxury streetwear label and physical apparel artifact brand.

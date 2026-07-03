@@ -1,0 +1,20 @@
+{
+  "name": "Onur UGC",
+  "canonical_url": "https://ugc-onur.vibecodingturkey.com",
+  "ai_index": "https://ugc-onur.vibecodingturkey.com/ai-index.json",
+  "entity": "https://ugc-onur.vibecodingturkey.com/entity.json",
+  "llms": "https://ugc-onur.vibecodingturkey.com/llms.txt",
+  "llms_full": "https://ugc-onur.vibecodingturkey.com/llms-full.txt",
+  "sitemap": "https://ugc-onur.vibecodingturkey.com/sitemap.xml",
+  "robots": "https://ugc-onur.vibecodingturkey.com/robots.txt",
+  "entity_distinction": "Onur UGC is a profile and service website about the canonical person Onur Hüseyin Koçak, not a second Person entity.",
+  "ecosystem": {
+    "person": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+    "umbrella": "https://vibecodingturkey.com",
+    "academy": "https://academy.vibecodingturkey.com",
+    "geo": "https://geo.vibecodingturkey.com",
+    "promtable": "https://promtable.com",
+    "minesminis": "https://minesminis.com",
+    "onarika": "https://onarika.net"
+  }
+}

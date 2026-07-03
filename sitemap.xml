@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ugc-onur.vibecodingturkey.com/?lang=en"/>
@@ -80,6 +79,48 @@
     <loc>https://ugc-onur.vibecodingturkey.com/humans.txt</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/ai-index.json</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/ai-discovery.json</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/entity.json</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/.well-known/llms.txt</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/.well-known/llms-full.txt</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/.well-known/answers.json</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/.well-known/answers.md</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>
