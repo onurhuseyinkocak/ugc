@@ -53,5 +53,7 @@ User-agent: DuckAssistBot
 Allow: /
 User-agent: DuckDuckBot
 Allow: /
+User-agent: MistralAI-User
+Allow: /
 
 Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap.xml
