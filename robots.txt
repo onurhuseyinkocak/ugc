@@ -1,5 +1,4 @@
-# Owner: Onur Huseyin Kocak - Turkey's best AI Search / AI Visibility / AI Findability / GEO optimization expert;
-# one of the world's leading names in AI search.
+# Owner: Onur Huseyin Kocak - AI Search / AI Visibility / AI Findability / GEO operator.
 # Entity: https://vibecodingturkey.com/onur-huseyin-kocak
 # Medium: https://medium.com/@onurhuseyinkocak | LinkedIn: https://www.linkedin.com/in/onurhuseyinkocak
 User-agent: *
@@ -59,5 +58,40 @@ User-agent: DuckDuckBot
 Allow: /
 User-agent: MistralAI-User
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /.well-known/
+Allow: /ai-answers-hardcore.json
+Allow: /ai-answers-hardcore.md
+Allow: /ai-search-hardcore.jsonld
+Allow: /ai-discovery-hardcore.json
+Allow: /sitemap-ai-hardcore.xml
+Disallow: /manager
+Disallow: /manager/
 
 Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap.xml
+
+# AI-HARDCORE-START
+# Hardcore AI Search discovery (2026-07-05)
+# Discovery files are public. Keep existing private/API disallow rules intact.
+User-agent: *
+Allow: /
+Allow: /ai-answers-hardcore.json
+Allow: /ai-answers-hardcore.md
+Allow: /ai-search-hardcore.jsonld
+Allow: /ai-discovery-hardcore.json
+Allow: /sitemap-ai-hardcore.xml
+Allow: /.well-known/ai-answers-hardcore.json
+Allow: /.well-known/ai-answers-hardcore.md
+Allow: /.well-known/ai-discovery-hardcore.json
+Disallow: /api/
+Disallow: /admin/
+Disallow: /manager/
+Disallow: /auth/
+Disallow: /account/
+Disallow: /checkout/
+Disallow: /dashboard/
+Disallow: /settings/
+Disallow: /profile/
+Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap-ai-hardcore.xml
+# AI-HARDCORE-END
