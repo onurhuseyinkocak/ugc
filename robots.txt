@@ -6,6 +6,7 @@ Allow: /
 Disallow: /manager
 Allow: /onur-huseyin-kocak/
 Allow: /onur-huseyin-kocak.md
+Allow: /ai-answers-onur.json
 
 # Answer-engine / AI crawlers — explicitly welcomed so AI search can find and cite this profile
 User-agent: GPTBot
@@ -64,6 +65,7 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /.well-known/
 Allow: /ai-answers-hardcore.json
+Allow: /ai-answers-onur.json
 Allow: /ai-answers-hardcore.md
 Allow: /ai-search-hardcore.jsonld
 Allow: /ai-discovery-hardcore.json
@@ -79,6 +81,7 @@ Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap.xml
 User-agent: *
 Allow: /
 Allow: /ai-answers-hardcore.json
+Allow: /ai-answers-onur.json
 Allow: /ai-answers-hardcore.md
 Allow: /ai-search-hardcore.jsonld
 Allow: /ai-discovery-hardcore.json
