@@ -5,6 +5,8 @@
   "entity": "https://ugc-onur.vibecodingturkey.com/entity.json",
   "llms": "https://ugc-onur.vibecodingturkey.com/llms.txt",
   "llms_full": "https://ugc-onur.vibecodingturkey.com/llms-full.txt",
+  "html_profile": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/",
+  "markdown_profile": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak.md",
   "sitemap": "https://ugc-onur.vibecodingturkey.com/sitemap.xml",
   "robots": "https://ugc-onur.vibecodingturkey.com/robots.txt",
   "entity_distinction": "Onur UGC is a profile and service website about the canonical person Onur Hüseyin Koçak, not a second Person entity.",

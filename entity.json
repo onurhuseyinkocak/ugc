@@ -6,6 +6,7 @@
       "@id": "https://ugc-onur.vibecodingturkey.com/#profile",
       "name": "Onur UGC",
       "url": "https://ugc-onur.vibecodingturkey.com",
+      "mainEntityOfPage": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/",
       "description": "Public UGC creator profile and service website for Onur Hüseyin Koçak.",
       "about": {
         "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"

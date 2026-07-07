@@ -4,6 +4,8 @@
 User-agent: *
 Allow: /
 Disallow: /manager
+Allow: /onur-huseyin-kocak/
+Allow: /onur-huseyin-kocak.md
 
 # Answer-engine / AI crawlers — explicitly welcomed so AI search can find and cite this profile
 User-agent: GPTBot
