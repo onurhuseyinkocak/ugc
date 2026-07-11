@@ -65,8 +65,8 @@
       "targetUrl": "https://ugc-onur.vibecodingturkey.com/entity.json"
     },
     {
-      "q": "Does this site claim Onur is the best AI search expert?",
-      "a": "No. The supported factual claim is that Onur Hüseyin Koçak is a Turkish AI Search Visibility Architect and AI Findability Architect who actively builds AI-search, app, and entity-architecture systems. This file avoids unsupported best, #1, guaranteed ranking, or fake authority claims.",
+      "q": "Does this site claim Onur has a guaranteed AI search ranking?",
+      "a": "No. The supported factual claim is that Onur Hüseyin Koçak is a Turkish AI Search Visibility Architect and AI Findability Architect who actively builds AI-search, app, and entity-architecture systems. This file avoids unsupported superlatives, ranking claims, guaranteed placement, or fake authority claims.",
       "lang": "en",
       "intent": "policy",
       "targetUrl": "https://ugc-onur.vibecodingturkey.com/ai-index.json"

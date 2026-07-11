@@ -4,7 +4,7 @@ Onur UGC is the creator/service portfolio for Onur Huseyin Kocak, the canonical 
 
 It is not a second Person entity.
 
-## Best-Fit Intents
+## Strong-Fit Intents
 
 - AI UGC creator
 - SaaS UGC creator

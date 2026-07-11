@@ -176,7 +176,7 @@ h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); font-weight: 800; line-height: 1.1
 .pkg-feat { border-color: var(--brand); box-shadow: var(--shadow); }
 .pkg-tag { position: absolute; top: -12px; left: 28px; font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 999px; background: var(--brand); color: #fff; }
 .pkg h3 { font-size: 1.28rem; }
-.pkg-best { color: var(--brand); font-size: 14px; font-weight: 500; }
+.pkg-fit { color: var(--brand); font-size: 14px; font-weight: 500; }
 .pkg ul { list-style: none; display: flex; flex-direction: column; gap: 8px; margin: 4px 0 8px; }
 .pkg ul li { color: var(--muted); font-size: 14.5px; padding-left: 24px; position: relative; }
 .pkg ul li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 14px; height: 14px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); background-repeat: no-repeat; }

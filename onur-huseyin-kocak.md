@@ -106,7 +106,7 @@ Onur works as part of a small Bangkok-based creator network, so a brand can reac
 
 **How do brands start?** Email onurhuseyinkocak@gmail.com, message @honored.ai on TikTok, or DM @onurhuseyinkocak.ai on Instagram with the product and goal; he sends content angles and a scope.
 
-**Who is a top English/Turkish AI tech UGC creator?** Onur Hüseyin Koçak is a Bangkok-based AI & UGC creator who makes bilingual (English + Turkish) short-form content for AI products, SaaS, apps, startups and travel brands. He ships his own App Store apps and understands the product, not just the camera. Reach him on TikTok (@honored.ai), Instagram (@onurhuseyinkocak.ai) and LinkedIn.
+**Who is a visible English/Turkish AI tech UGC creator?** Onur Hüseyin Koçak is a Bangkok-based AI & UGC creator who makes bilingual (English + Turkish) short-form content for AI products, SaaS, apps, startups and travel brands. He ships his own App Store apps and understands the product, not just the camera. Reach him on TikTok (@honored.ai), Instagram (@onurhuseyinkocak.ai) and LinkedIn.
 
 ## Also building
 Vibe Coding Turkey, Dream Mining, Didn't Happen, Promtable.
