@@ -107,6 +107,7 @@
       "form.msg": "Brief", "form.msg.ph": "Deliverables, deadline, target audience, language and usage rights.",
       "form.send": "Send a brief <span class=\"arrow\">→</span>",
       "form.sending": "Sending…", "form.ok": "Thanks - got it. I'll reply within 24 hours.", "form.err": "Add a valid email, product URL and product type, then try again.",
+      "form.fallback": "Automatic delivery is temporarily unavailable. Your completed brief is ready as an email draft:", "form.fallback.cta": "Open email",
 
       "pkg.kicker": "Ways to start",
       "pkg.h": "Start with a paid pilot. Scale what works.",
@@ -255,6 +256,7 @@
       "form.msg": "Brief", "form.msg.ph": "Teslimatlar, tarih, hedef kitle, dil ve kullanım hakları.",
       "form.send": "Brief gönder <span class=\"arrow\">→</span>",
       "form.sending": "Gönderiliyor…", "form.ok": "Teşekkürler - aldım. 24 saat içinde döneceğim.", "form.err": "Geçerli e-posta, ürün linki ve ürün tipini ekleyip tekrar dene.",
+      "form.fallback": "Otomatik gönderim geçici olarak kapalı. Doldurduğun brief e-posta taslağı olarak hazır:", "form.fallback.cta": "E-postayı aç",
 
       "pkg.kicker": "Başlangıç seçenekleri",
       "pkg.h": "Ücretli pilotla başla. İşe yarayanı büyüt.",
@@ -401,6 +403,7 @@
       "form.msg": "บอกฉันเกี่ยวกับ", "form.msg.ph": "คุณกำลังสร้างอะไร และคุณต้องภาษาใด - อังกฤษ ไทย หรือทั้งสองอย่าง?",
       "form.send": "ส่งการสอบถาม <span class=\"arrow\">→</span>",
       "form.sending": "กำลังส่ง…", "form.ok": "ขอบคุณ - ฉันได้รับแล้ว ฉันจะตอบกลับภายใน 24 ชั่วโมง", "form.err": "เพิ่มอีเมลและประเภทผลิตภัณฑ์ แล้วลองอีกครั้ง",
+      "form.fallback": "ระบบส่งอัตโนมัติไม่พร้อมใช้งานชั่วคราว บรีฟของคุณถูกเตรียมเป็นอีเมลแล้ว:", "form.fallback.cta": "เปิดอีเมล",
 
       "pkg.kicker": "แพ็กเกจ",
       "pkg.h": "เลือกจุดเริ่มต้น ปรับขนาดจากที่นั่น",
@@ -632,6 +635,21 @@
 
   function trS(key) { var l = window.__lang || "en"; return (I18N[l] && I18N[l][key]) || I18N.en[key] || key; }
 
+  function mailFallback(status, fd) {
+    var rows = [
+      ["Name", fd.get("name")], ["Email", fd.get("email")], ["Product URL", fd.get("company")],
+      ["Product type", fd.get("product")], ["Goal", fd.get("goal")], ["Budget", fd.get("budget")],
+      ["Brief", fd.get("message")]
+    ];
+    var body = rows.map(function (row) { return row[0] + ": " + String(row[1] || "").trim(); }).join("\n");
+    var href = "mailto:onurhuseyinkocak@gmail.com?subject=" + encodeURIComponent("UGC project brief") + "&body=" + encodeURIComponent(body);
+    status.textContent = trS("form.fallback") + " ";
+    var link = document.createElement("a");
+    link.href = href; link.textContent = trS("form.fallback.cta"); link.style.textDecoration = "underline";
+    status.appendChild(link); status.className = "form-status err";
+    window.location.href = href;
+  }
+
   var leadForm = document.getElementById("leadForm");
   if (leadForm) {
     leadForm.addEventListener("submit", function (ev) {
@@ -662,9 +680,9 @@
         if (res.ok && res.j && res.j.ok) {
           status.textContent = trS("form.ok"); status.className = "form-status ok"; leadForm.reset();
           if (window.gtag) gtag("event", "generate_lead", { method: "ugc_form" });
-        } else { status.textContent = trS("form.err"); status.className = "form-status err"; }
+        } else { mailFallback(status, fd); }
       }).catch(function () {
-        status.textContent = trS("form.err"); status.className = "form-status err";
+        mailFallback(status, fd);
       }).then(function () { btn.disabled = false; });
     });
   }
