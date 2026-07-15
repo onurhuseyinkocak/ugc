@@ -1,5 +1,5 @@
 /* =========================================================================
-   Onur Hüseyin Koçak — portfolio behaviour
+   Onur Hüseyin Koçak - portfolio behaviour
    i18n (EN/TR) · geo default (outside Turkey -> EN) · reveal · video · lead form
    ========================================================================= */
 (function () {
@@ -9,265 +9,271 @@
   var I18N = {
     en: {
       "nav.work": "Work", "nav.tiktok": "TikTok", "nav.cases": "Case studies",
-      "nav.about": "About", "nav.services": "Services", "nav.cta": "Book a call",
+      "nav.about": "About", "nav.services": "Services", "nav.cta": "Send a brief",
 
-      "hero.kicker": "Bangkok-based AI &amp; UGC creator",
-      "hero.h": "Content that earns<br>attention for <em>modern brands.</em>",
-      "hero.sub": "I make performance-driven short-form content — in fluent English and Turkish — for AI companies, SaaS products, mobile apps, startups and travel brands that want to be seen and chosen.",
-      "hero.cta1": "Book a collaboration <span class=\"arrow\">→</span>",
-      "hero.cta2": "View portfolio",
+      "hero.kicker": "Tech-first UGC creator in Bangkok",
+      "hero.h": "Make your product<br><em>easy to choose.</em>",
+      "hero.sub": "Onur leads tech and app UGC. Our Bangkok creator network also covers lifestyle, travel and hospitality.",
+      "hero.cta1": "Send a brief <span class=\"arrow\">→</span>",
+      "hero.cta2": "Watch creator intro",
       "hero.chip1": "English &amp; Turkish content",
       "hero.chip2": "Bangkok, Thailand",
       "hero.chip3": "Brands worldwide",
-      "hero.badge": "organic views, recent reels",
+      "hero.badge": "creator introduction",
+      "hero.sound": "Play with sound",
 
-      "stat.views": "Organic views across recent videos",
-      "stat.comments": "Real comments &amp; conversations",
-      "stat.viral": "Videos past 24K views on a small account",
-      "stat.lang": "Native-level content in two languages",
-      "stat.note": "Real numbers, pulled from live analytics. No bought views, no fake metrics.",
+      "stat.views": "Recorded views across five reels · 26 Jun snapshot",
+      "stat.comments": "Comments on one live Instagram reel · 15 Jul",
+      "stat.viral": "Instagram followers · live count on 15 Jul",
+      "stat.lang": "Paid spend behind these owned-channel samples",
+      "stat.note": "Owned-channel proof with dates shown. Organic platform results, not client campaign ROAS.",
 
-      "work.kicker": "Selected work",
-      "work.h": "Short-form that gets watched, shared and remembered.",
-      "work.langpill": "Filmed in English &amp; Turkish",
-      "work.viral": "Viral",
+      "work.kicker": "Creator samples",
+      "work.h": "See the hook, pacing and delivery.",
+      "work.disclosure": "Self-directed videos from my creator channel. Tap any sample to watch it with sound.",
+      "work.langpill": "Current samples: Turkish",
+      "work.viral": "Owned channel",
       "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / Tools", "work.tag.apps": "Apps / No-code", "work.tag.story": "Tech / Story",
-      "work.v4.t": "What GEO means for your product", "work.v4.d": "1,691 comments — top performer",
-      "work.v6.t": "Not an SEO story — it's GEO", "work.v6.d": "3,146 views — a quick example of why GEO matters",
-      "work.v2.t": "Answer Engine Optimization, explained", "work.v2.d": "28,170 views — a complex topic made simple",
+      "work.v4.t": "What GEO means for your product", "work.v4.d": "24.3K recorded views, 3,026 live comments",
+      "work.v6.t": "Not an SEO story, it is GEO", "work.v6.d": "A technical concept made concrete",
+      "work.v2.t": "Answer Engine Optimization, explained", "work.v2.d": "28,170 organic views",
       "work.v3.t": "The viral AI video trend, for free", "work.v3.d": "Turning a trend into a how-to people save",
       "work.v5.t": "Anyone can build an app now", "work.v5.d": "A product story told in under a minute",
       "work.v1.t": "The 16-year-old who built an AI company", "work.v1.d": "Narrative hooks that hold attention",
-      "work.cta.t": "Your product, in motion.", "work.cta.d": "English or Turkish — let's plan your first batch.", "work.cta.b": "Start a project →",
+      "work.cta.t": "Your product, in motion.", "work.cta.d": "English or Turkish - let's plan your first batch.", "work.cta.b": "Start a project →",
 
       "tt.kicker": "On TikTok",
       "tt.h": "Built for the <em>For You</em> page.",
-      "tt.p": "TikTok rewards a strong hook, a clear story and a reason to stay. That's exactly how I build — content engineered for watch-time, not just views. New AI, tech and travel videos drop regularly.",
+      "tt.p": "TikTok rewards a strong hook, a clear story and a reason to stay. That's exactly how I build - content engineered for watch-time, not just views. New AI, tech and travel videos drop regularly.",
       "tt.follow": "Follow on TikTok <span class=\"arrow\">→</span>", "tt.collab": "Collaborate",
 
-      "cases.kicker": "Case studies",
-      "cases.h": "A look behind two videos that broke out.",
-      "cases.p": "Reach is the easy part. These are examples of turning a hard, abstract topic into short-form content that people watch to the end — and argue about in the comments.",
+      "cases.kicker": "One content breakdown",
+      "cases.h": "How an abstract topic earned 3,026 comments.",
+      "cases.p": "This is an owned-channel example, included to show the creative thinking behind the result.",
       "case.problem": "Problem", "case.strategy": "Strategy", "case.outcome": "Outcome",
       "case.views": "Views", "case.comments": "Comments", "case.likes": "Likes", "case.spend": "Ad spend",
-      "case1.h": "Making a brand-new acquisition channel feel obvious.",
+      "case1.h": "Make the unfamiliar feel immediately relevant.",
       "case1.problem": "“Generative Engine Optimization” is abstract and easy to scroll past. Most explanations sound like a lecture.",
       "case1.strategy": "Open with a sharp contrast hook (SEO vs. GEO), then make it personal: where does your product show up when people ask ChatGPT?",
-      "case1.outcome": "The format triggered a real debate — 1,691 comments on a small account, and the video kept circulating for days.",
+      "case1.outcome": "The reel recorded 24.3K views and reached 3,026 live comments on 15 July.",
       "case2.h": "28K views on a topic most people haven't heard of.",
       "case2.problem": "Answer Engine Optimization is a niche, jargon-heavy subject with near-zero search demand yet.",
-      "case2.strategy": "Lead with the behaviour shift people already feel — “you ask ChatGPT instead of Google now” — then land the term on top of it.",
+      "case2.strategy": "Lead with the behaviour shift people already feel - “you ask ChatGPT instead of Google now” - then land the term on top of it.",
       "case2.outcome": "Pure curiosity-driven reach: 28,170 views with no ad spend, proving demand for the topic before competitors caught on.",
 
-      "about.kicker": "About", "about.role": "AI &amp; UGC Creator · Bangkok",
-      "about.h": "A creator who actually understands the products he films.",
-      "about.big": "I'm Onur — a Bangkok-based creator working with AI and tech brands around the world. Before the camera, I build software and study how people discover products online. That's the difference: I don't just make videos that look good, I make videos that move the metric you care about.",
-      "about.p1": "Most UGC stops at “nice clip.” I start from the business question — who's the buyer, what's the objection, what makes them stop scrolling — and design the content backwards from there. Hooks, pacing, on-screen copy and calls to action are all deliberate, because attention without conversion is just noise.",
-      "about.p2": "I create in <strong>fluent English and Turkish</strong>, so a single brief can reach a global audience and a Turkish-speaking one without losing tone or nuance. From Bangkok I work with founders and teams across every time zone — async, fast, and easy to brief.",
-      "about.li1": "<strong>English &amp; Turkish</strong> — native-level scripts and delivery in both.",
-      "about.li2": "<strong>Performance-minded</strong> — built around hooks, retention and conversion.",
-      "about.li3": "<strong>Product-fluent</strong> — I understand AI, SaaS and apps from the inside.",
-      "about.li4": "<strong>Fast &amp; remote</strong> — Bangkok-based, working with brands worldwide.",
+      "about.kicker": "About", "about.role": "UGC creator for technical products",
+      "about.h": "You will not need to teach me what your product does.",
+      "about.big": "I build software and explain AI products for a living. I can turn a feature list into a useful story without flattening the product or overpromising.",
+      "about.p1": "Most UGC stops at “nice clip.” I start from the business question - who's the buyer, what's the objection, what makes them stop scrolling - and design the content backwards from there. Hooks, pacing, on-screen copy and calls to action are all deliberate, because attention without conversion is just noise.",
+      "about.p2": "I create in <strong>fluent English and Turkish</strong>, so a single brief can reach a global audience and a Turkish-speaking one without losing tone or nuance. From Bangkok I work with founders and teams across every time zone - async, fast, and easy to brief.",
+      "about.li1": "<strong>English &amp; Turkish</strong> - native-level scripts and delivery in both.",
+      "about.li2": "<strong>Performance-minded</strong> - built around hooks, retention and conversion.",
+      "about.li3": "<strong>Product-fluent</strong> - I understand AI, SaaS and apps from the inside.",
+      "about.li4": "<strong>Fast &amp; remote</strong> - Bangkok-based, working with brands worldwide.",
 
-      "svc.kicker": "Services",
-      "svc.h": "Everything you need to show up and convert.",
-      "svc.p": "Pick a single video or a full content engine. Every deliverable can be produced in English, Turkish, or both.",
-      "svc1.t": "UGC Videos", "svc1.d": "Authentic, talking-to-camera content that feels like a recommendation from a friend — not an ad.",
-      "svc2.t": "TikTok Content", "svc2.d": "Native short-form engineered for the For You page — strong hooks, tight pacing, high watch-time.",
-      "svc3.t": "AI Product Content", "svc3.d": "Explain a complex AI product simply, and show real value in seconds. My specialty.",
-      "svc4.t": "SaaS Product Content", "svc4.d": "Feature walk-throughs, use-case demos and founder stories that turn trials into paying users.",
+      "svc.kicker": "What I deliver",
+      "svc.h": "A complete video, not just footage.",
+      "svc.p": "Every engagement is scoped around the platform, audience, usage and result you need.",
+      "svc1.t": "Angles and hooks", "svc1.d": "Audience, objection and platform translated into a clear creative direction before filming.",
+      "svc2.t": "Script and shot plan", "svc2.d": "A concise script, screen recordings, B-roll plan and call to action built around one job.",
+      "svc3.t": "On-camera delivery", "svc3.d": "Natural creator delivery in English or Turkish, filmed vertically for the target platform.",
+      "svc4.t": "Edit and handoff", "svc4.d": "Captions, pacing, platform-ready exports and agreed raw files or hook variations.",
       "svc5.t": "Travel Content", "svc5.d": "Cinematic, on-location storytelling from Bangkok and beyond for travel and lifestyle brands.",
       "svc6.t": "Short-Form Ads", "svc6.d": "Paid-ready creatives built for hooks, retention and conversion across TikTok, Reels and Shorts.",
-      "svc7.t": "Creative Strategy", "svc7.d": "Hook angles, content pillars and a posting plan — so every video has a job, not just a view count.",
-      "svc8.t": "Content Packages", "svc8.d": "Monthly retainers — a steady drip of on-brand content in EN &amp; TR, planned and shipped for you.",
+      "svc7.t": "Creative Strategy", "svc7.d": "Hook angles, content pillars and a posting plan - so every video has a job, not just a view count.",
+      "svc8.t": "Content Packages", "svc8.d": "Monthly retainers - a steady drip of on-brand content in EN &amp; TR, planned and shipped for you.",
 
-      "why.quote": "Attention is cheap. Attention that turns into customers is the whole job — and that's what I'm hired to deliver.",
-      "why.cite": "Onur Hüseyin Koçak — Bangkok",
+      "why.quote": "Attention is cheap. Attention that turns into customers is the whole job - and that's what I'm hired to deliver.",
+      "why.cite": "Onur Hüseyin Koçak - Bangkok",
       "why1.q": "I understand the <span>product</span>, not just the camera.",
       "why1.p": "I build software myself, so I can take a raw feature list and turn it into a story a buyer actually cares about.",
       "why2.q": "Two languages, <span>one brief</span>.",
-      "why2.p": "English for the global market, Turkish for one of the fastest-growing creator audiences — produced natively, never translated word-for-word.",
+      "why2.p": "English for the global market, Turkish for one of the fastest-growing creator audiences - produced natively, never translated word-for-word.",
       "why3.q": "I optimise for <span>conversion</span>.",
-      "why3.p": "Hooks, pacing and CTAs are designed on purpose. The goal is never just views — it's sign-ups, installs and sales.",
+      "why3.p": "Hooks, pacing and CTAs are designed on purpose. The goal is never just views - it's sign-ups, installs and sales.",
 
-      "contact.kicker": "Let's work",
-      "contact.h": "Have a product worth talking about?",
-      "contact.sub": "Tell me what you're building and what success looks like. I'll come back with an honest take and a plan — usually within 24 hours.",
-      "contact.response": "Available for new collaborations · replies within 24h",
+      "contact.kicker": "Send the brief",
+      "contact.h": "Send the product. Get a clear creative plan.",
+      "contact.sub": "Include the link, goal, language, deadline and usage. I reply with scope, timeline and quote within 24 hours.",
+      "contact.response": "Replies within 24 hours on business days.",
       "form.name": "Name", "form.name.ph": "Your name",
       "form.email": "Email <span class=\"req\">*</span>",
-      "form.company": "Company", "form.company.ph": "Brand / startup",
+      "form.company": "Product URL <span class=\"req\">*</span>", "form.company.ph": "https://yourproduct.com",
       "form.product": "Product type <span class=\"req\">*</span>", "form.product.ph": "Select…",
       "form.opt.ai": "AI product", "form.opt.saas": "SaaS", "form.opt.app": "Mobile app", "form.opt.startup": "Startup", "form.opt.travel": "Travel brand", "form.opt.other": "Other",
       "form.goal": "What's the goal?", "form.goal.ph": "Select…",
       "form.goal.aware": "Awareness &amp; reach", "form.goal.conv": "Conversions &amp; installs", "form.goal.ads": "Paid ad creatives", "form.goal.ongoing": "Ongoing content",
-      "form.msg": "Tell me about it", "form.msg.ph": "What are you building, and which language(s) do you need — English, Turkish, or both?",
-      "form.send": "Send inquiry <span class=\"arrow\">→</span>",
-      "form.sending": "Sending…", "form.ok": "Thanks — got it. I'll reply within 24 hours.", "form.err": "Add your email and product type, then try again.",
+      "form.budget": "Budget range", "form.budget.ph": "Select a range", "form.budget.1": "Under €500", "form.budget.2": "€500-€1,500", "form.budget.3": "€1,500-€3,000", "form.budget.4": "€3,000+",
+      "form.msg": "Brief", "form.msg.ph": "Deliverables, deadline, target audience, language and usage rights.",
+      "form.send": "Send a brief <span class=\"arrow\">→</span>",
+      "form.sending": "Sending…", "form.ok": "Thanks - got it. I'll reply within 24 hours.", "form.err": "Add a valid email, product URL and product type, then try again.",
 
-      "pkg.kicker": "Packages",
-      "pkg.h": "Pick a starting point, scale from there.",
-      "pkg.p": "Clear scopes, no lock-in. Every package is quoted to your brief — custom quote based on deliverables, usage rights and number of videos.",
+      "pkg.kicker": "Ways to start",
+      "pkg.h": "Start with a paid pilot. Scale what works.",
+      "pkg.p": "Pricing depends on deliverables, revisions, raw files and usage rights. Send the product link for a clear quote.",
       "pkg.quote": "Custom quote",
-      "pkg1.t": "Starter UGC Video", "pkg1.d": "One UGC video, one hook angle, edited + raw. Built for a first test.",
-      "pkg2.t": "Growth UGC Pack", "pkg2.d": "3 videos, multiple hooks, built for organic + paid testing.",
-      "pkg3.t": "Paid Ads Creative Pack", "pkg3.d": "Ad-ready creatives with hook variations for TikTok, Reels &amp; Meta.",
+      "pkg1.t": "One-video pilot", "pkg1.d": "One concept, one hook, one edited vertical video. The cleanest way to test fit.",
+      "pkg2.t": "Three-video test", "pkg2.d": "Three distinct angles for organic or paid testing, with one shared creative strategy.",
+      "pkg3.t": "Product launch batch", "pkg3.d": "Five videos across explainer, demo, objection and founder-led angles.",
       "pkg4.t": "SaaS / App Launch Pack", "pkg4.d": "5 videos, script strategy, demos + founder content around your launch.",
       "pkg5.t": "Monthly Creator Retainer", "pkg5.d": "A steady drip of on-brand content in EN &amp; TR, planned and shipped monthly.",
-      "pkg.cta.t": "Tell me your scope", "pkg.cta.d": "Send your product, goal and number of videos — I'll reply with a clear quote.",
+      "pkg.cta.t": "Tell me your scope", "pkg.cta.d": "Send your product, goal and number of videos - I'll reply with a clear quote.",
 
       "faq.kicker": "FAQ",
       "faq.h": "Questions brands ask.",
-      "faq.p": "The real questions founders and marketers type into Google — or ask ChatGPT — when they're looking for a creator like me.",
+      "faq.p": "The real questions founders and marketers type into Google - or ask ChatGPT - when they're looking for a creator like me.",
       "faq.q1": "What kind of brands do you make content for?",
-      "faq.a1": "AI products, SaaS, mobile apps, tech startups, productivity and consumer apps, and travel brands. If your product lives on the internet and needs attention, it's a fit.",
+      "faq.a1": "AI products, SaaS, mobile apps and technical startups. If the product needs explanation before it earns attention, it is a strong fit.",
       "faq.q2": "Do you create UGC in both English and Turkish?",
-      "faq.a2": "Yes — natively in both. One brief can become an English version for global audiences and a Turkish version for the local market, with the tone right in each, not a word-for-word translation.",
+      "faq.a2": "Yes. I create in English and Turkish. The public samples here are Turkish, so ask for a short English test read with your brief.",
       "faq.q3": "Can the videos be used as paid ads?",
       "faq.a3": "Yes. Everything is built hook-first for TikTok, Reels and Shorts and works as organic content or paid creative. Usage rights, whitelisting and raw files are agreed up front.",
       "faq.q4": "Do you actually understand technical products?",
-      "faq.a4": "I build software myself, so I can read a feature list and turn it into a story a buyer cares about — without getting the product wrong or over-promising.",
+      "faq.a4": "I build software myself, so I can read a feature list and turn it into a story a buyer cares about - without getting the product wrong or over-promising.",
       "faq.q5": "How fast can you deliver?",
       "faq.a5": "Fast and fully remote from Bangkok. Most single videos land in days, not weeks; larger batches are scheduled around your launch date.",
       "faq.q6": "How does pricing work?",
-      "faq.a6": "Scope-based — from a single test video to a monthly content package. Tell me the product, the goal and how many videos you need, and I'll send a clear quote.",
+      "faq.a6": "Scope-based - from a single test video to a monthly content package. Tell me the product, the goal and how many videos you need, and I'll send a clear quote.",
       "faq.q7": "Can you help with an app or product launch?",
-      "faq.a7": "Yes — launch content is a core use case: explainer reels, product demos, founder videos and ad creatives, planned around your release.",
+      "faq.a7": "Yes - launch content is a core use case: explainer reels, product demos, founder videos and ad creatives, planned around your release.",
       "faq.q8": "Do you work with international brands?",
-      "faq.a8": "Yes. I'm based in Bangkok and work with founders and teams worldwide — async and across time zones, in English or Turkish.",
+      "faq.a8": "Yes. I'm based in Bangkok and work with founders and teams worldwide - async and across time zones, in English or Turkish.",
       "faq.q9": "Do you cover lifestyle or travel content too?",
       "faq.a9": "Through my creator network: <a href=\"https://ugc-mine.vibecodingturkey.com\" target=\"_blank\" rel=\"noopener\">Mine Koçak</a> for lifestyle &amp; beauty, and <a href=\"https://moviatravelhub.vibecodingturkey.com\" target=\"_blank\" rel=\"noopener\">Movia Travel Hub</a> for travel &amp; hospitality. One studio, three audiences.",
 
       "net.kicker": "Creator network",
       "net.h": "One studio, three audiences.",
-      "net.p": "Beyond AI and tech, our family of creators also covers lifestyle and travel — so a brand can reach the right audience with the right face, all from Bangkok.",
-      "net.mine.tag": "Lifestyle &amp; Beauty", "net.mine.t": "Mine Koçak",
-      "net.mine.d": "Lifestyle &amp; beauty UGC — authentic content for beauty, wellness and lifestyle brands.",
+      "net.p": "One brief can stay with Onur for tech, move to Mine for lifestyle, or become a couple travel shoot with Movia.",
+      "net.mine.tag": "Beauty · Lifestyle · Travel", "net.mine.t": "Mine Koçak",
+      "net.mine.d": "Beauty, lifestyle, travel and everyday app UGC with a warm, natural female creator perspective.",
       "net.mine.cta": "Visit the site <span class=\"arrow\">→</span>",
-      "net.movia.tag": "Travel &amp; Hospitality", "net.movia.t": "Movia Travel Hub",
-      "net.movia.d": "Travel &amp; hospitality content from Bangkok — cafés, hotels, restaurants and venues, brought to life on camera.",
+      "net.movia.tag": "Couple Travel · Places", "net.movia.t": "Movia Travel Hub",
+      "net.movia.d": "Couple travel and venue content for hotels, cafés, restaurants, destinations and travel apps.",
       "net.movia.cta": "Visit the site <span class=\"arrow\">→</span>",
 
-      "footer.tag": "Bangkok-based AI &amp; UGC creator. Performance-driven short-form content in English and Turkish for modern internet brands.",
-      "footer.explore": "Explore", "footer.connect": "Connect", "footer.network": "Network", "footer.made": "Bangkok, Thailand · Working worldwide"
+      "footer.tag": "Tech-first UGC by Onur, backed by a Bangkok creator network for lifestyle, travel and hospitality.",
+      "footer.explore": "Explore", "footer.connect": "Connect", "footer.network": "Network", "footer.made": "English and Turkish content for brands worldwide."
     },
 
     tr: {
       "nav.work": "İşler", "nav.tiktok": "TikTok", "nav.cases": "Vaka analizleri",
-      "nav.about": "Hakkımda", "nav.services": "Hizmetler", "nav.cta": "Görüşme planla",
+      "nav.about": "Hakkımda", "nav.services": "Hizmetler", "nav.cta": "Brief gönder",
 
-      "hero.kicker": "Bangkok merkezli AI &amp; UGC içerik üreticisi",
-      "hero.h": "Modern markalara<br><em>ilgi kazandıran</em> içerikler.",
-      "hero.sub": "AI şirketleri, SaaS ürünleri, mobil uygulamalar, startup'lar ve seyahat markaları için akıcı İngilizce ve Türkçe, performans odaklı kısa video üretiyorum. Görünür olun, tercih edilin.",
-      "hero.cta1": "Birlikte çalışalım <span class=\”arrow\”>→</span>",
-      "hero.cta2": "İşlere göz at",
+      "hero.kicker": "Bangkok'ta tech-first UGC üreticisi",
+      "hero.h": "Ürününü<br><em>seçmesi kolay hâle getir.</em>",
+      "hero.sub": "Onur tech ve uygulama UGC'sine liderlik eder. Bangkok'taki üretici ağımız lifestyle, travel ve hospitality işleri de çeker.",
+      "hero.cta1": "Brief gönder <span class=\"arrow\">→</span>",
+      "hero.cta2": "Üretici tanıtımını izle",
       "hero.chip1": "İngilizce &amp; Türkçe içerik",
       "hero.chip2": "Bangkok, Tayland",
       "hero.chip3": "Dünya geneli markalar",
-      "hero.badge": "organik izlenme, son videolar",
+      "hero.badge": "üretici tanıtımı",
+      "hero.sound": "Sesi aç",
 
-      "stat.views": "Son videolardaki toplam organik izlenme",
-      "stat.comments": "Gerçek yorum ve konuşma",
-      "stat.viral": "Küçük bir hesapta 24B izlenmeyi geçen video",
-      "stat.lang": "İki dilde ana dil seviyesinde içerik",
-      "stat.note": "Gerçek rakamlar, canlı analizlerden alındı. Satın alınmış izlenme yok, sahte metrik yok.",
+      "stat.views": "Beş Reels videosunda kayıtlı izlenme · 26 Haziran görüntüsü",
+      "stat.comments": "Tek bir canlı Instagram Reels yorum sayısı · 15 Temmuz",
+      "stat.viral": "Instagram takipçisi · 15 Temmuz canlı sayım",
+      "stat.lang": "Bu kişisel kanal örneklerinin reklam harcaması",
+      "stat.note": "Tarihleri belirtilmiş kişisel kanal kanıtı. Organik platform sonuçlarıdır; müşteri ROAS verisi değildir.",
 
-      "work.kicker": "Seçili işler",
-      "work.h": "İzlenen, paylaşılan ve akılda kalan kısa videolar.",
-      "work.langpill": "İngilizce &amp; Türkçe çekiliyor",
-      "work.viral": "Viral",
+      "work.kicker": "İçerik örnekleri",
+      "work.h": "Kancayı, ritmi ve sunumu gör.",
+      "work.disclosure": "Kendi içerik kanalım için ürettiğim videolar. Sesli izlemek için bir örneğe dokun.",
+      "work.langpill": "Mevcut örnekler: Türkçe",
+      "work.viral": "Kişisel kanal",
       "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / Araçlar", "work.tag.apps": "Uygulama / No-code", "work.tag.story": "Tech / Hikâye",
-      "work.v4.t": "GEO senin ürünün için ne anlama geliyor", "work.v4.d": "1.691 yorum — en çok etkileşim alan",
-      "work.v6.t": "Aslında bir SEO hikâyesi değil", "work.v6.d": "3.146 izlenme — GEO neden önemli, kısa bir örnek",
-      "work.v2.t": "Answer Engine Optimization, sade anlatımla", "work.v2.d": "28.170 izlenme — karmaşık bir konu, basitçe",
+      "work.v4.t": "GEO senin ürünün için ne anlama geliyor", "work.v4.d": "24,3 bin kayıtlı izlenme, 3.026 canlı yorum",
+      "work.v6.t": "Aslında bir SEO hikâyesi değil", "work.v6.d": "Teknik bir kavramı somutlaştırmak",
+      "work.v2.t": "Answer Engine Optimization, sade anlatımla", "work.v2.d": "28.170 organik izlenme",
       "work.v3.t": "Viral AI video trendi, ücretsiz", "work.v3.d": "Bir trendi, insanların kaydettiği bir rehbere çevirmek",
       "work.v5.t": "Artık herkes uygulama yapabilir", "work.v5.d": "Bir dakikadan kısa bir ürün hikâyesi",
       "work.v1.t": "16 yaşında AI şirketi kuran çocuk", "work.v1.d": "Dikkati tutan anlatı kancaları",
-      "work.cta.t": "Ürünün, hareket halinde.", "work.cta.d": "İngilizce ya da Türkçe — ilk seti birlikte planlayalım.", "work.cta.b": "Projeye başla →",
+      "work.cta.t": "Ürünün, hareket halinde.", "work.cta.d": "İngilizce ya da Türkçe - ilk seti birlikte planlayalım.", "work.cta.b": "Projeye başla →",
 
       "tt.kicker": "TikTok'ta",
       "tt.h": "<em>Keşfet</em> sayfası için tasarlandı.",
-      "tt.p": "TikTok; güçlü bir kanca, net bir hikâye ve kalmak için bir sebep ister. Ben de tam olarak böyle üretiyorum — sadece izlenme değil, izlenme süresi için kurgulanmış içerik. Düzenli olarak yeni AI, teknoloji ve seyahat videoları geliyor.",
-      "tt.follow": "TikTok'ta takip et <span class=\”arrow\”>→</span>", "tt.collab": "İş birliği yap",
+      "tt.p": "TikTok; güçlü bir kanca, net bir hikâye ve kalmak için bir sebep ister. Ben de tam olarak böyle üretiyorum - sadece izlenme değil, izlenme süresi için kurgulanmış içerik. Düzenli olarak yeni AI, teknoloji ve seyahat videoları geliyor.",
+      "tt.follow": "TikTok'ta takip et <span class=\"arrow\">→</span>", "tt.collab": "İş birliği yap",
 
-      "cases.kicker": "Vaka analizleri",
-      "cases.h": "Patlayan iki videonun arkasındaki düşünce.",
-      "cases.p": "Erişim işin kolay kısmı. Bunlar, zor ve soyut bir konuyu sonuna kadar izlenen — ve yorumlarda tartışılan — kısa videoya çevirmenin örnekleri.",
+      "cases.kicker": "Bir içerik analizi",
+      "cases.h": "Soyut bir konu nasıl 3.026 yorum aldı?",
+      "cases.p": "Bu kişisel kanal örneği, sonucun arkasındaki yaratıcı düşünceyi göstermek için paylaşılıyor.",
       "case.problem": "Problem", "case.strategy": "Strateji", "case.outcome": "Sonuç",
       "case.views": "İzlenme", "case.comments": "Yorum", "case.likes": "Beğeni", "case.spend": "Reklam harcaması",
-      "case1.h": "Yepyeni bir kazanım kanalını apaçık hissettirmek.",
+      "case1.h": "Yabancı bir kavramı hemen alakalı hissettirmek.",
       "case1.problem": "”Generative Engine Optimization” soyut ve kolayca atlanan bir konu. Çoğu anlatım ders gibi geliyor.",
       "case1.strategy": "Keskin bir karşıtlık kancasıyla aç (SEO vs. GEO), sonra kişiselleştir: insanlar ChatGPT'ye sorduğunda senin ürünün nerede çıkıyor?",
-      "case1.outcome": "Format gerçek bir tartışma başlattı — küçük bir hesapta 1.691 yorum ve video günlerce dolaşmaya devam etti.",
+      "case1.outcome": "Reels 24,3 bin kayıtlı izlenmeye ve 15 Temmuz'da 3.026 canlı yoruma ulaştı.",
       "case2.h": "Çoğu kişinin duymadığı bir konuda 28B izlenme.",
       "case2.problem": "Answer Engine Optimization, henüz neredeyse hiç arama hacmi olmayan, jargon yüklü niş bir konu.",
-      "case2.strategy": "İnsanların zaten hissettiği davranış değişimiyle başla — “artık Google yerine ChatGPT'ye soruyorsun” — terimi de bunun üzerine otur.",
+      "case2.strategy": "İnsanların zaten hissettiği davranış değişimiyle başla - “artık Google yerine ChatGPT'ye soruyorsun” - terimi de bunun üzerine otur.",
       "case2.outcome": "Tamamen meraktan gelen erişim: sıfır reklam harcamasıyla 28.170 izlenme. Rakipler fark etmeden konuya talep olduğunu kanıtladı.",
 
-      "about.kicker": "Hakkımda", "about.role": "AI &amp; UGC İçerik Üreticisi · Bangkok",
-      "about.h": "Çektiği ürünleri gerçekten anlayan bir içerik üreticisi.",
-      "about.big": "Ben Onur — Bangkok'tan, dünyanın dört bir yanındaki AI ve teknoloji markalarıyla çalışan bir içerik üreticisiyim. Kameranın arkasına geçmeden önce yazılım geliştiriyorum ve insanların ürünleri internette nasıl keşfettiğini inceliyorum. Fark da burada: sadece güzel görünen videolar değil, önemsediğin metriği hareket ettiren videolar yapıyorum.",
-      "about.p1": "Çoğu UGC “güzel klip” seviyesinde kalır. Ben iş sorusundan başlarım — alıcı kim, itirazı ne, onu durduran şey ne — ve içeriği oradan geriye doğru kurgularım. Kanca, ritim, ekran yazıları ve harekete geçirici mesajlar bilinçli seçimlerdir; çünkü dönüşüm getirmeyen ilgi sadece gürültüdür.",
-      "about.p2": "<strong>Akıcı İngilizce ve Türkçe</strong> içerik üretiyorum; böylece tek bir brief, tonu ve nüansı kaybetmeden hem global hem Türkçe konuşan kitleye ulaşır. Bangkok'tan, her saat diliminden ekiplerle çalışıyorum — hızlı, uzaktan ve brief vermesi kolay.",
-      "about.li1": "<strong>İngilizce &amp; Türkçe</strong> — her ikisinde de ana dil seviyesinde senaryo ve sunum.",
-      "about.li2": "<strong>Performans odaklı</strong> — kanca, izlenme süresi ve dönüşüm üzerine kurulu.",
-      "about.li3": "<strong>Ürüne hâkim</strong> — AI, SaaS ve uygulamaları içeriden biliyorum.",
-      "about.li4": "<strong>Hızlı &amp; uzaktan</strong> — Bangkok merkezli, dünya geneli markalarla.",
+      "about.kicker": "Hakkımda", "about.role": "Teknik ürünler için UGC üreticisi",
+      "about.h": "Ürününün ne yaptığını bana öğretmek zorunda kalmayacaksın.",
+      "about.big": "Yazılım geliştiriyor ve AI ürünlerini anlatıyorum. Bir özellik listesini, ürünü basitleştirmeden veya abartmadan işe yarayan bir hikâyeye çevirebilirim.",
+      "about.p1": "Çoğu UGC “güzel klip” seviyesinde kalır. Ben iş sorusundan başlarım - alıcı kim, itirazı ne, onu durduran şey ne - ve içeriği oradan geriye doğru kurgularım. Kanca, ritim, ekran yazıları ve harekete geçirici mesajlar bilinçli seçimlerdir; çünkü dönüşüm getirmeyen ilgi sadece gürültüdür.",
+      "about.p2": "<strong>Akıcı İngilizce ve Türkçe</strong> içerik üretiyorum; böylece tek bir brief, tonu ve nüansı kaybetmeden hem global hem Türkçe konuşan kitleye ulaşır. Bangkok'tan, her saat diliminden ekiplerle çalışıyorum - hızlı, uzaktan ve brief vermesi kolay.",
+      "about.li1": "<strong>İngilizce &amp; Türkçe</strong> - her ikisinde de ana dil seviyesinde senaryo ve sunum.",
+      "about.li2": "<strong>Performans odaklı</strong> - kanca, izlenme süresi ve dönüşüm üzerine kurulu.",
+      "about.li3": "<strong>Ürüne hâkim</strong> - AI, SaaS ve uygulamaları içeriden biliyorum.",
+      "about.li4": "<strong>Hızlı &amp; uzaktan</strong> - Bangkok merkezli, dünya geneli markalarla.",
 
-      "svc.kicker": "Hizmetler",
-      "svc.h": "Görünmek ve dönüştürmek için ihtiyacın olan her şey.",
-      "svc.p": "Tek bir video da seçebilirsin, eksiksiz bir içerik motoru da. Tüm işler İngilizce, Türkçe ya da her ikisinde üretilebilir.",
-      "svc1.t": "UGC Videolar", "svc1.d": "Reklam gibi değil, bir arkadaşın tavsiyesi gibi hissettiren, samimi ve kameraya konuşan içerik.",
-      "svc2.t": "TikTok İçeriği", "svc2.d": "Keşfet sayfası için kurgulanmış doğal kısa video — güçlü kanca, sıkı ritim, yüksek izlenme süresi.",
-      "svc3.t": "AI Ürün İçeriği", "svc3.d": "Karmaşık bir AI ürününü sade anlat, gerçek değeri saniyeler içinde göster. Uzmanlık alanım.",
-      "svc4.t": "SaaS Ürün İçeriği", "svc4.d": "Denemeyi ödeme yapan kullanıcıya çeviren özellik turları, kullanım senaryoları ve kurucu hikâyeleri.",
+      "svc.kicker": "Teslimatlar",
+      "svc.h": "Sadece görüntü değil, tamamlanmış bir video.",
+      "svc.p": "Her iş; platform, kitle, kullanım hakkı ve hedeflenen sonuca göre kapsamlandırılır.",
+      "svc1.t": "Açı ve kancalar", "svc1.d": "Kitle, itiraz ve platform çekimden önce net bir yaratıcı yöne dönüştürülür.",
+      "svc2.t": "Senaryo ve çekim planı", "svc2.d": "Tek bir hedefe göre kısa senaryo, ekran kaydı, B-roll planı ve harekete geçirici mesaj.",
+      "svc3.t": "Kamera önü sunum", "svc3.d": "Hedef platform için dikey çekilmiş, İngilizce veya Türkçe doğal üretici sunumu.",
+      "svc4.t": "Kurgu ve teslim", "svc4.d": "Altyazı, ritim, platforma hazır çıktılar ve anlaşılan ham dosya veya kanca varyasyonları.",
       "svc5.t": "Seyahat İçeriği", "svc5.d": "Seyahat ve yaşam tarzı markaları için Bangkok'tan ve ötesinden sinematik, mekânında anlatım.",
       "svc6.t": "Kısa Reklam Videoları", "svc6.d": "TikTok, Reels ve Shorts için kanca, izlenme süresi ve dönüşüme göre kurgulanmış reklama hazır içerik.",
-      "svc7.t": "Yaratıcı Strateji", "svc7.d": "Kanca açıları, içerik sütunları ve paylaşım planı — böylece her video bir iş yapar, sadece izlenme toplamaz.",
-      "svc8.t": "İçerik Paketleri", "svc8.d": "Aylık anlaşmalar — EN &amp; TR markana uygun içeriğin düzenli akışı, senin için planlanır ve teslim edilir.",
+      "svc7.t": "Yaratıcı Strateji", "svc7.d": "Kanca açıları, içerik sütunları ve paylaşım planı - böylece her video bir iş yapar, sadece izlenme toplamaz.",
+      "svc8.t": "İçerik Paketleri", "svc8.d": "Aylık anlaşmalar - EN &amp; TR markana uygun içeriğin düzenli akışı, senin için planlanır ve teslim edilir.",
 
-      "why.quote": "İlgi ucuzdur. Müşteriye dönüşen ilgi ise işin ta kendisidir — ve ben tam da bunu teslim etmek için işe alınırım.",
-      "why.cite": "Onur Hüseyin Koçak — Bangkok",
+      "why.quote": "İlgi ucuzdur. Müşteriye dönüşen ilgi ise işin ta kendisidir - ve ben tam da bunu teslim etmek için işe alınırım.",
+      "why.cite": "Onur Hüseyin Koçak - Bangkok",
       "why1.q": "Sadece kamerayı değil, <span>ürünü</span> de anlıyorum.",
       "why1.p": "Yazılımı kendim yazıyorum; bu yüzden ham bir özellik listesini, alıcının gerçekten önemsediği bir hikâyeye çevirebiliyorum.",
       "why2.q": "İki dil, <span>tek brief</span>.",
-      "why2.p": "Global pazar için İngilizce, en hızlı büyüyen içerik kitlelerinden biri için Türkçe — kelime kelime çeviri değil, baştan o dilde üretilmiş içerik.",
+      "why2.p": "Global pazar için İngilizce, en hızlı büyüyen içerik kitlelerinden biri için Türkçe - kelime kelime çeviri değil, baştan o dilde üretilmiş içerik.",
       "why3.q": "<span>Dönüşüm</span> için optimize ediyorum.",
-      "why3.p": "Kanca, ritim ve CTA'lar bilinçli tasarlanır. Hedef hiçbir zaman sadece izlenme değil — kayıt, indirme ve satıştır.",
+      "why3.p": "Kanca, ritim ve CTA'lar bilinçli tasarlanır. Hedef hiçbir zaman sadece izlenme değil - kayıt, indirme ve satıştır.",
 
-      "contact.kicker": "Hadi çalışalım",
-      "contact.h": "Konuşmaya değer bir ürünün mü var?",
-      "contact.sub": "Ne geliştirdiğini ve başarının senin için ne demek olduğunu anlat. Sana dürüst bir değerlendirme ve bir planla döneyim — genelde 24 saat içinde.",
-      "contact.response": "Yeni iş birliklerine açık · 24 saat içinde yanıt",
+      "contact.kicker": "Brief gönder",
+      "contact.h": "Ürünü gönder. Net bir yaratıcı plan al.",
+      "contact.sub": "Linki, hedefi, dili, teslim tarihini ve kullanım şeklini ekle. Kapsam, takvim ve teklifle 24 saat içinde dönerim.",
+      "contact.response": "İş günlerinde 24 saat içinde dönüş.",
       "form.name": "İsim", "form.name.ph": "Adın",
-      "form.email": "E-posta <span class=\”req\”>*</span>",
-      "form.company": "Şirket", "form.company.ph": "Marka / startup",
-      "form.product": "Ürün tipi <span class=\”req\”>*</span>", "form.product.ph": "Seç…",
+      "form.email": "E-posta <span class=\"req\">*</span>",
+      "form.company": "Ürün linki <span class=\"req\">*</span>", "form.company.ph": "https://urunlinki.com",
+      "form.product": "Ürün tipi <span class=\"req\">*</span>", "form.product.ph": "Seç…",
       "form.opt.ai": "AI ürünü", "form.opt.saas": "SaaS", "form.opt.app": "Mobil uygulama", "form.opt.startup": "Startup", "form.opt.travel": "Seyahat markası", "form.opt.other": "Diğer",
       "form.goal": "Hedef ne?", "form.goal.ph": "Seç…",
       "form.goal.aware": "Bilinirlik &amp; erişim", "form.goal.conv": "Dönüşüm &amp; indirme", "form.goal.ads": "Reklam içeriği", "form.goal.ongoing": "Sürekli içerik",
-      "form.msg": "Biraz anlat", "form.msg.ph": "Ne geliştiriyorsun ve hangi dil(ler)e ihtiyacın var — İngilizce, Türkçe ya da ikisi?",
-      "form.send": "Mesaj gönder <span class=\”arrow\”>→</span>",
-      "form.sending": "Gönderiliyor…", "form.ok": "Teşekkürler — aldım. 24 saat içinde döneceğim.", "form.err": "E-posta ve ürün tipini ekleyip tekrar dene.",
+      "form.budget": "Bütçe aralığı", "form.budget.ph": "Bir aralık seç", "form.budget.1": "€500 altı", "form.budget.2": "€500-€1.500", "form.budget.3": "€1.500-€3.000", "form.budget.4": "€3.000+",
+      "form.msg": "Brief", "form.msg.ph": "Teslimatlar, tarih, hedef kitle, dil ve kullanım hakları.",
+      "form.send": "Brief gönder <span class=\"arrow\">→</span>",
+      "form.sending": "Gönderiliyor…", "form.ok": "Teşekkürler - aldım. 24 saat içinde döneceğim.", "form.err": "Geçerli e-posta, ürün linki ve ürün tipini ekleyip tekrar dene.",
 
-      "pkg.kicker": "Paketler",
-      "pkg.h": "Bir başlangıç seç, oradan büyüt.",
-      "pkg.p": "Net kapsam, bağlayıcılık yok. Her paket brief'ine göre fiyatlanır — teslimatlara, kullanım haklarına ve video sayısına göre özel teklif.",
+      "pkg.kicker": "Başlangıç seçenekleri",
+      "pkg.h": "Ücretli pilotla başla. İşe yarayanı büyüt.",
+      "pkg.p": "Fiyat; teslimatlar, revizyon, ham dosya ve kullanım haklarına göre belirlenir. Net teklif için ürün linkini gönder.",
       "pkg.quote": "Özel teklif",
-      "pkg1.t": "Başlangıç UGC Videosu", "pkg1.d": "Tek UGC video, tek kanca açısı, edit + ham. İlk test için ideal.",
-      "pkg2.t": "Growth UGC Paketi", "pkg2.d": "3 video, çoklu kanca, organik + paid test için.",
-      "pkg3.t": "Reklam İçeriği Paketi", "pkg3.d": "TikTok, Reels &amp; Meta için kanca varyasyonlu reklama hazır içerik.",
+      "pkg1.t": "Tek videoluk pilot", "pkg1.d": "Bir konsept, bir kanca, bir kurgulanmış dikey video. Uyumu test etmenin en temiz yolu.",
+      "pkg2.t": "Üç videoluk test", "pkg2.d": "Tek yaratıcı strateji altında organik veya reklam testi için üç farklı açı.",
+      "pkg3.t": "Ürün lansmanı seti", "pkg3.d": "Açıklama, demo, itiraz ve kurucu anlatısı açılarını kapsayan beş video.",
       "pkg4.t": "SaaS / App Lansman Paketi", "pkg4.d": "5 video, senaryo stratejisi, lansmanın etrafında demo + kurucu içeriği.",
       "pkg5.t": "Aylık İçerik Anlaşması", "pkg5.d": "EN &amp; TR markana uygun içeriğin aylık düzenli akışı.",
-      "pkg.cta.t": "Kapsamını anlat", "pkg.cta.d": "Ürününü, hedefini ve video sayısını gönder — net bir teklifle döneyim.",
+      "pkg.cta.t": "Kapsamını anlat", "pkg.cta.d": "Ürününü, hedefini ve video sayısını gönder - net bir teklifle döneyim.",
 
       "faq.kicker": "SSS",
       "faq.h": "Markaların sorduğu sorular.",
-      "faq.p": "Kurucuların ve pazarlamacıların benim gibi bir içerik üreticisi ararken Google'a yazdığı — ya da ChatGPT'ye sorduğu — gerçek sorular.",
+      "faq.p": "Kurucuların ve pazarlamacıların benim gibi bir içerik üreticisi ararken Google'a yazdığı - ya da ChatGPT'ye sorduğu - gerçek sorular.",
       "faq.q1": "Ne tür markalara içerik üretiyorsun?",
-      "faq.a1": "AI ürünleri, SaaS, mobil uygulamalar, teknoloji startup'ları, üretkenlik ve tüketici uygulamaları ve seyahat markaları. Ürünün internette yaşıyor ve dikkat istiyorsa, uygundur.",
+      "faq.a1": "AI ürünleri, SaaS, mobil uygulamalar ve teknik startup'lar. Ürün ilgi çekmeden önce açıklama gerektiriyorsa güçlü bir eşleşmedir.",
       "faq.q2": "İçeriği hem İngilizce hem Türkçe üretiyor musun?",
-      "faq.a2": "Evet — ikisinde de ana dil seviyesinde. Tek bir brief; global kitle için İngilizce, yerel pazar için Türkçe versiyona dönüşür. Kelime kelime çeviri değil, her dilde doğru tonla.",
+      "faq.a2": "Evet. İngilizce ve Türkçe içerik üretiyorum. Buradaki açık örnekler Türkçe; brief'inle birlikte kısa bir İngilizce test okuması isteyebilirsin.",
       "faq.q3": "Videolar reklam olarak kullanılabilir mi?",
       "faq.a3": "Evet. Her şey TikTok, Reels ve Shorts için kanca-öncelikli kurgulanır; organik içerik ya da reklam olarak çalışır. Kullanım hakları, whitelisting ve ham dosyalar baştan netleşir.",
       "faq.q4": "Teknik ürünleri gerçekten anlıyor musun?",
@@ -275,170 +281,171 @@
       "faq.q5": "Ne kadar hızlı teslim ediyorsun?",
       "faq.a5": "Bangkok'tan hızlı ve tamamen uzaktan. Tek videolar genelde haftalar değil günler içinde; büyük setler lansman tarihine göre planlanır.",
       "faq.q6": "Fiyatlandırma nasıl işliyor?",
-      "faq.a6": "Kapsama göre — tek bir test videosundan aylık içerik paketine kadar. Ürünü, hedefi ve kaç video istediğini söyle, net bir teklif göndereyim.",
+      "faq.a6": "Kapsama göre - tek bir test videosundan aylık içerik paketine kadar. Ürünü, hedefi ve kaç video istediğini söyle, net bir teklif göndereyim.",
       "faq.q7": "Uygulama ya da ürün lansmanında yardımcı olur musun?",
-      "faq.a7": "Evet — lansman içeriği temel kullanım alanı: açıklayıcı reel'ler, ürün demoları, kurucu videoları ve reklam içerikleri, çıkışına göre planlanır.",
+      "faq.a7": "Evet - lansman içeriği temel kullanım alanı: açıklayıcı reel'ler, ürün demoları, kurucu videoları ve reklam içerikleri, çıkışına göre planlanır.",
       "faq.q8": "Uluslararası markalarla çalışıyor musun?",
-      "faq.a8": "Evet. Bangkok merkezliyim ve dünya genelindeki kurucu ve ekiplerle çalışıyorum — asenkron, farklı saat dilimlerinde, İngilizce ya da Türkçe.",
+      "faq.a8": "Evet. Bangkok merkezliyim ve dünya genelindeki kurucu ve ekiplerle çalışıyorum - asenkron, farklı saat dilimlerinde, İngilizce ya da Türkçe.",
       "faq.q9": "Lifestyle veya seyahat içeriği de var mı?",
-      "faq.a9": "İçerik ağım üzerinden: lifestyle &amp; güzellik için <a href=\”https://ugc-mine.vibecodingturkey.com\” target=\”_blank\” rel=\”noopener\”>Mine Koçak</a>, seyahat &amp; ağırlama için <a href=\”https://moviatravelhub.vibecodingturkey.com\” target=\”_blank\” rel=\”noopener\”>Movia Travel Hub</a>. Tek stüdyo, üç kitle.",
+      "faq.a9": "İçerik ağım üzerinden: lifestyle &amp; güzellik için <a href=\"https://ugc-mine.vibecodingturkey.com\" target=\"_blank\" rel=\"noopener\">Mine Koçak</a>, seyahat &amp; ağırlama için <a href=\"https://moviatravelhub.vibecodingturkey.com\" target=\"_blank\" rel=\"noopener\">Movia Travel Hub</a>. Tek stüdyo, üç kitle.",
 
       "net.kicker": "İçerik ağı",
       "net.h": "Tek stüdyo, üç kitle.",
-      "net.p": "AI ve teknolojinin ötesinde; ailecek yaşam tarzı ve seyahat içeriğini de kapsıyoruz — böylece bir marka doğru kitleye doğru yüzle ulaşır, hepsi Bangkok'tan.",
-      "net.mine.tag": "Lifestyle &amp; Güzellik", "net.mine.t": "Mine Koçak",
-      "net.mine.d": "Lifestyle &amp; güzellik UGC — güzellik, wellness ve yaşam tarzı markaları için samimi içerik.",
-      "net.mine.cta": "Siteyi gör <span class=\”arrow\”>→</span>",
-      "net.movia.tag": "Seyahat &amp; Ağırlama", "net.movia.t": "Movia Travel Hub",
-      "net.movia.d": "Bangkok'tan seyahat &amp; ağırlama içeriği — kafeler, oteller, restoranlar ve mekanlar, kamera önünde.",
-      "net.movia.cta": "Siteyi gör <span class=\”arrow\”>→</span>",
+      "net.p": "Tek brief tech için Onur'da kalabilir, lifestyle için Mine'a geçebilir veya Movia ile couple travel çekimine dönüşebilir.",
+      "net.mine.tag": "Güzellik · Lifestyle · Travel", "net.mine.t": "Mine Koçak",
+      "net.mine.d": "Güzellik, lifestyle, travel ve gündelik uygulamalar için sıcak, doğal kadın üretici bakışı.",
+      "net.mine.cta": "Siteyi gör <span class=\"arrow\">→</span>",
+      "net.movia.tag": "Couple Travel · Mekân", "net.movia.t": "Movia Travel Hub",
+      "net.movia.d": "Otel, kafe, restoran, destinasyon ve travel app'ler için çift seyahat ve mekân içeriği.",
+      "net.movia.cta": "Siteyi gör <span class=\"arrow\">→</span>",
 
-      "footer.tag": "Bangkok merkezli AI &amp; UGC içerik üreticisi. Modern internet markaları için İngilizce ve Türkçe, performans odaklı kısa video.",
-      "footer.explore": "Keşfet", "footer.connect": "Bağlan", "footer.network": "Ağ", "footer.made": "Bangkok, Tayland · Dünya geneli çalışıyorum"
+      "footer.tag": "Onur'dan tech-first UGC; lifestyle, travel ve hospitality için Bangkok üretici ağı desteği.",
+      "footer.explore": "Keşfet", "footer.connect": "Bağlan", "footer.network": "Ağ", "footer.made": "Dünya genelindeki markalar için İngilizce ve Türkçe içerik."
     },
 
     th: {
       "nav.work": "ผลงาน", "nav.tiktok": "TikTok", "nav.cases": "กรณีศึกษา",
       "nav.about": "เกี่ยวกับ", "nav.services": "บริการ", "nav.cta": "จองการปรึกษา",
 
-      "hero.kicker": "สร้างสรรค์เนื้อหา AI &amp; UGC จาก Bangkok",
-      "hero.h": "เนื้อหาที่สร้าง<br><em>ความสนใจให้กับแบรนด์สมัยใหม่</em>",
-      "hero.sub": "ผมสร้างเนื้อหาวิดีโอสั้นที่มุ่งประสิทธิภาพ — เป็นภาษาอังกฤษและไทยที่ลื่นไหล — สำหรับบริษัท AI, ผลิตภัณฑ์ SaaS, แอปโทรศัพท์มือถือ, สตาร์ตอัป และแบรนด์การท่องเที่ยวที่อยากโดดเด่นและได้รับความชื่นชอบ",
-      "hero.cta1": "เริ่มการทำงานร่วมกัน <span class=\”arrow\”>→</span>",
-      "hero.cta2": "ดูผลงาน",
+      "hero.kicker": "ครีเอเตอร์ UGC สายเทคในกรุงเทพฯ",
+      "hero.h": "ทำให้ผลิตภัณฑ์ของคุณ<br><em>เข้าใจง่ายและน่าเลือก</em>",
+      "hero.sub": "Onur ดูแล UGC สำหรับเทคและแอป เครือข่ายครีเอเตอร์ในกรุงเทพฯ ของเรายังครอบคลุมไลฟ์สไตล์ ท่องเที่ยว และธุรกิจบริการ",
+      "hero.cta1": "เริ่มการทำงานร่วมกัน <span class=\"arrow\">→</span>",
+      "hero.cta2": "ดูวิดีโอแนะนำตัว",
       "hero.chip1": "เนื้อหาภาษาอังกฤษ &amp; ไทย",
       "hero.chip2": "Bangkok, ประเทศไทย",
       "hero.chip3": "แบรนด์ทั่วโลก",
-      "hero.badge": "มิวจัดต์วิวแบบออร์แกนิค, วิดีโอล่าสุด",
+      "hero.badge": "วิดีโอแนะนำครีเอเตอร์",
+      "hero.sound": "เปิดเสียง",
 
-      "stat.views": "จำนวนมิวจัดต์วิวแบบออร์แกนิคทั้งหมด",
-      "stat.comments": "ความเห็นและการสนทนาที่แท้จริง",
-      "stat.viral": "วิดีโอที่ได้รับมิวจัดต์วิวเกิน 24,000 ครั้งจากแอคาउนท์เล็ก",
-      "stat.lang": "เนื้อหาระดับเจ้าของภาษาในสองภาษา",
-      "stat.note": "ตัวเลขที่แท้จริง ดึงมาจากการวิเคราะห์แบบสด ไม่มีมิวจัดต์วิวที่ซื้อ ไม่มีเมตริกส์ปลอม",
+      "stat.views": "ยอดวิวที่บันทึกจาก 5 Reels · ข้อมูล ณ 26 มิ.ย.",
+      "stat.comments": "คอมเมนต์บน Instagram Reel หนึ่งคลิป · 15 ก.ค.",
+      "stat.viral": "ผู้ติดตาม Instagram · ตัวเลขสด 15 ก.ค.",
+      "stat.lang": "งบโฆษณาสำหรับตัวอย่างในช่องของเรา",
+      "stat.note": "หลักฐานจากช่องของเราเองพร้อมวันที่ เป็นผลลัพธ์แบบออร์แกนิก ไม่ใช่ ROAS ของลูกค้า",
 
       "work.kicker": "ผลงานที่เลือก",
       "work.h": "วิดีโอสั้นที่ได้รับการชมชอบ แชร์ และจดจำ",
       "work.langpill": "ถ่ายทำเป็นภาษาอังกฤษ &amp; ไทย",
       "work.viral": "ไวรัล",
       "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / เครื่องมือ", "work.tag.apps": "แอป / No-code", "work.tag.story": "เทค / เรื่องราว",
-      "work.v4.t": "GEO หมายถึงอะไรสำหรับผลิตภัณฑ์ของคุณ", "work.v4.d": "1,691 ความเห็น — ผลงานที่ได้ปฏิกิริยาสูงสุด",
-      "work.v6.t": "ไม่ใช่เรื่องราว SEO — มันคือ GEO", "work.v6.d": "3,146 มิวจัดต์วิว — ตัวอย่างสั้น ๆ ของเหตุผลที่ GEO มีความสำคัญ",
-      "work.v2.t": "Answer Engine Optimization อธิบายอย่างชัดเจน", "work.v2.d": "28,170 มิวจัดต์วิว — หัวข้อที่ซับซ้อนทำให้เรียบง่าย",
+      "work.v4.t": "GEO หมายถึงอะไรสำหรับผลิตภัณฑ์ของคุณ", "work.v4.d": "ยอดวิวบันทึก 24.3K และคอมเมนต์สด 3,026",
+      "work.v6.t": "ไม่ใช่เรื่องราว SEO - มันคือ GEO", "work.v6.d": "3,146 มิวจัดต์วิว - ตัวอย่างสั้น ๆ ของเหตุผลที่ GEO มีความสำคัญ",
+      "work.v2.t": "Answer Engine Optimization อธิบายอย่างชัดเจน", "work.v2.d": "28,170 มิวจัดต์วิว - หัวข้อที่ซับซ้อนทำให้เรียบง่าย",
       "work.v3.t": "เทรนด์วิดีโอ AI ไวรัล ฟรี", "work.v3.d": "เปลี่ยนเทรนด์เป็นคู่มือที่ผู้คนบันทึก",
       "work.v5.t": "ตอนนี้ทุกคนสร้างแอปได้", "work.v5.d": "เรื่องราวผลิตภัณฑ์ในเวลาน้อยกว่าหนึ่งนาที",
       "work.v1.t": "เด็ก 16 ปีที่สร้างบริษัท AI", "work.v1.d": "ตัวเบ็ดความสนใจที่ยึดจับได้",
-      "work.cta.t": "ผลิตภัณฑ์ของคุณ ในการเคลื่อนไหว", "work.cta.d": "ภาษาอังกฤษหรือไทย — ลองวางแผนชุดแรกของคุณด้วยกัน", "work.cta.b": "เริ่มโครงการ →",
+      "work.cta.t": "ผลิตภัณฑ์ของคุณ ในการเคลื่อนไหว", "work.cta.d": "ภาษาอังกฤษหรือไทย - ลองวางแผนชุดแรกของคุณด้วยกัน", "work.cta.b": "เริ่มโครงการ →",
 
       "tt.kicker": "บน TikTok",
       "tt.h": "สร้างสรรค์สำหรับหน้า <em>For You</em>",
-      "tt.p": "TikTok ให้รางวัลแก่ตัวเบ็ดที่แข็งแกร่ง เรื่องราวที่ชัดเจน และเหตุผลที่ต้องอยู่ ฉันสร้างสรรค์อย่างแน่นอนแบบนั้น — เนื้อหาที่ออกแบบมาสำหรับเวลาชมชอบ ไม่ใช่แค่มิวจัดต์วิว วิดีโอ AI, เทคโนโลยี และการท่องเที่ยวใหม่เพิ่มเข้ามาเป็นประจำ",
-      "tt.follow": "ติดตามบน TikTok <span class=\”arrow\”>→</span>", "tt.collab": "ร่วมมือ",
+      "tt.p": "TikTok ให้รางวัลแก่ตัวเบ็ดที่แข็งแกร่ง เรื่องราวที่ชัดเจน และเหตุผลที่ต้องอยู่ ฉันสร้างสรรค์อย่างแน่นอนแบบนั้น - เนื้อหาที่ออกแบบมาสำหรับเวลาชมชอบ ไม่ใช่แค่มิวจัดต์วิว วิดีโอ AI, เทคโนโลยี และการท่องเที่ยวใหม่เพิ่มเข้ามาเป็นประจำ",
+      "tt.follow": "ติดตามบน TikTok <span class=\"arrow\">→</span>", "tt.collab": "ร่วมมือ",
 
       "cases.kicker": "กรณีศึกษา",
       "cases.h": "มองข้างหลังวิดีโอสองวิดีโอที่ถูกวิเคราะห์",
-      "cases.p": "การเข้าถึงคือส่วนที่ง่าย นี่คือตัวอย่างของการเปลี่ยนหัวข้อที่ยากและนามธรรมให้เป็นเนื้อหาวิดีโอสั้นที่ผู้คนชม จนจบ — และโต้แย้งในส่วนความเห็น",
+      "cases.p": "การเข้าถึงคือส่วนที่ง่าย นี่คือตัวอย่างของการเปลี่ยนหัวข้อที่ยากและนามธรรมให้เป็นเนื้อหาวิดีโอสั้นที่ผู้คนชม จนจบ - และโต้แย้งในส่วนความเห็น",
       "case.problem": "ปัญหา", "case.strategy": "กลยุทธ์", "case.outcome": "ผลลัพธ์",
       "case.views": "มิวจัดต์วิว", "case.comments": "ความเห็น", "case.likes": "ชอบ", "case.spend": "งบประมาณโฆษณา",
       "case1.h": "ทำให้ช่องทางการได้มาใหม่รู้สึกชัดเจน",
       "case1.problem": "”Generative Engine Optimization” เป็นหัวข้อนามธรรมและเพิ่มเติมเข้าไปได้อย่างง่ายดาย คำอธิบายส่วนใหญ่ฟังเหมือนการบรรยาย",
       "case1.strategy": "เปิดด้วยตัวเบ็ดความเปรียบเทียบแหลม (SEO vs. GEO) แล้วทำให้เป็นส่วนตัว: ผลิตภัณฑ์ของคุณปรากฏตัวที่ไหนเมื่อผู้คนถาม ChatGPT?",
-      "case1.outcome": "รูปแบบนี้ทำให้เกิดการโต้เถียงที่แท้จริง — 1,691 ความเห็นจากแอคาउนท์เล็ก และวิดีโอยังคงหมุนเวียนต่อไปเป็นเวลาหลายวัน",
+      "case1.outcome": "Reel นี้มียอดวิวบันทึก 24.3K และคอมเมนต์สด 3,026 ณ วันที่ 15 กรกฎาคม",
       "case2.h": "28,000 มิวจัดต์วิวในหัวข้อที่ผู้คนส่วนใหญ่ยังไม่ได้ยินมา",
       "case2.problem": "Answer Engine Optimization เป็นหัวข้อเฉพาะที่ยุ่งเหยิงด้วยศัพท์เทคนิคและมีความต้องการการค้นหาเกือบศูนย์ในขณะนี้",
-      "case2.strategy": "เริ่มต้นด้วยการเปลี่ยนแปลงพฤติกรรมที่ผู้คนรู้สึกอยู่แล้ว — \”คุณเลยถามไปที่ ChatGPT มากกว่า Google\” — จากนั้นวางศัพท์ด้านบน",
+      "case2.strategy": "เริ่มต้นด้วยการเปลี่ยนแปลงพฤติกรรมที่ผู้คนรู้สึกอยู่แล้ว - ”คุณเลยถามไปที่ ChatGPT มากกว่า Google” - จากนั้นวางศัพท์ด้านบน",
       "case2.outcome": "การเข้าถึงที่ขับเคลื่อนด้วยความสนใจล้วนๆ: 28,170 มิวจัดต์วิวโดยไม่มีงบประมาณโฆษณา พิสูจน์ความต้องการของหัวข้อก่อนที่คู่แข่งจะสังเกตเห็น",
 
       "about.kicker": "เกี่ยวกับ", "about.role": "สร้างสรรค์เนื้อหา AI &amp; UGC · Bangkok",
       "about.h": "สร้างสรรค์เนื้อหาที่เข้าใจผลิตภัณฑ์ที่ถ่ายทำ",
-      "about.big": "ฉันคือ Onur — สร้างสรรค์เนื้อหาจาก Bangkok ทำงานกับแบรนด์ AI และเทคโนโลยีทั่วโลก ก่อนกล้องตัวอย่าง ฉันเขียนโปรแกรมและศึกษาวิธีการที่ผู้คนค้นพบผลิตภัณฑ์ออนไลน์ ความแตกต่างอยู่ที่นี่: ฉันไม่ได้สร้างเพียงวิดีโอที่ดูดี ฉันสร้างวิดีโอที่เคลื่อนไหวเมตริกส์ที่คุณสนใจ",
-      "about.p1": "UGC ส่วนใหญ่หยุดอยู่ที่ 'คลิปที่ดี' ฉันเริ่มจากคำถามทางธุรกิจ — ผู้ซื้อคือใคร คำคัดค้านคือ อะไรที่ทำให้พวกเขาหยุดสแกน — และออกแบบเนื้อหาย้อนกลับจากที่นั่น ตัวเบ็ด, จังหวะ, สำเนาบนหน้าจอ และการเรียกอำเภออย่างมีจริยธรรม ความสนใจที่ไม่นำไปสู่การแปลงคือเพียงสัญญาณรบกวน",
-      "about.p2": "ฉันสร้างสรรค์เนื้อหาเป็น <strong>ภาษาอังกฤษและไทยที่ลื่นไหล</strong>; ดังนั้น brief หนึ่งฉบับสามารถเข้าถึงผู้ชมทั่วโลกและผู้พูดภาษาไทยโดยไม่สูญเสียโทน หรือความแตกต่าง จาก Bangkok ฉันทำงานกับทีมในเขตเวลาทุก ๆ ที่ — อย่างรวดเร็ว ระยะไกล และให้ brief ได้อย่างสะดวก",
-      "about.li1": "<strong>ภาษาอังกฤษ &amp; ไทย</strong> — สคริปต์และการส่งมอบระดับเจ้าของภาษาในทั้งสองสิ่ง",
-      "about.li2": "<strong>มุ่งเน้นประสิทธิภาพ</strong> — สร้างขึ้นจากตัวเบ็ด เวลาชมชอบ และการแปลง",
-      "about.li3": "<strong>ชำนาญผลิตภัณฑ์</strong> — ฉันรู้ AI, SaaS และแอปจากภายใน",
-      "about.li4": "<strong>เร็วขึ้น &amp; ระยะไกล</strong> — ศูนย์กลาง Bangkok แบรนด์ทั่วโลก",
+      "about.big": "ฉันคือ Onur - สร้างสรรค์เนื้อหาจาก Bangkok ทำงานกับแบรนด์ AI และเทคโนโลยีทั่วโลก ก่อนกล้องตัวอย่าง ฉันเขียนโปรแกรมและศึกษาวิธีการที่ผู้คนค้นพบผลิตภัณฑ์ออนไลน์ ความแตกต่างอยู่ที่นี่: ฉันไม่ได้สร้างเพียงวิดีโอที่ดูดี ฉันสร้างวิดีโอที่เคลื่อนไหวเมตริกส์ที่คุณสนใจ",
+      "about.p1": "UGC ส่วนใหญ่หยุดอยู่ที่ 'คลิปที่ดี' ฉันเริ่มจากคำถามทางธุรกิจ - ผู้ซื้อคือใคร คำคัดค้านคือ อะไรที่ทำให้พวกเขาหยุดสแกน - และออกแบบเนื้อหาย้อนกลับจากที่นั่น ตัวเบ็ด, จังหวะ, สำเนาบนหน้าจอ และการเรียกอำเภออย่างมีจริยธรรม ความสนใจที่ไม่นำไปสู่การแปลงคือเพียงสัญญาณรบกวน",
+      "about.p2": "ฉันสร้างสรรค์เนื้อหาเป็น <strong>ภาษาอังกฤษและไทยที่ลื่นไหล</strong>; ดังนั้น brief หนึ่งฉบับสามารถเข้าถึงผู้ชมทั่วโลกและผู้พูดภาษาไทยโดยไม่สูญเสียโทน หรือความแตกต่าง จาก Bangkok ฉันทำงานกับทีมในเขตเวลาทุก ๆ ที่ - อย่างรวดเร็ว ระยะไกล และให้ brief ได้อย่างสะดวก",
+      "about.li1": "<strong>ภาษาอังกฤษ &amp; ไทย</strong> - สคริปต์และการส่งมอบระดับเจ้าของภาษาในทั้งสองสิ่ง",
+      "about.li2": "<strong>มุ่งเน้นประสิทธิภาพ</strong> - สร้างขึ้นจากตัวเบ็ด เวลาชมชอบ และการแปลง",
+      "about.li3": "<strong>ชำนาญผลิตภัณฑ์</strong> - ฉันรู้ AI, SaaS และแอปจากภายใน",
+      "about.li4": "<strong>เร็วขึ้น &amp; ระยะไกล</strong> - ศูนย์กลาง Bangkok แบรนด์ทั่วโลก",
 
       "svc.kicker": "บริการ",
       "svc.h": "ทุกสิ่งที่คุณต้องการเพื่อปรากฏตัวและแปลง",
       "svc.p": "เลือกวิดีโอเดียว หรือเครื่องยนต์เนื้อหาที่สมบูรณ์ ทั้งหมดสามารถผลิตเป็นภาษาอังกฤษ ไทย หรือทั้งสองอย่าง",
-      "svc1.t": "วิดีโอ UGC", "svc1.d": "เนื้อหาแท้ที่สนทนากับกล้อง — รู้สึกเหมือนคำแนะนำจากเพื่อน ไม่ใช่โฆษณา",
-      "svc2.t": "เนื้อหา TikTok", "svc2.d": "ปกติวิดีโอสั้นที่ออกแบบสำหรับหน้า For You — ตัวเบ็ดที่แข็งแกร่ง จังหวะแน่นตัน เวลาชมชอบสูง",
+      "svc1.t": "วิดีโอ UGC", "svc1.d": "เนื้อหาแท้ที่สนทนากับกล้อง - รู้สึกเหมือนคำแนะนำจากเพื่อน ไม่ใช่โฆษณา",
+      "svc2.t": "เนื้อหา TikTok", "svc2.d": "ปกติวิดีโอสั้นที่ออกแบบสำหรับหน้า For You - ตัวเบ็ดที่แข็งแกร่ง จังหวะแน่นตัน เวลาชมชอบสูง",
       "svc3.t": "เนื้อหาผลิตภัณฑ์ AI", "svc3.d": "อธิบายผลิตภัณฑ์ AI ที่ซับซ้อนอย่างชัดเจน แสดงค่าที่แท้จริงในเวลาไม่กี่วินาที ความชำนาญของฉัน",
       "svc4.t": "เนื้อหาผลิตภัณฑ์ SaaS", "svc4.d": "ทัวร์คุณสมบัติ เดโมกรณีการใช้งาน และเรื่องราวผู้ก่อตั้งที่เปลี่ยนการทดลองเป็นผู้ใช้ที่ต้องจ่าย",
-      "svc5.t": "เนื้อหาการท่องเที่ยว", "svc5.d": "การเล่าเรื่องภาพยนตร์ในสถานที่ — สำหรับแบรนด์การท่องเที่ยวและไลฟ์สไตล์ จาก Bangkok และไกลออกไป",
-      "svc6.t": "โฆษณาวิดีโอสั้น", "svc6.d": "สร้างสรรค์ที่พร้อมจ่ายแล้ว — สร้างขึ้นสำหรับตัวเบ็ด เวลาชมชอบ และการแปลงทั่วทั้ง TikTok, Reels และ Shorts",
-      "svc7.t": "กลยุทธ์สร้างสรรค์", "svc7.d": "มุมตัวเบ็ด เสาเนื้อหา และแผนการโพสต์ — ดังนั้นวิดีโอทุกชุดมีการทำงาน ไม่ใช่แค่นับมิวจัดต์วิว",
-      "svc8.t": "แพ็คเนื้อหา", "svc8.d": "สัญญาแบบรายเดือน — การไหลของเนื้อหาที่สม่ำเสมอสำหรับแบรนด์อังกฤษ &amp; ไทย วางแผนและส่งมอบให้คุณ",
+      "svc5.t": "เนื้อหาการท่องเที่ยว", "svc5.d": "การเล่าเรื่องภาพยนตร์ในสถานที่ - สำหรับแบรนด์การท่องเที่ยวและไลฟ์สไตล์ จาก Bangkok และไกลออกไป",
+      "svc6.t": "โฆษณาวิดีโอสั้น", "svc6.d": "สร้างสรรค์ที่พร้อมจ่ายแล้ว - สร้างขึ้นสำหรับตัวเบ็ด เวลาชมชอบ และการแปลงทั่วทั้ง TikTok, Reels และ Shorts",
+      "svc7.t": "กลยุทธ์สร้างสรรค์", "svc7.d": "มุมตัวเบ็ด เสาเนื้อหา และแผนการโพสต์ - ดังนั้นวิดีโอทุกชุดมีการทำงาน ไม่ใช่แค่นับมิวจัดต์วิว",
+      "svc8.t": "แพ็คเนื้อหา", "svc8.d": "สัญญาแบบรายเดือน - การไหลของเนื้อหาที่สม่ำเสมอสำหรับแบรนด์อังกฤษ &amp; ไทย วางแผนและส่งมอบให้คุณ",
 
-      "why.quote": "ความสนใจนั้นราคาถูก ความสนใจที่เปลี่ยนเป็นลูกค้าคือทั้งงาน — และนั่นคือสิ่งที่ฉันได้รับการว่าจ้างให้ส่งมอบ",
-      "why.cite": "Onur Hüseyin Koçak — Bangkok",
+      "why.quote": "ความสนใจนั้นราคาถูก ความสนใจที่เปลี่ยนเป็นลูกค้าคือทั้งงาน - และนั่นคือสิ่งที่ฉันได้รับการว่าจ้างให้ส่งมอบ",
+      "why.cite": "Onur Hüseyin Koçak - Bangkok",
       "why1.q": "ฉันเข้าใจ <span>ผลิตภัณฑ์</span>, ไม่ใช่แค่กล้อง",
       "why1.p": "ฉันเขียนโปรแกรมเอง ดังนั้นฉันจึงสามารถใช้รายการฟีเจอร์ดิบและเปลี่ยนเป็นเรื่องราวที่ผู้ซื้อสนใจจริง ๆ",
       "why2.q": "สองภาษา <span>brief เดียว</span>",
-      "why2.p": "ภาษาอังกฤษสำหรับตลาดโลก ไทยสำหรับผู้ชมที่เติบโตเร็วที่สุดแห่งหนึ่ง — ผลิตแบบเจ้าของภาษา ไม่ใช่แบบแปลคำต่อคำ",
+      "why2.p": "ภาษาอังกฤษสำหรับตลาดโลก ไทยสำหรับผู้ชมที่เติบโตเร็วที่สุดแห่งหนึ่ง - ผลิตแบบเจ้าของภาษา ไม่ใช่แบบแปลคำต่อคำ",
       "why3.q": "ฉันเพิ่มประสิทธิภาพสำหรับ <span>การแปลง</span>",
-      "why3.p": "ตัวเบ็ด จังหวะ และ CTA ออกแบบมาโดยตั้งใจ เป้าหมายจะไม่เป็นเพียงมิวจัดต์วิว — มันคือการลงทะเบียน การดาวน์โหลด และการขาย",
+      "why3.p": "ตัวเบ็ด จังหวะ และ CTA ออกแบบมาโดยตั้งใจ เป้าหมายจะไม่เป็นเพียงมิวจัดต์วิว - มันคือการลงทะเบียน การดาวน์โหลด และการขาย",
 
       "contact.kicker": "มาทำงานร่วมกันกัน",
       "contact.h": "มีผลิตภัณฑ์ที่คุ่มค่าในการพูดถึงหรือไม่?",
-      "contact.sub": "บอกฉันว่าคุณกำลังสร้างและสิ่งที่สำเร็จหมายถึงอะไรกับคุณ ฉันจะยอมรับความซื่อสัตย์และแผน — โดยปกติภายใน 24 ชั่วโมง",
+      "contact.sub": "บอกฉันว่าคุณกำลังสร้างและสิ่งที่สำเร็จหมายถึงอะไรกับคุณ ฉันจะยอมรับความซื่อสัตย์และแผน - โดยปกติภายใน 24 ชั่วโมง",
       "contact.response": "ยอมรับการร่วมมือใหม่ · ตอบกลับภายใน 24 ชั่วโมง",
       "form.name": "ชื่อ", "form.name.ph": "ชื่อของคุณ",
-      "form.email": "อีเมล <span class=\”req\”>*</span>",
+      "form.email": "อีเมล <span class=\"req\">*</span>",
       "form.company": "บริษัท", "form.company.ph": "แบรนด์ / สตาร์ตอัป",
-      "form.product": "ประเภทผลิตภัณฑ์ <span class=\”req\”>*</span>", "form.product.ph": "เลือก…",
+      "form.product": "ประเภทผลิตภัณฑ์ <span class=\"req\">*</span>", "form.product.ph": "เลือก…",
       "form.opt.ai": "ผลิตภัณฑ์ AI", "form.opt.saas": "SaaS", "form.opt.app": "แอปโทรศัพท์มือถือ", "form.opt.startup": "สตาร์ตอัป", "form.opt.travel": "แบรนด์การท่องเที่ยว", "form.opt.other": "อื่น ๆ",
       "form.goal": "เป้าหมายคืออะไร?", "form.goal.ph": "เลือก…",
       "form.goal.aware": "การรับรู้ &amp; เข้าถึง", "form.goal.conv": "การแปลง &amp; ดาวน์โหลด", "form.goal.ads": "สร้างสรรค์โฆษณา", "form.goal.ongoing": "เนื้อหาที่กำลังดำเนิน",
-      "form.msg": "บอกฉันเกี่ยวกับ", "form.msg.ph": "คุณกำลังสร้างอะไร และคุณต้องภาษาใด — อังกฤษ ไทย หรือทั้งสองอย่าง?",
-      "form.send": "ส่งการสอบถาม <span class=\”arrow\”>→</span>",
-      "form.sending": "กำลังส่ง…", "form.ok": "ขอบคุณ — ฉันได้รับแล้ว ฉันจะตอบกลับภายใน 24 ชั่วโมง", "form.err": "เพิ่มอีเมลและประเภทผลิตภัณฑ์ แล้วลองอีกครั้ง",
+      "form.msg": "บอกฉันเกี่ยวกับ", "form.msg.ph": "คุณกำลังสร้างอะไร และคุณต้องภาษาใด - อังกฤษ ไทย หรือทั้งสองอย่าง?",
+      "form.send": "ส่งการสอบถาม <span class=\"arrow\">→</span>",
+      "form.sending": "กำลังส่ง…", "form.ok": "ขอบคุณ - ฉันได้รับแล้ว ฉันจะตอบกลับภายใน 24 ชั่วโมง", "form.err": "เพิ่มอีเมลและประเภทผลิตภัณฑ์ แล้วลองอีกครั้ง",
 
       "pkg.kicker": "แพ็กเกจ",
       "pkg.h": "เลือกจุดเริ่มต้น ปรับขนาดจากที่นั่น",
-      "pkg.p": "ขอบเขตที่ชัดเจน ไม่มีการล็อก แพ็คเกจแต่ละแพ็คจะอ้างอิงถึง brief ของคุณ — บอกฉันว่าผลิตภัณฑ์ เป้าหมาย และจำนวนวิดีโอ ฉันจะตอบกลับด้วยใจเต็มไป",
+      "pkg.p": "ขอบเขตที่ชัดเจน ไม่มีการล็อก แพ็คเกจแต่ละแพ็คจะอ้างอิงถึง brief ของคุณ - บอกฉันว่าผลิตภัณฑ์ เป้าหมาย และจำนวนวิดีโอ ฉันจะตอบกลับด้วยใจเต็มไป",
       "pkg.quote": "บอกเขาขอบเขตของคุณ",
       "pkg1.t": "วิดีโอ UGC เริ่มต้น", "pkg1.d": "วิดีโอ UGC เดียว ตัวเบ็ดมุมเดียว แก้ไข + ดิบ เหมาะสำหรับการทดสอบครั้งแรก",
       "pkg2.t": "แพ็ค Growth UGC", "pkg2.d": "3 วิดีโอ ตัวเบ็ดหลาย ๆ อัน สร้างสำหรับการทดสอบออร์แกนิค + จ่าย",
-      "pkg3.t": "แพ็คสร้างสรรค์โฆษณา", "pkg3.d": "สร้างสรรค์พร้อมใช้โฆษณา — พร้อมตัวเบ็ดต่าง ๆ สำหรับ TikTok, Reels &amp; Meta",
+      "pkg3.t": "แพ็คสร้างสรรค์โฆษณา", "pkg3.d": "สร้างสรรค์พร้อมใช้โฆษณา - พร้อมตัวเบ็ดต่าง ๆ สำหรับ TikTok, Reels &amp; Meta",
       "pkg4.t": "แพ็ค SaaS / App Launch", "pkg4.d": "5 วิดีโอ กลยุทธ์สคริปต์ เดโมและเนื้อหาผู้ก่อตั้ง รอบการเปิดตัว",
       "pkg5.t": "สัญญาสร้างสรรค์แบบรายเดือน", "pkg5.d": "การไหลของเนื้อหาที่สม่ำเสมอสำหรับแบรนด์อังกฤษ &amp; ไทย ตามแผนและส่งมอบรายเดือน",
-      "pkg.cta.t": "บอกเขาขอบเขตของคุณ", "pkg.cta.d": "ส่งผลิตภัณฑ์ เป้าหมาย และจำนวนวิดีโอ — ฉันจะส่งอัตราป้องกันที่ชัดเจน",
+      "pkg.cta.t": "บอกเขาขอบเขตของคุณ", "pkg.cta.d": "ส่งผลิตภัณฑ์ เป้าหมาย และจำนวนวิดีโอ - ฉันจะส่งอัตราป้องกันที่ชัดเจน",
 
       "faq.kicker": "คำถามที่พบบ่อย",
       "faq.h": "คำถามที่แบรนด์ถาม",
-      "faq.p": "คำถามที่แท้จริงที่ผู้ก่อตั้งและสมาชิกการตลาดพิมพ์ลงใน Google — หรือถามไปที่ ChatGPT — เมื่อพวกเขากำลังมองหาสร้างสรรค์เนื้อหาเหมือนฉัน",
+      "faq.p": "คำถามที่แท้จริงที่ผู้ก่อตั้งและสมาชิกการตลาดพิมพ์ลงใน Google - หรือถามไปที่ ChatGPT - เมื่อพวกเขากำลังมองหาสร้างสรรค์เนื้อหาเหมือนฉัน",
       "faq.q1": "คุณสร้างเนื้อหาให้กับแบรนด์ประเภทใด?",
       "faq.a1": "ผลิตภัณฑ์ AI, SaaS, แอปโทรศัพท์มือถือ, สตาร์ตอัปเทคโนโลยี ผลิตภัณฑ์ที่มีการผลิตและการท่องเที่ยวแบรนด์ ถ้าผลิตภัณฑ์ของคุณอยู่บนอินเทอร์เน็ตและต้องการความสนใจ มันเข้ากันได้",
       "faq.q2": "คุณสร้างเนื้อหา UGC ทั้งภาษาอังกฤษและไทยหรือไม่?",
-      "faq.a2": "ใช่ — เจ้าของภาษาในทั้งสอง brief หนึ่งฉบับสามารถเป็นเวอร์ชันภาษาอังกฤษสำหรับผู้ชมทั่วโลกและเวอร์ชันภาษาไทยสำหรับตลาดท้องถิ่น โดยมีโทนที่เหมาะสมในแต่ละรุ่น ไม่ใช่การแปลคำต่อคำ",
+      "faq.a2": "ใช่ - เจ้าของภาษาในทั้งสอง brief หนึ่งฉบับสามารถเป็นเวอร์ชันภาษาอังกฤษสำหรับผู้ชมทั่วโลกและเวอร์ชันภาษาไทยสำหรับตลาดท้องถิ่น โดยมีโทนที่เหมาะสมในแต่ละรุ่น ไม่ใช่การแปลคำต่อคำ",
       "faq.q3": "วิดีโอของคุณสามารถใช้เป็นโฆษณาจ่ายแล้วหรือไม่?",
       "faq.a3": "ใช่ ทุกสิ่งถูกสร้างสรรค์ด้วยตัวเบ็ดแรกสำหรับ TikTok, Reels และ Shorts และใช้งานได้เป็นเนื้อหาแบบออร์แกนิคหรือเป็นสร้างสรรค์โฆษณา สิทธิการใช้งาน whitelisting และไฟล์ดิบตกลงตั้งแต่แรก",
       "faq.q4": "คุณเข้าใจผลิตภัณฑ์ทางเทคนิคจริง ๆ หรือไม่?",
-      "faq.a4": "ฉันเขียนโปรแกรมเอง ดังนั้นฉันจึงสามารถใช้รายการคุณสมบัติและเปลี่ยนเป็นเรื่องราวที่ผู้ซื้อสนใจจริง ๆ — โดยไม่ทำให้ผลิตภัณฑ์นั้นผิดพลาดหรือเกินจริง",
+      "faq.a4": "ฉันเขียนโปรแกรมเอง ดังนั้นฉันจึงสามารถใช้รายการคุณสมบัติและเปลี่ยนเป็นเรื่องราวที่ผู้ซื้อสนใจจริง ๆ - โดยไม่ทำให้ผลิตภัณฑ์นั้นผิดพลาดหรือเกินจริง",
       "faq.q5": "คุณส่งมอบเร็วแค่ไหน?",
       "faq.a5": "อย่างรวดเร็วและระยะไกลจาก Bangkok แล้ว วิดีโอเดียวส่วนใหญ่มาในไม่กี่วันไม่ใช่สัปดาห์; แบตช์ขนาดใหญ่ตามแผนรอบวันที่เปิดตัว",
       "faq.q6": "ราคากำหนดอย่างไร?",
-      "faq.a6": "ขอบเขต — จากวิดีโอทดสอบเดียวไปถึงแพ็คเนื้อหารายเดือน บอกฉันถึงผลิตภัณฑ์ เป้าหมาย และจำนวนวิดีโอที่คุณต้องการ ฉันจะส่งใจเต็มไป",
+      "faq.a6": "ขอบเขต - จากวิดีโอทดสอบเดียวไปถึงแพ็คเนื้อหารายเดือน บอกฉันถึงผลิตภัณฑ์ เป้าหมาย และจำนวนวิดีโอที่คุณต้องการ ฉันจะส่งใจเต็มไป",
       "faq.q7": "คุณช่วยเหลือด้วยแอปหรือการเปิดตัวผลิตภัณฑ์ได้หรือไม่?",
-      "faq.a7": "ใช่ — เนื้อหาการเปิดตัวคือกรณีการใช้งานหลัก: อธิบายอ่าน เดโมผลิตภัณฑ์ วิดีโอผู้ก่อตั้ง และสร้างสรรค์โฆษณา วางแผนรอบการปล่อยของคุณ",
+      "faq.a7": "ใช่ - เนื้อหาการเปิดตัวคือกรณีการใช้งานหลัก: อธิบายอ่าน เดโมผลิตภัณฑ์ วิดีโอผู้ก่อตั้ง และสร้างสรรค์โฆษณา วางแผนรอบการปล่อยของคุณ",
       "faq.q8": "คุณทำงานกับแบรนด์ระหว่างประเทศหรือไม่?",
-      "faq.a8": "ใช่ ฉันศูนย์กลาง Bangkok และทำงานกับผู้ก่อตั้งและทีมทั่วโลก — อะซิงค์ และหลายเขตเวลา ภาษาอังกฤษหรือไทย",
+      "faq.a8": "ใช่ ฉันศูนย์กลาง Bangkok และทำงานกับผู้ก่อตั้งและทีมทั่วโลก - อะซิงค์ และหลายเขตเวลา ภาษาอังกฤษหรือไทย",
       "faq.q9": "คุณเคลื่อนไปสู่ไลฟ์สไตล์หรือเนื้อหาการท่องเที่ยวด้วยหรือไม่?",
-      "faq.a9": "ผ่านเครือข่ายสร้างสรรค์ของฉัน: ไลฟ์สไตล์ &amp; ความงาม <a href=\”https://ugc-mine.vibecodingturkey.com\” target=\”_blank\” rel=\”noopener\”>Mine Koçak</a>, การท่องเที่ยว &amp; ความอำนวยความสะดวก <a href=\”https://moviatravelhub.vibecodingturkey.com\” target=\”_blank\” rel=\”noopener\”>Movia Travel Hub</a> สตูดิโอเดียว ผู้ชมสามคน",
+      "faq.a9": "ผ่านเครือข่ายสร้างสรรค์ของฉัน: ไลฟ์สไตล์ &amp; ความงาม <a href=\"https://ugc-mine.vibecodingturkey.com\" target=\"_blank\" rel=\"noopener\">Mine Koçak</a>, การท่องเที่ยว &amp; ความอำนวยความสะดวก <a href=\"https://moviatravelhub.vibecodingturkey.com\" target=\"_blank\" rel=\"noopener\">Movia Travel Hub</a> สตูดิโอเดียว ผู้ชมสามคน",
 
       "net.kicker": "เครือข่ายสร้างสรรค์",
       "net.h": "สตูดิโอเดียว ผู้ชมสามคน",
-      "net.p": "นอกเหนือจากไอพอร์ต และเทคโนโลยี ครอบครัวของเราครอบคลุมไลฟ์สไตล์และการท่องเที่ยว — เพื่อให้แบรนด์สามารถเข้าถึงผู้ชมที่เหมาะสมด้วยใบหน้าที่เหมาะสม ทั้งหมดจาก Bangkok",
-      "net.mine.tag": "ไลฟ์สไตล์ &amp; ความงาม", "net.mine.t": "Mine Koçak",
-      "net.mine.d": "ไลฟ์สไตล์ &amp; ความงาม UGC — เนื้อหาแท้สำหรับแบรนด์ความงาม wellness และไลฟ์สไตล์",
-      "net.mine.cta": "ไปที่ไซต์ <span class=\”arrow\”>→</span>",
-      "net.movia.tag": "การท่องเที่ยว &amp; ความอำนวยความสะดวก", "net.movia.t": "Movia Travel Hub",
-      "net.movia.d": "เนื้อหาการท่องเที่ยว &amp; ความอำนวยความสะดวกจาก Bangkok — คาเฟ่ โรงแรม ร้านอาหาร และสถานที่ นำเสนอบนกล้อง",
-      "net.movia.cta": "ไปที่ไซต์ <span class=\”arrow\”>→</span>",
+      "net.p": "บรีฟเดียวเลือก Onur สำหรับเทค เลือก Mine สำหรับไลฟ์สไตล์ หรือทำคอนเทนต์คู่รักสายท่องเที่ยวกับ Movia ได้",
+      "net.mine.tag": "ความงาม · ไลฟ์สไตล์ · ท่องเที่ยว", "net.mine.t": "Mine Koçak",
+      "net.mine.d": "UGC สำหรับความงาม ไลฟ์สไตล์ ท่องเที่ยว และแอปในชีวิตประจำวัน ด้วยมุมมองครีเอเตอร์หญิงที่เป็นธรรมชาติ",
+      "net.mine.cta": "ไปที่ไซต์ <span class=\"arrow\">→</span>",
+      "net.movia.tag": "คู่รักท่องเที่ยว · สถานที่", "net.movia.t": "Movia Travel Hub",
+      "net.movia.d": "คอนเทนต์คู่รักท่องเที่ยวและรีวิวสถานที่สำหรับโรงแรม คาเฟ่ ร้านอาหาร จุดหมาย และแอปท่องเที่ยว",
+      "net.movia.cta": "ไปที่ไซต์ <span class=\"arrow\">→</span>",
 
-      "footer.tag": "สร้างสรรค์เนื้อหา AI &amp; UGC จาก Bangkok ของเนื้อหาวิดีโอสั้นที่มุ่งประสิทธิภาพสำหรับแบรนด์อินเทอร์เน็ตสมัยใหม่เป็นภาษาอังกฤษและไทย",
+      "footer.tag": "UGC สายเทคโดย Onur พร้อมเครือข่ายครีเอเตอร์ในกรุงเทพฯ สำหรับไลฟ์สไตล์ ท่องเที่ยว และธุรกิจบริการ",
       "footer.explore": "สำรวจ", "footer.connect": "เชื่อมต่อ", "footer.network": "เครือข่าย", "footer.made": "Bangkok, ประเทศไทย · ทำงานทั่วโลก"
     }
   };
@@ -477,13 +484,16 @@
     window.__lang = lang;
   }
 
-  // 1) instant paint from stored choice or browser language guess
+  // Use English as the acquisition default. A location-based language swap
+  // made international buyers in Bangkok land on an unintended Thai version.
   var stored = getStored();
-  var initial = stored || ((navigator.language || "en").toLowerCase().indexOf("tr") === 0 ? "tr" : (navigator.language || "en").toLowerCase().indexOf("th") === 0 ? "th" : "en");
+  var isPortfolioHome = document.body.classList.contains("portfolio-home");
+  var initial = stored || "en";
   applyLang(initial);
 
-  // 2) if user has NOT chosen manually, refine by location: Thailand -> th, Turkey -> tr, else -> en
-  if (!stored) {
+  // Preserve the older geo behaviour only on legacy landing pages. The home
+  // page stays English until the visitor explicitly switches language.
+  if (!stored && !isPortfolioHome) {
     fetch("https://get.geojs.io/v1/ip/country.json")
       .then(function (r) { return r.json(); })
       .then(function (j) {
@@ -505,20 +515,47 @@
     });
   });
 
+  // The supplied creator introduction is the shared EN/TH hero asset for now.
+  // Turkish can be swapped independently when the localized recording arrives.
+  var heroVideo = document.querySelector("[data-hero-video]");
+  var heroSound = document.querySelector("[data-hero-sound]");
+  if (heroVideo && heroSound) {
+    heroSound.addEventListener("click", function () {
+      heroVideo.muted = false;
+      heroVideo.loop = false;
+      heroVideo.currentTime = 0;
+      heroVideo.play().catch(function () {});
+      heroSound.hidden = true;
+    });
+    heroVideo.addEventListener("volumechange", function () {
+      heroSound.hidden = !heroVideo.muted;
+    });
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      heroVideo.autoplay = false;
+      heroVideo.pause();
+    }
+  }
+
   /* ---------------- nav scroll + mobile menu ---------------- */
   var nav = document.getElementById("nav");
-  function onScroll() { nav.classList.toggle("scrolled", window.scrollY > 12); }
-  onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
+  nav.classList.add("scrolled");
 
   var burger = document.getElementById("burger");
   var menu = document.getElementById("mobileMenu");
-  function closeMenu() { burger.classList.remove("open"); menu.classList.remove("open"); document.body.classList.remove("no-scroll"); }
+  function closeMenu() {
+    burger.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+    menu.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+  }
   burger.addEventListener("click", function () {
     var open = burger.classList.toggle("open");
+    burger.setAttribute("aria-expanded", String(open));
     menu.classList.toggle("open", open);
     document.body.classList.toggle("no-scroll", open);
   });
   menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeMenu); });
+  document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") closeMenu(); });
 
   /* ---------------- reveal on scroll ---------------- */
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -573,7 +610,7 @@
   var LEAD_ENDPOINT = "https://bajrnvusqzllvsvipitr.supabase.co/functions/v1/ugc-lead";
   var LEAD_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJhanJudnVzcXpsbHZzdmlwaXRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4MzMwNDQsImV4cCI6MjA4OTQwOTA0NH0.ao8f5YlNpbDnVdty5O6QwJaTSQS5cV8VEx2OE8gRa1k";
 
-  // entry attribution (referrer + utm) — same shape the manager dashboard expects
+  // entry attribution (referrer + utm) - same shape the manager dashboard expects
   var ENTRY = (function () {
     var p = new URLSearchParams(location.search);
     var utm = {};
@@ -604,8 +641,9 @@
       var fd = new FormData(leadForm);
       if (fd.get("website")) { status.textContent = trS("form.ok"); status.className = "form-status ok"; leadForm.reset(); return; }
       var email = (fd.get("email") || "").trim();
+      var company = (fd.get("company") || "").trim();
       var product = (fd.get("product") || "").trim();
-      if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || !product) {
+      if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || !/^https?:\/\/\S+$/i.test(company) || !product) {
         status.textContent = trS("form.err"); status.className = "form-status err"; return;
       }
       btn.disabled = true; status.textContent = trS("form.sending"); status.className = "form-status";
@@ -614,8 +652,8 @@
         headers: { "Content-Type": "application/json", apikey: LEAD_ANON, Authorization: "Bearer " + LEAD_ANON },
         body: JSON.stringify({
           action: "submit", kind: "booking", lang: window.__lang || "en",
-          name: fd.get("name") || "", email: email, company: fd.get("company") || "",
-          product: product, goal: fd.get("goal") || "", message: fd.get("message") || "",
+          name: fd.get("name") || "", email: email, company: company,
+          product: product, goal: fd.get("goal") || "", budget: fd.get("budget") || "", message: fd.get("message") || "",
           channel: ENTRY.channel, entry_referrer: ENTRY.entry_referrer, utm: ENTRY.utm
         })
       }).then(function (r) {
