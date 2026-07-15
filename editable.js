@@ -13,6 +13,9 @@
   if (!SITE) return;
   var FN = "https://bajrnvusqzllvsvipitr.supabase.co/functions/v1/ugc-content";
   var ANON = window.UGC_ANON || "";
+  // Public overrides are opt-in. Without an anon key the edge function cannot
+  // be read reliably, so keep the audited hardcoded content and skip the call.
+  if (!ANON) return;
 
   function curLang() { return (document.documentElement.lang || "en").slice(0, 2); }
 
