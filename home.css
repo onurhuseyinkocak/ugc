@@ -779,9 +779,13 @@
   }
 
   .portfolio-home .hero-figure {
-    width: calc(100% - 22px);
+    width: 100%;
     max-width: 420px;
-    justify-self: start;
+    justify-self: center;
+  }
+
+  .portfolio-home .hero-portrait {
+    box-shadow: 10px 10px 0 var(--gold);
   }
 
   .portfolio-home .hero-actions {
