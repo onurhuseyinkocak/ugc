@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-07-17T08:33:49.877Z",
+  "updatedAt": "2026-07-17T08:42:18.706Z",
   "source": "Instagram Graph API",
   "profile": "@onurhuseyinkocak.ai",
   "items": [
@@ -15,7 +15,7 @@
       "caption": "API (Application Programming Interface), uygulamaların birbirleriyle güvenli şekilde iletişim kurmasını sağlayan dijital anahtardır. Bir mobil uygulama giriş yaparken, ödeme alırken, yapay zekâ kullanırken veya veritabanından veri çekerken büyük ihtimalle bir API kullanıyordur.\n\nPeki API sızması neden bu kadar tehlikeli?\n\nÇünkü API key veya token, uygulamanın kimliği gibidir. Bu bilgi başkasının eline geçerse senin adına işlem yapabilir, ücretli AI servislerini kullanabilir, veritabanına erişebilir, kullanıcı verilerini çekebilir ve sana yüksek faturalar çıkarabilir.\n\nEn büyük problem ise çoğu kişinin bunun farkında olmaması. API anahtarını yanlışlıkla GitHub’a yüklemek, mobil uygulamanın içine düz metin olarak koymak veya herkese açık bir repoda bırakmak en yaygın hatalardan biridir.\n\nÖzellikle Claude Code, Codex, Cursor veya benzeri AI kod araçlarını kullanıyorsan dikkat et. Fark etmeden API key’lerini commit etmiş olabilirsin. Açık GitHub repoları sürekli botlar tarafından taranıyor ve sızan anahtarlar çoğu zaman dakikalar içinde bulunuyor.\n\nKendini korumak için:\n• API key’lerini istemci tarafına koyma.\n• Environment variable ve secret kullan.\n• GitHub’a göndermeden önce commit’lerini kontrol et.\n• Düzenli olarak API key’lerini yenile.\n• TruffleHog veya Gitleaks ile repolarını ücretsiz tara.\n\nUygulamaların büyük kısmı karmaşık saldırılarla değil, yanlışlıkla paylaşılan API anahtarları yüzünden zarar görüyor.\n\nYorumlara API yaz. GitHub’da API key sızıntısı olup olmadığını ücretsiz kontrol edebileceğin araçları ve kontrol listesini göndereyim.\n\n#VibeCoding #ClaudeCode #Codex #GitHub #cybersecurity",
       "likes": 1,
       "comments": 0,
-      "views": 111,
+      "views": 117,
       "reach": 104,
       "saved": 1,
       "shares": 0,
@@ -33,8 +33,8 @@
       "caption": "🚨 SEO yetmiyor. AI Search dönemi başladı.\n\nİnsanlar artık sadece Google’da arama yapmıyor.\n\nBugün milyonlarca kişi;\n\n• ChatGPT Search\n• Google AI Mode\n• Google AI Overviews\n• Perplexity AI\n• Microsoft Copilot\n• Claude AI\n• Gemini\n\nüzerinden ürün, uygulama, SaaS, otel, restoran, doktor, ajans, freelancer, yazılım ve marka önerisi alıyor.\n\nPeki yapay zekâ senin markanı öneriyor mu?\n\nÇoğu işletme bunun cevabını bilmiyor.\n\nÇünkü klasik SEO ile AI Search Optimization aynı şey değil.\n\nArtık önemli olan sadece Google’da ilk sırada çıkmak değil.\n\nYapay zekânın seni anlaması, güvenmesi ve kullanıcıya önermesi gerekiyor.\n\nBiz son aylarda bunun üzerine yüzlerce saat çalıştık.\n\nVe AI Search görünürlüğünü artırmak isteyen herkes için tamamen ücretsiz bir AI Search Kontrol Listesi hazırladık.\n\nKontrol listesinde;\n\n✅ ChatGPT’de görünürlük testi\n✅ Google AI Overviews kontrolü\n✅ Google AI Mode kontrolü\n✅ Perplexity görünürlük testi\n✅ Microsoft Copilot görünürlük testi\n✅ AI SEO kontrolü\n✅ AI Search Optimization kontrolü\n✅ GEO (Generative Engine Optimization) kontrolü\n✅ AEO (Answer Engine Optimization) kontrolü\n✅ LLM Optimization kontrolü\n✅ robots.txt kontrolü\n✅ sitemap kontrolü\n✅ indeksleme kontrolü\n✅ schema kontrolü\n✅ entity SEO kontrolü\n✅ brand entity kontrolü\n✅ knowledge graph hazırlığı\n✅ AI citation kontrolü\n✅ AI kaynak gösterme optimizasyonu\n✅ içerik optimizasyonu\n✅ marka otoritesi kontrolü\n✅ AI Search test soruları\n✅ görünürlük puanlama sistemi\n\nhepsi ücretsiz.\n\nYoruma sadece AI yaz.\n\nKontrol listesini ücretsiz göndereyim.\n\n—\n\n#AISearch #AISearchOptimization #AISEO #SEO #GEO AEO LLM LLMOptimization ChatGPT ChatGPTSearch OpenAI GoogleAI GoogleAIOverviews GoogleAIMode Perplexity ClaudeAI Gemini MicrosoftCopilot SearchEngineOptimization GenerativeEngineOptimization AnswerEngineOptimization DigitalMarketing ContentMarketing Branding Startup SaaS Marketing VibeCoding VibeCodingTurkey",
       "likes": 68,
       "comments": 71,
-      "views": 2888,
-      "reach": 2068,
+      "views": 2889,
+      "reach": 2071,
       "saved": 37,
       "shares": 44,
       "totalInteractions": 236,
@@ -123,11 +123,11 @@
       "caption": "🚀 AEO (Answer Engine Optimization) Nedir?\n\nİnsanlar artık Google’da aramak yerine ChatGPT, Gemini ve Claude’a soru soruyor.\n\nAEO, web sitenizi bu yapay zekaların cevaplarında yer alacak şekilde optimize etme sürecidir.\n\nBu videoda anlattığım araçlar:\n\n• AnswerThePublic\n• AlsoAsked\n• Google “İnsanlar Bunları da Soruyor”\n• Reddit\n• Quora\n\nBu kaynaklardan nişinizdeki gerçek soruları bulup içerik üretirseniz yapay zekalar sizi kaynak olarak kullanabilir.\n\n📌 GEO, AEO, SEO ve AI Search hakkında daha fazla içerik için takip etmeyi unutma.\n\n💬 “VCT” yaz, kullandığım promptu ve AEO rehberini göndereyim.\n\n#AEO #GEO #ChatGPT #SEO #onurhuseyinkocak",
       "likes": 512,
       "comments": 616,
-      "views": 59563,
+      "views": 59568,
       "reach": 49752,
-      "saved": 1392,
+      "saved": 1393,
       "shares": 1318,
-      "totalInteractions": 3854,
+      "totalInteractions": 3855,
       "date": "2026-06-14"
     },
     {
@@ -158,12 +158,12 @@
       "alt": "Onur Koçak creator sample: GEO nedir?",
       "caption": "GEO nedir?\n\nSEO web siteni Google’a anlatır.\n\nGEO ise ürününü ChatGPT, Claude, Gemini ve Perplexity’ye anlatır.\n\nArtık insanlar Google’a değil, yapay zekâlara soru soruyor.\n\n“En iyi rüya analizi uygulaması nedir?”\n“Anksiyete için hangi uygulamayı kullanmalıyım?”\n“Vibe coding öğrenmek için hangi topluluk iyi?”\n\nEğer ürünün AI Search’e uygun değilse bu cevapların içinde asla yer alamazsın.\n\nSon birkaç haftadır kendi projelerimde GEO çalışmaları yapıyorum ve sonuçlar oldukça ilginç. Bazı sitelerimde trafiğin önemli bir kısmı doğrudan yapay zekâlardan gelmeye başladı.\n\nİyi haber şu:\n\nBu iş için onlarca saat harcamana gerek yok.\n\nClaude Code veya Codex’e vereceğin tek bir prompt ile sitene GEO entegrasyonu yaptırabilirsin.\n\nYorumlara “PROMPT” yaz.\n\nKullandığım GEO promptunu göndereyim.\n\nKaydet. Takip et. Gönderiyi AI ile ürün geliştiren bir arkadaşına gönder.\n\n#GEO #AISearch #GenerativeEngineOptimization #VibeCodingTurkey #AIMarketing",
       "likes": 617,
-      "comments": 3128,
-      "views": 42826,
+      "comments": 3130,
+      "views": 42829,
       "reach": 31735,
       "saved": 1948,
       "shares": 1057,
-      "totalInteractions": 6777,
+      "totalInteractions": 6779,
       "date": "2026-06-08"
     },
     {
