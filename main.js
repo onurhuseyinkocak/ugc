@@ -11,40 +11,29 @@
       "nav.work": "Work", "nav.tiktok": "TikTok", "nav.cases": "Case studies",
       "nav.about": "About", "nav.services": "Services", "nav.cta": "Send a brief",
 
-      "hero.kicker": "Tech-first UGC creator in Bangkok",
+      "hero.kicker": "Bangkok UGC creator for brands",
       "hero.h": "Make your product<br><em>easy to choose.</em>",
-      "hero.sub": "Tech-first UGC plus recurring Canvas UGC for products, apps, places and services, backed by our Bangkok creator network.",
+      "hero.sub": "Concept, script, filming and editing for apps, products, places and services. English and Turkish, backed by a Bangkok creator network.",
       "hero.cta1": "Send a brief <span class=\"arrow\">→</span>",
-      "hero.cta2": "Watch creator intro",
       "hero.chip1": "English &amp; Turkish content",
       "hero.chip2": "Bangkok, Thailand",
       "hero.chip3": "Brands worldwide",
       "hero.badge": "creator introduction",
       "hero.sound": "Play with sound",
+      "hero.deliverables": "Concept · Script · Shoot · Edit",
+      "hero.videoNote": "English creator introduction · Bangkok",
 
-      "stat.views": "Lifetime views across nine selected Reels · 16 Jul",
-      "stat.comments": "Comments on the top selected Instagram Reel · 16 Jul",
-      "stat.viral": "Instagram followers · live API count on 16 Jul",
+      "stat.eyebrow": "Verified owned-channel proof",
+      "stat.views": "Views on one verified Reel",
+      "stat.comments": "Comments on one verified Reel",
+      "stat.viral": "Saves on one verified Reel",
       "stat.lang": "Paid spend behind these owned-channel samples",
-      "stat.note": "Owned-channel proof with dates shown. Organic platform results, not client campaign ROAS.",
+      "stat.note": "Per-Reel Instagram results with a source date. No lifetime total, no invented client ROAS.",
 
       "work.kicker": "Creator samples",
       "work.h": "See the hook, pacing and delivery.",
-      "work.disclosure": "Latest three samples shown. Portfolio proof covers nine self-directed Reels; metrics captured via Instagram Graph API on 16 July.",
-      "work.langpill": "Current samples: Turkish",
-      "work.viral": "Owned channel",
-      "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / Tools", "work.tag.apps": "Apps / No-code", "work.tag.story": "Tech / Story",
-      "work.tag.lead": "Lead Gen / CTA", "work.tag.founder": "Founder / App", "work.tag.format": "Format Test",
-      "work.v7.t": "AI Search checklist that turns interest into comments", "work.v7.d": "15 Jul · 2,664 views · 53 comments · 30 saves · 36 shares",
-      "work.v8.t": "Founder-style product explanation", "work.v8.d": "29 Jun · 1,973 views · 6 comments · 9 saves · 7 shares",
-      "work.v9.t": "“Choose your side” visual hook", "work.v9.d": "23 Jun · 1,120 views · 9 saves · 11 shares",
-      "work.v4.t": "What GEO means for your product", "work.v4.d": "42,372 views · 3,101 comments · 1,922 saves",
-      "work.v6.t": "Not an SEO story, it is GEO", "work.v6.d": "A technical concept made concrete",
-      "work.v2.t": "Answer Engine Optimization, explained", "work.v2.d": "59,135 views · 1,381 saves · 1,315 shares",
-      "work.v3.t": "The viral AI video trend, for free", "work.v3.d": "Turning a trend into a how-to people save",
-      "work.v5.t": "Anyone can build an app now", "work.v5.d": "A product story told in under a minute",
-      "work.v1.t": "The 16-year-old who built an AI company", "work.v1.d": "Narrative hooks that hold attention",
-      "work.cta.t": "Your product, in motion.", "work.cta.d": "English or Turkish - let's plan your first batch.", "work.cta.b": "Start a project →",
+      "work.disclosure": "One active video at a time. Reels and per-video metrics sync from the official Instagram API.",
+      "work.langpill": "Current Reel language: Turkish",
 
       "tt.kicker": "On TikTok",
       "tt.h": "Built for the <em>For You</em> page.",
@@ -52,20 +41,16 @@
       "tt.follow": "Follow on TikTok <span class=\"arrow\">→</span>", "tt.collab": "Collaborate",
 
       "cases.kicker": "One content breakdown",
-      "cases.h": "How an abstract topic earned 3,101 comments.",
+      "cases.h": "How an abstract topic became a comment engine.",
       "cases.p": "This is an owned-channel example, included to show the creative thinking behind the result.",
       "case.problem": "Problem", "case.strategy": "Strategy", "case.outcome": "Outcome",
       "case.views": "Views", "case.comments": "Comments", "case.likes": "Likes", "case.spend": "Ad spend", "case.saves": "Saves", "case.shares": "Shares",
       "case1.h": "Make the unfamiliar feel immediately relevant.",
       "case1.problem": "“Generative Engine Optimization” is abstract and easy to scroll past. Most explanations sound like a lecture.",
       "case1.strategy": "Open with a sharp contrast hook (SEO vs. GEO), then make it personal: where does your product show up when people ask ChatGPT?",
-      "case1.outcome": "The reel reached 42,372 views, 3,101 comments and 1,922 saves by 16 July.",
-      "case2.h": "59K views on a topic most people haven't heard of.",
-      "case2.problem": "Answer Engine Optimization is a niche, jargon-heavy subject with near-zero search demand yet.",
-      "case2.strategy": "Lead with the behaviour shift people already feel - “you ask ChatGPT instead of Google now” - then land the term on top of it.",
-      "case2.outcome": "59,135 views, 1,381 saves and 1,315 shares with no ad spend - strong evidence that a clear explainer can make a niche topic worth keeping and sharing.",
+      "case1.outcome": "Strong view depth, thousands of comments and saves, with no paid distribution behind the sample.",
 
-      "about.kicker": "About", "about.role": "UGC creator for technical products",
+      "about.kicker": "About", "about.role": "Tech-first lead creator · Bangkok",
       "about.h": "You will not need to teach me what your product does.",
       "about.big": "I build software and explain AI products for a living. I can turn a feature list into a useful story without flattening the product or overpromising.",
       "about.p1": "Most UGC stops at “nice clip.” I start from the business question - who's the buyer, what's the objection, what makes them stop scrolling - and design the content backwards from there. Hooks, pacing, on-screen copy and calls to action are all deliberate, because attention without conversion is just noise.",
@@ -78,10 +63,10 @@
       "svc.kicker": "What I deliver",
       "svc.h": "A complete video, not just footage.",
       "svc.p": "Every engagement is scoped around the platform, audience, usage and result you need.",
-      "svc1.t": "Angles and hooks", "svc1.d": "Audience, objection and platform translated into a clear creative direction before filming.",
-      "svc2.t": "Script and shot plan", "svc2.d": "A concise script, screen recordings, B-roll plan and call to action built around one job.",
-      "svc3.t": "On-camera delivery", "svc3.d": "Natural creator delivery in English or Turkish, filmed vertically for the target platform.",
-      "svc4.t": "Edit and handoff", "svc4.d": "Captions, pacing, platform-ready exports and agreed raw files or hook variations.",
+      "svc1.t": "Angles, hooks and scripts", "svc1.d": "Audience, objection and platform turned into concepts, a concise script and a practical shot plan.",
+      "svc2.t": "Shoot, edit and handoff", "svc2.d": "Natural on-camera delivery, B-roll, captions, pacing and platform-ready vertical exports.",
+      "svc3.t": "Apps, products and Canvas UGC", "svc3.d": "One-off demos or recurring brand-account content for mobile apps, SaaS, consumer products and services.",
+      "svc4.t": "Travel, lifestyle and venues", "svc4.d": "Hotels, cafés, restaurants and travel experiences routed to the strongest creator and setting in our Bangkok network.",
       "svc5.t": "Travel Content", "svc5.d": "Cinematic, on-location storytelling from Bangkok and beyond for travel and lifestyle brands.",
       "svc6.t": "Short-Form Ads", "svc6.d": "Paid-ready creatives built for hooks, retention and conversion across TikTok, Reels and Shorts.",
       "svc7.t": "Creative Strategy", "svc7.d": "Hook angles, content pillars and a posting plan - so every video has a job, not just a view count.",
@@ -112,7 +97,7 @@
       "form.msg": "Brief", "form.msg.ph": "Deliverables, deadline, target audience, language and usage rights.",
       "form.send": "Send a brief <span class=\"arrow\">→</span>",
       "form.sending": "Sending…", "form.ok": "Thanks - got it. I'll reply within 24 hours.", "form.err": "Add a valid email, product URL and product type, then try again.",
-      "form.fallback": "Automatic delivery is temporarily unavailable. Your completed brief is ready as an email draft:", "form.fallback.cta": "Open email",
+      "form.fallback": "Your brief is ready in a prefilled email:", "form.fallback.cta": "Review and send",
 
       "pkg.kicker": "Ways to start",
       "pkg.h": "Start with a paid pilot. Scale what works.",
@@ -167,40 +152,29 @@
       "nav.work": "İşler", "nav.tiktok": "TikTok", "nav.cases": "Vaka analizleri",
       "nav.about": "Hakkımda", "nav.services": "Hizmetler", "nav.cta": "Brief gönder",
 
-      "hero.kicker": "Bangkok'ta tech-first UGC üreticisi",
+      "hero.kicker": "Bangkok'ta markalar için UGC üreticisi",
       "hero.h": "Ürününü<br><em>seçmesi kolay hâle getir.</em>",
-      "hero.sub": "Tech-first UGC'nin yanında ürün, uygulama, mekân ve hizmetler için düzenli Canvas UGC; Bangkok üretici ağımızla tek brief'ten.",
+      "hero.sub": "Uygulama, ürün, mekân ve hizmetler için konsept, senaryo, çekim ve kurgu. İngilizce ve Türkçe, Bangkok üretici ağımızla.",
       "hero.cta1": "Brief gönder <span class=\"arrow\">→</span>",
-      "hero.cta2": "Üretici tanıtımını izle",
       "hero.chip1": "İngilizce &amp; Türkçe içerik",
       "hero.chip2": "Bangkok, Tayland",
       "hero.chip3": "Dünya geneli markalar",
       "hero.badge": "üretici tanıtımı",
       "hero.sound": "Sesi aç",
+      "hero.deliverables": "Konsept · Senaryo · Çekim · Kurgu",
+      "hero.videoNote": "İngilizce üretici tanıtımı · Bangkok",
 
-      "stat.views": "Seçili dokuz Reels videosunda toplam izlenme · 16 Temmuz",
-      "stat.comments": "En güçlü seçili Instagram Reels yorum sayısı · 16 Temmuz",
-      "stat.viral": "Instagram takipçisi · 16 Temmuz canlı API sayımı",
+      "stat.eyebrow": "Doğrulanmış kişisel kanal kanıtı",
+      "stat.views": "Tek bir doğrulanmış Reels izlenmesi",
+      "stat.comments": "Tek bir doğrulanmış Reels yorumu",
+      "stat.viral": "Tek bir doğrulanmış Reels kaydı",
       "stat.lang": "Bu kişisel kanal örneklerinin reklam harcaması",
-      "stat.note": "Tarihleri belirtilmiş kişisel kanal kanıtı. Organik platform sonuçlarıdır; müşteri ROAS verisi değildir.",
+      "stat.note": "Kaynak tarihi belirtilmiş tekil Reels sonuçları. Lifetime toplamı veya uydurma müşteri ROAS verisi yok.",
 
       "work.kicker": "İçerik örnekleri",
       "work.h": "Kancayı, ritmi ve sunumu gör.",
-      "work.disclosure": "En yeni üç örnek gösteriliyor. Portfolyo kanıtı kendi kanalımda ürettiğim dokuz Reels'i kapsıyor; metrikler 16 Temmuz'da Instagram Graph API'den alındı.",
-      "work.langpill": "Mevcut örnekler: Türkçe",
-      "work.viral": "Kişisel kanal",
-      "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / Araçlar", "work.tag.apps": "Uygulama / No-code", "work.tag.story": "Tech / Hikâye",
-      "work.tag.lead": "Lead / CTA", "work.tag.founder": "Founder / Uygulama", "work.tag.format": "Format Testi",
-      "work.v7.t": "İlgiyi yoruma çeviren AI Search kontrol listesi", "work.v7.d": "15 Tem · 2.664 izlenme · 53 yorum · 30 kayıt · 36 paylaşım",
-      "work.v8.t": "Founder tarzı ürün anlatımı", "work.v8.d": "29 Haz · 1.973 izlenme · 6 yorum · 9 kayıt · 7 paylaşım",
-      "work.v9.t": "“Tarafını seç” görsel kancası", "work.v9.d": "23 Haz · 1.120 izlenme · 9 kayıt · 11 paylaşım",
-      "work.v4.t": "GEO senin ürünün için ne anlama geliyor", "work.v4.d": "42.372 izlenme · 3.101 yorum · 1.922 kayıt",
-      "work.v6.t": "Aslında bir SEO hikâyesi değil", "work.v6.d": "Teknik bir kavramı somutlaştırmak",
-      "work.v2.t": "Answer Engine Optimization, sade anlatımla", "work.v2.d": "59.135 izlenme · 1.381 kayıt · 1.315 paylaşım",
-      "work.v3.t": "Viral AI video trendi, ücretsiz", "work.v3.d": "Bir trendi, insanların kaydettiği bir rehbere çevirmek",
-      "work.v5.t": "Artık herkes uygulama yapabilir", "work.v5.d": "Bir dakikadan kısa bir ürün hikâyesi",
-      "work.v1.t": "16 yaşında AI şirketi kuran çocuk", "work.v1.d": "Dikkati tutan anlatı kancaları",
-      "work.cta.t": "Ürünün, hareket halinde.", "work.cta.d": "İngilizce ya da Türkçe - ilk seti birlikte planlayalım.", "work.cta.b": "Projeye başla →",
+      "work.disclosure": "Aynı anda tek video oynar. Reels videoları ve tekil metrikleri resmi Instagram API'sinden senkronlanır.",
+      "work.langpill": "Mevcut Reels dili: Türkçe",
 
       "tt.kicker": "TikTok'ta",
       "tt.h": "<em>Keşfet</em> sayfası için tasarlandı.",
@@ -208,20 +182,16 @@
       "tt.follow": "TikTok'ta takip et <span class=\"arrow\">→</span>", "tt.collab": "İş birliği yap",
 
       "cases.kicker": "Bir içerik analizi",
-      "cases.h": "Soyut bir konu nasıl 3.101 yorum aldı?",
+      "cases.h": "Soyut bir konu nasıl yorum motoruna dönüştü?",
       "cases.p": "Bu kişisel kanal örneği, sonucun arkasındaki yaratıcı düşünceyi göstermek için paylaşılıyor.",
       "case.problem": "Problem", "case.strategy": "Strateji", "case.outcome": "Sonuç",
       "case.views": "İzlenme", "case.comments": "Yorum", "case.likes": "Beğeni", "case.spend": "Reklam harcaması", "case.saves": "Kayıt", "case.shares": "Paylaşım",
       "case1.h": "Yabancı bir kavramı hemen alakalı hissettirmek.",
       "case1.problem": "”Generative Engine Optimization” soyut ve kolayca atlanan bir konu. Çoğu anlatım ders gibi geliyor.",
       "case1.strategy": "Keskin bir karşıtlık kancasıyla aç (SEO vs. GEO), sonra kişiselleştir: insanlar ChatGPT'ye sorduğunda senin ürünün nerede çıkıyor?",
-      "case1.outcome": "Reels 16 Temmuz itibarıyla 42.372 izlenme, 3.101 yorum ve 1.922 kayda ulaştı.",
-      "case2.h": "Çoğu kişinin duymadığı bir konuda 59B izlenme.",
-      "case2.problem": "Answer Engine Optimization, henüz neredeyse hiç arama hacmi olmayan, jargon yüklü niş bir konu.",
-      "case2.strategy": "İnsanların zaten hissettiği davranış değişimiyle başla - “artık Google yerine ChatGPT'ye soruyorsun” - terimi de bunun üzerine otur.",
-      "case2.outcome": "Sıfır reklam harcamasıyla 59.135 izlenme, 1.381 kayıt ve 1.315 paylaşım; net bir anlatımın niş bir konuyu saklanmaya ve paylaşılmaya değer hâle getirdiğini gösterdi.",
+      "case1.outcome": "Güçlü izlenme derinliği, binlerce yorum ve kayıt; örneğin arkasında reklam harcaması yok.",
 
-      "about.kicker": "Hakkımda", "about.role": "Teknik ürünler için UGC üreticisi",
+      "about.kicker": "Hakkımda", "about.role": "Tech-first ana üretici · Bangkok",
       "about.h": "Ürününün ne yaptığını bana öğretmek zorunda kalmayacaksın.",
       "about.big": "Yazılım geliştiriyor ve AI ürünlerini anlatıyorum. Bir özellik listesini, ürünü basitleştirmeden veya abartmadan işe yarayan bir hikâyeye çevirebilirim.",
       "about.p1": "Çoğu UGC “güzel klip” seviyesinde kalır. Ben iş sorusundan başlarım - alıcı kim, itirazı ne, onu durduran şey ne - ve içeriği oradan geriye doğru kurgularım. Kanca, ritim, ekran yazıları ve harekete geçirici mesajlar bilinçli seçimlerdir; çünkü dönüşüm getirmeyen ilgi sadece gürültüdür.",
@@ -234,10 +204,10 @@
       "svc.kicker": "Teslimatlar",
       "svc.h": "Sadece görüntü değil, tamamlanmış bir video.",
       "svc.p": "Her iş; platform, kitle, kullanım hakkı ve hedeflenen sonuca göre kapsamlandırılır.",
-      "svc1.t": "Açı ve kancalar", "svc1.d": "Kitle, itiraz ve platform çekimden önce net bir yaratıcı yöne dönüştürülür.",
-      "svc2.t": "Senaryo ve çekim planı", "svc2.d": "Tek bir hedefe göre kısa senaryo, ekran kaydı, B-roll planı ve harekete geçirici mesaj.",
-      "svc3.t": "Kamera önü sunum", "svc3.d": "Hedef platform için dikey çekilmiş, İngilizce veya Türkçe doğal üretici sunumu.",
-      "svc4.t": "Kurgu ve teslim", "svc4.d": "Altyazı, ritim, platforma hazır çıktılar ve anlaşılan ham dosya veya kanca varyasyonları.",
+      "svc1.t": "Açılar, kancalar ve senaryo", "svc1.d": "Kitle, itiraz ve platform; konsepte, kısa senaryoya ve uygulanabilir çekim planına dönüşür.",
+      "svc2.t": "Çekim, kurgu ve teslim", "svc2.d": "Doğal kamera önü sunum, B-roll, altyazı, ritim ve platforma hazır dikey çıktılar.",
+      "svc3.t": "Uygulama, ürün ve Canvas UGC", "svc3.d": "Mobil uygulama, SaaS, tüketici ürünü ve hizmetler için tek seferlik demo veya düzenli marka hesabı içeriği.",
+      "svc4.t": "Travel, lifestyle ve mekân", "svc4.d": "Otel, kafe, restoran ve seyahat deneyimleri Bangkok ağımızdaki en doğru üretici ve mekâna yönlendirilir.",
       "svc5.t": "Seyahat İçeriği", "svc5.d": "Seyahat ve yaşam tarzı markaları için Bangkok'tan ve ötesinden sinematik, mekânında anlatım.",
       "svc6.t": "Kısa Reklam Videoları", "svc6.d": "TikTok, Reels ve Shorts için kanca, izlenme süresi ve dönüşüme göre kurgulanmış reklama hazır içerik.",
       "svc7.t": "Yaratıcı Strateji", "svc7.d": "Kanca açıları, içerik sütunları ve paylaşım planı - böylece her video bir iş yapar, sadece izlenme toplamaz.",
@@ -268,7 +238,7 @@
       "form.msg": "Brief", "form.msg.ph": "Teslimatlar, tarih, hedef kitle, dil ve kullanım hakları.",
       "form.send": "Brief gönder <span class=\"arrow\">→</span>",
       "form.sending": "Gönderiliyor…", "form.ok": "Teşekkürler - aldım. 24 saat içinde döneceğim.", "form.err": "Geçerli e-posta, ürün linki ve ürün tipini ekleyip tekrar dene.",
-      "form.fallback": "Otomatik gönderim geçici olarak kapalı. Doldurduğun brief e-posta taslağı olarak hazır:", "form.fallback.cta": "E-postayı aç",
+      "form.fallback": "Briefin önceden doldurulmuş e-postada hazır:", "form.fallback.cta": "Kontrol et ve gönder",
 
       "pkg.kicker": "Başlangıç seçenekleri",
       "pkg.h": "Ücretli pilotla başla. İşe yarayanı büyüt.",
@@ -323,40 +293,29 @@
       "nav.work": "ผลงาน", "nav.tiktok": "TikTok", "nav.cases": "กรณีศึกษา",
       "nav.about": "เกี่ยวกับ", "nav.services": "บริการ", "nav.cta": "จองการปรึกษา",
 
-      "hero.kicker": "ครีเอเตอร์ UGC สายเทคในกรุงเทพฯ",
+      "hero.kicker": "ครีเอเตอร์ UGC สำหรับแบรนด์ในกรุงเทพฯ",
       "hero.h": "ทำให้ผลิตภัณฑ์ของคุณ<br><em>เข้าใจง่ายและน่าเลือก</em>",
-      "hero.sub": "UGC สายเทค พร้อม Canvas UGC ต่อเนื่องสำหรับสินค้า แอป สถานที่ และบริการ โดยเครือข่ายครีเอเตอร์ในกรุงเทพฯ",
+      "hero.sub": "คอนเซปต์ สคริปต์ ถ่ายทำ และตัดต่อสำหรับแอป สินค้า สถานที่ และบริการ พร้อมเครือข่ายครีเอเตอร์ในกรุงเทพฯ",
       "hero.cta1": "เริ่มการทำงานร่วมกัน <span class=\"arrow\">→</span>",
-      "hero.cta2": "ดูวิดีโอแนะนำตัว",
       "hero.chip1": "เนื้อหาภาษาอังกฤษ &amp; ไทย",
       "hero.chip2": "Bangkok, ประเทศไทย",
       "hero.chip3": "แบรนด์ทั่วโลก",
       "hero.badge": "วิดีโอแนะนำครีเอเตอร์",
       "hero.sound": "เปิดเสียง",
+      "hero.deliverables": "คอนเซปต์ · สคริปต์ · ถ่ายทำ · ตัดต่อ",
+      "hero.videoNote": "วิดีโอแนะนำครีเอเตอร์ภาษาอังกฤษ · กรุงเทพฯ",
 
-      "stat.views": "ยอดวิวรวมจาก Reels ที่เลือก 9 คลิป · 16 ก.ค.",
-      "stat.comments": "คอมเมนต์บน Instagram Reel ที่ทำผลงานดีที่สุด · 16 ก.ค.",
-      "stat.viral": "ผู้ติดตาม Instagram · ตัวเลขสดจาก API วันที่ 16 ก.ค.",
+      "stat.eyebrow": "ผลงานจากช่องที่ตรวจสอบแล้ว",
+      "stat.views": "ยอดวิวของ Reel ที่ตรวจสอบแล้วหนึ่งคลิป",
+      "stat.comments": "คอมเมนต์ของ Reel ที่ตรวจสอบแล้วหนึ่งคลิป",
+      "stat.viral": "ยอดบันทึกของ Reel ที่ตรวจสอบแล้วหนึ่งคลิป",
       "stat.lang": "งบโฆษณาสำหรับตัวอย่างในช่องของเรา",
-      "stat.note": "หลักฐานจากช่องของเราเองพร้อมวันที่ เป็นผลลัพธ์แบบออร์แกนิก ไม่ใช่ ROAS ของลูกค้า",
+      "stat.note": "ผลลัพธ์ราย Reel พร้อมวันที่จากแหล่งข้อมูล ไม่มีการอ้างยอดรวมตลอดอายุหรือ ROAS ลูกค้าที่แต่งขึ้น",
 
       "work.kicker": "ตัวอย่างผลงานครีเอเตอร์",
       "work.h": "ดูฮุก จังหวะ และการนำเสนอ",
-      "work.disclosure": "แสดง 3 คลิปล่าสุด หลักฐานรวม Reels จากช่องของเราเอง 9 คลิป โดยดึงตัวเลขจาก Instagram Graph API วันที่ 16 ก.ค.",
-      "work.langpill": "ตัวอย่างปัจจุบัน: ภาษาตุรกี",
-      "work.viral": "ช่องของเราเอง",
-      "work.tag.ai": "AI / GEO", "work.tag.tech": "AI / เครื่องมือ", "work.tag.apps": "แอป / No-code", "work.tag.story": "เทค / เรื่องราว",
-      "work.tag.lead": "Lead / CTA", "work.tag.founder": "Founder / แอป", "work.tag.format": "ทดสอบฟอร์แมต",
-      "work.v7.t": "เช็กลิสต์ AI Search ที่เปลี่ยนความสนใจเป็นคอมเมนต์", "work.v7.d": "15 ก.ค. · 2,664 วิว · 53 คอมเมนต์ · 30 บันทึก · 36 แชร์",
-      "work.v8.t": "การอธิบายผลิตภัณฑ์สไตล์ผู้ก่อตั้ง", "work.v8.d": "29 มิ.ย. · 1,973 วิว · 6 คอมเมนต์ · 9 บันทึก · 7 แชร์",
-      "work.v9.t": "ฮุกภาพ “เลือกฝั่งของคุณ”", "work.v9.d": "23 มิ.ย. · 1,120 วิว · 9 บันทึก · 11 แชร์",
-      "work.v4.t": "GEO หมายถึงอะไรสำหรับผลิตภัณฑ์ของคุณ", "work.v4.d": "42,372 วิว · 3,101 คอมเมนต์ · 1,922 บันทึก",
-      "work.v6.t": "ไม่ใช่เรื่องราว SEO - มันคือ GEO", "work.v6.d": "3,146 มิวจัดต์วิว - ตัวอย่างสั้น ๆ ของเหตุผลที่ GEO มีความสำคัญ",
-      "work.v2.t": "อธิบาย Answer Engine Optimization ให้เข้าใจง่าย", "work.v2.d": "59,135 วิว · 1,381 บันทึก · 1,315 แชร์",
-      "work.v3.t": "เทรนด์วิดีโอ AI ไวรัล ฟรี", "work.v3.d": "เปลี่ยนเทรนด์เป็นคู่มือที่ผู้คนบันทึก",
-      "work.v5.t": "ตอนนี้ทุกคนสร้างแอปได้", "work.v5.d": "เรื่องราวผลิตภัณฑ์ในเวลาน้อยกว่าหนึ่งนาที",
-      "work.v1.t": "เด็ก 16 ปีที่สร้างบริษัท AI", "work.v1.d": "ตัวเบ็ดความสนใจที่ยึดจับได้",
-      "work.cta.t": "ผลิตภัณฑ์ของคุณ ในการเคลื่อนไหว", "work.cta.d": "ภาษาอังกฤษหรือไทย - ลองวางแผนชุดแรกของคุณด้วยกัน", "work.cta.b": "เริ่มโครงการ →",
+      "work.disclosure": "เล่นครั้งละหนึ่งวิดีโอ Reels และตัวเลขรายคลิปซิงก์จาก Instagram API อย่างเป็นทางการ",
+      "work.langpill": "ภาษา Reel ปัจจุบัน: ตุรกี",
 
       "tt.kicker": "บน TikTok",
       "tt.h": "สร้างสรรค์สำหรับหน้า <em>For You</em>",
@@ -364,20 +323,16 @@
       "tt.follow": "ติดตามบน TikTok <span class=\"arrow\">→</span>", "tt.collab": "ร่วมมือ",
 
       "cases.kicker": "กรณีศึกษา",
-      "cases.h": "หัวข้อนามธรรมสร้าง 3,101 คอมเมนต์ได้อย่างไร",
+      "cases.h": "หัวข้อนามธรรมกลายเป็นเครื่องสร้างคอมเมนต์ได้อย่างไร",
       "cases.p": "ตัวอย่างจากช่องของเราเอง เพื่อแสดงแนวคิดสร้างสรรค์ที่อยู่เบื้องหลังผลลัพธ์",
       "case.problem": "ปัญหา", "case.strategy": "กลยุทธ์", "case.outcome": "ผลลัพธ์",
       "case.views": "วิว", "case.comments": "คอมเมนต์", "case.likes": "ไลก์", "case.spend": "งบโฆษณา", "case.saves": "บันทึก", "case.shares": "แชร์",
       "case1.h": "ทำให้ช่องทางการได้มาใหม่รู้สึกชัดเจน",
       "case1.problem": "”Generative Engine Optimization” เป็นหัวข้อนามธรรมและเพิ่มเติมเข้าไปได้อย่างง่ายดาย คำอธิบายส่วนใหญ่ฟังเหมือนการบรรยาย",
       "case1.strategy": "เปิดด้วยตัวเบ็ดความเปรียบเทียบแหลม (SEO vs. GEO) แล้วทำให้เป็นส่วนตัว: ผลิตภัณฑ์ของคุณปรากฏตัวที่ไหนเมื่อผู้คนถาม ChatGPT?",
-      "case1.outcome": "ภายในวันที่ 16 ก.ค. Reel นี้มี 42,372 วิว 3,101 คอมเมนต์ และ 1,922 บันทึก",
-      "case2.h": "59K วิวในหัวข้อที่คนส่วนใหญ่ยังไม่เคยได้ยิน",
-      "case2.problem": "Answer Engine Optimization เป็นหัวข้อเฉพาะที่ยุ่งเหยิงด้วยศัพท์เทคนิคและมีความต้องการการค้นหาเกือบศูนย์ในขณะนี้",
-      "case2.strategy": "เริ่มต้นด้วยการเปลี่ยนแปลงพฤติกรรมที่ผู้คนรู้สึกอยู่แล้ว - ”คุณเลยถามไปที่ ChatGPT มากกว่า Google” - จากนั้นวางศัพท์ด้านบน",
-      "case2.outcome": "59,135 วิว 1,381 บันทึก และ 1,315 แชร์โดยไม่มีงบโฆษณา แสดงให้เห็นว่าคำอธิบายที่ชัดเจนทำให้หัวข้อเฉพาะทางน่าบันทึกและแชร์ได้",
+      "case1.outcome": "ยอดดูมีคุณภาพ คอมเมนต์และการบันทึกหลายพัน โดยไม่มีงบโฆษณาสำหรับตัวอย่างนี้",
 
-      "about.kicker": "เกี่ยวกับ", "about.role": "สร้างสรรค์เนื้อหา AI &amp; UGC · Bangkok",
+      "about.kicker": "เกี่ยวกับ", "about.role": "ครีเอเตอร์หลักสายเทค · กรุงเทพฯ",
       "about.h": "สร้างสรรค์เนื้อหาที่เข้าใจผลิตภัณฑ์ที่ถ่ายทำ",
       "about.big": "ฉันคือ Onur - สร้างสรรค์เนื้อหาจาก Bangkok ทำงานกับแบรนด์ AI และเทคโนโลยีทั่วโลก ก่อนกล้องตัวอย่าง ฉันเขียนโปรแกรมและศึกษาวิธีการที่ผู้คนค้นพบผลิตภัณฑ์ออนไลน์ ความแตกต่างอยู่ที่นี่: ฉันไม่ได้สร้างเพียงวิดีโอที่ดูดี ฉันสร้างวิดีโอที่เคลื่อนไหวเมตริกส์ที่คุณสนใจ",
       "about.p1": "UGC ส่วนใหญ่หยุดอยู่ที่ 'คลิปที่ดี' ฉันเริ่มจากคำถามทางธุรกิจ - ผู้ซื้อคือใคร คำคัดค้านคือ อะไรที่ทำให้พวกเขาหยุดสแกน - และออกแบบเนื้อหาย้อนกลับจากที่นั่น ตัวเบ็ด, จังหวะ, สำเนาบนหน้าจอ และการเรียกอำเภออย่างมีจริยธรรม ความสนใจที่ไม่นำไปสู่การแปลงคือเพียงสัญญาณรบกวน",
@@ -390,10 +345,10 @@
       "svc.kicker": "บริการ",
       "svc.h": "ทุกสิ่งที่คุณต้องการเพื่อปรากฏตัวและแปลง",
       "svc.p": "เลือกวิดีโอเดียว หรือเครื่องยนต์เนื้อหาที่สมบูรณ์ ทั้งหมดสามารถผลิตเป็นภาษาอังกฤษ ไทย หรือทั้งสองอย่าง",
-      "svc1.t": "วิดีโอ UGC", "svc1.d": "เนื้อหาแท้ที่สนทนากับกล้อง - รู้สึกเหมือนคำแนะนำจากเพื่อน ไม่ใช่โฆษณา",
-      "svc2.t": "เนื้อหา TikTok", "svc2.d": "ปกติวิดีโอสั้นที่ออกแบบสำหรับหน้า For You - ตัวเบ็ดที่แข็งแกร่ง จังหวะแน่นตัน เวลาชมชอบสูง",
-      "svc3.t": "เนื้อหาผลิตภัณฑ์ AI", "svc3.d": "อธิบายผลิตภัณฑ์ AI ที่ซับซ้อนอย่างชัดเจน แสดงค่าที่แท้จริงในเวลาไม่กี่วินาที ความชำนาญของฉัน",
-      "svc4.t": "เนื้อหาผลิตภัณฑ์ SaaS", "svc4.d": "ทัวร์คุณสมบัติ เดโมกรณีการใช้งาน และเรื่องราวผู้ก่อตั้งที่เปลี่ยนการทดลองเป็นผู้ใช้ที่ต้องจ่าย",
+      "svc1.t": "มุม คำเปิด และสคริปต์", "svc1.d": "เปลี่ยนกลุ่มเป้าหมาย ข้อกังวล และแพลตฟอร์มให้เป็นคอนเซปต์ สคริปต์สั้น และแผนถ่ายทำที่ใช้ได้จริง",
+      "svc2.t": "ถ่ายทำ ตัดต่อ และส่งมอบ", "svc2.d": "การนำเสนอหน้ากล้องอย่างเป็นธรรมชาติ B-roll ซับ จังหวะ และไฟล์แนวตั้งพร้อมลงแพลตฟอร์ม",
+      "svc3.t": "แอป สินค้า และ Canvas UGC", "svc3.d": "เดโมครั้งเดียวหรือคอนเทนต์ต่อเนื่องสำหรับบัญชีแบรนด์ ทั้งแอปมือถือ SaaS สินค้า และบริการ",
+      "svc4.t": "ท่องเที่ยว ไลฟ์สไตล์ และสถานที่", "svc4.d": "โรงแรม คาเฟ่ ร้านอาหาร และประสบการณ์ท่องเที่ยว เลือกครีเอเตอร์และโลเคชันที่เหมาะที่สุดจากเครือข่ายกรุงเทพฯ",
       "svc5.t": "เนื้อหาการท่องเที่ยว", "svc5.d": "การเล่าเรื่องภาพยนตร์ในสถานที่ - สำหรับแบรนด์การท่องเที่ยวและไลฟ์สไตล์ จาก Bangkok และไกลออกไป",
       "svc6.t": "โฆษณาวิดีโอสั้น", "svc6.d": "สร้างสรรค์ที่พร้อมจ่ายแล้ว - สร้างขึ้นสำหรับตัวเบ็ด เวลาชมชอบ และการแปลงทั่วทั้ง TikTok, Reels และ Shorts",
       "svc7.t": "กลยุทธ์สร้างสรรค์", "svc7.d": "มุมตัวเบ็ด เสาเนื้อหา และแผนการโพสต์ - ดังนั้นวิดีโอทุกชุดมีการทำงาน ไม่ใช่แค่นับมิวจัดต์วิว",
@@ -423,7 +378,7 @@
       "form.msg": "บอกฉันเกี่ยวกับ", "form.msg.ph": "คุณกำลังสร้างอะไร และคุณต้องภาษาใด - อังกฤษ ไทย หรือทั้งสองอย่าง?",
       "form.send": "ส่งการสอบถาม <span class=\"arrow\">→</span>",
       "form.sending": "กำลังส่ง…", "form.ok": "ขอบคุณ - ฉันได้รับแล้ว ฉันจะตอบกลับภายใน 24 ชั่วโมง", "form.err": "เพิ่มอีเมลและประเภทผลิตภัณฑ์ แล้วลองอีกครั้ง",
-      "form.fallback": "ระบบส่งอัตโนมัติไม่พร้อมใช้งานชั่วคราว บรีฟของคุณถูกเตรียมเป็นอีเมลแล้ว:", "form.fallback.cta": "เปิดอีเมล",
+      "form.fallback": "บรีฟของคุณพร้อมแล้วในอีเมลที่กรอกไว้ล่วงหน้า:", "form.fallback.cta": "ตรวจสอบและส่ง",
 
       "pkg.kicker": "แพ็กเกจ",
       "pkg.h": "เลือกจุดเริ่มต้น ปรับขนาดจากที่นั่น",
@@ -507,6 +462,7 @@
       b.classList.toggle("active", b.getAttribute("data-lang") === lang);
     });
     window.__lang = lang;
+    window.dispatchEvent(new CustomEvent("ugc:language", { detail: { lang: lang } }));
   }
 
   // Use English as the acquisition default. A location-based language swap
@@ -561,6 +517,292 @@
     }
   }
 
+  /* ---------------- managed portfolio media ---------------- */
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function pauseManagedVideos(except) {
+    document.querySelectorAll("video").forEach(function (video) {
+      if (video !== except && !video.paused) video.pause();
+    });
+  }
+
+  var REEL_UI = {
+    en: {
+      views: "Views", comments: "Comments", saves: "Saves", shares: "Shares",
+      previous: "Previous", next: "Next", pause: "Pause", play: "Play",
+      sound: "Play with sound", mute: "Mute", original: "View original Reel",
+      source: "Instagram Insights", choose: "Show Reel",
+      excerpt: "Watch the opening seconds, on-camera delivery, pacing, on-screen copy and call to action."
+    },
+    tr: {
+      views: "İzlenme", comments: "Yorum", saves: "Kayıt", shares: "Paylaşım",
+      previous: "Önceki", next: "Sonraki", pause: "Duraklat", play: "Oynat",
+      sound: "Sesi aç", mute: "Sesi kapat", original: "Orijinal Reels'i aç",
+      source: "Instagram Insights", choose: "Reels'i göster",
+      excerpt: "İlk saniyelerdeki kancayı, kamera önü sunumu, ritmi, ekran yazılarını ve CTA'yı incele."
+    },
+    th: {
+      views: "ยอดวิว", comments: "คอมเมนต์", saves: "บันทึก", shares: "แชร์",
+      previous: "ก่อนหน้า", next: "ถัดไป", pause: "หยุดชั่วคราว", play: "เล่น",
+      sound: "เปิดเสียง", mute: "ปิดเสียง", original: "ดู Reel ต้นฉบับ",
+      source: "Instagram Insights", choose: "แสดง Reel",
+      excerpt: "ดูคำเปิดช่วงแรก การนำเสนอหน้ากล้อง จังหวะ ข้อความบนจอ และคำกระตุ้นการตัดสินใจ"
+    }
+  };
+
+  function reelCopy() {
+    return REEL_UI[window.__lang] || REEL_UI.en;
+  }
+
+  function numberLocale() {
+    return window.__lang === "tr" ? "tr-TR" : window.__lang === "th" ? "th-TH" : "en-US";
+  }
+
+  function formatNumber(value) {
+    return new Intl.NumberFormat(numberLocale()).format(Number(value) || 0);
+  }
+
+  function formatMetric(value) {
+    return value === null || value === undefined ? "N/A" : formatNumber(value);
+  }
+
+  function formatSnapshot(value) {
+    var date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return new Intl.DateTimeFormat(numberLocale(), { day: "numeric", month: "short", year: "numeric" }).format(date);
+  }
+
+  var carousel = document.querySelector("[data-reel-carousel]");
+  var reelVideo = carousel && carousel.querySelector("[data-reel-video]");
+  var reelSound = carousel && carousel.querySelector("[data-reel-sound]");
+  var reelStrip = carousel && carousel.querySelector("[data-reel-strip]");
+  var reelItems = [];
+  var reelIndex = 0;
+  var reelInView = false;
+  var reelUserPaused = false;
+  var snapshotAt = "2026-07-17T00:00:00.000Z";
+
+  function setReelText(selector, text) {
+    var element = carousel && carousel.querySelector(selector);
+    if (element) element.textContent = text;
+  }
+
+  function updateReelControls() {
+    if (!carousel || !reelVideo) return;
+    var copy = reelCopy();
+    var previous = carousel.querySelector("[data-reel-prev]");
+    var next = carousel.querySelector("[data-reel-next]");
+    var toggle = carousel.querySelector("[data-reel-toggle]");
+    var original = carousel.querySelector("[data-reel-link]");
+    var labels = carousel.querySelectorAll(".reel-metrics dt");
+    if (previous) previous.innerHTML = "← <span>" + copy.previous + "</span>";
+    if (next) next.innerHTML = "<span>" + copy.next + "</span> →";
+    if (toggle) {
+      toggle.textContent = reelVideo.paused ? copy.play : copy.pause;
+      toggle.setAttribute("aria-label", (reelVideo.paused ? copy.play : copy.pause) + " current Reel");
+    }
+    if (reelSound) reelSound.textContent = reelVideo.muted ? copy.sound : copy.mute;
+    if (original) original.innerHTML = copy.original + ' <span aria-hidden="true">↗</span>';
+    [copy.views, copy.comments, copy.saves, copy.shares].forEach(function (label, index) {
+      if (labels[index]) labels[index].textContent = label;
+    });
+    setReelText("[data-reel-excerpt]", copy.excerpt);
+    setReelText("[data-reel-source]", copy.source + " · " + formatSnapshot(snapshotAt));
+  }
+
+  function renderReel(index, requestPlay) {
+    if (!carousel || !reelVideo || !reelItems.length) return;
+    reelIndex = (index + reelItems.length) % reelItems.length;
+    var item = reelItems[reelIndex];
+    reelVideo.pause();
+    reelVideo.muted = true;
+    reelVideo.poster = item.thumb;
+    if (reelVideo.getAttribute("src") !== item.video) {
+      reelVideo.setAttribute("src", item.video);
+      reelVideo.load();
+    }
+    reelVideo.setAttribute("aria-label", item.title);
+    setReelText("[data-reel-position]", String(reelIndex + 1).padStart(2, "0") + " / " + String(reelItems.length).padStart(2, "0"));
+    setReelText("[data-reel-title]", item.title);
+    setReelText("[data-reel-views]", formatMetric(item.views));
+    setReelText("[data-reel-comments]", formatMetric(item.comments));
+    setReelText("[data-reel-saves]", formatMetric(item.saved));
+    setReelText("[data-reel-shares]", formatMetric(item.shares));
+    var link = carousel.querySelector("[data-reel-link]");
+    if (link) link.href = item.permalink;
+    reelStrip.querySelectorAll("button").forEach(function (button, buttonIndex) {
+      var active = buttonIndex === reelIndex;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-current", active ? "true" : "false");
+    });
+    var activeThumb = reelStrip.querySelectorAll("button")[reelIndex];
+    if (activeThumb) {
+      reelStrip.scrollTo({ left: activeThumb.offsetLeft - reelStrip.clientWidth / 2 + activeThumb.clientWidth / 2, behavior: reduceMotion ? "auto" : "smooth" });
+    }
+    updateReelControls();
+    if (requestPlay && reelInView && !reduceMotion) {
+      reelUserPaused = false;
+      pauseManagedVideos(reelVideo);
+      var playWhenReady = function () {
+        reelVideo.play().catch(function () {});
+      };
+      if (reelVideo.readyState >= 2) playWhenReady();
+      else reelVideo.addEventListener("canplay", playWhenReady, { once: true });
+    }
+  }
+
+  function buildReelStrip() {
+    if (!reelStrip) return;
+    reelStrip.innerHTML = "";
+    var copy = reelCopy();
+    reelItems.forEach(function (item, index) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "reel-thumb";
+      button.setAttribute("aria-label", copy.choose + " " + (index + 1) + ": " + item.title);
+      var image = document.createElement("img");
+      image.src = item.thumb;
+      image.alt = "";
+      image.loading = index < 4 ? "eager" : "lazy";
+      var count = document.createElement("span");
+      count.textContent = String(index + 1).padStart(2, "0");
+      button.appendChild(image);
+      button.appendChild(count);
+      button.addEventListener("click", function () { renderReel(index, true); });
+      reelStrip.appendChild(button);
+    });
+  }
+
+  function updateProof(manifest) {
+    var items = manifest.items || [];
+    if (!items.length) return;
+    var topViews = items.reduce(function (best, item) { return item.views > best.views ? item : best; }, items[0]);
+    var topComments = items.reduce(function (best, item) { return item.comments > best.comments ? item : best; }, items[0]);
+    var topSaves = items.reduce(function (best, item) { return item.saved > best.saved ? item : best; }, items[0]);
+    var views = document.querySelector("[data-proof-views]");
+    var comments = document.querySelector("[data-proof-comments]");
+    var saves = document.querySelector("[data-proof-saves]");
+    var updated = document.querySelector("[data-proof-updated]");
+    if (views) views.textContent = formatNumber(topViews.views);
+    if (comments) comments.textContent = formatNumber(topComments.comments);
+    if (saves) saves.textContent = formatNumber(topSaves.saved);
+    if (updated) updated.textContent = reelCopy().source + " · " + formatSnapshot(manifest.updatedAt);
+    var caseItem = items.find(function (item) { return item.id === "18127658746529604"; });
+    if (caseItem) {
+      var caseViews = document.querySelector("[data-case-views]");
+      var caseComments = document.querySelector("[data-case-comments]");
+      var caseSaves = document.querySelector("[data-case-saves]");
+      if (caseViews) caseViews.textContent = formatNumber(caseItem.views);
+      if (caseComments) caseComments.textContent = formatNumber(caseItem.comments);
+      if (caseSaves) caseSaves.textContent = formatNumber(caseItem.saved);
+    }
+  }
+
+  if (carousel && reelVideo && reelStrip) {
+    fetch("assets/portfolio/manifest.json", { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("Portfolio manifest unavailable");
+        return response.json();
+      })
+      .then(function (manifest) {
+        reelItems = Array.isArray(manifest) ? manifest : manifest.items || [];
+        if (!reelItems.length) throw new Error("Portfolio manifest is empty");
+        snapshotAt = manifest.updatedAt || snapshotAt;
+        buildReelStrip();
+        updateProof({ items: reelItems, updatedAt: snapshotAt });
+        renderReel(0, true);
+      })
+      .catch(function () {
+        reelItems = [{
+          id: "18418558528176379",
+          title: "Why leaked API keys put products at risk",
+          video: "assets/video/ig-18418558528176379.mp4",
+          thumb: "assets/portfolio/ig-18418558528176379.jpg",
+          permalink: "https://www.instagram.com/reel/Da4qps4Bhwy/",
+          views: null, comments: null, saved: null, shares: null
+        }];
+        buildReelStrip();
+        renderReel(0, false);
+      });
+
+    carousel.querySelector("[data-reel-prev]").addEventListener("click", function () { renderReel(reelIndex - 1, true); });
+    carousel.querySelector("[data-reel-next]").addEventListener("click", function () { renderReel(reelIndex + 1, true); });
+    carousel.querySelector("[data-reel-toggle]").addEventListener("click", function () {
+      if (reelVideo.paused) {
+        pauseManagedVideos(reelVideo);
+        reelUserPaused = false;
+        reelVideo.play().catch(function () {});
+      } else {
+        reelUserPaused = true;
+        reelVideo.pause();
+      }
+    });
+    reelSound.addEventListener("click", function () {
+      reelVideo.muted = !reelVideo.muted;
+      if (reelVideo.paused) reelVideo.play().catch(function () {});
+      updateReelControls();
+    });
+    reelVideo.addEventListener("play", updateReelControls);
+    reelVideo.addEventListener("pause", updateReelControls);
+    reelVideo.addEventListener("volumechange", updateReelControls);
+    reelVideo.addEventListener("ended", function () { renderReel(reelIndex + 1, true); });
+    carousel.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft") { event.preventDefault(); renderReel(reelIndex - 1, true); }
+      if (event.key === "ArrowRight") { event.preventDefault(); renderReel(reelIndex + 1, true); }
+    });
+    var pointerStart = null;
+    carousel.querySelector(".reel-media").addEventListener("pointerdown", function (event) { pointerStart = event.clientX; });
+    carousel.querySelector(".reel-media").addEventListener("pointerup", function (event) {
+      if (pointerStart == null) return;
+      var distance = event.clientX - pointerStart;
+      pointerStart = null;
+      if (Math.abs(distance) > 52) renderReel(reelIndex + (distance < 0 ? 1 : -1), true);
+    });
+    window.addEventListener("ugc:language", function () {
+      buildReelStrip();
+      updateReelControls();
+      if (reelItems.length) updateProof({ items: reelItems, updatedAt: snapshotAt });
+    });
+  }
+
+  var aboutVideo = document.querySelector("[data-about-video]");
+  var aboutSound = document.querySelector("[data-about-sound]");
+  if (aboutVideo && aboutSound) {
+    aboutSound.addEventListener("click", function () {
+      pauseManagedVideos(aboutVideo);
+      aboutVideo.muted = !aboutVideo.muted;
+      aboutSound.textContent = aboutVideo.muted ? reelCopy().sound : reelCopy().mute;
+      aboutVideo.play().catch(function () {});
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    if (heroVideo) {
+      new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting && !reduceMotion) {
+          pauseManagedVideos(heroVideo);
+          heroVideo.play().catch(function () {});
+        } else heroVideo.pause();
+      }, { threshold: 0.45 }).observe(heroVideo);
+    }
+    if (carousel && reelVideo) {
+      new IntersectionObserver(function (entries) {
+        reelInView = entries[0].isIntersecting;
+        if (reelInView && !reduceMotion && !reelUserPaused) {
+          pauseManagedVideos(reelVideo);
+          reelVideo.play().catch(function () {});
+        } else reelVideo.pause();
+      }, { threshold: 0.35 }).observe(carousel);
+    }
+    if (aboutVideo) {
+      new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting && !reduceMotion) {
+          pauseManagedVideos(aboutVideo);
+          aboutVideo.play().catch(function () {});
+        } else aboutVideo.pause();
+      }, { threshold: 0.45 }).observe(aboutVideo);
+    }
+  }
+
   /* ---------------- nav scroll + mobile menu ---------------- */
   var nav = document.getElementById("nav");
   nav.classList.add("scrolled");
@@ -609,7 +851,7 @@
       ev.preventDefault();
       var existing = frame.querySelector("video");
       if (existing) {
-        if (existing.paused) { existing.play(); frame.classList.add("playing"); }
+        if (existing.paused) { pauseManagedVideos(existing); existing.play(); frame.classList.add("playing"); }
         else { existing.pause(); frame.classList.remove("playing"); }
         return;
       }
@@ -625,35 +867,14 @@
       if (poster) v.setAttribute("poster", poster.getAttribute("src"));
       frame.appendChild(v);
       frame.classList.add("playing");
+      pauseManagedVideos(v);
       v.play().catch(function () {});
       playing = frame;
       if (window.gtag) gtag("event", "video_play", { src: src });
     });
   });
 
-  /* ---------------- lead form -> Supabase edge fn (feeds /manager + email) ---------------- */
-  var LEAD_ENDPOINT = "https://bajrnvusqzllvsvipitr.supabase.co/functions/v1/ugc-lead";
-  var LEAD_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJhanJudnVzcXpsbHZzdmlwaXRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4MzMwNDQsImV4cCI6MjA4OTQwOTA0NH0.ao8f5YlNpbDnVdty5O6QwJaTSQS5cV8VEx2OE8gRa1k";
-
-  // entry attribution (referrer + utm) - same shape the manager dashboard expects
-  var ENTRY = (function () {
-    var p = new URLSearchParams(location.search);
-    var utm = {};
-    ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"].forEach(function (k) {
-      var v = p.get(k); if (v) utm[k] = v;
-    });
-    var ref = document.referrer || "";
-    var channel = "direct";
-    if (Object.keys(utm).length) channel = utm.utm_source || "utm";
-    else if (ref) {
-      if (/tiktok/i.test(ref)) channel = "tiktok";
-      else if (/instagram/i.test(ref)) channel = "instagram";
-      else if (/linkedin|lnkd/i.test(ref)) channel = "linkedin";
-      else if (/google/i.test(ref)) channel = "google";
-      else channel = "referral";
-    }
-    return { channel: channel, entry_referrer: ref, utm: utm };
-  })();
+  /* ---------------- dependency-free lead form -> prefilled email ---------------- */
 
   function trS(key) { var l = window.__lang || "en"; return (I18N[l] && I18N[l][key]) || I18N.en[key] || key; }
 
@@ -668,7 +889,7 @@
     status.textContent = trS("form.fallback") + " ";
     var link = document.createElement("a");
     link.href = href; link.textContent = trS("form.fallback.cta"); link.style.textDecoration = "underline";
-    status.appendChild(link); status.className = "form-status err";
+    status.appendChild(link); status.className = "form-status ok";
     window.location.href = href;
   }
 
@@ -677,7 +898,6 @@
     leadForm.addEventListener("submit", function (ev) {
       ev.preventDefault();
       var status = document.getElementById("formStatus");
-      var btn = leadForm.querySelector("button[type=submit]");
       var fd = new FormData(leadForm);
       if (fd.get("website")) { status.textContent = trS("form.ok"); status.className = "form-status ok"; leadForm.reset(); return; }
       var email = (fd.get("email") || "").trim();
@@ -686,26 +906,8 @@
       if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || !/^https?:\/\/\S+$/i.test(company) || !product) {
         status.textContent = trS("form.err"); status.className = "form-status err"; return;
       }
-      btn.disabled = true; status.textContent = trS("form.sending"); status.className = "form-status";
-      fetch(LEAD_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", apikey: LEAD_ANON, Authorization: "Bearer " + LEAD_ANON },
-        body: JSON.stringify({
-          action: "submit", kind: "booking", lang: window.__lang || "en",
-          name: fd.get("name") || "", email: email, company: company,
-          product: product, goal: fd.get("goal") || "", budget: fd.get("budget") || "", message: fd.get("message") || "",
-          channel: ENTRY.channel, entry_referrer: ENTRY.entry_referrer, utm: ENTRY.utm
-        })
-      }).then(function (r) {
-        return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; });
-      }).then(function (res) {
-        if (res.ok && res.j && res.j.ok) {
-          status.textContent = trS("form.ok"); status.className = "form-status ok"; leadForm.reset();
-          if (window.gtag) gtag("event", "generate_lead", { method: "ugc_form" });
-        } else { mailFallback(status, fd); }
-      }).catch(function () {
-        mailFallback(status, fd);
-      }).then(function () { btn.disabled = false; });
+      mailFallback(status, fd);
+      if (window.gtag) gtag("event", "generate_lead", { method: "email_draft" });
     });
   }
 

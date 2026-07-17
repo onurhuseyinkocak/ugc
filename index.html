@@ -189,14 +189,15 @@
         <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
       </div>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#work" data-i18n="nav.work">Work</a>
-      <a href="#cases" data-i18n="nav.cases">Case studies</a>
-      <a href="#services" data-i18n="nav.services">Services</a>
-      <a href="#about" data-i18n="nav.about">About</a>
-      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Send a brief</a>
-    </div>
   </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#cases" data-i18n="nav.cases">Case studies</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Send a brief</a>
+  </div>
 
   <main id="top">
 
@@ -204,26 +205,22 @@
     <section class="hero container">
       <div class="hero-grid">
         <div class="hero-copy">
-          <div class="kicker hero-kicker reveal" data-i18n="hero.kicker">Tech-first UGC creator in Bangkok</div>
+          <div class="kicker hero-kicker reveal" data-i18n="hero.kicker">Bangkok UGC creator for brands</div>
           <h1 class="reveal d1" data-i18n-html="hero.h">Make your product<br><em>easy to choose.</em></h1>
-          <p class="lede reveal d2" data-i18n="hero.sub">Tech-first UGC plus recurring Canvas UGC for products, apps, places and services, backed by our Bangkok creator network.</p>
+          <p class="lede reveal d2" data-i18n="hero.sub">Concept, script, filming and editing for apps, products, places and services. English and Turkish, backed by a Bangkok creator network.</p>
           <div class="hero-actions reveal d3">
             <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Send a brief <span class="arrow">→</span></a>
-            <a href="#creator-intro" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Watch creator intro</a>
+            <p class="hero-deliverables" data-i18n="hero.deliverables">Concept · Script · Shoot · Edit</p>
           </div>
         </div>
         <div class="hero-figure reveal d2">
-          <div class="hero-badge">
-            <div class="n">EN</div>
-            <div class="l" data-i18n="hero.badge">creator introduction</div>
-          </div>
-          <div class="hero-frame"></div>
           <div class="hero-portrait" id="creator-intro">
-            <video data-hero-video controls autoplay muted loop playsinline preload="metadata" poster="assets/portfolio/onur-ugc-intro-poster.jpg" aria-label="Onur Koçak English UGC creator introduction">
+            <video data-hero-video autoplay muted loop playsinline preload="auto" poster="assets/portfolio/onur-ugc-intro-poster.jpg" aria-label="Onur Koçak English UGC creator introduction">
               <source src="assets/video/onur-ugc-intro-en-th.mp4" type="video/mp4" />
             </video>
             <button class="hero-sound" type="button" data-hero-sound data-i18n="hero.sound" aria-label="Play creator introduction with sound">Play with sound</button>
           </div>
+          <p class="hero-video-note" data-i18n="hero.videoNote">English creator introduction · Bangkok</p>
         </div>
       </div>
     </section>
@@ -242,14 +239,18 @@
     </div>
 
     <!-- ===================== STATS ===================== -->
-    <section class="section container">
+    <section class="section container proof-section" aria-label="Verified Instagram proof">
+      <div class="proof-heading reveal">
+        <span data-i18n="stat.eyebrow">Verified owned-channel proof</span>
+        <span data-proof-updated>Official Instagram Insights</span>
+      </div>
       <div class="stats">
-        <div class="stat reveal"><div class="n">117.7K</div><div class="l" data-i18n="stat.views">Lifetime views across nine selected Reels · 16 Jul</div></div>
-        <div class="stat reveal d1"><div class="n">3,101</div><div class="l" data-i18n="stat.comments">Comments on the top selected Instagram Reel · 16 Jul</div></div>
-        <div class="stat reveal d2"><div class="n">1,356</div><div class="l" data-i18n="stat.viral">Instagram followers · live API count on 16 Jul</div></div>
+        <div class="stat reveal"><div class="n" data-proof-views>…</div><div class="l" data-i18n="stat.views">Views on one verified Reel</div></div>
+        <div class="stat reveal d1"><div class="n" data-proof-comments>…</div><div class="l" data-i18n="stat.comments">Comments on one verified Reel</div></div>
+        <div class="stat reveal d2"><div class="n" data-proof-saves>…</div><div class="l" data-i18n="stat.viral">Saves on one verified Reel</div></div>
         <div class="stat reveal d3"><div class="n">0</div><div class="l" data-i18n="stat.lang">Paid spend behind these owned-channel samples</div></div>
       </div>
-      <p class="stats-note reveal" data-i18n="stat.note">Owned-channel proof with dates shown. Organic platform results, not client campaign ROAS.</p>
+      <p class="stats-note reveal" data-i18n="stat.note">Per-Reel Instagram results with a source date. No lifetime total, no invented client ROAS.</p>
     </section>
 
     <!-- ===================== WORK / SHORT-FORM ===================== -->
@@ -258,175 +259,38 @@
         <div class="section-head reveal" style="margin-bottom:0">
           <div class="kicker" data-i18n="work.kicker">Creator samples</div>
           <h2 data-i18n="work.h">See the hook, pacing and delivery.</h2>
-          <p class="proof-disclosure" data-i18n="work.disclosure">Latest three samples shown. Portfolio proof covers nine self-directed Reels; metrics captured via Instagram Graph API on 16 July.</p>
+          <p class="proof-disclosure" data-i18n="work.disclosure">One active video at a time. Reels and per-video metrics sync from the official Instagram API.</p>
         </div>
-        <div class="lang-pill reveal d1"><span data-i18n="work.langpill">Current samples: Turkish</span></div>
+        <div class="lang-pill reveal d1"><span data-i18n="work.langpill">Current Reel language: Turkish</span></div>
       </div>
 
-      <div class="work-grid">
-        <!-- reel-7 : newest AI Search lead magnet -->
-        <article class="vcard reveal">
-          <div class="vframe" data-src="assets/video/reel-7.mp4">
-            <img class="poster" src="assets/portfolio/reel-7.jpg" alt="AI Search checklist reel filmed at a Bangkok cafe" loading="eager" decoding="async" />
-            <span class="vtag" data-i18n="work.tag.lead">Lead Gen / CTA</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>2,664</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.3-4.5A8.4 8.4 0 1 1 21 11.5z"/></svg>53</span>
+      <div class="reel-carousel reveal" data-reel-carousel role="region" aria-roledescription="carousel" aria-label="Instagram Reel portfolio">
+        <div class="reel-stage">
+          <div class="reel-media">
+            <video data-reel-video src="assets/video/ig-18418558528176379.mp4" muted playsinline preload="metadata" poster="assets/portfolio/ig-18418558528176379.jpg" aria-label="Current creator sample"></video>
+            <button class="media-sound" type="button" data-reel-sound>Play with sound</button>
+          </div>
+          <div class="reel-detail" aria-live="polite">
+            <div class="reel-position" data-reel-position>…</div>
+            <h3 data-reel-title>Loading the latest Reel</h3>
+            <p class="reel-excerpt" data-reel-excerpt>A direct-to-camera explainer with a clear risk, useful steps and a comment-led call to action.</p>
+            <dl class="reel-metrics">
+              <div><dt>Views</dt><dd data-reel-views>…</dd></div>
+              <div><dt>Comments</dt><dd data-reel-comments>…</dd></div>
+              <div><dt>Saves</dt><dd data-reel-saves>…</dd></div>
+              <div><dt>Shares</dt><dd data-reel-shares>…</dd></div>
+            </dl>
+            <p class="reel-source" data-reel-source>Instagram Insights</p>
+            <a class="reel-original" data-reel-link href="https://www.instagram.com/reel/Da4qps4Bhwy/" target="_blank" rel="noopener">View original Reel <span aria-hidden="true">↗</span></a>
+            <div class="reel-controls">
+              <button type="button" data-reel-prev aria-label="Previous Reel">← <span>Previous</span></button>
+              <button type="button" data-reel-toggle aria-label="Pause current Reel">Pause</button>
+              <button type="button" data-reel-next aria-label="Next Reel"><span>Next</span> →</button>
             </div>
           </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v7.t">AI Search checklist that turns interest into comments</div>
-            <div class="vd" data-i18n="work.v7.d">15 Jul · 2,664 views · 53 comments · 30 saves · 36 shares</div>
-          </div>
-        </article>
-
-        <!-- reel-8 : founder-style app explanation -->
-        <article class="vcard reveal d1">
-          <div class="vframe" data-src="assets/video/reel-8.mp4">
-            <img class="poster" src="assets/portfolio/reel-8.jpg" alt="Founder-style direct-to-camera app reel" loading="eager" decoding="async" />
-            <span class="vtag" data-i18n="work.tag.founder">Founder / App</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>1,973</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>9</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v8.t">Founder-style product explanation</div>
-            <div class="vd" data-i18n="work.v8.d">29 Jun · 1,973 views · 6 comments · 9 saves · 7 shares</div>
-          </div>
-        </article>
-
-        <!-- reel-9 : short visual format test -->
-        <article class="vcard reveal d2">
-          <div class="vframe" data-src="assets/video/reel-9.mp4">
-            <img class="poster" src="assets/portfolio/reel-9.jpg" alt="Choose your side visual format test reel" loading="eager" decoding="async" />
-            <span class="vtag" data-i18n="work.tag.format">Format Test</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>1,120</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M16 6l-4-4-4 4M12 2v13"/></svg>11</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v9.t">“Choose your side” visual hook</div>
-            <div class="vd" data-i18n="work.v9.d">23 Jun · 1,120 views · 9 saves · 11 shares</div>
-          </div>
-        </article>
-
-        <!-- reel-4 : GEO (viral) -->
-        <article class="vcard reveal d3">
-          <div class="vframe" data-src="assets/video/reel-4.mp4">
-            <img class="poster" src="assets/portfolio/reel-4.jpg" alt="GEO explainer reel" loading="eager" decoding="async" />
-            <span class="vtag" data-i18n="work.tag.ai">AI / GEO</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>42.4K</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.3-4.5A8.4 8.4 0 1 1 21 11.5z"/></svg>3,101</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v4.t">What GEO means for your product</div>
-            <div class="vd"><span class="viral" data-i18n="work.viral">Owned channel</span> / <span data-i18n="work.v4.d">42,372 views · 3,101 comments · 1,922 saves</span></div>
-          </div>
-        </article>
-
-        <!-- reel-2 : AEO -->
-        <article class="vcard reveal d1">
-          <div class="vframe" data-src="assets/video/reel-2.mp4">
-            <img class="poster" src="assets/portfolio/reel-2.jpg" alt="AEO explainer reel" loading="eager" decoding="async" />
-            <span class="vtag" data-i18n="work.tag.ai">AI / Search</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>59.1K</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.3-4.5A8.4 8.4 0 1 1 21 11.5z"/></svg>614</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v2.t">Answer Engine Optimization, explained</div>
-            <div class="vd" data-i18n="work.v2.d">59,135 views · 1,381 saves · 1,315 shares</div>
-          </div>
-        </article>
-
-        <!-- reel-6 : GEO example (newest) -->
-        <article class="vcard reveal d2">
-          <div class="vframe" data-src="assets/video/reel-6.mp4">
-            <img class="poster" src="assets/portfolio/reel-6.jpg" alt="GEO example reel" loading="eager" decoding="async" />
-            <span class="vtag" data-i18n="work.tag.ai">AI / GEO</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>4,324</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.3-4.5A8.4 8.4 0 1 1 21 11.5z"/></svg>84</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v6.t">Not an SEO story - it's GEO</div>
-            <div class="vd" data-i18n="work.v6.d">A technical concept made concrete</div>
-          </div>
-        </article>
-
-        <!-- reel-3 : viral AI video tools -->
-        <article class="vcard reveal d3">
-          <div class="vframe" data-src="assets/video/reel-3.mp4">
-            <img class="poster" src="assets/portfolio/reel-3.jpg" alt="Free AI video tools reel" loading="lazy" />
-            <span class="vtag" data-i18n="work.tag.tech">AI / Tools</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>2,565</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>36</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v3.t">The viral AI video trend, for free</div>
-            <div class="vd" data-i18n="work.v3.d">Turning a trend into a how-to people save</div>
-          </div>
-        </article>
-
-        <!-- reel-5 : no-code apps -->
-        <article class="vcard reveal">
-          <div class="vframe" data-src="assets/video/reel-5.mp4">
-            <img class="poster" src="assets/portfolio/reel-5.jpg" alt="No-code app building reel" loading="lazy" />
-            <span class="vtag" data-i18n="work.tag.apps">Apps / No-code</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>2,230</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.3-4.5A8.4 8.4 0 1 1 21 11.5z"/></svg>22</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v5.t">Anyone can build an app now</div>
-            <div class="vd" data-i18n="work.v5.d">A product story told in under a minute</div>
-          </div>
-        </article>
-
-        <!-- reel-1 : founders story -->
-        <article class="vcard reveal d1">
-          <div class="vframe" data-src="assets/video/reel-1.mp4">
-            <img class="poster" src="assets/portfolio/reel-1.jpg" alt="Teen AI founders story reel" loading="lazy" />
-            <span class="vtag" data-i18n="work.tag.story">Tech / Story</span>
-            <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            <div class="vmetric">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>1,267</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.3L3 21l1.3-4.5A8.4 8.4 0 1 1 21 11.5z"/></svg>8</span>
-            </div>
-          </div>
-          <div class="vmeta">
-            <div class="vt" data-i18n="work.v1.t">The 16-year-old who built an AI company</div>
-            <div class="vd" data-i18n="work.v1.d">Narrative hooks that hold attention</div>
-          </div>
-        </article>
-
-        <!-- CTA card -->
-        <article class="vcard reveal d2">
-          <a href="#contact" class="vframe" style="display:flex;align-items:center;justify-content:center;text-align:center;background:var(--ink);cursor:pointer">
-            <div style="color:var(--bg);padding:28px">
-              <div style="font-family:var(--font-display);font-size:30px;line-height:1.15" data-i18n="work.cta.t">Your product, in motion.</div>
-              <div style="margin-top:16px;font-size:13.5px;color:rgba(245,243,238,.65)" data-i18n="work.cta.d">English or Turkish - let's plan your first batch.</div>
-              <span class="btn btn-primary" style="margin-top:22px;background:var(--gold);color:var(--ink)" data-i18n="work.cta.b">Start a project →</span>
-            </div>
-          </a>
-        </article>
+        </div>
+        <div class="reel-strip" data-reel-strip aria-label="Choose a Reel"></div>
+        <noscript><p><a href="https://www.instagram.com/onurhuseyinkocak.ai" target="_blank" rel="noopener">View the latest Reels on Instagram</a></p></noscript>
       </div>
     </section>
 
@@ -460,7 +324,7 @@
     <section class="section container" id="cases">
       <div class="section-head reveal">
         <div class="kicker" data-i18n="cases.kicker">One content breakdown</div>
-        <h2 data-i18n="cases.h">How an abstract topic earned 3,101 comments.</h2>
+        <h2 data-i18n="cases.h">How an abstract topic became a comment engine.</h2>
         <p data-i18n="cases.p">This is an owned-channel example, included to show the creative thinking behind the result.</p>
       </div>
 
@@ -479,39 +343,16 @@
             <div class="case-rows">
               <div class="case-row"><div class="k" data-i18n="case.problem">Problem</div><div class="v" data-i18n="case1.problem">"Generative Engine Optimization" is abstract and easy to scroll past. Most explanations sound like a lecture.</div></div>
               <div class="case-row"><div class="k" data-i18n="case.strategy">Strategy</div><div class="v" data-i18n="case1.strategy">Open with a sharp contrast hook (SEO vs. GEO), then make it personal: where does your product show up when people ask ChatGPT?</div></div>
-              <div class="case-row"><div class="k" data-i18n="case.outcome">Outcome</div><div class="v" data-i18n="case1.outcome">The reel reached 42,372 views, 3,101 comments and 1,922 saves by 16 July.</div></div>
+              <div class="case-row"><div class="k" data-i18n="case.outcome">Outcome</div><div class="v" data-i18n="case1.outcome">Strong view depth, thousands of comments and saves, with no paid distribution behind the sample.</div></div>
             </div>
             <div class="case-outcome">
-              <div class="o"><div class="n">42<span>K</span></div><div class="l" data-i18n="case.views">Views</div></div>
-              <div class="o"><div class="n">3,101</div><div class="l" data-i18n="case.comments">Comments</div></div>
-              <div class="o"><div class="n">1,922</div><div class="l" data-i18n="case.saves">Saves</div></div>
+              <div class="o"><div class="n" data-case-views>…</div><div class="l" data-i18n="case.views">Views</div></div>
+              <div class="o"><div class="n" data-case-comments>…</div><div class="l" data-i18n="case.comments">Comments</div></div>
+              <div class="o"><div class="n" data-case-saves>…</div><div class="l" data-i18n="case.saves">Saves</div></div>
             </div>
           </div>
         </article>
 
-        <!-- Case 2: AEO -->
-        <article class="case reveal">
-          <div class="case-media">
-            <div class="vframe" data-src="assets/video/reel-2.mp4">
-              <img class="poster" src="assets/portfolio/reel-2.jpg" alt="AEO case study video" loading="lazy" />
-              <button class="vplay" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-            </div>
-          </div>
-          <div class="case-body">
-            <div class="case-num">Case 02 - AI / Search</div>
-            <h3 data-i18n="case2.h">59K views on a topic most people haven't heard of.</h3>
-            <div class="case-rows">
-              <div class="case-row"><div class="k" data-i18n="case.problem">Problem</div><div class="v" data-i18n="case2.problem">Answer Engine Optimization is a niche, jargon-heavy subject with near-zero search demand yet.</div></div>
-              <div class="case-row"><div class="k" data-i18n="case.strategy">Strategy</div><div class="v" data-i18n="case2.strategy">Lead with the behaviour shift people already feel - "you ask ChatGPT instead of Google now" - then land the term on top of it.</div></div>
-              <div class="case-row"><div class="k" data-i18n="case.outcome">Outcome</div><div class="v" data-i18n="case2.outcome">59,135 views, 1,381 saves and 1,315 shares with no ad spend - strong evidence that a clear explainer can make a niche topic worth keeping and sharing.</div></div>
-            </div>
-            <div class="case-outcome">
-              <div class="o"><div class="n">59<span>K</span></div><div class="l" data-i18n="case.views">Views</div></div>
-              <div class="o"><div class="n">1,381</div><div class="l" data-i18n="case.saves">Saves</div></div>
-              <div class="o"><div class="n">1,315</div><div class="l" data-i18n="case.shares">Shares</div></div>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -519,8 +360,13 @@
     <section class="section container" id="about">
       <div class="about-grid">
         <div class="about-figure reveal">
-          <img src="assets/portfolio/reel-5.jpg" alt="Onur presenting a technical product story on camera" width="1080" height="1920" loading="eager" decoding="async" />
-          <div class="sig">Onur Hüseyin Koçak<small data-i18n="about.role">UGC creator for technical products</small></div>
+          <div class="about-video-frame">
+            <video data-about-video muted loop playsinline preload="none" poster="assets/portfolio/reel-8.jpg" aria-label="Onur presenting a product story on camera">
+              <source src="assets/video/reel-8.mp4" type="video/mp4" />
+            </video>
+            <button class="media-sound" type="button" data-about-sound>Play with sound</button>
+          </div>
+          <div class="sig">Onur Hüseyin Koçak<small data-i18n="about.role">Tech-first lead creator · Bangkok</small></div>
         </div>
         <div class="about-body">
           <div class="kicker reveal" data-i18n="about.kicker">About</div>
@@ -546,15 +392,10 @@
         <p data-i18n="svc.p">Every engagement is scoped around the platform, audience, usage and result you need.</p>
       </div>
       <div class="svc-grid">
-        <div class="svc reveal"><div class="svc-top"><span class="svc-num">CONCEPT</span></div><h3 data-i18n="svc1.t">Angles and hooks</h3><p data-i18n="svc1.d">Audience, objection and platform translated into a clear creative direction before filming.</p></div>
-        <div class="svc reveal d1"><div class="svc-top"><span class="svc-num">SCRIPT</span></div><h3 data-i18n="svc2.t">Script and shot plan</h3><p data-i18n="svc2.d">A concise script, screen recordings, B-roll plan and call to action built around one job.</p></div>
-        <div class="svc reveal"><div class="svc-top"><span class="svc-num">CAMERA</span></div><h3 data-i18n="svc3.t">On-camera delivery</h3><p data-i18n="svc3.d">Natural creator delivery in English or Turkish, filmed vertically for the target platform.</p></div>
-        <div class="svc reveal d1"><div class="svc-top"><span class="svc-num">EDIT</span></div><h3 data-i18n="svc4.t">Edit and handoff</h3><p data-i18n="svc4.d">Captions, pacing, platform-ready exports and agreed raw files or hook variations.</p></div>
-        <div class="svc reveal"><div class="svc-top"><span class="svc-num">05</span><svg class="svc-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3 data-i18n="svc5.t">Travel Content</h3><p data-i18n="svc5.d">Cinematic, on-location storytelling from Bangkok and beyond for travel and lifestyle brands.</p></div>
-        <div class="svc reveal d1"><div class="svc-top"><span class="svc-num">06</span><svg class="svc-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m13 2-3 7h5l-3 7"/><path d="M5 14h-.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h.5a2.5 2.5 0 0 1 0 5H17"/></svg></div><h3 data-i18n="svc6.t">Short-Form Ads</h3><p data-i18n="svc6.d">Paid-ready creatives built for hooks, retention and conversion across TikTok, Reels and Shorts.</p></div>
-        <div class="svc reveal"><div class="svc-top"><span class="svc-num">07</span><svg class="svc-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-i18n="svc7.t">Creative Strategy</h3><p data-i18n="svc7.d">Hook angles, content pillars and a posting plan - so every video has a job, not just a view count.</p></div>
-        <div class="svc reveal d1"><div class="svc-top"><span class="svc-num">08</span><svg class="svc-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg></div><h3 data-i18n="svc8.t">Content Packages</h3><p data-i18n="svc8.d">Monthly retainers - a steady drip of on-brand content in EN &amp; TR, planned and shipped for you.</p></div>
-        <div class="svc reveal"><div class="svc-top"><span class="svc-num">CANVAS</span></div><h3 data-i18n="svc9.t">Canvas UGC Programs</h3><p data-i18n="svc9.d">Recurring short-form for a brand-owned or dedicated ambassador account: concepts, scripts, filming, edits and optional posting in any category.</p></div>
+        <div class="svc reveal"><div class="svc-top"><span class="svc-num">01 · STRATEGY</span></div><h3 data-i18n="svc1.t">Angles, hooks and scripts</h3><p data-i18n="svc1.d">Audience, objection and platform turned into concepts, a concise script and a practical shot plan.</p></div>
+        <div class="svc reveal d1"><div class="svc-top"><span class="svc-num">02 · PRODUCTION</span></div><h3 data-i18n="svc2.t">Shoot, edit and handoff</h3><p data-i18n="svc2.d">Natural on-camera delivery, B-roll, captions, pacing and platform-ready vertical exports.</p></div>
+        <div class="svc reveal"><div class="svc-top"><span class="svc-num">03 · PRODUCT</span></div><h3 data-i18n="svc3.t">Apps, products and Canvas UGC</h3><p data-i18n="svc3.d">One-off demos or recurring brand-account content for mobile apps, SaaS, consumer products and services.</p></div>
+        <div class="svc reveal d1"><div class="svc-top"><span class="svc-num">04 · PLACE</span></div><h3 data-i18n="svc4.t">Travel, lifestyle and venues</h3><p data-i18n="svc4.d">Hotels, cafés, restaurants and travel experiences routed to the strongest creator and setting in our Bangkok network.</p></div>
       </div>
     </section>
 
