@@ -1,12 +1,12 @@
 [
   {
     "i": 1,
-    "id": "18102026597469549",
-    "permalink": "https://www.instagram.com/reel/DZuKh1Qui6_/",
+    "id": "18095469617590067",
+    "permalink": "https://www.instagram.com/reel/DZumxoIMw-v/",
     "thumb": "assets/portfolio/reel-1.jpg",
     "caption": "Pranjali Awasthi.  16 yaşında.  Yapay zeka şirketi kurdu.  Zach Yadegari.  18 yaşında.  Ya",
-    "likes": 1,
-    "comments": 0,
+    "likes": 40,
+    "comments": 8,
     "date": "2026-06-18"
   },
   {
@@ -15,8 +15,8 @@
     "permalink": "https://www.instagram.com/reel/DZku2Dxuh6L/",
     "thumb": "assets/portfolio/reel-2.jpg",
     "caption": "🚀 AEO (Answer Engine Optimization) Nedir?  İnsanlar artık Google’da aramak yerine ChatGPT,",
-    "likes": 187,
-    "comments": 136,
+    "likes": 508,
+    "comments": 614,
     "date": "2026-06-14"
   },
   {
@@ -25,7 +25,7 @@
     "permalink": "https://www.instagram.com/reel/DZZrsNhu2ee/",
     "thumb": "assets/portfolio/reel-3.jpg",
     "caption": "Son günlerde gördüğünüz şu küpten arabaya dönüşen viral AI videolarını tamamen ücretsiz şe",
-    "likes": 34,
+    "likes": 36,
     "comments": 6,
     "date": "2026-06-10"
   },
@@ -35,8 +35,8 @@
     "permalink": "https://www.instagram.com/reel/DZUrR_Iuzrd/",
     "thumb": "assets/portfolio/reel-4.jpg",
     "caption": "GEO nedir?  SEO web siteni Google’a anlatır.  GEO ise ürününü ChatGPT, Claude, Gemini ve P",
-    "likes": 355,
-    "comments": 1437,
+    "likes": 612,
+    "comments": 3101,
     "date": "2026-06-08"
   },
   {
@@ -45,8 +45,48 @@
     "permalink": "https://www.instagram.com/reel/DYxHDePsxj2/",
     "thumb": "assets/portfolio/reel-5.jpg",
     "caption": "Türkiye’de yıllarca “uygulama yapmak için yazılımcı olmak gerekir” diye düşündük.  Artık d",
-    "likes": 82,
-    "comments": 15,
+    "likes": 84,
+    "comments": 22,
     "date": "2026-05-25"
+  },
+  {
+    "i": 6,
+    "id": "17958979817964459",
+    "permalink": "https://www.instagram.com/reel/DZ5la7du_OJ/",
+    "thumb": "assets/portfolio/reel-6.jpg",
+    "caption": "Bu videodaki şey aslında bir SEO hikayesi değil. GEO'nun neden önemli hale geldiğinin küçük bir örneği.",
+    "likes": 69,
+    "comments": 84,
+    "date": "2026-06-22"
+  },
+  {
+    "i": 7,
+    "id": "18159866923486645",
+    "permalink": "https://www.instagram.com/reel/Daz4akJhU-m/",
+    "thumb": "assets/portfolio/reel-7.jpg",
+    "caption": "AI Search ve GEO kontrol listesi: markanızın AI cevaplarında nerede göründüğünü ölçün.",
+    "likes": 62,
+    "comments": 53,
+    "date": "2026-07-15"
+  },
+  {
+    "i": 8,
+    "id": "18088436213576090",
+    "permalink": "https://www.instagram.com/reel/DaJoaO9oCzv/",
+    "thumb": "assets/portfolio/reel-8.jpg",
+    "caption": "Doğrudan kameraya doğal ürün ve uygulama anlatımı.",
+    "likes": 36,
+    "comments": 6,
+    "date": "2026-06-29"
+  },
+  {
+    "i": 9,
+    "id": "17934559134277567",
+    "permalink": "https://www.instagram.com/reel/DZ8AQJIOwPe/",
+    "thumb": "assets/portfolio/reel-9.jpg",
+    "caption": "Tarafını seç!",
+    "likes": 25,
+    "comments": 0,
+    "date": "2026-06-23"
   }
 ]
