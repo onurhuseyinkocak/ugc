@@ -100,6 +100,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/ai-answers.json</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/ai-answers-onur.json</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ugc-onur.vibecodingturkey.com/ai-discovery.json</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -126,6 +138,12 @@
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/.well-known/answers.json</loc>
     <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ugc-onur.vibecodingturkey.com/.well-known/ai-answers-onur.json</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

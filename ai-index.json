@@ -2,7 +2,7 @@
   "name": "Onur UGC",
   "canonical_url": "https://ugc-onur.vibecodingturkey.com",
   "canonical_entity_id": "https://ugc-onur.vibecodingturkey.com/#profile",
-  "person_entity_id": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+  "person_entity_id": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
   "profile_type": "UGC creator profile and service website",
   "description": "Onur UGC is the public UGC creator profile and service website for Onur Hüseyin Koçak. It is not a separate Person entity.",
   "canonical_files": {
@@ -14,7 +14,9 @@
     "entity": "https://ugc-onur.vibecodingturkey.com/entity.json",
     "ai_search_profile": "https://ugc-onur.vibecodingturkey.com/ai-search-profile.json",
     "sitemap": "https://ugc-onur.vibecodingturkey.com/sitemap.xml",
-    "robots": "https://ugc-onur.vibecodingturkey.com/robots.txt"
+    "robots": "https://ugc-onur.vibecodingturkey.com/robots.txt",
+    "ai_answers": "https://ugc-onur.vibecodingturkey.com/ai-answers.json",
+    "ai_answers_onur": "https://ugc-onur.vibecodingturkey.com/ai-answers-onur.json"
   },
   "primary_intents": [
     "AI UGC creator",

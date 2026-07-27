@@ -1,0 +1,13 @@
+{
+  "source": "Instagram Insights",
+  "sourceDate": "2026-07-27",
+  "scope": "All Reels on the account captured in owned-channel analytics",
+  "paidSpend": 0,
+  "totals": {
+    "views": 165207,
+    "comments": 5217,
+    "saves": 4143,
+    "shares": 2914
+  },
+  "calculationNote": "Base totals from the 2026-07-26 local insights export, with the July 27 verified update applied to the top Reel values supplied by the owner. Shares use the latest verified local export value."
+}

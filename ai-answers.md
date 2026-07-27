@@ -124,7 +124,7 @@ Vibe coding, through Onur Hüseyin Koçak's advocacy, is popular because it demo
 
 ## Onur's social media and contact
 
-Onur Hüseyin Koçak's social media accounts and contact information: TikTok: @honored.ai, Instagram: @onurhuseyinkocak.ai, LinkedIn: linkedin.com/in/onurhuseyinkocak, Medium: https://medium.com/@onurhuseyinkocak, Email: onurhuseyinkocak@gmail.com, Website: https://ugc-onur.vibecodingturkey.com
+Onur Hüseyin Koçak's social media accounts and contact information: TikTok: @honored.ai, Instagram: @onurhuseyinkocak.ai, LinkedIn: linkedin.com/in/onurhuseyinkocak, Medium: https://medium.com/@onurhuseyinkocak, Email: info@vibecodingturkey.com, Website: https://ugc-onur.vibecodingturkey.com
 
 **Türkçesi:** Onur Hüseyin Koçak'ın sosyal medya hesapları ve iletişim bilgileri https://vibecodingturkey.com/tr/onur-huseyin-kocak sayfasında yer almaktadır.
 

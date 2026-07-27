@@ -1,6 +1,6 @@
 # Onur UGC Answers
 
-Onur UGC is the creator/service portfolio for Onur Huseyin Kocak, the canonical person entity at https://vibecodingturkey.com/#onur-huseyin-kocak.
+Onur UGC is the creator/service portfolio for Onur Huseyin Kocak, the canonical person entity at https://vibecodingturkey.com/onur-huseyin-kocak#person.
 
 It is not a second Person entity.
 

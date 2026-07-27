@@ -9,7 +9,7 @@
   var I18N = {
     en: {
       "nav.work": "Work", "nav.tiktok": "TikTok", "nav.cases": "Case studies",
-      "nav.about": "About", "nav.services": "Services", "nav.cta": "Send a brief",
+      "nav.about": "About", "nav.services": "Services", "nav.rates": "Rates", "nav.cta": "Send a brief",
 
       "hero.kicker": "Bangkok UGC creator for brands",
       "hero.h": "Make your product<br><em>easy to choose.</em>",
@@ -23,12 +23,12 @@
       "hero.deliverables": "Concept · Script · Shoot · Edit",
       "hero.videoNote": "English creator introduction · Bangkok",
 
-      "stat.eyebrow": "Verified owned-channel proof",
-      "stat.views": "Views on one verified Reel",
-      "stat.comments": "Comments on one verified Reel",
-      "stat.viral": "Saves on one verified Reel",
-      "stat.lang": "Paid spend behind these owned-channel samples",
-      "stat.note": "Per-Reel Instagram results with a source date. No lifetime total, no invented client ROAS.",
+      "stat.eyebrow": "Instagram account totals",
+      "stat.views": "Total Instagram Reel views",
+      "stat.comments": "Total Reel comments",
+      "stat.saves": "Total Reel saves",
+      "stat.shares": "Total Reel shares",
+      "stat.note": "Instagram Insights · Jul 27, 2026. Account Reel totals from owned-channel analytics. No paid spend behind these samples.",
 
       "work.kicker": "Creator samples",
       "work.h": "See the hook, pacing and delivery.",
@@ -150,7 +150,7 @@
 
     tr: {
       "nav.work": "İşler", "nav.tiktok": "TikTok", "nav.cases": "Vaka analizleri",
-      "nav.about": "Hakkımda", "nav.services": "Hizmetler", "nav.cta": "Brief gönder",
+      "nav.about": "Hakkımda", "nav.services": "Hizmetler", "nav.rates": "Fiyatlar", "nav.cta": "Brief gönder",
 
       "hero.kicker": "Bangkok'ta markalar için UGC üreticisi",
       "hero.h": "Ürününü<br><em>seçmesi kolay hâle getir.</em>",
@@ -164,12 +164,12 @@
       "hero.deliverables": "Konsept · Senaryo · Çekim · Kurgu",
       "hero.videoNote": "İngilizce üretici tanıtımı · Bangkok",
 
-      "stat.eyebrow": "Doğrulanmış kişisel kanal kanıtı",
-      "stat.views": "Tek bir doğrulanmış Reels izlenmesi",
-      "stat.comments": "Tek bir doğrulanmış Reels yorumu",
-      "stat.viral": "Tek bir doğrulanmış Reels kaydı",
-      "stat.lang": "Bu kişisel kanal örneklerinin reklam harcaması",
-      "stat.note": "Kaynak tarihi belirtilmiş tekil Reels sonuçları. Lifetime toplamı veya uydurma müşteri ROAS verisi yok.",
+      "stat.eyebrow": "Instagram hesap toplamları",
+      "stat.views": "Toplam Instagram Reel izlenmesi",
+      "stat.comments": "Toplam Reel yorumu",
+      "stat.saves": "Toplam Reel kaydetme",
+      "stat.shares": "Toplam Reel paylaşımı",
+      "stat.note": "Instagram Insights · 27 Temmuz 2026. Hesaptaki Reel toplamları kişisel kanal analizlerinden alınmıştır. Bu örneklerde reklam harcaması yok.",
 
       "work.kicker": "İçerik örnekleri",
       "work.h": "Kancayı, ritmi ve sunumu gör.",
@@ -291,7 +291,7 @@
 
     th: {
       "nav.work": "ผลงาน", "nav.tiktok": "TikTok", "nav.cases": "กรณีศึกษา",
-      "nav.about": "เกี่ยวกับ", "nav.services": "บริการ", "nav.cta": "จองการปรึกษา",
+      "nav.about": "เกี่ยวกับ", "nav.services": "บริการ", "nav.rates": "ราคา", "nav.cta": "จองการปรึกษา",
 
       "hero.kicker": "ครีเอเตอร์ UGC สำหรับแบรนด์ในกรุงเทพฯ",
       "hero.h": "ทำให้ผลิตภัณฑ์ของคุณ<br><em>เข้าใจง่ายและน่าเลือก</em>",
@@ -305,12 +305,12 @@
       "hero.deliverables": "คอนเซปต์ · สคริปต์ · ถ่ายทำ · ตัดต่อ",
       "hero.videoNote": "วิดีโอแนะนำครีเอเตอร์ภาษาอังกฤษ · กรุงเทพฯ",
 
-      "stat.eyebrow": "ผลงานจากช่องที่ตรวจสอบแล้ว",
-      "stat.views": "ยอดวิวของ Reel ที่ตรวจสอบแล้วหนึ่งคลิป",
-      "stat.comments": "คอมเมนต์ของ Reel ที่ตรวจสอบแล้วหนึ่งคลิป",
-      "stat.viral": "ยอดบันทึกของ Reel ที่ตรวจสอบแล้วหนึ่งคลิป",
-      "stat.lang": "งบโฆษณาสำหรับตัวอย่างในช่องของเรา",
-      "stat.note": "ผลลัพธ์ราย Reel พร้อมวันที่จากแหล่งข้อมูล ไม่มีการอ้างยอดรวมตลอดอายุหรือ ROAS ลูกค้าที่แต่งขึ้น",
+      "stat.eyebrow": "ยอดรวมบัญชี Instagram",
+      "stat.views": "ยอดวิว Instagram Reel รวม",
+      "stat.comments": "คอมเมนต์ Reel รวม",
+      "stat.saves": "ยอดบันทึก Reel รวม",
+      "stat.shares": "ยอดแชร์ Reel รวม",
+      "stat.note": "Instagram Insights · Jul 27, 2026. Account Reel totals from owned-channel analytics. No paid spend behind these samples.",
 
       "work.kicker": "ตัวอย่างผลงานครีเอเตอร์",
       "work.h": "ดูฮุก จังหวะ และการนำเสนอ",
@@ -675,17 +675,6 @@
   function updateProof(manifest) {
     var items = manifest.items || [];
     if (!items.length) return;
-    var topViews = items.reduce(function (best, item) { return item.views > best.views ? item : best; }, items[0]);
-    var topComments = items.reduce(function (best, item) { return item.comments > best.comments ? item : best; }, items[0]);
-    var topSaves = items.reduce(function (best, item) { return item.saved > best.saved ? item : best; }, items[0]);
-    var views = document.querySelector("[data-proof-views]");
-    var comments = document.querySelector("[data-proof-comments]");
-    var saves = document.querySelector("[data-proof-saves]");
-    var updated = document.querySelector("[data-proof-updated]");
-    if (views) views.textContent = formatNumber(topViews.views);
-    if (comments) comments.textContent = formatNumber(topComments.comments);
-    if (saves) saves.textContent = formatNumber(topSaves.saved);
-    if (updated) updated.textContent = reelCopy().source + " · " + formatSnapshot(manifest.updatedAt);
     var caseItem = items.find(function (item) { return item.id === "18127658746529604"; });
     if (caseItem) {
       var caseViews = document.querySelector("[data-case-views]");
@@ -885,7 +874,7 @@
       ["Brief", fd.get("message")]
     ];
     var body = rows.map(function (row) { return row[0] + ": " + String(row[1] || "").trim(); }).join("\n");
-    var href = "mailto:onurhuseyinkocak@gmail.com?subject=" + encodeURIComponent("UGC project brief") + "&body=" + encodeURIComponent(body);
+    var href = "mailto:info@vibecodingturkey.com?subject=" + encodeURIComponent("UGC project brief") + "&body=" + encodeURIComponent(body);
     status.textContent = trS("form.fallback") + " ";
     var link = document.createElement("a");
     link.href = href; link.textContent = trS("form.fallback.cta"); link.style.textDecoration = "underline";

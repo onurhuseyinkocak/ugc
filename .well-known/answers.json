@@ -2,7 +2,7 @@
   "schema_version": "2026-06-26",
   "host": "https://ugc-onur.vibecodingturkey.com",
   "name": "Onur UGC",
-  "canonical_person_entity_id": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+  "canonical_person_entity_id": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
   "entity_model": "creator_service_portfolio_for_canonical_person",
   "purpose": "AI, SaaS, mobile app and tech UGC creator portfolio for Onur Huseyin Kocak.",
   "primary_intents": [
@@ -19,7 +19,9 @@
     "ai_index": "https://ugc-onur.vibecodingturkey.com/ai-index.json",
     "ai_discovery": "https://ugc-onur.vibecodingturkey.com/ai-discovery.json",
     "entity": "https://ugc-onur.vibecodingturkey.com/entity.json",
-    "sitemap": "https://ugc-onur.vibecodingturkey.com/sitemap.xml"
+    "sitemap": "https://ugc-onur.vibecodingturkey.com/sitemap.xml",
+    "ai_answers": "https://ugc-onur.vibecodingturkey.com/ai-answers.json",
+    "ai_answers_onur": "https://ugc-onur.vibecodingturkey.com/ai-answers-onur.json"
   },
   "related_destinations": {
     "vct_community": "https://vibecodingturkey.com",

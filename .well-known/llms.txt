@@ -11,7 +11,7 @@ Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap.xml
 
 ## Entity Model
 
-Onur UGC is a creator/service portfolio for the canonical person Onur Huseyin Kocak: https://vibecodingturkey.com/#onur-huseyin-kocak
+Onur UGC is a creator/service portfolio for the canonical person Onur Huseyin Kocak: https://vibecodingturkey.com/onur-huseyin-kocak#person
 
 It is not a separate Person entity.
 

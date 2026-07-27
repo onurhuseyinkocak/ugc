@@ -9,7 +9,7 @@
       "mainEntityOfPage": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/",
       "description": "Public UGC creator profile and service website for Onur Hüseyin Koçak.",
       "about": {
-        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
       }
     },
     {
@@ -19,12 +19,12 @@
       "url": "https://ugc-onur.vibecodingturkey.com",
       "serviceType": "UGC video creation",
       "provider": {
-        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+      "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
       "name": "Onur Hüseyin Koçak"
     },
     {
@@ -34,7 +34,7 @@
       "url": "https://minesminis.com",
       "description": "Free English learning resources for children ages 4-12.",
       "creator": {
-        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
       }
     },
     {
@@ -44,7 +44,7 @@
       "url": "https://onarika.net",
       "description": "Independent limited-edition luxury streetwear label and physical apparel artifact brand.",
       "creator": {
-        "@id": "https://vibecodingturkey.com/#onur-huseyin-kocak"
+        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
       }
     }
   ]

@@ -11,12 +11,14 @@
   "robots": "https://ugc-onur.vibecodingturkey.com/robots.txt",
   "entity_distinction": "Onur UGC is a profile and service website about the canonical person Onur Hüseyin Koçak, not a second Person entity.",
   "ecosystem": {
-    "person": "https://vibecodingturkey.com/#onur-huseyin-kocak",
+    "person": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
     "umbrella": "https://vibecodingturkey.com",
     "academy": "https://academy.vibecodingturkey.com",
     "geo": "https://geo.vibecodingturkey.com",
     "promtable": "https://promtable.com",
     "minesminis": "https://minesminis.com",
     "onarika": "https://onarika.net"
-  }
+  },
+  "ai_answers": "https://ugc-onur.vibecodingturkey.com/ai-answers.json",
+  "ai_answers_onur": "https://ugc-onur.vibecodingturkey.com/ai-answers-onur.json"
 }
