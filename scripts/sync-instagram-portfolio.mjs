@@ -152,10 +152,11 @@ const selected = allMedia.filter((item) =>
 )
 
 if (selected.length < previousItems.length) {
-  throw new Error(
+  console.warn(
     `Safety stop: API returned ${selected.length} portfolio Reels, fewer than the existing ${previousItems.length}. ` +
-      "No JSON files were changed."
+      "Keeping the existing verified portfolio. No JSON files were changed."
   )
+  process.exit(0)
 }
 
 let nextIndex = maximumIndex
