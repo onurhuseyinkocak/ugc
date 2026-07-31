@@ -1,64 +1,64 @@
 {
-  "updatedAt": "2026-07-27T04:52:25.227Z",
+  "updatedAt": "2026-07-31T04:41:35.633Z",
   "source": "Instagram Graph API",
   "reels": {
-    "18111883303767128": {
-      "views": 1317,
-      "reach": 1224,
-      "likes": 0,
-      "comments": 8,
-      "saved": 4,
-      "shares": 3,
-      "totalInteractions": 15
+    "17880795171617033": {
+      "views": 3947,
+      "reach": 3192,
+      "likes": 33,
+      "comments": 32,
+      "saved": 74,
+      "shares": 24,
+      "totalInteractions": 170
     },
     "17900922237330587": {
-      "views": 2129,
-      "reach": 1756,
-      "likes": 31,
+      "views": 2476,
+      "reach": 1959,
+      "likes": 43,
       "comments": 10,
-      "saved": 11,
-      "shares": 8,
-      "totalInteractions": 65
+      "saved": 14,
+      "shares": 10,
+      "totalInteractions": 85
     },
     "18418558528176379": {
-      "views": 2867,
-      "reach": 2325,
-      "likes": 50,
-      "comments": 58,
-      "saved": 80,
-      "shares": 46,
-      "totalInteractions": 242
+      "views": 3003,
+      "reach": 2411,
+      "likes": 53,
+      "comments": 60,
+      "saved": 84,
+      "shares": 55,
+      "totalInteractions": 261
     },
     "18159866923486645": {
-      "views": 3558,
-      "reach": 2494,
-      "likes": 80,
-      "comments": 178,
-      "saved": 45,
+      "views": 3652,
+      "reach": 2559,
+      "likes": 81,
+      "comments": 186,
+      "saved": 49,
       "shares": 51,
-      "totalInteractions": 370
+      "totalInteractions": 383
     },
     "18088436213576090": {
-      "views": 2069,
-      "reach": 1597,
-      "likes": 36,
+      "views": 2088,
+      "reach": 1617,
+      "likes": 38,
       "comments": 6,
-      "saved": 9,
-      "shares": 8,
-      "totalInteractions": 63
+      "saved": 11,
+      "shares": 9,
+      "totalInteractions": 70
     },
     "17934559134277567": {
-      "views": 1207,
-      "reach": 751,
+      "views": 1226,
+      "reach": 760,
       "likes": 25,
       "comments": 0,
-      "saved": 9,
+      "saved": 10,
       "shares": 11,
-      "totalInteractions": 50
+      "totalInteractions": 52
     },
     "17958979817964459": {
-      "views": 4435,
-      "reach": 3549,
+      "views": 4466,
+      "reach": 3572,
       "likes": 70,
       "comments": 88,
       "saved": 81,
@@ -66,49 +66,49 @@
       "totalInteractions": 293
     },
     "18095469617590067": {
-      "views": 1324,
-      "reach": 861,
-      "likes": 41,
+      "views": 1342,
+      "reach": 875,
+      "likes": 42,
       "comments": 8,
-      "saved": 12,
+      "saved": 14,
       "shares": 20,
-      "totalInteractions": 86
+      "totalInteractions": 90
     },
     "18128790184621531": {
-      "views": 67414,
-      "reach": 56884,
-      "likes": 579,
-      "comments": 793,
-      "saved": 1621,
-      "shares": 1505,
-      "totalInteractions": 4517
+      "views": 70628,
+      "reach": 60132,
+      "likes": 615,
+      "comments": 821,
+      "saved": 1699,
+      "shares": 1587,
+      "totalInteractions": 4745
     },
     "18112554292710912": {
-      "views": 2614,
-      "reach": 2055,
-      "likes": 36,
+      "views": 2627,
+      "reach": 2060,
+      "likes": 38,
       "comments": 6,
-      "saved": 12,
+      "saved": 14,
       "shares": 14,
-      "totalInteractions": 72
+      "totalInteractions": 78
     },
     "18127658746529604": {
-      "views": 47213,
-      "reach": 34587,
-      "likes": 666,
-      "comments": 3999,
-      "saved": 2138,
-      "shares": 1151,
-      "totalInteractions": 7982
+      "views": 48834,
+      "reach": 35317,
+      "likes": 681,
+      "comments": 4060,
+      "saved": 2205,
+      "shares": 1187,
+      "totalInteractions": 8163
     },
     "18091609091343964": {
-      "views": 2292,
-      "reach": 1305,
-      "likes": 84,
+      "views": 2311,
+      "reach": 1309,
+      "likes": 85,
       "comments": 24,
-      "saved": 22,
+      "saved": 24,
       "shares": 15,
-      "totalInteractions": 160
+      "totalInteractions": 165
     }
   }
 }
