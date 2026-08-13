@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T07:49:00.753Z",
+  "updatedAt": "2026-08-13T07:51:43.066Z",
   "source": "Instagram Graph API",
   "reels": {
     "17880795171617033": {
@@ -58,7 +58,7 @@
     },
     "18095039303058953": {
       "views": 2416,
-      "reach": 1818,
+      "reach": 1820,
       "likes": 38,
       "comments": 0,
       "saved": 25,
@@ -147,13 +147,13 @@
       "totalInteractions": 80
     },
     "18127658746529604": {
-      "views": 53437,
+      "views": 53438,
       "reach": 39203,
       "likes": 741,
-      "comments": 4639,
+      "comments": 4640,
       "saved": 2397,
-      "shares": 1301,
-      "totalInteractions": 9111
+      "shares": 1300,
+      "totalInteractions": 9110
     },
     "18091609091343964": {
       "views": 2353,
