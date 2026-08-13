@@ -13,6 +13,8 @@ const PORTFOLIO_START = process.env.INSTAGRAM_PORTFOLIO_START || "2026-05-01"
 const GRAPH_VERSION = process.env.INSTAGRAM_GRAPH_VERSION || "v23.0"
 const GRAPH_BASE = `https://graph.facebook.com/${GRAPH_VERSION}`
 const TITLE_OVERRIDES = {
+  "17880795171617033": "FreeBuff — AI coding-agent collaboration",
+  "18211971262345987": "Brantial — AI-search collaboration",
   "18418558528176379": "Why leaked API keys put products at risk",
   "18159866923486645": "AI Search checklist with a comment-led CTA",
   "18088436213576090": "Founder-style product explanation",
@@ -24,6 +26,7 @@ const TITLE_OVERRIDES = {
   "18127658746529604": "Make an abstract topic feel urgent",
   "18091609091343964": "Make product building feel possible",
 }
+const FEATURED_COLLAB_IDS = ["17880795171617033", "18211971262345987"]
 
 function localCredentials() {
   const storePath =
@@ -118,24 +121,24 @@ async function validAsset(relativePath, minimumBytes) {
 }
 
 async function downloadAsset(url, relativePath, expectedType, minimumBytes, maximumBytes) {
-  if (!url) throw new Error(`Instagram did not return a source for ${relativePath}`)
-  const response = await fetch(url)
-  const contentType = response.headers.get("content-type") || ""
-  const contentLength = Number(response.headers.get("content-length") || 0)
-  if (!response.ok || !contentType.startsWith(expectedType)) {
-    throw new Error(`Invalid ${expectedType} response for ${relativePath}`)
+  if (!url) return false
+  try {
+    const response = await fetch(url)
+    const contentType = response.headers.get("content-type") || ""
+    const contentLength = Number(response.headers.get("content-length") || 0)
+    if (!response.ok || !contentType.startsWith(expectedType)) return false
+    if (contentLength && contentLength > maximumBytes) return false
+    const bytes = Buffer.from(await response.arrayBuffer())
+    if (bytes.length < minimumBytes || bytes.length > maximumBytes) return false
+    const destination = path.join(ROOT, relativePath)
+    const temporary = `${destination}.tmp`
+    await fsp.mkdir(path.dirname(destination), { recursive: true })
+    await fsp.writeFile(temporary, bytes)
+    await fsp.rename(temporary, destination)
+    return true
+  } catch {
+    return false
   }
-  if (contentLength && contentLength > maximumBytes) {
-    throw new Error(`Downloaded asset exceeds the safe repository limit: ${relativePath}`)
-  }
-  const bytes = Buffer.from(await response.arrayBuffer())
-  if (bytes.length < minimumBytes) throw new Error(`Downloaded asset is too small: ${relativePath}`)
-  if (bytes.length > maximumBytes) throw new Error(`Downloaded asset exceeds the safe repository limit: ${relativePath}`)
-  const destination = path.join(ROOT, relativePath)
-  const temporary = `${destination}.tmp`
-  await fsp.mkdir(path.dirname(destination), { recursive: true })
-  await fsp.writeFile(temporary, bytes)
-  await fsp.rename(temporary, destination)
 }
 
 const previousRaw = JSON.parse(await fsp.readFile(MANIFEST_PATH, "utf8"))
@@ -151,16 +154,9 @@ const selected = allMedia.filter((item) =>
   String(item.timestamp || "").slice(0, 10) >= PORTFOLIO_START
 )
 
-if (selected.length < previousItems.length) {
-  console.warn(
-    `Safety stop: API returned ${selected.length} portfolio Reels, fewer than the existing ${previousItems.length}. ` +
-      "Keeping the existing verified portfolio. No JSON files were changed."
-  )
-  process.exit(0)
-}
-
 let nextIndex = maximumIndex
 const enriched = []
+const skipped = []
 for (const media of selected) {
   const prior = previousById.get(String(media.id))
   const metrics = await insightsFor(media.id)
@@ -191,18 +187,36 @@ for (const media of selected) {
   })
 }
 
+const publishable = []
 for (const item of enriched) {
-  if (!(await validAsset(item.video, 100_000))) {
+  const videoReady = await validAsset(item.video, 100_000) ||
     await downloadAsset(item._mediaUrl, item.video, "video/", 100_000, 90_000_000)
+  if (!videoReady) {
+    skipped.push(item.id)
+    continue
   }
-  if (!(await validAsset(item.thumb, 10_000))) {
+  const thumbnailReady = await validAsset(item.thumb, 10_000) ||
     await downloadAsset(item._thumbnailUrl, item.thumb, "image/", 10_000, 12_000_000)
+  if (!thumbnailReady) {
+    skipped.push(item.id)
+    continue
   }
+  publishable.push(item)
 }
 
-enriched.sort((a, b) => b.date.localeCompare(a.date) || Number(b.id) - Number(a.id))
+if (!selected.length || !publishable.length) {
+  throw new Error("Instagram returned no complete published Reels; keeping the last verified portfolio.")
+}
+if (skipped.length) console.warn(`Skipped ${skipped.length} Reel(s) without complete public media: ${skipped.join(", ")}`)
+
+publishable.sort((a, b) => {
+  const featuredA = FEATURED_COLLAB_IDS.indexOf(a.id)
+  const featuredB = FEATURED_COLLAB_IDS.indexOf(b.id)
+  if (featuredA !== featuredB) return (featuredA < 0 ? Infinity : featuredA) - (featuredB < 0 ? Infinity : featuredB)
+  return b.date.localeCompare(a.date) || Number(b.id) - Number(a.id)
+})
 const updatedAt = new Date().toISOString()
-const publicItems = enriched.map(({ _mediaUrl, _thumbnailUrl, ...item }) => item)
+const publicItems = publishable.map(({ _mediaUrl, _thumbnailUrl, ...item }) => item)
 const topViews = [...publicItems].sort((a, b) => b.views - a.views)[0]
 const topComments = [...publicItems].sort((a, b) => b.comments - a.comments)[0]
 const topSaves = [...publicItems].sort((a, b) => b.saved - a.saved)[0]
