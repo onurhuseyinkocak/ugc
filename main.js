@@ -675,6 +675,22 @@
   function updateProof(manifest) {
     var items = manifest.items || [];
     if (!items.length) return;
+    var totals = items.reduce(function (sum, item) {
+      sum.views += Number(item.views) || 0;
+      sum.comments += Number(item.comments) || 0;
+      sum.saves += Number(item.saved) || 0;
+      sum.shares += Number(item.shares) || 0;
+      return sum;
+    }, { views: 0, comments: 0, saves: 0, shares: 0 });
+    [["[data-account-views]", totals.views], ["[data-account-comments]", totals.comments], ["[data-account-saves]", totals.saves], ["[data-account-shares]", totals.shares]].forEach(function (entry) {
+      var node = document.querySelector(entry[0]);
+      if (node) node.textContent = formatNumber(entry[1]);
+    });
+    var snapshot = formatSnapshot(manifest.updatedAt || snapshotAt);
+    var updated = document.querySelector("[data-insights-updated]");
+    var note = document.querySelector(".stats-note");
+    if (updated) updated.textContent = "Instagram Graph API snapshot · " + snapshot;
+    if (note) note.textContent = "Current published-Reel totals from owned-channel analytics. No paid spend behind these samples.";
     var caseItem = items.find(function (item) { return item.id === "18127658746529604"; });
     if (caseItem) {
       var caseViews = document.querySelector("[data-case-views]");
