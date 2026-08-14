@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-13T07:51:43.066Z",
+  "updatedAt": "2026-08-14T03:30:30.968Z",
   "source": "Instagram Graph API",
   "reels": {
     "17880795171617033": {
-      "views": 5923,
-      "reach": 4469,
+      "views": 5931,
+      "reach": 4478,
       "likes": 65,
       "comments": 163,
       "saved": 119,
@@ -12,35 +12,35 @@
       "totalInteractions": 400
     },
     "18211971262345987": {
-      "views": 4443,
-      "reach": 3360,
-      "likes": 79,
+      "views": 4493,
+      "reach": 3402,
+      "likes": 80,
       "comments": 49,
-      "saved": 76,
+      "saved": 78,
       "shares": 126,
-      "totalInteractions": 345
+      "totalInteractions": 348
     },
     "18177705763421686": {
-      "views": 1817,
-      "reach": 1341,
-      "likes": 38,
+      "views": 1832,
+      "reach": 1353,
+      "likes": 39,
       "comments": 0,
       "saved": 12,
       "shares": 6,
-      "totalInteractions": 63
+      "totalInteractions": 64
     },
     "18110164556087610": {
-      "views": 735,
-      "reach": 537,
-      "likes": 18,
+      "views": 752,
+      "reach": 546,
+      "likes": 19,
       "comments": 0,
       "saved": 6,
       "shares": 5,
-      "totalInteractions": 34
+      "totalInteractions": 35
     },
     "18174138991427819": {
-      "views": 1600,
-      "reach": 1284,
+      "views": 1605,
+      "reach": 1290,
       "likes": 39,
       "comments": 9,
       "saved": 36,
@@ -48,7 +48,7 @@
       "totalInteractions": 103
     },
     "18116767072919468": {
-      "views": 2821,
+      "views": 2825,
       "reach": 2046,
       "likes": 54,
       "comments": 0,
@@ -57,8 +57,8 @@
       "totalInteractions": 96
     },
     "18095039303058953": {
-      "views": 2416,
-      "reach": 1820,
+      "views": 2427,
+      "reach": 1823,
       "likes": 38,
       "comments": 0,
       "saved": 25,
@@ -66,8 +66,8 @@
       "totalInteractions": 106
     },
     "17900922237330587": {
-      "views": 2651,
-      "reach": 2088,
+      "views": 2652,
+      "reach": 2090,
       "likes": 49,
       "comments": 17,
       "saved": 16,
@@ -75,8 +75,8 @@
       "totalInteractions": 101
     },
     "18418558528176379": {
-      "views": 3124,
-      "reach": 2484,
+      "views": 3126,
+      "reach": 2487,
       "likes": 58,
       "comments": 65,
       "saved": 87,
@@ -84,7 +84,7 @@
       "totalInteractions": 276
     },
     "18159866923486645": {
-      "views": 3747,
+      "views": 3749,
       "reach": 2605,
       "likes": 86,
       "comments": 205,
@@ -93,8 +93,8 @@
       "totalInteractions": 408
     },
     "18088436213576090": {
-      "views": 2151,
-      "reach": 1652,
+      "views": 2152,
+      "reach": 1655,
       "likes": 42,
       "comments": 10,
       "saved": 12,
@@ -102,8 +102,8 @@
       "totalInteractions": 81
     },
     "17934559134277567": {
-      "views": 1289,
-      "reach": 794,
+      "views": 1290,
+      "reach": 795,
       "likes": 30,
       "comments": 0,
       "saved": 11,
@@ -111,13 +111,13 @@
       "totalInteractions": 59
     },
     "17958979817964459": {
-      "views": 4559,
-      "reach": 3630,
-      "likes": 74,
+      "views": 4564,
+      "reach": 3636,
+      "likes": 75,
       "comments": 99,
       "saved": 83,
       "shares": 44,
-      "totalInteractions": 311
+      "totalInteractions": 312
     },
     "18095469617590067": {
       "views": 1382,
@@ -129,17 +129,17 @@
       "totalInteractions": 96
     },
     "18128790184621531": {
-      "views": 77724,
-      "reach": 66981,
-      "likes": 678,
-      "comments": 932,
-      "saved": 1884,
-      "shares": 1756,
-      "totalInteractions": 5274
+      "views": 77914,
+      "reach": 67245,
+      "likes": 679,
+      "comments": 934,
+      "saved": 1886,
+      "shares": 1769,
+      "totalInteractions": 5292
     },
     "18112554292710912": {
       "views": 2668,
-      "reach": 2085,
+      "reach": 2088,
       "likes": 40,
       "comments": 6,
       "saved": 14,
@@ -147,17 +147,17 @@
       "totalInteractions": 80
     },
     "18127658746529604": {
-      "views": 53438,
-      "reach": 39203,
-      "likes": 741,
-      "comments": 4640,
-      "saved": 2397,
-      "shares": 1300,
-      "totalInteractions": 9110
+      "views": 53714,
+      "reach": 39527,
+      "likes": 745,
+      "comments": 4654,
+      "saved": 2405,
+      "shares": 1314,
+      "totalInteractions": 9151
     },
     "18091609091343964": {
-      "views": 2353,
-      "reach": 1333,
+      "views": 2354,
+      "reach": 1335,
       "likes": 87,
       "comments": 24,
       "saved": 24,
