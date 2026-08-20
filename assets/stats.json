@@ -1,19 +1,19 @@
 {
-  "followers": 1743,
-  "posts": 43,
-  "portfolioReels": 21,
-  "updatedAt": "2026-08-19T02:32:25.455Z",
+  "followers": 1803,
+  "posts": 45,
+  "portfolioReels": 23,
+  "updatedAt": "2026-08-20T02:31:26.906Z",
   "source": "Instagram Graph API",
   "topViews": {
     "id": "18128790184621531",
-    "value": 78655
+    "value": 78799
   },
   "topComments": {
     "id": "18127658746529604",
-    "value": 4717
+    "value": 4737
   },
   "topSaves": {
     "id": "18127658746529604",
-    "value": 2463
+    "value": 2474
   }
 }
