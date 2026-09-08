@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-07T06:07:23.555Z",
+  "updatedAt": "2026-09-08T05:59:16.509Z",
   "source": "Instagram Graph API",
   "reels": {
     "17880795171617033": {
-      "views": 6101,
+      "views": 6106,
       "reach": 4578,
       "likes": 71,
       "comments": 170,
@@ -12,16 +12,16 @@
       "totalInteractions": 415
     },
     "18211971262345987": {
-      "views": 5127,
-      "reach": 3757,
+      "views": 5139,
+      "reach": 3776,
       "likes": 99,
       "comments": 59,
       "saved": 98,
-      "shares": 140,
-      "totalInteractions": 417
+      "shares": 141,
+      "totalInteractions": 418
     },
     "18021931826857766": {
-      "views": 2120,
+      "views": 2123,
       "reach": 1695,
       "likes": 36,
       "comments": 1,
@@ -30,7 +30,7 @@
       "totalInteractions": 57
     },
     "18351578539173967": {
-      "views": 1719,
+      "views": 1721,
       "reach": 1386,
       "likes": 21,
       "comments": 2,
@@ -39,8 +39,8 @@
       "totalInteractions": 39
     },
     "18466939027116085": {
-      "views": 2682,
-      "reach": 2060,
+      "views": 2685,
+      "reach": 2063,
       "likes": 40,
       "comments": 0,
       "saved": 31,
@@ -48,7 +48,7 @@
       "totalInteractions": 80
     },
     "18009503477756294": {
-      "views": 3105,
+      "views": 3107,
       "reach": 2501,
       "likes": 46,
       "comments": 6,
@@ -57,8 +57,8 @@
       "totalInteractions": 154
     },
     "18137087719592360": {
-      "views": 3790,
-      "reach": 3050,
+      "views": 3793,
+      "reach": 3054,
       "likes": 50,
       "comments": 9,
       "saved": 78,
@@ -66,13 +66,13 @@
       "totalInteractions": 166
     },
     "17951586627240097": {
-      "views": 11066,
-      "reach": 9162,
-      "likes": 153,
+      "views": 11138,
+      "reach": 9243,
+      "likes": 155,
       "comments": 10,
-      "saved": 417,
+      "saved": 422,
       "shares": 153,
-      "totalInteractions": 739
+      "totalInteractions": 746
     },
     "18211282168347727": {
       "views": 2251,
@@ -84,7 +84,7 @@
       "totalInteractions": 84
     },
     "18112031015079456": {
-      "views": 3074,
+      "views": 3075,
       "reach": 2619,
       "likes": 37,
       "comments": 2,
@@ -93,7 +93,7 @@
       "totalInteractions": 104
     },
     "17971863840121279": {
-      "views": 2006,
+      "views": 2007,
       "reach": 1612,
       "likes": 42,
       "comments": 1,
@@ -102,8 +102,8 @@
       "totalInteractions": 86
     },
     "18177705763421686": {
-      "views": 2017,
-      "reach": 1470,
+      "views": 2019,
+      "reach": 1472,
       "likes": 44,
       "comments": 0,
       "saved": 12,
@@ -120,7 +120,7 @@
       "totalInteractions": 50
     },
     "18174138991427819": {
-      "views": 1818,
+      "views": 1819,
       "reach": 1390,
       "likes": 43,
       "comments": 9,
@@ -129,8 +129,8 @@
       "totalInteractions": 116
     },
     "18116767072919468": {
-      "views": 2927,
-      "reach": 2127,
+      "views": 2928,
+      "reach": 2130,
       "likes": 59,
       "comments": 0,
       "saved": 20,
@@ -138,7 +138,7 @@
       "totalInteractions": 103
     },
     "18095039303058953": {
-      "views": 2559,
+      "views": 2561,
       "reach": 1912,
       "likes": 42,
       "comments": 0,
@@ -165,7 +165,7 @@
       "totalInteractions": 287
     },
     "18159866923486645": {
-      "views": 3811,
+      "views": 3812,
       "reach": 2645,
       "likes": 90,
       "comments": 205,
@@ -210,13 +210,13 @@
       "totalInteractions": 103
     },
     "18128790184621531": {
-      "views": 81313,
-      "reach": 70156,
+      "views": 81364,
+      "reach": 70207,
       "likes": 712,
-      "comments": 989,
-      "saved": 1983,
+      "comments": 991,
+      "saved": 1984,
       "shares": 1862,
-      "totalInteractions": 5573
+      "totalInteractions": 5576
     },
     "18112554292710912": {
       "views": 2696,
@@ -228,13 +228,13 @@
       "totalInteractions": 85
     },
     "18127658746529604": {
-      "views": 57983,
+      "views": 58041,
       "reach": 42410,
       "likes": 801,
-      "comments": 4908,
-      "saved": 2617,
-      "shares": 1406,
-      "totalInteractions": 9767
+      "comments": 4912,
+      "saved": 2616,
+      "shares": 1407,
+      "totalInteractions": 9771
     },
     "18091609091343964": {
       "views": 2406,
