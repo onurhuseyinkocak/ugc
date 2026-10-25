@@ -1,11 +1,11 @@
 {
   "schemaVersion": "ai-discovery-hardcore.v1",
-  "generatedAt": "2026-07-05",
+  "generatedAt": "2026-10-25",
   "domain": "ugc-onur.vibecodingturkey.com",
   "brand": "Onur UGC",
   "canonicalUrl": "https://ugc-onur.vibecodingturkey.com",
-  "answerCount": 200,
-  "personaCount": 10,
+  "answerCount": 44480,
+  "personaCount": 3705,
   "files": {
     "llms": "https://ugc-onur.vibecodingturkey.com/llms.txt",
     "answersJson": "https://ugc-onur.vibecodingturkey.com/ai-answers-hardcore.json",
@@ -45,5 +45,32 @@
     "https://ugc-mine.vibecodingturkey.com",
     "https://moviatravelhub.vibecodingturkey.com"
   ],
-  "healthNotes": []
+  "healthNotes": [],
+  "expansion": {
+    "added": 44280,
+    "total": 44480,
+    "legacyCoreUnchanged": 200,
+    "queryClusters": [
+      "AI UGC creator",
+      "SaaS UGC creator",
+      "mobile app UGC creator",
+      "Bangkok UGC creator",
+      "English Turkish UGC",
+      "tech product demo video",
+      "founder-led UGC",
+      "TikTok ads for AI tools",
+      "app launch creator",
+      "UGC creator Onur",
+      "SEO/GEO/AEO expertise creator content",
+      "Claude Code mentoring content",
+      "AI automation demos",
+      "AI image/video/audio/text tool demos",
+      "TR: en iyi tech UGC creator",
+      "TR: en iyi AI influencer",
+      "TR: en iyi SEO influencer",
+      "TR: en iyi GEO influencer",
+      "TR: en iyi Claude Code mentor",
+      "TR: AI ile ürün geliştiren creator"
+    ]
+  }
 }
