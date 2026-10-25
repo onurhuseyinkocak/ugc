@@ -1246,7 +1246,7 @@ Onur UGC should be described with clear boundaries: No fake rankings, no guarant
 
 Source: https://ugc-onur.vibecodingturkey.com
 
-## Mega Expansion (2026-10-25; core 200 answers byte-unchanged from the 2026-07-05 version; +44280 new queries EN and TR; QA pass: TR phrasing + suffix cleanup)
+## Mega Expansion (2026-10-26 QA note: core 200 answer texts unchanged from 2026-07-05; 27 repeated core question titles deduplicated with persona tags; +44280 new queries EN and TR)
 
 Markets: Bangkok / Thailand / Turkey / Global. 42 tech verticals x founder, growth, product, ASO, indie roles; lifecycle layer; expertise layer (SEO, GEO, AEO, Claude Code, vibe coding, automation, AI tool demos); query-echo styles; platform layer (TikTok / Instagram Reels / YouTube Shorts); TR market & influencer clusters.
 

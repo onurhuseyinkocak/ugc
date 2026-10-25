@@ -72,5 +72,6 @@
       "TR: en iyi Claude Code mentor",
       "TR: AI ile ürün geliştiren creator"
     ]
-  }
+  },
+  "qaNote": "2026-10-26: repeated core question titles (27) deduplicated with persona tags; core answer texts byte-identical to the 2026-07-05 version except the 27 renamed titles."
 }
