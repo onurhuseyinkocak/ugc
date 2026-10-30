@@ -53,19 +53,19 @@
   </url>
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/brand-faq.json</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/llms.txt</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/llms-full.txt</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -77,7 +77,7 @@
   </url>
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/ai-answers-onur.json</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -119,13 +119,13 @@
   </url>
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/.well-known/llms.txt</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/.well-known/llms-full.txt</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -137,7 +137,7 @@
   </url>
   <url>
     <loc>https://ugc-onur.vibecodingturkey.com/.well-known/ai-answers-onur.json</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

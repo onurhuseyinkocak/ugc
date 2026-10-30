@@ -5,7 +5,7 @@ if(existsSync(out)&&!existsSync(join(out,'.generated-creator-site')))throw Error
 if(existsSync(out))rmSync(out,{recursive:true,force:true});
 mkdirSync(out);writeFileSync(join(out,'.generated-creator-site'),'Generated static publication output.');
 const excluded=new Set(['.git','.github','.site-output','.vercel','docs','scripts','review-shots','node_modules']);
-const publicFile=/\.(html|css|js|json|md|txt|xml|svg|png|jpe?g|webp|avif|mp4|webm|pdf|ttf|woff2?|ico)$/i;
+const publicFile=/\.(html|css|js|json|jsonld|md|txt|xml|svg|png|jpe?g|webp|avif|mp4|webm|pdf|ttf|woff2?|ico)$/i;
 let files=0;
 function copy(dir,target){for(const item of readdirSync(dir,{withFileTypes:true})){
   if(excluded.has(item.name)||item.name.startsWith('.')&&item.name!=='.well-known')continue;

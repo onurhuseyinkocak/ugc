@@ -4,6 +4,20 @@ import {test} from 'node:test';
 import {render,validateSnapshot,esc} from './build-creator.mjs';
 import {runInNewContext} from 'node:vm';
 const d=JSON.parse(readFileSync(new URL('../assets/creator/snapshot.json',import.meta.url),'utf8'));
+test('AI discovery mirrors and commercial answers match the dated creator source',()=>{
+ for(const name of ['llms.txt','llms-full.txt','ai-answers-onur.json'])assert.equal(readFileSync(new URL('../'+name,import.meta.url),'utf8'),readFileSync(new URL('../.well-known/'+name,import.meta.url),'utf8'));
+ for(const name of ['llms.txt','llms-full.txt']){
+  const text=readFileSync(new URL('../'+name,import.meta.url),'utf8');
+  assert.equal((text.match(/verified-creator:start/g)??[]).length,1);
+  assert(text.includes('Paid advertising and extra usage are quoted separately.'));
+  assert(!/57K\+|1\.9K\+/.test(text));
+ }
+ const faq=JSON.parse(readFileSync(new URL('../brand-faq.json',import.meta.url),'utf8'));
+ assert.equal(faq.canonical_url,'https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/');
+ const prices=faq.questions.find(p=>p.question.includes('video and carousel rates'))?.answer;
+ for(const price of ['$300 USD','$100 USD','$200 USD'])assert(prices?.includes(price));
+ assert.equal(faq.questions.filter(p=>p.question.includes('annual totals')).length,1);
+});
 test('only verified account metrics, exact period and two approved sponsors are published',()=>{
  assert.equal(validateSnapshot(d),d);
  for(const bad of [{...d,username:'other'},{...d,days:365},{...d,endDate:d.startDate},{...d,metrics:{...d.metrics,reach:-1}},{...d,followers:NaN},{...d,campaigns:[...d.campaigns,d.campaigns[0]]}])assert.throws(()=>validateSnapshot(bad));

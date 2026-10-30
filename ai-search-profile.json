@@ -1,6 +1,6 @@
 {
   "profile_type": "ai_search_entity_profile",
-  "last_updated": "2026-10-30T10:33:13.612Z",
+  "last_updated": "2026-10-30T11:03:51.073Z",
   "canonical_url": "https://ugc-onur.vibecodingturkey.com/",
   "entity": {
     "name": "Onur Hüseyin Koçak",
@@ -74,10 +74,10 @@
     ]
   },
   "proof_points": [
-    "1,848,549 account views and 784,843 accounts reached over 2026-09-30–2026-10-29; source: Meta Graph API.",
-    "7,929 current followers, measured 2026-10-30T10:33:13.612Z.",
-    "Brantial: 6665 lifetime post views, measured 2026-10-30T10:33:13.612Z; https://www.instagram.com/reel/Dbm-NzGBpAW/",
-    "Mostdomain: 2848 lifetime post views, measured 2026-10-30T10:33:13.612Z; https://www.instagram.com/reel/De1X_KdB12-/"
+    "1,848,554 account views and 784,843 accounts reached over 2026-09-30–2026-10-29; source: Meta Graph API.",
+    "7,934 current followers, measured 2026-10-30T11:03:51.073Z.",
+    "Brantial: 6666 lifetime post views, measured 2026-10-30T11:03:51.073Z; https://www.instagram.com/reel/Dbm-NzGBpAW/",
+    "Mostdomain: 2849 lifetime post views, measured 2026-10-30T11:03:51.073Z; https://www.instagram.com/reel/De1X_KdB12-/"
   ],
   "creator_network": [
     {
@@ -129,17 +129,17 @@
     "period_days": 30,
     "start_date": "2026-09-30",
     "end_date": "2026-10-29",
-    "measured_at": "2026-10-30T10:33:13.612Z"
+    "measured_at": "2026-10-30T11:03:51.073Z"
   },
   "verified_measurements": {
     "source": "Meta Graph API",
-    "measured_at": "2026-10-30T10:33:13.612Z",
+    "measured_at": "2026-10-30T11:03:51.073Z",
     "account": {
       "period_days": 30,
       "start_date": "2026-09-30",
       "end_date": "2026-10-29",
       "metrics": {
-        "views": 1848549,
+        "views": 1848554,
         "reach": 784843,
         "comments": 10726,
         "likes": 19922,
@@ -147,7 +147,7 @@
         "shares": 39044,
         "total_interactions": 183705
       },
-      "followers_current": 7929
+      "followers_current": 7934
     },
     "sponsored_campaigns": [
       {
@@ -155,7 +155,7 @@
         "url": "https://www.instagram.com/reel/Dbm-NzGBpAW/",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 6665,
+          "views": 6666,
           "reach": 5073,
           "saved": 132,
           "shares": 157,
@@ -168,7 +168,7 @@
         "url": "https://www.instagram.com/reel/De1X_KdB12-/",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 2848,
+          "views": 2849,
           "reach": 2155,
           "saved": 37,
           "shares": 69,

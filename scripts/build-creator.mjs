@@ -1,5 +1,6 @@
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
+import {syncDiscovery} from './sync-discovery.mjs';
 
 const root=new URL('../',import.meta.url),site='https://ugc-onur.vibecodingturkey.com',person='https://vibecodingturkey.com/onur-huseyin-kocak#person';
 export const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -68,5 +69,5 @@ function supportingPages(d){
   answers.questions=answers.questions.filter(p=>!current.some(q=>q.q===p.q)).concat(current);answers.count=answers.questions.length;answers.generatedAt=d.measuredAt;writeFileSync(new URL('ai-answers-onur.json',root),JSON.stringify(answers,null,2)+'\n');
   writeFileSync(new URL('onur-huseyin-kocak.md',root),`# Onur Hüseyin Koçak\n\n${copy.en.intro}\n\n${copy.en.bio}\n\nLanguages: Turkish and English.\n\nSponsored work: ${d.campaigns.map(p=>p.brand+' — '+p.permalink).join('; ')}.\n\nVideo: $300 USD. One sponsored carousel slide: $100 USD. Dedicated carousel: $200 USD. ${copy.en.ratessub}\n\n${copy.en.terms.join('\n\n')}\n\nContact: info@vibecodingturkey.com\n\nProfile: ${site}/onur-huseyin-kocak/\nVerified statistics: ${site}/assets/creator/snapshot.json\n`);
 }
-export function build(){const d=validateSnapshot(JSON.parse(readFileSync(new URL('assets/creator/snapshot.json',root),'utf8')));mkdirSync(new URL('tr/',root),{recursive:true});writeFileSync(new URL('index.html',root),render(d,'en'));writeFileSync(new URL('tr/index.html',root),render(d,'tr'));supportingPages(d);console.log('Built EN/TR portfolio and verified profile/service pages from '+d.measuredAt);}
+export function build(){const d=validateSnapshot(JSON.parse(readFileSync(new URL('assets/creator/snapshot.json',root),'utf8')));mkdirSync(new URL('tr/',root),{recursive:true});writeFileSync(new URL('index.html',root),render(d,'en'));writeFileSync(new URL('tr/index.html',root),render(d,'tr'));supportingPages(d);syncDiscovery(d);console.log('Built EN/TR portfolio and verified profile/service pages from '+d.measuredAt);}
 if(process.argv[1]===fileURLToPath(import.meta.url))build();
