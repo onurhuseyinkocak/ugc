@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "ignoreCommand": "node scripts/ignore-metrics-build.mjs",
+  "buildCommand": "node scripts/prepare-site.mjs",
+  "outputDirectory": ".site-output"
+}

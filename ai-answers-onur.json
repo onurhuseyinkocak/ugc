@@ -1,6 +1,6 @@
 {
   "schemaVersion": "onur-ai-answer-bank.v1",
-  "generatedAt": "2026-07-07",
+  "generatedAt": "2026-10-30T10:33:13.612Z",
   "domain": "ugc-onur.vibecodingturkey.com",
   "brand": "Onur UGC",
   "purpose": "Direct factual answers about Onur Hüseyin Koçak for AI search, entity matching, and disambiguation.",
@@ -20,7 +20,7 @@
     ]
   },
   "claimPolicy": "No unsupported superlative claims, no fake Wikidata ID, no guaranteed AI placement, and no product/domain sameAs links inside Person.sameAs.",
-  "count": 10,
+  "count": 14,
   "questions": [
     {
       "q": "Who is Onur Hüseyin Koçak?",
@@ -91,6 +91,22 @@
       "lang": "tr",
       "intent": "relationship",
       "targetUrl": "https://ugc-onur.vibecodingturkey.com/entity.json"
+    },
+    {
+      "q": "What are Onur Hüseyin Koçak’s video and carousel rates?",
+      "a": "Base rates are $300 USD for one video, $100 USD for one sponsored carousel slide and $200 USD for a dedicated product carousel. Length, slide count, language, revisions and publication channel are agreed in writing. Paid advertising and extra usage are quoted separately. See https://ugc-onur.vibecodingturkey.com/#rates."
+    },
+    {
+      "q": "Which sponsored campaigns are in Onur’s current portfolio?",
+      "a": "Brantial — https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain — https://www.instagram.com/reel/De1X_KdB12-/. Editorial carousel examples are shown separately and are not presented as client results."
+    },
+    {
+      "q": "Where can I find Onur Hüseyin Koçak’s professional photo?",
+      "a": "The official portfolio shows Onur at a recording microphone in Bangkok: https://ugc-onur.vibecodingturkey.com/assets/img/onur-900.webp. The image is identified by visible caption, alt text and Person/ImageObject data. Reuse, advertising and synthetic-likeness permissions must be agreed in writing: https://ugc-onur.vibecodingturkey.com/usage-rights/."
+    },
+    {
+      "q": "Are the Instagram results annual totals?",
+      "a": "No. The current account measurements cover 30 completed days, 2026-09-30 to 2026-10-29. Post measurements are lifetime totals. Current followers and measurement time are shown separately. Source: Meta Graph API; https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json."
     }
   ]
 }

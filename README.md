@@ -1,69 +1,30 @@
-# Onur HK — UGC Creator Portfolio
+# Onur Hüseyin Koçak — Tech UGC portfolio
 
-Premium, static, single-page UGC portfolio for **Onur Hüseyin Koçak** (`@onurhuseyinkocak.ai`).
-Built for brands to instantly understand the work and reach out. No backend — pure HTML/CSS/JS, GitHub Pages ready.
+Live: https://ugc-onur.vibecodingturkey.com/
 
-**Live:** https://onurhuseyinkocak.github.io/ugc/
+Static English/Turkish portfolio for AI, SaaS and app brands. The sponsored portfolio contains only Brantial and Mostdomain. Editorial carousels are labelled separately. All measurements are dated Meta API data; no conversion, annual-total or ranking claims are inferred.
 
-## Structure
+## Build and checks
 
-```
-.
-├── index.html              # all sections (hero → contact)
-├── style.css               # premium dark theme, responsive
-├── script.js               # scroll reveal, nav, stat count-up
-├── README.md
-└── assets/
-    ├── favicon.svg
-    ├── stats.json           # real IG stats snapshot
-    ├── img/onur.jpg         # profile photo
-    └── portfolio/
-        ├── reel-1..5.jpg    # real reel thumbnails (downloaded)
-        └── manifest.json    # id, permalink, caption per reel
+```sh
+node scripts/build-creator.mjs
+node --test scripts/test-creator.mjs
+node scripts/prepare-site.mjs
+node scripts/verify-public.mjs
 ```
 
-## Sections
-Hero · Social-proof strip · Live stats (real) · What I Create · Portfolio · Why Brands ·
-Packages · Process · About · Contact.
+The static output excludes internal research, scripts and repository metadata. Existing public archives remain available. No server function is added.
 
-## Real data, no fakes
-- **Stats** (711 community · 22 videos · 1.4K+ comments · TR·EN) were pulled live from the
-  `@onurhuseyinkocak.ai` account. No invented metrics, testimonials, or brand logos.
-- **Portfolio** uses 5 real reels (thumbnails downloaded locally so they don't expire; cards
-  link to the real Instagram reels) + 1 "English UGC — in production" slot.
+## Data refresh
 
-## Replace / update content
-- **Add a real video:** drop a 9:16 thumbnail in `assets/portfolio/`, then duplicate a
-  `.reel` block in `index.html` (set the `href` to the reel URL, the `<img src>`, title,
-  type, and hook).
-- **English samples:** swap the `.reel-soon` card for a real `.reel` once shot.
-- **Refresh stats:** edit the numbers in the `.stats` section of `index.html` (they animate
-  via the `data-count` attribute).
-- **Packages have no prices** by design — "Custom pricing based on scope."
+`node scripts/sync-creator.mjs` uses the existing `INSTAGRAM_PAGE_TOKEN` secret, or the registered local account file in memory. It checks the exact account and post owners, bounds request count and Meta usage, and preserves the previous snapshot on failure. Never print credentials.
 
-## Deploy to GitHub Pages
+The existing daily GitHub workflow updates the fixed public snapshot. Its exact metrics-only commit message is excluded from full Vercel builds. The production page reads the updated public snapshot with validated numeric values and dated fallback. No background polling runs in the browser.
 
-Already deployed. To redeploy after changes:
+## Rates and rights
 
-```bash
-git add -A
-git commit -m "update"
-git push
-```
+Video: 300 USD. One sponsored carousel slide: 100 USD. Dedicated carousel: 200 USD. Scope and publication channel are agreed in writing. Paid ads and extra usage are separately licensed. Current HTML, AI profile and PDF use the same prices.
 
-GitHub Pages serves the `main` branch root automatically (Settings → Pages → Source: `main` / `/`).
+PDF source: `scripts/build-rate-card.py` (ReportLab and fontTools); Manrope is included under OFL. The PDF is committed, so Vercel does not need Python.
 
-### First-time setup (if cloning fresh)
-1. Create a public repo named `ugc`.
-2. `git init && git add -A && git commit -m "init" && git branch -M main`
-3. `git remote add origin https://github.com/<user>/ugc.git && git push -u origin main`
-4. Settings → **Pages** → Source = **Deploy from a branch** → `main` / `/ (root)` → Save.
-5. Live in ~1 min at `https://<user>.github.io/ugc/`.
-
-### Custom domain (optional)
-Add a `CNAME` file with your domain (e.g. `ugc.onurhuseyinkocak.com`) and point a DNS
-CNAME record at `<user>.github.io`.
-
-## Tech
-Static HTML/CSS/JS · Google Fonts (Inter + Space Grotesk) · IntersectionObserver for reveal
-animations · `prefers-reduced-motion` respected · fully responsive (mobile-first).
+Research and the 2,000 unvalidated query/prompt candidates are internal under `docs/seo/2026-10-30/`. They are not public doorway pages or claimed rankings.

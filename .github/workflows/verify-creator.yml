@@ -1,0 +1,21 @@
+name: Verify creator portfolio
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['assets/creator/snapshot.json', 'docs/**']
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - run: node --test scripts/test-creator.mjs
+      - run: node --check creator.js && node --check scripts/sync-creator.mjs
+      - run: node scripts/prepare-site.mjs && node scripts/verify-public.mjs

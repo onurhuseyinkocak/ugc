@@ -10,7 +10,11 @@
       "description": "Public UGC creator profile and service website for Onur Hüseyin Koçak.",
       "about": {
         "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
-      }
+      },
+      "mainEntity": {
+        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
+      },
+      "dateModified": "2026-10-30T10:33:13.612Z"
     },
     {
       "@type": "Service",
@@ -25,7 +29,57 @@
     {
       "@type": "Person",
       "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
-      "name": "Onur Hüseyin Koçak"
+      "name": "Onur Hüseyin Koçak",
+      "alternateName": [
+        "Onur Koçak",
+        "Onur Huseyin Kocak",
+        "onurhuseyinkocak.ai"
+      ],
+      "url": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/",
+      "jobTitle": [
+        "Tech UGC Creator",
+        "Software Developer"
+      ],
+      "description": "Onur Hüseyin Koçak — a software builder and tech creator in Bangkok. I turn AI tools, SaaS and apps into useful videos and carousels, in Turkish and English.",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://ugc-onur.vibecodingturkey.com/#portrait",
+        "contentUrl": "https://ugc-onur.vibecodingturkey.com/assets/img/onur-900.webp",
+        "caption": "Onur Hüseyin Koçak, tech creator and software developer, at a recording microphone.",
+        "representativeOfPage": true,
+        "license": "https://ugc-onur.vibecodingturkey.com/usage-rights/",
+        "acquireLicensePage": "https://ugc-onur.vibecodingturkey.com/#brief",
+        "creditText": "Onur Hüseyin Koçak"
+      },
+      "knowsLanguage": [
+        "tr",
+        "en"
+      ],
+      "knowsAbout": [
+        "Tech UGC",
+        "AI tools",
+        "SaaS",
+        "Mobile apps",
+        "Instagram Reels",
+        "Instagram carousels",
+        "Vibe coding"
+      ],
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Bangkok, Thailand"
+      },
+      "sameAs": [
+        "https://www.instagram.com/onurhuseyinkocak.ai/",
+        "https://www.youtube.com/@onurhuseyinkocak",
+        "https://github.com/onurhuseyinkocak",
+        "https://www.linkedin.com/in/onurhuseyinkocak",
+        "https://www.tiktok.com/@honored.ai"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Vibe Coding Turkey",
+        "url": "https://vibecodingturkey.com"
+      }
     },
     {
       "@type": "WebSite",

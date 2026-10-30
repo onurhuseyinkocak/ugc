@@ -25,21 +25,21 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Fetch verified Reels and insights
+      - name: Refresh the fixed, verified creator selection
         env:
           INSTAGRAM_PAGE_TOKEN: ${{ secrets.INSTAGRAM_PAGE_TOKEN }}
           INSTAGRAM_USER_ID: ${{ vars.INSTAGRAM_USER_ID }}
           INSTAGRAM_GRAPH_VERSION: ${{ vars.INSTAGRAM_GRAPH_VERSION }}
-        run: node scripts/sync-instagram-portfolio.mjs
+        run: node scripts/sync-creator.mjs
 
       - name: Commit only validated portfolio changes
         run: |
-          git add assets/portfolio/manifest.json assets/portfolio/metrics.json assets/stats.json assets/portfolio/ig-*.jpg assets/video/ig-*.mp4
+          git add assets/creator/snapshot.json
           if git diff --cached --quiet; then
             echo "Instagram portfolio is already current."
             exit 0
           fi
           git config user.name "ugc-portfolio-sync[bot]"
           git config user.email "ugc-portfolio-sync[bot]@users.noreply.github.com"
-          git commit -m "chore: sync verified Instagram portfolio"
+          git commit -m "chore: refresh verified creator measurements [skip-vercel]"
           git push
