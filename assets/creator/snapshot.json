@@ -1,13 +1,13 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 7929,
-  "measuredAt": "2026-10-30T10:33:13.612Z",
+  "followers": 7934,
+  "measuredAt": "2026-10-30T11:03:51.073Z",
   "days": 30,
   "startDate": "2026-09-30",
   "endDate": "2026-10-29",
   "metrics": {
-    "views": 1848549,
+    "views": 1848554,
     "reach": 784843,
     "comments": 10726,
     "likes": 19922,
@@ -148,7 +148,7 @@
       "poster": "assets/creator/18211971262345987.jpg",
       "video": "assets/creator/18211971262345987.mp4",
       "metrics": {
-        "views": 6665,
+        "views": 6666,
         "reach": 5073,
         "saved": 132,
         "shares": 157,
@@ -166,7 +166,7 @@
       "poster": "assets/creator/17961609438230427.jpg",
       "video": "assets/creator/17961609438230427.mp4",
       "metrics": {
-        "views": 2848,
+        "views": 2849,
         "reach": 2155,
         "saved": 37,
         "shares": 69,
@@ -186,13 +186,13 @@
       "poster": "assets/creator/18644050693029570.jpg",
       "video": null,
       "metrics": {
-        "views": 744586,
-        "reach": 562429,
-        "saved": 27157,
-        "shares": 16032,
-        "follows": 2189,
-        "likes": 6451,
-        "comments": 1906
+        "views": 745000,
+        "reach": 563453,
+        "saved": 27169,
+        "shares": 16040,
+        "follows": 2191,
+        "likes": 6456,
+        "comments": 1907
       }
     },
     {
@@ -205,13 +205,13 @@
       "poster": "assets/creator/18096907886123336.jpg",
       "video": null,
       "metrics": {
-        "views": 165243,
+        "views": 165396,
         "reach": 114958,
-        "saved": 7928,
-        "shares": 2937,
+        "saved": 7931,
+        "shares": 2947,
         "follows": 647,
-        "likes": 1871,
-        "comments": 1092
+        "likes": 1874,
+        "comments": 1094
       }
     },
     {
@@ -224,12 +224,12 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 110595,
-        "reach": 79656,
-        "saved": 5319,
-        "shares": 3479,
+        "views": 110878,
+        "reach": 79792,
+        "saved": 5331,
+        "shares": 3487,
         "follows": 298,
-        "likes": 1119,
+        "likes": 1123,
         "comments": 725
       }
     }
