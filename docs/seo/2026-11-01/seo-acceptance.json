@@ -1,0 +1,155 @@
+{
+  "checkedAt": "2026-11-01T14:17:00.153268+00:00",
+  "sourceCommit": "fe2c8ce3176ee3b76aba193793ef01db82f25712",
+  "scope": "five bounded public GETs; no analytics API/deploy/build",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "finalUrl": "https://ugc-onur.vibecodingturkey.com/",
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "bytes": 22736,
+      "sha256": "b6648478a5a0b9641ec2ff5c1feec931e3292c59edf091301aebb7809c6b7b9d",
+      "sourceByteParity": true,
+      "canonical": [
+        "https://ugc-onur.vibecodingturkey.com/"
+      ],
+      "hreflang": [
+        [
+          "en",
+          "https://ugc-onur.vibecodingturkey.com/"
+        ],
+        [
+          "tr",
+          "https://ugc-onur.vibecodingturkey.com/tr/"
+        ],
+        [
+          "x-default",
+          "https://ugc-onur.vibecodingturkey.com/"
+        ]
+      ],
+      "personId": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://ugc-onur.vibecodingturkey.com/#portrait",
+        "contentUrl": "https://ugc-onur.vibecodingturkey.com/assets/img/onur-900.webp",
+        "caption": "Onur Hüseyin Koçak, tech creator and software developer, at a recording microphone.",
+        "representativeOfPage": true
+      },
+      "sameAs": [
+        "https://www.instagram.com/onurhuseyinkocak.ai/",
+        "https://www.youtube.com/@onurhuseyinkocak",
+        "https://github.com/onurhuseyinkocak",
+        "https://www.linkedin.com/in/onurhuseyinkocak",
+        "https://www.tiktok.com/@honored.ai"
+      ]
+    },
+    {
+      "path": "/tr/onur-huseyin-kocak/",
+      "status": 200,
+      "finalUrl": "https://ugc-onur.vibecodingturkey.com/tr/onur-huseyin-kocak/",
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "bytes": 6387,
+      "sha256": "1504c20f33d9b206fe5dfbfb5b9473c791173b8215b19f1e2d82a3c6914463f1",
+      "sourceByteParity": true,
+      "canonical": [
+        "https://ugc-onur.vibecodingturkey.com/tr/onur-huseyin-kocak/"
+      ],
+      "hreflang": [],
+      "personId": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://ugc-onur.vibecodingturkey.com/#portrait",
+        "contentUrl": "https://ugc-onur.vibecodingturkey.com/assets/img/onur-900.webp",
+        "caption": "Onur Hüseyin Koçak, tech creator and software developer, at a recording microphone.",
+        "representativeOfPage": true,
+        "license": "https://ugc-onur.vibecodingturkey.com/usage-rights/",
+        "acquireLicensePage": "https://ugc-onur.vibecodingturkey.com/#brief",
+        "creditText": "Onur Hüseyin Koçak"
+      },
+      "sameAs": [
+        "https://www.instagram.com/onurhuseyinkocak.ai/",
+        "https://www.youtube.com/@onurhuseyinkocak",
+        "https://github.com/onurhuseyinkocak",
+        "https://www.linkedin.com/in/onurhuseyinkocak",
+        "https://www.tiktok.com/@honored.ai"
+      ]
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "finalUrl": "https://ugc-onur.vibecodingturkey.com/robots.txt",
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "bytes": 2455,
+      "sha256": "5bdeddf926797ad54b7dc81dacca9046eabbce0e4f82a5235c5782b98f024a98",
+      "sourceByteParity": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://ugc-onur.vibecodingturkey.com/sitemap.xml",
+      "contentType": "application/xml",
+      "xRobotsTag": null,
+      "bytes": 6950,
+      "sha256": "86383fabf74f338fe4fb39295f87336f2bad9e2995c58723947d13cd916817e9",
+      "sourceByteParity": true
+    },
+    {
+      "path": "/assets/img/onur-900.webp",
+      "status": 200,
+      "finalUrl": "https://ugc-onur.vibecodingturkey.com/assets/img/onur-900.webp",
+      "contentType": "image/webp",
+      "xRobotsTag": null,
+      "bytes": 18534,
+      "sha256": "8fc9aa05ade905cab1f2e9a38951d67e265ba248d22e672f2da2b72d58c7fd1f",
+      "sourceByteParity": true
+    }
+  ],
+  "localOnlyFix": {
+    "homepagePortraitLicense": "same existing usage-rights and brief URLs as profile pages",
+    "profileLanguages": [
+      "en",
+      "tr",
+      "x-default"
+    ],
+    "generatorOutputsAllowlisted": 20,
+    "changedGeneratedPaths": 13,
+    "tests": 9,
+    "snapshotSha256Unchanged": "98ac500c87534d420b3b3a51c41d852d30dbb96cacc852c4fff98ef7bddc3ee1",
+    "snapshotMeasuredAt": "2026-11-01T07:33:21.827Z",
+    "legalFootersUnchanged": 10
+  },
+  "queryCandidates": {
+    "count": 2000,
+    "unique": 2000,
+    "volumeValidated": false,
+    "rankObserved": false,
+    "publicDoorwayPagesCreated": 0
+  },
+  "sourceEvidence": [
+    "docs/seo/2026-10-30/PLAN.md",
+    "/Users/jinx/Documents/projeler/vibecodingturkey/docs/legal-2026-11-01/onur-portfolio-browser-2026-11-01.json"
+  ],
+  "limits": {
+    "productionFixPublished": false,
+    "push": false,
+    "deploy": false,
+    "newAssets": false,
+    "analyticsApiRequests": 0,
+    "newPlanQuotaKnown": false,
+    "rankGuarantee": false
+  },
+  "testsEvidence": [
+    "/tmp/vct-ugc-seo-image-red-2026-11-01.log",
+    "/tmp/vct-ugc-seo-profile-red-2026-11-01.log",
+    "/tmp/vct-ugc-seo-final-2026-11-01.log"
+  ],
+  "officialSources": [
+    "https://developers.google.com/search/docs/appearance/google-images",
+    "https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata",
+    "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "profile_type": "ai_search_entity_profile",
-  "last_updated": "2026-10-30T11:03:51.073Z",
+  "last_updated": "2026-11-01T07:33:21.827Z",
   "canonical_url": "https://ugc-onur.vibecodingturkey.com/",
   "entity": {
     "name": "Onur Hüseyin Koçak",
@@ -74,10 +74,10 @@
     ]
   },
   "proof_points": [
-    "1,848,554 account views and 784,843 accounts reached over 2026-09-30–2026-10-29; source: Meta Graph API.",
-    "7,934 current followers, measured 2026-10-30T11:03:51.073Z.",
-    "Brantial: 6666 lifetime post views, measured 2026-10-30T11:03:51.073Z; https://www.instagram.com/reel/Dbm-NzGBpAW/",
-    "Mostdomain: 2849 lifetime post views, measured 2026-10-30T11:03:51.073Z; https://www.instagram.com/reel/De1X_KdB12-/"
+    "1,953,292 account views and 804,783 accounts reached over 2026-10-02–2026-10-31; source: Meta Graph API.",
+    "8,164 current followers, measured 2026-11-01T07:33:21.827Z.",
+    "Brantial: 6735 lifetime post views, measured 2026-11-01T07:33:21.827Z; https://www.instagram.com/reel/Dbm-NzGBpAW/",
+    "Mostdomain: 3429 lifetime post views, measured 2026-11-01T07:33:21.827Z; https://www.instagram.com/reel/De1X_KdB12-/"
   ],
   "creator_network": [
     {
@@ -127,27 +127,27 @@
     "url": "https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json",
     "source": "Meta Graph API",
     "period_days": 30,
-    "start_date": "2026-09-30",
-    "end_date": "2026-10-29",
-    "measured_at": "2026-10-30T11:03:51.073Z"
+    "start_date": "2026-10-02",
+    "end_date": "2026-10-31",
+    "measured_at": "2026-11-01T07:33:21.827Z"
   },
   "verified_measurements": {
     "source": "Meta Graph API",
-    "measured_at": "2026-10-30T11:03:51.073Z",
+    "measured_at": "2026-11-01T07:33:21.827Z",
     "account": {
       "period_days": 30,
-      "start_date": "2026-09-30",
-      "end_date": "2026-10-29",
+      "start_date": "2026-10-02",
+      "end_date": "2026-10-31",
       "metrics": {
-        "views": 1848554,
-        "reach": 784843,
-        "comments": 10726,
-        "likes": 19922,
-        "saves": 73999,
-        "shares": 39044,
-        "total_interactions": 183705
+        "views": 1953292,
+        "reach": 804783,
+        "comments": 12070,
+        "likes": 20967,
+        "saves": 77723,
+        "shares": 41017,
+        "total_interactions": 193836
       },
-      "followers_current": 7934
+      "followers_current": 8164
     },
     "sponsored_campaigns": [
       {
@@ -155,10 +155,10 @@
         "url": "https://www.instagram.com/reel/Dbm-NzGBpAW/",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 6666,
-          "reach": 5073,
+          "views": 6735,
+          "reach": 5134,
           "saved": 132,
-          "shares": 157,
+          "shares": 158,
           "likes": 117,
           "comments": 72
         }
@@ -168,10 +168,10 @@
         "url": "https://www.instagram.com/reel/De1X_KdB12-/",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 2849,
-          "reach": 2155,
+          "views": 3429,
+          "reach": 2249,
           "saved": 37,
-          "shares": 69,
+          "shares": 70,
           "likes": 45,
           "comments": 4
         }

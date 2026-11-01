@@ -35,6 +35,16 @@ test('EN and TR expose actual values, matching prices, canonical language pages 
   for(const path of lang==='tr'?['tr/gizlilik','tr/sozlesme','tr/iade-politikasi']:['en/privacy','en/terms','en/refund-policy'])assert(html.includes('https://vibecodingturkey.com/'+path),'Every portfolio locale links to the shared legal source');
  }
 });
+test('all primary language pages expose the same portrait licensing metadata',()=>{
+ for(const lang of ['en','tr']){
+  const html=render(d,lang),graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+  const image=graph.find(p=>p['@type']==='Person').image;
+  assert.equal(readFileSync(new URL('../'+(lang==='tr'?'tr/':'')+'index.html',import.meta.url),'utf8'),html,'Committed portfolio must match its generator and dated snapshot');
+  assert.equal(image.license,'https://ugc-onur.vibecodingturkey.com/usage-rights/');
+  assert.equal(image.acquireLicensePage,'https://ugc-onur.vibecodingturkey.com/#brief');
+  assert.equal(image.creditText,'Onur Hüseyin Koçak');
+ }
+});
 test('all portfolio assets and original post links are real local files and scoped Instagram posts',()=>{
  for(const p of [...d.campaigns,...d.carousels]){assert(existsSync(new URL('../'+p.poster,import.meta.url)));assert(/^https:\/\/www\.instagram\.com\/(p|reel)\//.test(p.permalink));if(p.video)assert(existsSync(new URL('../'+p.video,import.meta.url)));}
 });
@@ -67,6 +77,12 @@ test('brief creates a correctly addressed email draft, never sends to a backgrou
 });
 
 test('generated profile, service and licence pages retain the shared legal destinations',()=>{
+ for(const lang of ['en','tr']){
+  const path=(lang==='tr'?'tr/':'')+'onur-huseyin-kocak/index.html';
+  const html=readFileSync(new URL('../'+path,import.meta.url),'utf8');
+  for(const code of ['en','tr','x-default'])assert(html.includes(`<link rel="alternate" hreflang="${code}" href="https://ugc-onur.vibecodingturkey.com/${code==='tr'?'tr/':''}onur-huseyin-kocak/">`),path+' reciprocal profile language link');
+  assert(html.includes(`<link rel="canonical" href="https://ugc-onur.vibecodingturkey.com/${lang==='tr'?'tr/':''}onur-huseyin-kocak/">`));
+ }
  for(const file of ['index.html','tr/index.html','onur-huseyin-kocak/index.html','tr/onur-huseyin-kocak/index.html','services/ai-tool-ugc/index.html','services/app-launch-ugc/index.html','usage-rights/index.html']){
   const html=readFileSync(new URL('../'+file,import.meta.url),'utf8');for(const path of file.startsWith('tr/')?['tr/gizlilik','tr/sozlesme','tr/iade-politikasi']:['en/privacy','en/terms','en/refund-policy'])assert(html.includes('https://vibecodingturkey.com/'+path),file);
  }

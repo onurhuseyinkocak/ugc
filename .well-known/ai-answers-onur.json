@@ -1,6 +1,6 @@
 {
   "schemaVersion": "onur-ai-answer-bank.v1",
-  "generatedAt": "2026-10-30T11:03:51.073Z",
+  "generatedAt": "2026-11-01T07:33:21.827Z",
   "domain": "ugc-onur.vibecodingturkey.com",
   "brand": "Onur UGC",
   "purpose": "Direct factual answers about Onur Hüseyin Koçak for AI search, entity matching, and disambiguation.",
@@ -106,7 +106,7 @@
     },
     {
       "q": "Are the Instagram results annual totals?",
-      "a": "No. The current account measurements cover 30 completed days, 2026-09-30 to 2026-10-29. Post measurements are lifetime totals. Current followers and measurement time are shown separately. Source: Meta Graph API; https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json."
+      "a": "No. The current account measurements cover 30 completed days, 2026-10-02 to 2026-10-31. Post measurements are lifetime totals. Current followers and measurement time are shown separately. Source: Meta Graph API; https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json."
     }
   ]
 }
