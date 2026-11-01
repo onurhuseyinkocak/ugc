@@ -32,6 +32,7 @@ test('EN and TR expose actual values, matching prices, canonical language pages 
   assert(!html.includes('FreeBuff'));assert(!html.includes('Freebuff'));assert(!html.includes('aggregateRating'));assert(!html.includes('Custom quote'));
   assert(html.includes(d.metrics.views.toLocaleString(lang==='tr'?'tr-TR':'en-US')));assert(html.includes('data-post-metric="follows"'));
   assert(!/NaN|undefined/.test(html));assert.equal((html.match(/<video /g)??[]).length,2);
+  for(const path of lang==='tr'?['tr/gizlilik','tr/sozlesme','tr/iade-politikasi']:['en/privacy','en/terms','en/refund-policy'])assert(html.includes('https://vibecodingturkey.com/'+path),'Every portfolio locale links to the shared legal source');
  }
 });
 test('all portfolio assets and original post links are real local files and scoped Instagram posts',()=>{
@@ -63,4 +64,10 @@ test('brief creates a correctly addressed email draft, never sends to a backgrou
  const ctx={document:{documentElement:{lang:'en'},getElementById:id=>id==='brief-form'?form:id==='draft-link'?link:status,querySelectorAll:()=>[]},location:{hostname:'127.0.0.1',pathname:'/',search:'',hash:''},window:{},URL,URLSearchParams,FormData:class{get(key){return values.get(key);}}};
  runInNewContext(readFileSync(new URL('../creator.js',import.meta.url),'utf8'),ctx);submit({preventDefault(){}});
  assert(clicked);const u=new URL(href);assert.equal(u.protocol,'mailto:');assert.equal(u.pathname,'info@vibecodingturkey.com');assert(u.searchParams.get('body').includes('a+b & c'));assert(status.textContent.includes('draft'));
+});
+
+test('generated profile, service and licence pages retain the shared legal destinations',()=>{
+ for(const file of ['index.html','tr/index.html','onur-huseyin-kocak/index.html','tr/onur-huseyin-kocak/index.html','services/ai-tool-ugc/index.html','services/app-launch-ugc/index.html','usage-rights/index.html']){
+  const html=readFileSync(new URL('../'+file,import.meta.url),'utf8');for(const path of file.startsWith('tr/')?['tr/gizlilik','tr/sozlesme','tr/iade-politikasi']:['en/privacy','en/terms','en/refund-policy'])assert(html.includes('https://vibecodingturkey.com/'+path),file);
+ }
 });
