@@ -1,25 +1,21 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 8164,
-  "measuredAt": "2026-11-01T07:33:21.827Z",
+  "followers": 8278,
+  "measuredAt": "2026-11-02T07:41:31.355Z",
   "days": 30,
-  "startDate": "2026-10-02",
-  "endDate": "2026-10-31",
+  "startDate": "2026-10-03",
+  "endDate": "2026-11-01",
   "metrics": {
-    "views": 1953292,
-    "reach": 804783,
-    "comments": 12070,
-    "likes": 20967,
-    "saves": 77723,
-    "shares": 41017,
-    "total_interactions": 193836
+    "views": 1997613,
+    "reach": 815808,
+    "comments": 12539,
+    "likes": 21441,
+    "saves": 79251,
+    "shares": 42036,
+    "total_interactions": 198381
   },
   "daily": [
-    {
-      "date": "2026-10-01",
-      "value": 49
-    },
     {
       "date": "2026-10-02",
       "value": 668
@@ -135,6 +131,10 @@
     {
       "date": "2026-10-30",
       "value": 25102
+    },
+    {
+      "date": "2026-10-31",
+      "value": 30246
     }
   ],
   "campaigns": [
@@ -148,7 +148,7 @@
       "poster": "assets/creator/18211971262345987.jpg",
       "video": "assets/creator/18211971262345987.mp4",
       "metrics": {
-        "views": 6735,
+        "views": 6768,
         "reach": 5134,
         "saved": 132,
         "shares": 158,
@@ -166,8 +166,8 @@
       "poster": "assets/creator/17961609438230427.jpg",
       "video": "assets/creator/17961609438230427.mp4",
       "metrics": {
-        "views": 3429,
-        "reach": 2249,
+        "views": 4401,
+        "reach": 2301,
         "saved": 37,
         "shares": 70,
         "likes": 45,
@@ -186,13 +186,13 @@
       "poster": "assets/creator/18644050693029570.jpg",
       "video": null,
       "metrics": {
-        "views": 763083,
-        "reach": 569239,
-        "saved": 27548,
-        "shares": 16255,
-        "follows": 2215,
-        "likes": 6557,
-        "comments": 1938
+        "views": 771414,
+        "reach": 572925,
+        "saved": 27696,
+        "shares": 16380,
+        "follows": 2237,
+        "likes": 6601,
+        "comments": 1962
       }
     },
     {
@@ -205,13 +205,13 @@
       "poster": "assets/creator/18096907886123336.jpg",
       "video": null,
       "metrics": {
-        "views": 173840,
-        "reach": 121905,
-        "saved": 8337,
-        "shares": 3098,
-        "follows": 682,
-        "likes": 1982,
-        "comments": 1193
+        "views": 177604,
+        "reach": 126034,
+        "saved": 8554,
+        "shares": 3193,
+        "follows": 702,
+        "likes": 2043,
+        "comments": 1227
       }
     },
     {
@@ -224,13 +224,13 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 122244,
-        "reach": 86402,
-        "saved": 5860,
-        "shares": 3872,
-        "follows": 332,
-        "likes": 1218,
-        "comments": 854
+        "views": 127771,
+        "reach": 90473,
+        "saved": 6139,
+        "shares": 4086,
+        "follows": 346,
+        "likes": 1260,
+        "comments": 892
       }
     }
   ]
