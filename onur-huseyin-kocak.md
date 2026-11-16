@@ -1,14 +1,14 @@
 # Onur Hüseyin Koçak
 
-I’m Onur Hüseyin Koçak — a software builder and tech creator in Bangkok. I turn AI tools, SaaS and apps into useful videos and carousels, in Turkish and English.
+I’m Onur Hüseyin Koçak, a software builder and tech creator in Bangkok. I use your product first, then explain it in Reels and carousels people save, in Turkish and English.
 
-I’m the founder of Vibe Coding Turkey and VCT Academy. I build software and teach AI-assisted product development — so I can test a tool, understand the workflow and explain why it matters on camera.
+I’m the founder of Vibe Coding Turkey and VCT Academy. I build software and teach AI-assisted product development, so I can test a tool, understand the workflow and explain why it matters on camera.
 
 Languages: Turkish and English.
 
-Sponsored work: Brantial — https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain — https://www.instagram.com/reel/De1X_KdB12-/.
+Sponsored work: Brantial: https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain: https://www.instagram.com/reel/De1X_KdB12-/.
 
-Video: $300 USD. One sponsored carousel slide: $100 USD. Dedicated carousel: $200 USD. USD base rates for one agreed deliverable. The brief defines length, slide count, language, revision scope and publication channel.
+Reel: $300 USD. Carousel: $100 USD. USD base rates for one agreed deliverable. The brief defines length, slide count, language, revision scope and publication channel.
 
 Paid ads, boosting, whitelisting / Partnership Ads, Spark Ads and dark posts are not included.
 

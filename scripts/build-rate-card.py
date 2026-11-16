@@ -31,12 +31,11 @@ def paragraph(value, y, size=9.3, color=muted):
 
 text(42,height-47,'ONUR HÜSEYİN KOÇAK',20)
 text(42,height-71,'TECH UGC  /  VIDEO + CAROUSEL  /  TURKISH + ENGLISH',9,green)
-text(42,height-95,'Brand collaborations · USD base rates · Updated 30 October 2026',9,muted)
+text(42,height-95,'Brand collaborations · USD base rates · Updated 16 November 2026',9,muted)
 y=height-139
 for title,price,description in [
-    ('Video','$300','One vertical product video: concept, explanation and edit.'),
-    ('Carousel slide','$100','One sponsored slide in a relevant editorial carousel.'),
-    ('Dedicated carousel','$200','One product-focused carousel; slide count agreed in the brief.')]:
+    ('Reel','$300','One vertical product video for Instagram Reels: concept, explanation and edit.'),
+    ('Carousel','$100','One sponsored product carousel; slide count agreed in the brief.')]:
     c.setStrokeColor(HexColor('#c9cec5'));c.line(42,y+18,width-42,y+18)
     text(42,y-4,title,14);text(width-116,y-4,price,20)
     text(42,y-26,description,9,muted);y-=76

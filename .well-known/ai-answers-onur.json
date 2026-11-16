@@ -1,6 +1,6 @@
 {
   "schemaVersion": "onur-ai-answer-bank.v1",
-  "generatedAt": "2026-11-01T07:33:21.827Z",
+  "generatedAt": "2026-11-16T04:48:53.599Z",
   "domain": "ugc-onur.vibecodingturkey.com",
   "brand": "Onur UGC",
   "purpose": "Direct factual answers about Onur Hüseyin Koçak for AI search, entity matching, and disambiguation.",
@@ -94,11 +94,11 @@
     },
     {
       "q": "What are Onur Hüseyin Koçak’s video and carousel rates?",
-      "a": "Base rates are $300 USD for one video, $100 USD for one sponsored carousel slide and $200 USD for a dedicated product carousel. Length, slide count, language, revisions and publication channel are agreed in writing. Paid advertising and extra usage are quoted separately. See https://ugc-onur.vibecodingturkey.com/#rates."
+      "a": "Base rates are $300 USD for one Reel (vertical video) and $100 USD for one sponsored carousel. Length, slide count, language, revisions and publication channel are agreed in writing. Paid advertising and extra usage are quoted separately. See https://ugc-onur.vibecodingturkey.com/#rates."
     },
     {
       "q": "Which sponsored campaigns are in Onur’s current portfolio?",
-      "a": "Brantial — https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain — https://www.instagram.com/reel/De1X_KdB12-/. Editorial carousel examples are shown separately and are not presented as client results."
+      "a": "Brantial: https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain: https://www.instagram.com/reel/De1X_KdB12-/. Editorial carousel examples are shown separately and are not presented as client results."
     },
     {
       "q": "Where can I find Onur Hüseyin Koçak’s professional photo?",
@@ -106,7 +106,7 @@
     },
     {
       "q": "Are the Instagram results annual totals?",
-      "a": "No. The current account measurements cover 30 completed days, 2026-10-02 to 2026-10-31. Post measurements are lifetime totals. Current followers and measurement time are shown separately. Source: Meta Graph API; https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json."
+      "a": "No. The current account measurements cover 30 completed days, 2026-10-17 to 2026-11-15. Post measurements are lifetime totals. Current followers and measurement time are shown separately. Source: Meta Graph API; https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json."
     }
   ]
 }

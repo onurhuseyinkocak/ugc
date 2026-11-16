@@ -1,77 +1,21 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 8278,
-  "measuredAt": "2026-11-02T07:41:31.355Z",
+  "followers": 9251,
+  "measuredAt": "2026-11-16T04:48:53.599Z",
   "days": 30,
-  "startDate": "2026-10-03",
-  "endDate": "2026-11-01",
+  "startDate": "2026-10-17",
+  "endDate": "2026-11-15",
   "metrics": {
-    "views": 1997613,
-    "reach": 815808,
-    "comments": 12539,
-    "likes": 21441,
-    "saves": 79251,
-    "shares": 42036,
-    "total_interactions": 198381
+    "views": 1827189,
+    "reach": 813440,
+    "comments": 11507,
+    "likes": 18664,
+    "saves": 69021,
+    "shares": 37974,
+    "total_interactions": 176163
   },
   "daily": [
-    {
-      "date": "2026-10-02",
-      "value": 668
-    },
-    {
-      "date": "2026-10-03",
-      "value": 837
-    },
-    {
-      "date": "2026-10-04",
-      "value": 4460
-    },
-    {
-      "date": "2026-10-05",
-      "value": 25719
-    },
-    {
-      "date": "2026-10-06",
-      "value": 24002
-    },
-    {
-      "date": "2026-10-07",
-      "value": 16616
-    },
-    {
-      "date": "2026-10-08",
-      "value": 12636
-    },
-    {
-      "date": "2026-10-09",
-      "value": 15138
-    },
-    {
-      "date": "2026-10-10",
-      "value": 22782
-    },
-    {
-      "date": "2026-10-11",
-      "value": 15231
-    },
-    {
-      "date": "2026-10-12",
-      "value": 16269
-    },
-    {
-      "date": "2026-10-13",
-      "value": 26374
-    },
-    {
-      "date": "2026-10-14",
-      "value": 53760
-    },
-    {
-      "date": "2026-10-15",
-      "value": 108295
-    },
     {
       "date": "2026-10-16",
       "value": 252470
@@ -134,7 +78,63 @@
     },
     {
       "date": "2026-10-31",
-      "value": 30246
+      "value": 30670
+    },
+    {
+      "date": "2026-11-01",
+      "value": 65969
+    },
+    {
+      "date": "2026-11-02",
+      "value": 36675
+    },
+    {
+      "date": "2026-11-03",
+      "value": 23216
+    },
+    {
+      "date": "2026-11-04",
+      "value": 22284
+    },
+    {
+      "date": "2026-11-05",
+      "value": 20509
+    },
+    {
+      "date": "2026-11-06",
+      "value": 15118
+    },
+    {
+      "date": "2026-11-07",
+      "value": 11313
+    },
+    {
+      "date": "2026-11-08",
+      "value": 10232
+    },
+    {
+      "date": "2026-11-09",
+      "value": 12312
+    },
+    {
+      "date": "2026-11-10",
+      "value": 11351
+    },
+    {
+      "date": "2026-11-11",
+      "value": 10458
+    },
+    {
+      "date": "2026-11-12",
+      "value": 8531
+    },
+    {
+      "date": "2026-11-13",
+      "value": 11824
+    },
+    {
+      "date": "2026-11-14",
+      "value": 7602
     }
   ],
   "campaigns": [
@@ -148,12 +148,12 @@
       "poster": "assets/creator/18211971262345987.jpg",
       "video": "assets/creator/18211971262345987.mp4",
       "metrics": {
-        "views": 6768,
-        "reach": 5134,
-        "saved": 132,
-        "shares": 158,
-        "likes": 117,
-        "comments": 72
+        "views": 7104,
+        "reach": 5324,
+        "saved": 138,
+        "shares": 162,
+        "likes": 122,
+        "comments": 73
       }
     },
     {
@@ -166,11 +166,11 @@
       "poster": "assets/creator/17961609438230427.jpg",
       "video": "assets/creator/17961609438230427.mp4",
       "metrics": {
-        "views": 4401,
-        "reach": 2301,
+        "views": 6085,
+        "reach": 2605,
         "saved": 37,
         "shares": 70,
-        "likes": 45,
+        "likes": 49,
         "comments": 4
       }
     }
@@ -186,32 +186,13 @@
       "poster": "assets/creator/18644050693029570.jpg",
       "video": null,
       "metrics": {
-        "views": 771414,
-        "reach": 572925,
-        "saved": 27696,
-        "shares": 16380,
-        "follows": 2237,
-        "likes": 6601,
-        "comments": 1962
-      }
-    },
-    {
-      "id": "18096907886123336",
-      "brand": null,
-      "caption": "YAPAY ZEKÂLARA PARA ÖDEMEYİ BIRAK! 💻\n\nOyun bilgisayarın varsa, her ay yapay zekâ aboneliklerine para harcamak zorunda değilsin.\n\nÇünkü ChatGPT, Claude, Midjourney ve diğer popüler AI servislerinin yaptığı birçok işi kendi bilgisayarında çalıştırabileceğin açık modellerle yapabilirsin.\n\nİşte 7 yerel AI alternatifi:\n\n🧠 Claude → Qwen2.5-Coder\nKod yazma, hata düzeltme ve yazılım geliştirme.\n\n💬 ChatGPT → GPT-OSS 20B\nSohbet, analiz ve problem çözme.\n\n🎬 Higgsfield → Wan 2.1\nYapay zekâyla video üretimi.\n\n🎨 Midjourney → FLUX.1 Schnell\nMetinden etkileyici görseller oluşturma.\n\n🎙️ ElevenLabs → Kokoro\nMetinleri doğal seslendirmelere dönüştürme.\n\n🎵 Suno → ACE-Step 1.5\nYapay zekâyla müzik üretimi.\n\n⚡ Gemini → Gemma 3\nGünlük AI görevleri, metin üretimi ve analiz.\n\nEn güzel tarafı ne?\n\n✅ Aylık abonelik zorunluluğu yok.\n\n✅ Kullanım başına API ücreti yok.\n\n✅ Modelleri bilgisayarında çalıştırabilirsin.\n\n✅ Verilerini üçüncü taraf sunuculara göndermeden kullanabilirsin.\n\nTek ihtiyacın, seçtiğin modeli çalıştırabilecek donanıma sahip bir bilgisayar. Modeller ücretli servislerle birebir aynı özellikleri sunmasa da pek çok görev için güçlü alternatifler.\n\n🔥 7 modelin tamamının bağlantılarını ve kurulum rehberini istiyorsan:\n\n👉 Hesabımı takip et.\n\n💬 Yorumlara GAMER yaz.\n\n📩 Tüm bağlantıları ve kurulum rehberini sana DM’den göndereyim!\n\n#YapayZeka #LocalAI #VibeCoding #Ollama #OpenSource",
-      "permalink": "https://www.instagram.com/p/DeuPewWkimo/",
-      "publishedAt": "2026-10-20T16:16:51+0000",
-      "mediaType": "CAROUSEL_ALBUM",
-      "poster": "assets/creator/18096907886123336.jpg",
-      "video": null,
-      "metrics": {
-        "views": 177604,
-        "reach": 126034,
-        "saved": 8554,
-        "shares": 3193,
-        "follows": 702,
-        "likes": 2043,
-        "comments": 1227
+        "views": 821986,
+        "reach": 601725,
+        "saved": 28778,
+        "shares": 17282,
+        "follows": 2377,
+        "likes": 6901,
+        "comments": 2034
       }
     },
     {
@@ -224,13 +205,88 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 127771,
-        "reach": 90473,
-        "saved": 6139,
-        "shares": 4086,
-        "follows": 346,
-        "likes": 1260,
-        "comments": 892
+        "views": 207473,
+        "reach": 147274,
+        "saved": 9538,
+        "shares": 6298,
+        "follows": 553,
+        "likes": 1882,
+        "comments": 1167
+      }
+    },
+    {
+      "id": "18096907886123336",
+      "brand": null,
+      "caption": "YAPAY ZEKÂLARA PARA ÖDEMEYİ BIRAK! 💻\n\nOyun bilgisayarın varsa, her ay yapay zekâ aboneliklerine para harcamak zorunda değilsin.\n\nÇünkü ChatGPT, Claude, Midjourney ve diğer popüler AI servislerinin yaptığı birçok işi kendi bilgisayarında çalıştırabileceğin açık modellerle yapabilirsin.\n\nİşte 7 yerel AI alternatifi:\n\n🧠 Claude → Qwen2.5-Coder\nKod yazma, hata düzeltme ve yazılım geliştirme.\n\n💬 ChatGPT → GPT-OSS 20B\nSohbet, analiz ve problem çözme.\n\n🎬 Higgsfield → Wan 2.1\nYapay zekâyla video üretimi.\n\n🎨 Midjourney → FLUX.1 Schnell\nMetinden etkileyici görseller oluşturma.\n\n🎙️ ElevenLabs → Kokoro\nMetinleri doğal seslendirmelere dönüştürme.\n\n🎵 Suno → ACE-Step 1.5\nYapay zekâyla müzik üretimi.\n\n⚡ Gemini → Gemma 3\nGünlük AI görevleri, metin üretimi ve analiz.\n\nEn güzel tarafı ne?\n\n✅ Aylık abonelik zorunluluğu yok.\n\n✅ Kullanım başına API ücreti yok.\n\n✅ Modelleri bilgisayarında çalıştırabilirsin.\n\n✅ Verilerini üçüncü taraf sunuculara göndermeden kullanabilirsin.\n\nTek ihtiyacın, seçtiğin modeli çalıştırabilecek donanıma sahip bir bilgisayar. Modeller ücretli servislerle birebir aynı özellikleri sunmasa da pek çok görev için güçlü alternatifler.\n\n🔥 7 modelin tamamının bağlantılarını ve kurulum rehberini istiyorsan:\n\n👉 Hesabımı takip et.\n\n💬 Yorumlara GAMER yaz.\n\n📩 Tüm bağlantıları ve kurulum rehberini sana DM’den göndereyim!\n\n#YapayZeka #LocalAI #VibeCoding #Ollama #OpenSource",
+      "permalink": "https://www.instagram.com/p/DeuPewWkimo/",
+      "publishedAt": "2026-10-20T16:16:51+0000",
+      "mediaType": "CAROUSEL_ALBUM",
+      "poster": "assets/creator/18096907886123336.jpg",
+      "video": null,
+      "metrics": {
+        "views": 205466,
+        "reach": 140919,
+        "saved": 9536,
+        "shares": 3611,
+        "follows": 835,
+        "likes": 2238,
+        "comments": 1312
+      }
+    }
+  ],
+  "reels": [
+    {
+      "id": "18128790184621531",
+      "brand": null,
+      "caption": "🚀 AEO (Answer Engine Optimization) Nedir?\n\nİnsanlar artık Google’da aramak yerine ChatGPT, Gemini ve Claude’a soru soruyor.\n\nAEO, web sitenizi bu yapay zekaların cevaplarında yer alacak şekilde optimize etme sürecidir.\n\nBu videoda anlattığım araçlar:\n\n• AnswerThePublic\n• AlsoAsked\n• Google “İnsanlar Bunları da Soruyor”\n• Reddit\n• Quora\n\nBu kaynaklardan nişinizdeki gerçek soruları bulup içerik üretirseniz yapay zekalar sizi kaynak olarak kullanabilir.\n\n📌 GEO, AEO, SEO ve AI Search hakkında daha fazla içerik için takip etmeyi unutma.\n\n💬 “VCT” yaz, kullandığım promptu ve AEO rehberini göndereyim.\n\n#AEO #GEO #ChatGPT #SEO #onurhuseyinkocak",
+      "permalink": "https://www.instagram.com/reel/DZku2Dxuh6L/",
+      "publishedAt": "2026-06-14T17:03:40+0000",
+      "mediaType": "VIDEO",
+      "poster": "assets/creator/18128790184621531.jpg",
+      "video": null,
+      "metrics": {
+        "views": 83355,
+        "reach": 71453,
+        "saved": 2009,
+        "shares": 1887,
+        "likes": 732,
+        "comments": 1170
+      }
+    },
+    {
+      "id": "18127658746529604",
+      "brand": null,
+      "caption": "GEO nedir?\n\nSEO web siteni Google’a anlatır.\n\nGEO ise ürününü ChatGPT, Claude, Gemini ve Perplexity’ye anlatır.\n\nArtık insanlar Google’a değil, yapay zekâlara soru soruyor.\n\n“En iyi rüya analizi uygulaması nedir?”\n“Anksiyete için hangi uygulamayı kullanmalıyım?”\n“Vibe coding öğrenmek için hangi topluluk iyi?”\n\nEğer ürünün AI Search’e uygun değilse bu cevapların içinde asla yer alamazsın.\n\nSon birkaç haftadır kendi projelerimde GEO çalışmaları yapıyorum ve sonuçlar oldukça ilginç. Bazı sitelerimde trafiğin önemli bir kısmı doğrudan yapay zekâlardan gelmeye başladı.\n\nİyi haber şu:\n\nBu iş için onlarca saat harcamana gerek yok.\n\nClaude Code veya Codex’e vereceğin tek bir prompt ile sitene GEO entegrasyonu yaptırabilirsin.\n\nYorumlara “PROMPT” yaz.\n\nKullandığım GEO promptunu göndereyim.\n\nKaydet. Takip et. Gönderiyi AI ile ürün geliştiren bir arkadaşına gönder.\n\n#GEO #AISearch #GenerativeEngineOptimization #VibeCodingTurkey #AIMarketing",
+      "permalink": "https://www.instagram.com/reel/DZUrR_Iuzrd/",
+      "publishedAt": "2026-06-08T11:32:58+0000",
+      "mediaType": "VIDEO",
+      "poster": "assets/creator/18127658746529604.jpg",
+      "video": null,
+      "metrics": {
+        "views": 61073,
+        "reach": 43927,
+        "saved": 2650,
+        "shares": 1441,
+        "likes": 829,
+        "comments": 5139
+      }
+    },
+    {
+      "id": "17951586627240097",
+      "brand": null,
+      "caption": "Uygulamaya login ekranı ekledin. Kullanıcı giriş yapmadan içeriyi göremiyor. Güvenli olduğunu düşünüyorsun.\n\nDeğil.\n\nLogin ekranı sadece kullanıcının kim olduğunu doğrular. Kullanıcının veritabanında hangi verilere erişebileceğini tek başına belirlemez.\n\nÖzellikle Supabase ile vibe coding yapıyorsan burada kritik konu RLS: Row Level Security.\n\nRLS yanlış yapılandırılmışsa veya gerekli tablolarda doğru policy’ler yoksa kullanıcı arayüzünde göstermediğin verilere doğrudan yapılan istekler üzerinden erişim riski oluşabilir.\n\nMesela uygulamada kullanıcı sadece kendi profilini ve kendi verilerini görüyor olabilir. Bu, veritabanının da yalnızca o satırlara izin verdiği anlamına gelmez.\n\nAsıl güvenlik kuralı backend/veritabanı seviyesinde olmalı:\n\n“Bu kullanıcı sadece user_id = auth.uid() olan satırları okuyabilir.”\n\nAynı mantık INSERT, UPDATE ve DELETE işlemleri için de ayrı ayrı düşünülmeli.\n\nYani:\n\nLogin var → kim olduğunu biliyorum.\n\nRLS + doğru policy var → hangi verilere erişebileceğini kontrol ediyorum.\n\nFrontend’de butonu gizlemek, sayfayı kapatmak veya route’u korumak gerçek bir veri erişim kontrolünün yerine geçmez.\n\nAI’a “login sistemi ekle” dediğinde işin bittiğini düşünme. Auth’tan sonra veritabanı erişim kurallarını da kontrol ettir.\n\nVibe coding’de en tehlikeli güvenlik açıklarından biri çalışan uygulamayı güvenli uygulama sanmak.\n\nEkranda ne gördüğüne değil, veritabanının neye izin verdiğine bak.\n\n#VibeCoding #Supabase #RLS #SiberGuvenlik #YapayZeka",
+      "permalink": "https://www.instagram.com/reel/DcN2LgOB331/",
+      "publishedAt": "2026-08-19T09:25:47+0000",
+      "mediaType": "VIDEO",
+      "poster": "assets/creator/17951586627240097.jpg",
+      "video": null,
+      "metrics": {
+        "views": 12063,
+        "reach": 9885,
+        "saved": 444,
+        "shares": 168,
+        "likes": 162,
+        "comments": 11
       }
     }
   ]

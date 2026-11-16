@@ -3,16 +3,18 @@ import {join} from 'node:path';
 import {homedir} from 'node:os';
 
 const root = new URL('../', import.meta.url);
-const accountId = '17841428045192826';
+// Instagram-login tokens use graph.instagram.com and address the account as "me".
+const base = process.env.INSTAGRAM_GRAPH_BASE || 'https://graph.facebook.com/v23.0/';
+if (!/^https:\/\/graph\.(facebook|instagram)\.com\/v\d+\.\d+\/$/.test(base)) throw new Error('Untrusted Graph base');
+const accountId = base.includes('graph.instagram.com') ? 'me' : '17841428045192826';
 const campaigns = [{brand:'Brantial',id:'18211971262345987'}, {brand:'Mostdomain',id:'17961609438230427'}];
-const carouselIds = ['18644050693029570','18096907886123336','18107535647276122','17890104750626337','17985211887075970','18190614169406601'];
 let calls = 0;
 let token = process.env.INSTAGRAM_PAGE_TOKEN;
 if(!token){try{token=JSON.parse(readFileSync(join(homedir(),'.local/share/claude-design/igbot/page-tokens.json'),'utf8'))['onurhuseyinkocak.ai']?.page_token;}catch{throw new Error('Local Instagram credential could not be read');}}
 if (!token) throw new Error('Instagram credential unavailable');
 async function graph(path, params = {}) {
-  if (++calls > 26) throw new Error('Read budget reached');
-  const url = new URL('https://graph.facebook.com/v23.0/' + path);
+  if (++calls > 40) throw new Error('Read budget reached');
+  const url = new URL(base + path);
   for (const [name,value] of Object.entries(params)) url.searchParams.set(name,String(value));
   const response = await fetch(url,{headers:{Authorization:'Bearer '+token},signal:AbortSignal.timeout(15000)});
   const usage = JSON.parse(response.headers.get('x-app-usage') || '{}');
@@ -23,8 +25,8 @@ async function graph(path, params = {}) {
 }
 const numeric = value => typeof value === 'number' && Number.isFinite(value) && value >= 0;
 async function media(id) {
-  const item = await graph(id,{fields:'id,owner{id},caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count'});
-  if (item.owner?.id!==accountId || item.id!==id || !item.permalink?.startsWith('https://www.instagram.com/')) throw new Error('Media ownership mismatch');
+  const item = await graph(id,{fields:'id,username,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count'});
+  if (item.username!=='onurhuseyinkocak.ai' || item.id!==id || !item.permalink?.startsWith('https://www.instagram.com/')) throw new Error('Media ownership mismatch');
   const names = ['views','reach','saved','shares',...(item.media_type==='CAROUSEL_ALBUM'?['follows']:[])];
   let insights;
   try { insights=await graph(id+'/insights',{metric:names.join(',')}); }
@@ -57,22 +59,31 @@ async function main() {
   const daily=(series.data?.[0]?.values??[]).map(r=>{if(!numeric(r.value)||!Number.isFinite(Date.parse(r.end_time)))throw new Error('Daily metric unavailable');return{date:new Date(Date.parse(r.end_time)-86400000).toISOString().slice(0,10),value:r.value};});
   const projects=[];
   for(const c of campaigns){const item=await media(c.id);if(!item.caption?.toLowerCase().includes(c.brand.toLowerCase()))throw new Error('Campaign caption mismatch');projects.push({...item,brand:c.brand});}
+  // Showcase: the published selection stays fixed between runs, because the live page only refreshes numbers for the posts it was built with.
+  // RESELECT=1 re-picks it: the six most-engaged recent posts per format are measured and the three with most views are kept. Rebuild and deploy afterwards.
   const previous=existsSync(new URL('assets/creator/snapshot.json',root))?JSON.parse(readFileSync(new URL('assets/creator/snapshot.json',root),'utf8')):null;
-  const selectedIds=previous?.carousels?.length===3?previous.carousels.map(item=>item.id):carouselIds;
-  if(selectedIds.some(id=>!carouselIds.includes(id)))throw new Error('Carousel selection mismatch');
-  const candidates=[];
-  for(const id of selectedIds){const item=await media(id);if(item.media_type!=='CAROUSEL_ALBUM')throw new Error('Carousel mismatch');candidates.push(item);}
-  const gallery=candidates.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1)).slice(0,3);
+  const keep=process.env.RESELECT!=='1'&&previous?.carousels?.length===3&&previous?.reels?.length===3;
+  const recent=keep?null:await graph(accountId+'/media',{fields:'id,media_type,like_count,comments_count',limit:100});
+  const sponsored=new Set(campaigns.map(c=>c.id)),engagement=m=>(m.like_count??0)+(m.comments_count??0);
+  async function top(type,kept){
+    const items=[];
+    if(keep){for(const p of kept){const item=await media(p.id);if(item.media_type!==type)throw new Error('Showcase mismatch');items.push(item);}return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1));}
+    for(const m of (recent.data??[]).filter(m=>m.media_type===type&&!sponsored.has(m.id)).sort((a,b)=>engagement(b)-engagement(a)).slice(0,6))items.push(await media(m.id));
+    if(items.length<3)throw new Error('Showcase unavailable');
+    return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1)).slice(0,3);
+  }
+  const gallery=await top('CAROUSEL_ALBUM',previous?.carousels),reels=await top('VIDEO',previous?.reels);
   mkdirSync(new URL('assets/creator/',root),{recursive:true});
   async function publicItem(item){
     const poster='assets/creator/'+item.id+'.jpg';await download(item.thumbnail_url||item.media_url,poster,'image/',5*1024*1024);
-    let video=null;if(item.media_type==='VIDEO'){video='assets/creator/'+item.id+'.mp4';await download(item.media_url,video,'video/',80*1024*1024);}
+    let video=null;if(item.brand&&item.media_type==='VIDEO'){video='assets/creator/'+item.id+'.mp4';await download(item.media_url,video,'video/',80*1024*1024);}
     return{id:item.id,brand:item.brand??null,caption:item.caption,permalink:item.permalink,publishedAt:item.timestamp,mediaType:item.media_type,poster,video,metrics:item.metrics};
   }
   const cleanProjects=[];for(const p of projects)cleanProjects.push(await publicItem(p));
   const cleanGallery=[];for(const p of gallery)cleanGallery.push(await publicItem(p));
-  const snapshot={source:'Meta Graph API',username:profile.username,followers:profile.followers_count,measuredAt:new Date().toISOString(),days:30,startDate:new Date(since*1000).toISOString().slice(0,10),endDate:new Date((until-1)*1000).toISOString().slice(0,10),metrics,daily,campaigns:cleanProjects,carousels:cleanGallery};
+  const cleanReels=[];for(const p of reels)cleanReels.push(await publicItem(p));
+  const snapshot={source:'Meta Graph API',username:profile.username,followers:profile.followers_count,measuredAt:new Date().toISOString(),days:30,startDate:new Date(since*1000).toISOString().slice(0,10),endDate:new Date((until-1)*1000).toISOString().slice(0,10),metrics,daily,campaigns:cleanProjects,carousels:cleanGallery,reels:cleanReels};
   writeFileSync(new URL('assets/creator/snapshot.json',root),JSON.stringify(snapshot,null,2)+'\n');
-  console.log(JSON.stringify({ok:true,reads:calls,username:snapshot.username,metrics,followers:snapshot.followers,projects:cleanProjects.map(p=>({brand:p.brand,metrics:p.metrics})),carousels:cleanGallery.map(p=>({id:p.id,metrics:p.metrics}))}));
+  console.log(JSON.stringify({ok:true,reads:calls,username:snapshot.username,metrics,followers:snapshot.followers,projects:cleanProjects.map(p=>({brand:p.brand,metrics:p.metrics})),carousels:cleanGallery.map(p=>({id:p.id,metrics:p.metrics})),reels:cleanReels.map(p=>({id:p.id,metrics:p.metrics}))}));
 }
-main().catch(error=>{console.error(/^Meta read failed:|guard reached|mismatch|unavailable|too large|refused|budget/.test(error.message)?error.message:'Creator sync could not be completed; previous snapshot preserved.');process.exitCode=1;});
+main().catch(error=>{console.error(/^Meta read failed:|guard reached|mismatch|unavailable|Untrusted|too large|refused|budget/.test(error.message)?error.message:'Creator sync could not be completed; previous snapshot preserved.');process.exitCode=1;});

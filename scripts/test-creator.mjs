@@ -15,23 +15,23 @@ test('AI discovery mirrors and commercial answers match the dated creator source
  const faq=JSON.parse(readFileSync(new URL('../brand-faq.json',import.meta.url),'utf8'));
  assert.equal(faq.canonical_url,'https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/');
  const prices=faq.questions.find(p=>p.question.includes('video and carousel rates'))?.answer;
- for(const price of ['$300 USD','$100 USD','$200 USD'])assert(prices?.includes(price));
+ for(const price of ['$300 USD','$100 USD'])assert(prices?.includes(price));assert(!/\$200|dedicated|carousel slide/i.test(prices),'Retired price structure must not return');
  assert.equal(faq.questions.filter(p=>p.question.includes('annual totals')).length,1);
 });
 test('only verified account metrics, exact period and two approved sponsors are published',()=>{
  assert.equal(validateSnapshot(d),d);
- for(const bad of [{...d,username:'other'},{...d,days:365},{...d,endDate:d.startDate},{...d,metrics:{...d.metrics,reach:-1}},{...d,followers:NaN},{...d,campaigns:[...d.campaigns,d.campaigns[0]]}])assert.throws(()=>validateSnapshot(bad));
+ for(const bad of [{...d,username:'other'},{...d,days:365},{...d,endDate:d.startDate},{...d,metrics:{...d.metrics,reach:-1}},{...d,followers:NaN},{...d,campaigns:[...d.campaigns,d.campaigns[0]]},{...d,reels:d.reels.slice(1)},{...d,carousels:[]}])assert.throws(()=>validateSnapshot(bad));
 });
 test('EN and TR expose actual values, matching prices, canonical language pages and no fabricated rankings',()=>{
  for(const lang of ['en','tr']){
   const html=render(d,lang),data=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
   assert(html.includes(`<html lang="${lang}">`));assert(html.includes('hreflang="tr" href="https://ugc-onur.vibecodingturkey.com/tr/"'));
-  assert.deepEqual(data['@graph'].filter(x=>x['@type']==='Service').map(x=>x.offers.price),['300','100','200']);
+  assert.deepEqual(data['@graph'].filter(x=>x['@type']==='Service').map(x=>x.offers.price),['300','100']);
   assert.equal(data['@graph'].filter(x=>x['@type']==='VideoObject').length,2);
   for(const brand of ['Brantial','Mostdomain'])assert(html.includes(brand));
   assert(!html.includes('FreeBuff'));assert(!html.includes('Freebuff'));assert(!html.includes('aggregateRating'));assert(!html.includes('Custom quote'));
   assert(html.includes(d.metrics.views.toLocaleString(lang==='tr'?'tr-TR':'en-US')));assert(html.includes('data-post-metric="follows"'));
-  assert(!/NaN|undefined/.test(html));assert.equal((html.match(/<video /g)??[]).length,2);
+  assert(!/NaN|undefined/.test(html));assert.equal((html.match(/<video /g)??[]).length,3,'Two sponsored videos and one own-product film');assert.equal((html.match(/data-preview=/g)??[]).length,2);assert(!/[—–↗]/.test(html.replace(/<script[\s\S]*?<\/script>/g,'')),'Visible copy uses glyphs the self-hosted fonts contain');assert(!/\$200|[Dd]edicated carousel|carousel slide|Carousel slaytı/.test(html));
   for(const path of lang==='tr'?['tr/gizlilik','tr/sozlesme','tr/iade-politikasi']:['en/privacy','en/terms','en/refund-policy'])assert(html.includes('https://vibecodingturkey.com/'+path),'Every portfolio locale links to the shared legal source');
  }
 });
@@ -46,7 +46,7 @@ test('all primary language pages expose the same portrait licensing metadata',()
  }
 });
 test('all portfolio assets and original post links are real local files and scoped Instagram posts',()=>{
- for(const p of [...d.campaigns,...d.carousels]){assert(existsSync(new URL('../'+p.poster,import.meta.url)));assert(/^https:\/\/www\.instagram\.com\/(p|reel)\//.test(p.permalink));if(p.video)assert(existsSync(new URL('../'+p.video,import.meta.url)));}
+ for(const p of [...d.campaigns,...d.carousels,...d.reels]){assert(existsSync(new URL('../'+p.poster,import.meta.url)));assert(/^https:\/\/www\.instagram\.com\/(p|reel)\//.test(p.permalink));if(p.video)assert(existsSync(new URL('../'+p.video,import.meta.url)));}
 });
 test('unsafe values are escaped; email drafts do not masquerade as confirmed leads',()=>{
  assert.equal(esc('<script>"&\''),'&lt;script&gt;&quot;&amp;&#39;');
@@ -86,4 +86,18 @@ test('generated profile, service and licence pages retain the shared legal desti
  for(const file of ['index.html','tr/index.html','onur-huseyin-kocak/index.html','tr/onur-huseyin-kocak/index.html','services/ai-tool-ugc/index.html','services/app-launch-ugc/index.html','usage-rights/index.html']){
   const html=readFileSync(new URL('../'+file,import.meta.url),'utf8');for(const path of file.startsWith('tr/')?['tr/gizlilik','tr/sozlesme','tr/iade-politikasi']:['en/privacy','en/terms','en/refund-policy'])assert(html.includes('https://vibecodingturkey.com/'+path),file);
  }
+});
+test('niche pages are distinct, evidenced and structurally valid; overlapping service URLs defer to them',()=>{
+ const read=file=>readFileSync(new URL('../'+file,import.meta.url),'utf8'),seenTitle=new Set(),seenDescription=new Set();
+ for(const file of ['index.html','tr/index.html','onur-huseyin-kocak/index.html','tr/onur-huseyin-kocak/index.html','ai-saas-ugc-creator/index.html','mobile-app-ugc-creator/index.html','bangkok-ugc-creator/index.html','usage-rights/index.html']){
+  const html=read(file),title=html.match(/<title>([^<]*)/)[1],description=html.match(/<meta name="description" content="([^"]*)/)[1],types=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'].map(x=>x['@type']);
+  assert(!seenTitle.has(title)&&!seenDescription.has(description),file+' duplicates a title or description');seenTitle.add(title);seenDescription.add(description);
+  assert(html.includes('og-onur.jpg')&&html.includes('twitter:image'),file+' social card');
+  if(!file.endsWith('index.html')||file.includes('/')&&!file.startsWith('tr/index'))assert(types.includes('BreadcrumbList'),file+' breadcrumb');
+  if(/ugc-creator|usage-rights|^index|^tr\/index/.test(file))assert(types.includes('FAQPage'),file+' FAQ data');
+  if(/ugc-creator/.test(file)){assert(html.includes('Brantial')&&html.includes(d.campaigns[0].metrics.views.toLocaleString('en-US')),file+' shows dated sponsored evidence');assert(!/\$200|FreeBuff/.test(html));}
+ }
+ assert(read('services/ai-tool-ugc/index.html').includes('<link rel="canonical" href="https://ugc-onur.vibecodingturkey.com/ai-saas-ugc-creator/">'));
+ assert(read('services/app-launch-ugc/index.html').includes('<link rel="canonical" href="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/">'));
+ assert(!read('sitemap.xml').includes('/services/'));assert(read('404.html').includes('noindex'));
 });

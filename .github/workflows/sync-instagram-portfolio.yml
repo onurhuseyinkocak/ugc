@@ -29,12 +29,12 @@ jobs:
         env:
           INSTAGRAM_PAGE_TOKEN: ${{ secrets.INSTAGRAM_PAGE_TOKEN }}
           INSTAGRAM_USER_ID: ${{ vars.INSTAGRAM_USER_ID }}
-          INSTAGRAM_GRAPH_VERSION: ${{ vars.INSTAGRAM_GRAPH_VERSION }}
+          INSTAGRAM_GRAPH_BASE: ${{ vars.INSTAGRAM_GRAPH_BASE }}
         run: node scripts/sync-creator.mjs
 
       - name: Commit only validated portfolio changes
         run: |
-          git add assets/creator/snapshot.json
+          git add assets/creator/snapshot.json assets/creator/*.jpg
           if git diff --cached --quiet; then
             echo "Instagram portfolio is already current."
             exit 0
