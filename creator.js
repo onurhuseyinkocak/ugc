@@ -30,11 +30,12 @@
     const loops=v=>{let plays=0;v.addEventListener('ended',()=>{if(!v.dataset.full&&++plays<3)v.play().catch(()=>{});});v.addEventListener('click',()=>{if(!v.controls){if(v.paused)v.play().catch(()=>{});else v.pause();}});};
     for(const v of videos){
       const sound=v.parentElement.querySelector('.sound');
+      if(lite)continue; // native controls stay: no autoplay, no hidden data cost
       if(sound){
         sound.hidden=false;v.controls=false;v.muted=true;v.loop=false;loops(v);
         sound.addEventListener('click',()=>{v.dataset.full='1';v.loop=false;v.muted=false;v.controls=true;v.src=v.querySelector('source').src;sound.hidden=true;v.play().catch(()=>{});v.focus();});
-        if(!lite&&v.dataset.preview)watch.observe(v);
-      }else if(v.dataset.autoplay!==undefined&&!lite){v.controls=false;v.loop=false;loops(v);watch.observe(v);}
+        if(v.dataset.preview)watch.observe(v);
+      }else if(v.dataset.autoplay!==undefined){v.controls=false;v.loop=false;loops(v);watch.observe(v);}
     }
     const dock=document.querySelector('[data-dock]'),hero=document.querySelector('.hero'),brief=document.getElementById('brief');
     if(dock&&hero&&brief){
@@ -77,7 +78,7 @@
         const lang=document.documentElement.lang==='tr'?'tr-TR':'en-US';
         document.querySelectorAll('[data-account]').forEach(e=>{const k=e.dataset.account;e.textContent=(k==='followers'?d.followers:d.metrics[k]).toLocaleString(lang);});
         document.querySelector('[data-hero-views]')?.replaceChildren(d.metrics.views.toLocaleString(lang));
-        const format=s=>new Date(s).toLocaleDateString(lang,{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
+        const format=s=>new Date(s).toLocaleDateString(lang==='tr-TR'?lang:'en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
         for(const key of ['startDate','endDate']){const e=document.querySelector('[data-period="'+key+'"]');if(e){e.dateTime=d[key];e.textContent=format(d[key]);}}
         old.dateTime=d.measuredAt;old.textContent=format(d.measuredAt);
         if(Array.isArray(d.daily)&&d.daily.length>1&&d.daily.every(p=>typeof p.value==='number'&&Number.isFinite(p.value)&&p.value>=0&&Number.isFinite(Date.parse(p.date)))){
@@ -87,6 +88,8 @@
           const caption=document.querySelector('[data-reach-caption]');if(caption)caption.textContent=caption.dataset.label+' · '+format(d.daily[0].date)+' - '+format(d.daily.at(-1).date);
         }
         const byId=new Map([...(d.campaigns??[]),...(d.carousels??[]),...(d.reels??[])].map(p=>[p.id,p]));
+        // Post figures and their date move together: skip both unless the snapshot still carries every post this page was built with.
+        if(![...document.querySelectorAll('[data-post-id]')].every(e=>byId.has(e.dataset.postId)))return;
         document.querySelectorAll('[data-post-metric]').forEach(e=>{const v=byId.get(e.dataset.postId)?.metrics?.[e.dataset.postMetric];if(v===null)e.textContent='-';else if(typeof v==='number'&&Number.isFinite(v)&&v>=0)e.textContent=v.toLocaleString(lang);});
         document.querySelectorAll('[data-post-measured]').forEach(e=>{e.dateTime=d.measuredAt;e.textContent=format(d.measuredAt);});
       }).catch(()=>{});

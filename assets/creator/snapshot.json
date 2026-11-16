@@ -2,18 +2,18 @@
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
   "followers": 9251,
-  "measuredAt": "2026-11-16T04:50:50.424Z",
+  "measuredAt": "2026-11-16T05:02:26.049Z",
   "days": 30,
   "startDate": "2026-10-17",
   "endDate": "2026-11-15",
   "metrics": {
-    "views": 1827189,
+    "views": 1827274,
     "reach": 813440,
-    "comments": 11513,
+    "comments": 11526,
     "likes": 18664,
-    "saves": 69021,
-    "shares": 37974,
-    "total_interactions": 176169
+    "saves": 69027,
+    "shares": 37975,
+    "total_interactions": 176190
   },
   "daily": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-11-14",
-      "value": 7602
+      "value": 7676
     }
   ],
   "campaigns": [
@@ -205,10 +205,10 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 207473,
+        "views": 207479,
         "reach": 147274,
-        "saved": 9538,
-        "shares": 6296,
+        "saved": 9539,
+        "shares": 6298,
         "follows": 553,
         "likes": 1882,
         "comments": 1167
@@ -224,9 +224,9 @@
       "poster": "assets/creator/18096907886123336.jpg",
       "video": null,
       "metrics": {
-        "views": 205466,
+        "views": 205467,
         "reach": 140919,
-        "saved": 9536,
+        "saved": 9537,
         "shares": 3611,
         "follows": 835,
         "likes": 2238,

@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit only validated portfolio changes
         run: |
-          git add assets/creator/snapshot.json assets/creator/*.jpg
+          git add assets/creator/snapshot.json
           if git diff --cached --quiet; then
             echo "Instagram portfolio is already current."
             exit 0

@@ -13,7 +13,7 @@ let token = process.env.INSTAGRAM_PAGE_TOKEN;
 if(!token){try{token=JSON.parse(readFileSync(join(homedir(),'.local/share/claude-design/igbot/page-tokens.json'),'utf8'))['onurhuseyinkocak.ai']?.page_token;}catch{throw new Error('Local Instagram credential could not be read');}}
 if (!token) throw new Error('Instagram credential unavailable');
 async function graph(path, params = {}) {
-  if (++calls > 40) throw new Error('Read budget reached');
+  if (++calls > 48) throw new Error('Read budget reached');
   const url = new URL(base + path);
   for (const [name,value] of Object.entries(params)) url.searchParams.set(name,String(value));
   const response = await fetch(url,{headers:{Authorization:'Bearer '+token},signal:AbortSignal.timeout(15000)});
@@ -57,18 +57,19 @@ async function main() {
   for(const name of ['views','reach','comments','likes','saves','shares','total_interactions']){const value=totals.data?.find(r=>r.name===name)?.total_value?.value;if(!numeric(value))throw new Error('Account metric unavailable');metrics[name]=value;}
   const series=await graph(accountId+'/insights',{metric:'reach',period:'day',metric_type:'time_series',since,until});
   const daily=(series.data?.[0]?.values??[]).map(r=>{if(!numeric(r.value)||!Number.isFinite(Date.parse(r.end_time)))throw new Error('Daily metric unavailable');return{date:new Date(Date.parse(r.end_time)-86400000).toISOString().slice(0,10),value:r.value};});
+  if(daily.length<2)throw new Error('Daily metric unavailable');
   const projects=[];
   for(const c of campaigns){const item=await media(c.id);if(!item.caption?.toLowerCase().includes(c.brand.toLowerCase()))throw new Error('Campaign caption mismatch');projects.push({...item,brand:c.brand});}
   // Showcase: the published selection stays fixed between runs, because the live page only refreshes numbers for the posts it was built with.
   // RESELECT=1 re-picks it: the six most-engaged recent posts per format are measured and the three with most views are kept. Rebuild and deploy afterwards.
   const previous=existsSync(new URL('assets/creator/snapshot.json',root))?JSON.parse(readFileSync(new URL('assets/creator/snapshot.json',root),'utf8')):null;
   const keep=process.env.RESELECT!=='1'&&previous?.carousels?.length===3&&previous?.reels?.length===3;
-  const recent=keep?null:await graph(accountId+'/media',{fields:'id,media_type,like_count,comments_count',limit:100});
-  const sponsored=new Set(campaigns.map(c=>c.id)),engagement=m=>(m.like_count??0)+(m.comments_count??0);
+  const recent=keep?null:await graph(accountId+'/media',{fields:'id,media_type,caption,like_count,comments_count',limit:100});
+  const sponsored=new Set(campaigns.map(c=>c.id)),paid=/i[sş]\s?birli[gğ]i|sponsor|reklam|#ad\b|paid partnership/i,engagement=m=>(m.like_count??0)+(m.comments_count??0);
   async function top(type,kept){
     const items=[];
-    if(keep){for(const p of kept){const item=await media(p.id);if(item.media_type!==type)throw new Error('Showcase mismatch');items.push(item);}return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1));}
-    for(const m of (recent.data??[]).filter(m=>m.media_type===type&&!sponsored.has(m.id)).sort((a,b)=>engagement(b)-engagement(a)).slice(0,6))items.push(await media(m.id));
+    if(keep){for(const p of kept){const item=await media(p.id);if(item.media_type!==type)throw new Error('Showcase mismatch; rerun with RESELECT=1');items.push(item);}return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1));}
+    for(const m of (recent.data??[]).filter(m=>m.media_type===type&&!sponsored.has(m.id)&&!paid.test(m.caption??'')).sort((a,b)=>engagement(b)-engagement(a)).slice(0,6))items.push(await media(m.id));
     if(items.length<3)throw new Error('Showcase unavailable');
     return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1)).slice(0,3);
   }
