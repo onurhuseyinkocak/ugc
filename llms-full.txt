@@ -26,16 +26,16 @@ Every figure below is dated Meta Graph API data for the Instagram account @onurh
 
 ## Published paid partnerships
 
-- Brantial (https://brantial.ai/): One Turkish-language product walkthrough Reel. Published 2026-08-04. 7,104 views, 5,324 accounts reached, 138 saves, 162 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/Dbm-NzGBpAW/
-- Mostdomain (https://www.mostdomain.com/): One Turkish-language explainer Reel. Published 2026-10-23. 6,085 views, 2,605 accounts reached, 37 saves, 70 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/De1X_KdB12-/
+- Brantial (https://brantial.ai/): One Turkish-language product walkthrough Reel. Published 2026-08-04. 7,108 views, 5,324 accounts reached, 138 saves, 162 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/Dbm-NzGBpAW/
+- Mostdomain (https://www.mostdomain.com/): One Turkish-language explainer Reel. Published 2026-10-23. 6,086 views, 2,605 accounts reached, 37 saves, 70 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/De1X_KdB12-/
 
 ## Instagram account, 2026-10-17 to 2026-11-15
 
-- Views: 1,827,274
+- Views: 1,827,395
 - Accounts reached: 813,440
-- Saves: 69,027; shares: 37,975; comments: 11,526; likes: 18,664
-- Current followers: 9,251
-- Measured: 2026-11-16T05:02:26.049Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
+- Saves: 69,036; shares: 37,976; comments: 11,546; likes: 18,665
+- Current followers: 9,250
+- Measured: 2026-11-16T05:35:38.785Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
 
 ## Pages
 
@@ -62,11 +62,11 @@ Every figure below is dated Meta Graph API data for the Instagram account @onurh
 
 ## Selected editorial posts (own channel, not client work)
 
-- AI tools from China: 821,986 views, 28,778 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/Dej-mRjkpy4/
-- Free alternatives to paid AI tools: 207,479 views, 9,539 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/De6u9QLlG5Z/
-- Free local AI models: 205,467 views, 9,537 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/DeuPewWkimo/
+- AI tools from China: 821,987 views, 28,778 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/Dej-mRjkpy4/
+- Free alternatives to paid AI tools: 207,538 views, 9,539 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/De6u9QLlG5Z/
+- Free local AI models: 205,475 views, 9,538 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/DeuPewWkimo/
 - SEO vs GEO: what changes: 83,355 views, 2,009 saves (lifetime, measured 2026-11-16). https://www.instagram.com/reel/DZku2Dxuh6L/
-- GEO explained: 1,500 clicks in a week: 61,073 views, 2,650 saves (lifetime, measured 2026-11-16). https://www.instagram.com/reel/DZUrR_Iuzrd/
+- GEO explained: 1,500 clicks in a week: 61,074 views, 2,650 saves (lifetime, measured 2026-11-16). https://www.instagram.com/reel/DZUrR_Iuzrd/
 - Why a login screen is not enough: 12,063 views, 444 saves (lifetime, measured 2026-11-16). https://www.instagram.com/reel/DcN2LgOB331/
 
 ## What does a tech UGC creator do for an AI or SaaS product?
@@ -79,7 +79,7 @@ One Reel is $300 USD and one sponsored carousel is $100 USD. Length, slide count
 
 ## Can you show results from earlier SaaS work?
 
-Yes. The Brantial Reel has 7,104 views, 5,324 accounts reached and 138 saves; the Mostdomain Reel has 6,085 views and 2,605 accounts reached (lifetime, Meta Graph API, measured 16 Nov 2026). These are post measurements, not sales or conversion figures, and no result is guaranteed.
+Yes. The Brantial Reel has 7,108 views, 5,324 accounts reached and 138 saves; the Mostdomain Reel has 6,086 views and 2,605 accounts reached (lifetime, Meta Graph API, measured 16 Nov 2026). These are post measurements, not sales or conversion figures, and no result is guaranteed.
 
 ## Which languages do you create in?
 

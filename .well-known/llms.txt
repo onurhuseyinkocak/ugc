@@ -26,16 +26,16 @@ Every figure below is dated Meta Graph API data for the Instagram account @onurh
 
 ## Published paid partnerships
 
-- Brantial (https://brantial.ai/): One Turkish-language product walkthrough Reel. Published 2026-08-04. 7,104 views, 5,324 accounts reached, 138 saves, 162 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/Dbm-NzGBpAW/
-- Mostdomain (https://www.mostdomain.com/): One Turkish-language explainer Reel. Published 2026-10-23. 6,085 views, 2,605 accounts reached, 37 saves, 70 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/De1X_KdB12-/
+- Brantial (https://brantial.ai/): One Turkish-language product walkthrough Reel. Published 2026-08-04. 7,108 views, 5,324 accounts reached, 138 saves, 162 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/Dbm-NzGBpAW/
+- Mostdomain (https://www.mostdomain.com/): One Turkish-language explainer Reel. Published 2026-10-23. 6,086 views, 2,605 accounts reached, 37 saves, 70 shares (lifetime, measured 2026-11-16). https://www.instagram.com/reel/De1X_KdB12-/
 
 ## Instagram account, 2026-10-17 to 2026-11-15
 
-- Views: 1,827,274
+- Views: 1,827,395
 - Accounts reached: 813,440
-- Saves: 69,027; shares: 37,975; comments: 11,526; likes: 18,664
-- Current followers: 9,251
-- Measured: 2026-11-16T05:02:26.049Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
+- Saves: 69,036; shares: 37,976; comments: 11,546; likes: 18,665
+- Current followers: 9,250
+- Measured: 2026-11-16T05:35:38.785Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
 
 ## Pages
 

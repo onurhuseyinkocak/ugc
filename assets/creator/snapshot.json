@@ -1,19 +1,19 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 9251,
-  "measuredAt": "2026-11-16T05:02:26.049Z",
+  "followers": 9250,
+  "measuredAt": "2026-11-16T05:35:38.785Z",
   "days": 30,
   "startDate": "2026-10-17",
   "endDate": "2026-11-15",
   "metrics": {
-    "views": 1827274,
+    "views": 1827395,
     "reach": 813440,
-    "comments": 11526,
-    "likes": 18664,
-    "saves": 69027,
-    "shares": 37975,
-    "total_interactions": 176190
+    "comments": 11546,
+    "likes": 18665,
+    "saves": 69036,
+    "shares": 37976,
+    "total_interactions": 176222
   },
   "daily": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-11-14",
-      "value": 7676
+      "value": 7786
     }
   ],
   "campaigns": [
@@ -148,7 +148,7 @@
       "poster": "assets/creator/18211971262345987.jpg",
       "video": "assets/creator/18211971262345987.mp4",
       "metrics": {
-        "views": 7104,
+        "views": 7108,
         "reach": 5324,
         "saved": 138,
         "shares": 162,
@@ -166,7 +166,7 @@
       "poster": "assets/creator/17961609438230427.jpg",
       "video": "assets/creator/17961609438230427.mp4",
       "metrics": {
-        "views": 6085,
+        "views": 6086,
         "reach": 2605,
         "saved": 37,
         "shares": 70,
@@ -186,7 +186,7 @@
       "poster": "assets/creator/18644050693029570.jpg",
       "video": null,
       "metrics": {
-        "views": 821986,
+        "views": 821987,
         "reach": 601725,
         "saved": 28778,
         "shares": 17282,
@@ -205,10 +205,10 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 207479,
-        "reach": 147274,
+        "views": 207538,
+        "reach": 147330,
         "saved": 9539,
-        "shares": 6298,
+        "shares": 6296,
         "follows": 553,
         "likes": 1882,
         "comments": 1167
@@ -224,9 +224,9 @@
       "poster": "assets/creator/18096907886123336.jpg",
       "video": null,
       "metrics": {
-        "views": 205467,
+        "views": 205475,
         "reach": 140919,
-        "saved": 9537,
+        "saved": 9538,
         "shares": 3611,
         "follows": 835,
         "likes": 2238,
@@ -263,7 +263,7 @@
       "poster": "assets/creator/18127658746529604.jpg",
       "video": null,
       "metrics": {
-        "views": 61073,
+        "views": 61074,
         "reach": 43927,
         "saved": 2650,
         "shares": 1441,
