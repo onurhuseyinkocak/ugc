@@ -1,6 +1,7 @@
 import {readFileSync,writeFileSync,existsSync,mkdirSync} from 'node:fs';
 import {join} from 'node:path';
 import {homedir} from 'node:os';
+import {validateSnapshot} from './build-creator.mjs';
 
 const root = new URL('../', import.meta.url);
 // Instagram-login tokens use graph.instagram.com and address the account as "me".
@@ -84,7 +85,8 @@ async function main() {
   const cleanGallery=[];for(const p of gallery)cleanGallery.push(await publicItem(p));
   const cleanReels=[];for(const p of reels)cleanReels.push(await publicItem(p));
   const snapshot={source:'Meta Graph API',username:profile.username,followers:profile.followers_count,measuredAt:new Date().toISOString(),days:30,startDate:new Date(since*1000).toISOString().slice(0,10),endDate:new Date((until-1)*1000).toISOString().slice(0,10),metrics,daily,campaigns:cleanProjects,carousels:cleanGallery,reels:cleanReels};
+  validateSnapshot(snapshot);
   writeFileSync(new URL('assets/creator/snapshot.json',root),JSON.stringify(snapshot,null,2)+'\n');
   console.log(JSON.stringify({ok:true,reads:calls,username:snapshot.username,metrics,followers:snapshot.followers,projects:cleanProjects.map(p=>({brand:p.brand,metrics:p.metrics})),carousels:cleanGallery.map(p=>({id:p.id,metrics:p.metrics})),reels:cleanReels.map(p=>({id:p.id,metrics:p.metrics}))}));
 }
-main().catch(error=>{console.error(/^Meta read failed:|guard reached|mismatch|unavailable|Untrusted|too large|refused|budget/.test(error.message)?error.message:'Creator sync could not be completed; previous snapshot preserved.');process.exitCode=1;});
+main().catch(error=>{console.error(/^Meta read failed:|guard reached|mismatch|unavailable|Untrusted|Unexpected|Invalid|Missing verified|too large|refused|budget/.test(error.message)?error.message:'Creator sync could not be completed; previous snapshot preserved.');process.exitCode=1;});

@@ -26,14 +26,22 @@
   if(window.IntersectionObserver&&page.classList){
     const lite=calm||window.navigator?.connection?.saveData;
     const watch=new IntersectionObserver(entries=>{for(const entry of entries){const v=entry.target;if(v.dataset.full)continue;if(entry.isIntersecting){if(v.dataset.preview&&!v.dataset.on){v.dataset.on='1';v.src=v.dataset.preview;}v.play().catch(()=>{});}else v.pause();}},{threshold:.5});
-    // Silent previews replay twice and stop; a click pauses or resumes them.
-    const loops=v=>{let plays=0;v.addEventListener('ended',()=>{if(!v.dataset.full&&++plays<3)v.play().catch(()=>{});});v.addEventListener('click',()=>{if(!v.controls){if(v.paused)v.play().catch(()=>{});else v.pause();}});};
+    // Silent previews play once and stop; a visible button, a click or Space/Enter pauses and resumes them.
+    const loops=v=>{
+      const tr=page.lang==='tr',button=document.createElement('button'),toggle=()=>{if(v.paused)v.play().catch(()=>{});else v.pause();};
+      const label=()=>{const text=v.paused?(tr?'Oynat':'Play'):(tr?'Duraklat':'Pause');button.textContent=text;button.setAttribute('aria-label',text+': '+v.getAttribute('aria-label'));};
+      button.type='button';button.className='pause';button.addEventListener('click',toggle);
+      v.tabIndex=0;v.addEventListener('click',()=>{if(!v.controls)toggle();});
+      v.addEventListener('keydown',event=>{if(!v.controls&&(event.key===' '||event.key==='Enter')){event.preventDefault();toggle();}});
+      for(const name of ['play','pause','ended'])v.addEventListener(name,label);
+      label();v.parentElement.appendChild(button);return button;
+    };
     for(const v of videos){
       const sound=v.parentElement.querySelector('.sound');
       if(lite)continue; // native controls stay: no autoplay, no hidden data cost
       if(sound){
-        sound.hidden=false;v.controls=false;v.muted=true;v.loop=false;loops(v);
-        sound.addEventListener('click',()=>{v.dataset.full='1';v.loop=false;v.muted=false;v.controls=true;v.src=v.querySelector('source').src;sound.hidden=true;v.play().catch(()=>{});v.focus();});
+        sound.hidden=false;v.controls=false;v.muted=true;v.loop=false;const pause=loops(v);
+        sound.addEventListener('click',()=>{v.dataset.full='1';v.loop=false;v.muted=false;v.controls=true;v.src=v.querySelector('source').src;sound.hidden=true;pause.remove();v.play().catch(()=>{});v.focus();});
         if(v.dataset.preview)watch.observe(v);
       }else if(v.dataset.autoplay!==undefined){v.controls=false;v.loop=false;loops(v);watch.observe(v);}
     }
@@ -77,7 +85,6 @@
           !Number.isSafeInteger(d.followers)||d.followers<0)return;
         const lang=document.documentElement.lang==='tr'?'tr-TR':'en-US';
         document.querySelectorAll('[data-account]').forEach(e=>{const k=e.dataset.account;e.textContent=(k==='followers'?d.followers:d.metrics[k]).toLocaleString(lang);});
-        document.querySelector('[data-hero-views]')?.replaceChildren(d.metrics.views.toLocaleString(lang));
         const format=s=>new Date(s).toLocaleDateString(lang==='tr-TR'?lang:'en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
         for(const key of ['startDate','endDate']){const e=document.querySelector('[data-period="'+key+'"]');if(e){e.dateTime=d[key];e.textContent=format(d[key]);}}
         old.dateTime=d.measuredAt;old.textContent=format(d.measuredAt);

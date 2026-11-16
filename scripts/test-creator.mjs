@@ -83,7 +83,7 @@ test('generated profile, service and licence pages retain the shared legal desti
   for(const code of ['en','tr','x-default'])assert(html.includes(`<link rel="alternate" hreflang="${code}" href="https://ugc-onur.vibecodingturkey.com/${code==='tr'?'tr/':''}onur-huseyin-kocak/">`),path+' reciprocal profile language link');
   assert(html.includes(`<link rel="canonical" href="https://ugc-onur.vibecodingturkey.com/${lang==='tr'?'tr/':''}onur-huseyin-kocak/">`));
  }
- for(const file of ['index.html','tr/index.html','onur-huseyin-kocak/index.html','tr/onur-huseyin-kocak/index.html','services/ai-tool-ugc/index.html','services/app-launch-ugc/index.html','usage-rights/index.html']){
+ for(const file of ['index.html','tr/index.html','onur-huseyin-kocak/index.html','tr/onur-huseyin-kocak/index.html','ai-saas-ugc-creator/index.html','mobile-app-ugc-creator/index.html','usage-rights/index.html']){
   const html=readFileSync(new URL('../'+file,import.meta.url),'utf8');for(const path of file.startsWith('tr/')?['tr/gizlilik','tr/sozlesme','tr/iade-politikasi']:['en/privacy','en/terms','en/refund-policy'])assert(html.includes('https://vibecodingturkey.com/'+path),file);
  }
 });
@@ -97,7 +97,10 @@ test('niche pages are distinct, evidenced and structurally valid; overlapping se
   if(/ugc-creator|usage-rights|^index|^tr\/index/.test(file))assert(types.includes('FAQPage'),file+' FAQ data');
   if(/ugc-creator/.test(file)){assert(html.includes('Brantial')&&html.includes(d.campaigns[0].metrics.views.toLocaleString('en-US')),file+' shows dated sponsored evidence');assert(!/\$200|FreeBuff/.test(html));}
  }
- assert(read('services/ai-tool-ugc/index.html').includes('<link rel="canonical" href="https://ugc-onur.vibecodingturkey.com/ai-saas-ugc-creator/">'));
- assert(read('services/app-launch-ugc/index.html').includes('<link rel="canonical" href="https://ugc-onur.vibecodingturkey.com/mobile-app-ugc-creator/">'));
- assert(!read('sitemap.xml').includes('/services/'));assert(read('404.html').includes('noindex'));
+ assert(!existsSync(new URL('../services',import.meta.url)),'Retired service pages are redirects, not files');
+ assert(!/\/services\/|ai-cevaplar|hardcore/.test(read('sitemap.xml')+read('robots.txt')+read('llms.txt')));assert(read('404.html').includes('noindex'));
+ for(const file of ['llms.txt','llms-full.txt','ai-answers-onur.json','brand-faq.json','ai-search-profile.json','entity.json'])assert(!/\d+K\+|Visibility Architect|for conversion|custom per project|\$200/i.test(read(file)),file+' carries an undated or retired claim');
+ assert(read('llms.txt').includes(d.metrics.views.toLocaleString('en-US'))&&read('llms.txt').includes(d.measuredAt),'Discovery text carries the dated account figures');
+ assert(/<h1><span lang="tr">[^<]+<\/span><\/h1>/.test(read('onur-huseyin-kocak/index.html')),'Turkish casing for the uppercase name on English pages');
+ for(const id of ['18644050693029570','18096907886123336'])assert(!render(d,'en').includes('/assets/creator/'+id),'Covers picturing public figures stay out of the page');
 });

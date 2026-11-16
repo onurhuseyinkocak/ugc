@@ -28,13 +28,15 @@ jobs:
       - name: Refresh the fixed, verified creator selection
         env:
           INSTAGRAM_PAGE_TOKEN: ${{ secrets.INSTAGRAM_PAGE_TOKEN }}
-          INSTAGRAM_USER_ID: ${{ vars.INSTAGRAM_USER_ID }}
           INSTAGRAM_GRAPH_BASE: ${{ vars.INSTAGRAM_GRAPH_BASE }}
         run: node scripts/sync-creator.mjs
 
+      - name: Rebuild the pages and discovery files from the new snapshot
+        run: node scripts/build-creator.mjs && node --test scripts/test-creator.mjs
+
       - name: Commit only validated portfolio changes
         run: |
-          git add assets/creator/snapshot.json
+          git add -A
           if git diff --cached --quiet; then
             echo "Instagram portfolio is already current."
             exit 0

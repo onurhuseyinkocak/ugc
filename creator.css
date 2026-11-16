@@ -70,6 +70,7 @@ h3{font-family:var(--display);font-stretch:100%;font-weight:650;font-size:clamp(
 .case-media{position:relative;justify-self:center;width:min(100%,360px);border-radius:var(--r);overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
 .case-media video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#0c0e11;cursor:pointer}.case-media video:focus-visible,.craft-film video:focus-visible{outline-offset:-4px}
 .sound{position:absolute;left:14px;bottom:14px;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:10px 18px 10px 16px;background:rgb(12 14 17/.86);color:#f1f1ec;border:1px solid rgb(241 241 236/.24);border-radius:999px;font-family:var(--display);font-size:14px;font-weight:650;cursor:pointer;transition:transform .16s var(--ease-out),background-color .2s ease}
+.pause{position:absolute;top:12px;right:12px;min-height:44px;padding:8px 16px;background:rgb(12 14 17/.86);color:#f1f1ec;border:1px solid rgb(241 241 236/.24);border-radius:999px;font-family:var(--display);font-size:13px;font-weight:650;cursor:pointer}.craft-film{position:relative}
 .sound::before{content:"";border-left:9px solid currentColor;border-block:6px solid transparent}.sound:active{transform:scale(.97)}.sound[hidden]{display:none}
 @media(hover:hover) and (pointer:fine){.sound:hover{background:var(--accent);color:var(--on-accent)}}
 .case-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:24px}
@@ -92,6 +93,7 @@ h3{font-family:var(--display);font-stretch:100%;font-weight:650;font-size:clamp(
 .shelf ol{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px 28px;align-items:start}
 .shelf li{display:grid;grid-template-columns:84px minmax(0,1fr);gap:16px;align-items:start}.shelf li:first-child{grid-row:span 2;grid-template-columns:1fr;gap:20px}
 .cover{display:block;overflow:hidden;border-radius:var(--r-s);background:var(--surface)}.shelf li:first-child .cover{border-radius:var(--r)}
+.cover-text{display:grid;align-items:end;aspect-ratio:4/5;padding:10px;border:1px solid var(--line);font-family:var(--display);font-stretch:68%;font-weight:800;font-size:14px;line-height:1;text-transform:uppercase;overflow-wrap:anywhere}.shelf li:first-child .cover-text{padding:clamp(16px,2.4vw,28px);font-size:clamp(22px,3.2vw,44px);line-height:.94}.cover-text+.rank .rank-title{display:none}
 .cover img{width:100%;object-fit:cover;transition:transform .5s var(--ease-out)}.shelf-carousel .cover img{aspect-ratio:4/5}.shelf-reel .cover img{aspect-ratio:9/16}
 @media(hover:hover) and (pointer:fine){.cover:hover img{transform:scale(1.03)}}
 .rank-title{font-weight:650;font-size:15px;line-height:1.35}.rank-views{margin-top:8px;font-size:30px}.rank-views small{font-family:var(--body);font-stretch:100%;font-size:13px;font-weight:500;letter-spacing:0;color:var(--muted)}

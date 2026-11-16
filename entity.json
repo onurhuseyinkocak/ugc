@@ -2,31 +2,6 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfilePage",
-      "@id": "https://ugc-onur.vibecodingturkey.com/#profile",
-      "name": "Onur UGC",
-      "url": "https://ugc-onur.vibecodingturkey.com",
-      "mainEntityOfPage": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/",
-      "description": "Public UGC creator profile and service website for Onur Hüseyin Koçak.",
-      "about": {
-        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
-      },
-      "mainEntity": {
-        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
-      },
-      "dateModified": "2026-11-16T05:02:26.049Z"
-    },
-    {
-      "@type": "Service",
-      "@id": "https://ugc-onur.vibecodingturkey.com/#ugc-service",
-      "name": "AI and SaaS UGC video creation",
-      "url": "https://ugc-onur.vibecodingturkey.com",
-      "serviceType": "UGC video creation",
-      "provider": {
-        "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
-      }
-    },
-    {
       "@type": "Person",
       "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person",
       "name": "Onur Hüseyin Koçak",
@@ -82,21 +57,24 @@
       }
     },
     {
-      "@type": "WebSite",
-      "@id": "https://minesminis.com/#website",
-      "name": "MinesMinis",
-      "url": "https://minesminis.com",
-      "description": "Free English learning resources for children ages 4-12.",
-      "creator": {
+      "@type": "ProfilePage",
+      "@id": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/#profile",
+      "url": "https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/",
+      "name": "Onur Hüseyin Koçak",
+      "mainEntity": {
         "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
-      }
+      },
+      "dateModified": "2026-11-16T05:02:26.049Z"
     },
     {
-      "@type": "Brand",
-      "@id": "https://onarika.net/#brand",
-      "name": "ONARIKA",
-      "url": "https://onarika.net",
-      "description": "Independent limited-edition luxury streetwear label and physical apparel artifact brand.",
+      "@type": "WebSite",
+      "@id": "https://ugc-onur.vibecodingturkey.com/#website",
+      "url": "https://ugc-onur.vibecodingturkey.com/",
+      "name": "Onur Hüseyin Koçak, tech UGC portfolio",
+      "inLanguage": [
+        "en",
+        "tr"
+      ],
       "creator": {
         "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
       }

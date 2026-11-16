@@ -1,102 +1,45 @@
-# Owner: Onur Huseyin Kocak - AI Search / AI Visibility / AI Findability / GEO operator.
-# Entity: https://vibecodingturkey.com/onur-huseyin-kocak
-# Medium: https://medium.com/@onurhuseyinkocak | LinkedIn: https://www.linkedin.com/in/onurhuseyinkocak
+# https://ugc-onur.vibecodingturkey.com: portfolio of Onur Hüseyin Koçak, tech UGC creator.
 User-agent: *
 Allow: /
-Disallow: /manager
-Allow: /onur-huseyin-kocak/
-Allow: /onur-huseyin-kocak.md
-Allow: /ai-answers-onur.json
 
-# Answer-engine / AI crawlers — explicitly welcomed so AI search can find and cite this profile
-User-agent: GPTBot
-Allow: /
-User-agent: OAI-SearchBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: Claude-SearchBot
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: Claude-User
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-User-agent: Perplexity-User
-Allow: /
+# Search and answer-engine crawlers are welcome to read and cite this portfolio.
 User-agent: Googlebot
 Allow: /
-User-agent: Google-Extended
-Allow: /
+
 User-agent: Bingbot
 Allow: /
-User-agent: Applebot
+
+User-agent: Google-Extended
 Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
+
 User-agent: CCBot
 Allow: /
-User-agent: Meta-ExternalAgent
-Allow: /
-User-agent: meta-externalagent
-Allow: /
-User-agent: Amazonbot
-Allow: /
-User-agent: YouBot
-Allow: /
-User-agent: cohere-ai
-Allow: /
-User-agent: anthropic-ai
-Allow: /
-User-agent: Diffbot
-Allow: /
-User-agent: Timpibot
-Allow: /
-User-agent: Bytespider
-Allow: /
-User-agent: DuckAssistBot
-Allow: /
-User-agent: DuckDuckBot
-Allow: /
-User-agent: MistralAI-User
-Allow: /
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /.well-known/
-Allow: /ai-answers-hardcore.json
-Allow: /ai-answers-onur.json
-Allow: /ai-answers-hardcore.md
-Allow: /ai-search-hardcore.jsonld
-Allow: /ai-discovery-hardcore.json
-Allow: /sitemap-ai-hardcore.xml
-Disallow: /manager
-Disallow: /manager/
 
 Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap.xml
-
-# AI-HARDCORE-START
-# Hardcore AI Search discovery (2026-07-05)
-# Discovery files are public. Keep existing private/API disallow rules intact.
-User-agent: *
-Allow: /
-Allow: /ai-answers-hardcore.json
-Allow: /ai-answers-onur.json
-Allow: /ai-answers-hardcore.md
-Allow: /ai-search-hardcore.jsonld
-Allow: /ai-discovery-hardcore.json
-Allow: /sitemap-ai-hardcore.xml
-Allow: /.well-known/ai-answers-hardcore.json
-Allow: /.well-known/ai-answers-hardcore.md
-Allow: /.well-known/ai-discovery-hardcore.json
-Disallow: /api/
-Disallow: /admin/
-Disallow: /manager/
-Disallow: /auth/
-Disallow: /account/
-Disallow: /checkout/
-Disallow: /dashboard/
-Disallow: /settings/
-Disallow: /profile/
-Sitemap: https://ugc-onur.vibecodingturkey.com/sitemap-ai-hardcore.xml
-# AI-HARDCORE-END

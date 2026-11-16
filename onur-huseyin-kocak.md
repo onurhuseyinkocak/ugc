@@ -6,7 +6,7 @@ I’m the founder of Vibe Coding Turkey and VCT Academy. I build software and te
 
 Languages: Turkish and English.
 
-Sponsored work: Brantial: https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain: https://www.instagram.com/reel/De1X_KdB12-/.
+Published paid partnerships: Brantial: https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain: https://www.instagram.com/reel/De1X_KdB12-/.
 
 Reel: $300 USD. Carousel: $100 USD. USD base rates for one agreed deliverable. The brief defines length, slide count, language, revision scope and publication channel.
 
@@ -22,7 +22,7 @@ Scope, timing and payment are agreed before production. Usage starts only under 
 
 Sponsored content is disclosed. Views, sales, rankings and conversions are not guaranteed.
 
-Contact: info@vibecodingturkey.com
+Brief form and contact: https://ugc-onur.vibecodingturkey.com/#brief
 
 Profile: https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/
-Verified statistics: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
+Verified statistics: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json (measured 2026-11-16T05:02:26.049Z)
