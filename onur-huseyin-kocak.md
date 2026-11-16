@@ -1,10 +1,10 @@
 # Onur Hüseyin Koçak
 
-I’m Onur Hüseyin Koçak, a software builder and tech creator in Bangkok. I use your product first, then explain it in Reels and carousels people save, in Turkish and English.
+I’m Onur Hüseyin Koçak, a software builder and tech creator. I use your product first, then explain it in Turkish Reels and carousels that Turkey’s tech audience saves and shares. English on request.
 
 I’m the founder of Vibe Coding Turkey and VCT Academy. I build software and teach AI-assisted product development, so I can test a tool, understand the workflow and explain why it matters on camera.
 
-Languages: Turkish and English.
+Content language: Turkish (English on request).
 
 Published paid partnerships: Brantial: https://www.instagram.com/reel/Dbm-NzGBpAW/; Mostdomain: https://www.instagram.com/reel/De1X_KdB12-/.
 
@@ -25,4 +25,4 @@ Sponsored content is disclosed. Views, sales, rankings and conversions are not g
 Brief form and contact: https://ugc-onur.vibecodingturkey.com/#brief
 
 Profile: https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/
-Verified statistics: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json (measured 2026-11-16T06:29:40.803Z)
+Verified statistics: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json (measured 2026-11-16T06:55:10.315Z)

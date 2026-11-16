@@ -111,3 +111,15 @@ test('daily chart range offset from the metric period is disclosed',()=>{
  assert.equal(shift(d.startDate,d.daily[0].date),1);
  for(const lang of ['en','tr'])assert(/one day|bir gün/.test(render(d,lang)));
 });
+test('brief is posted to the lead endpoint; a rejected or failed request falls back to the email draft',async()=>{
+ const js=readFileSync(new URL('../creator.js',import.meta.url),'utf8');
+ for(const ok of [true,false]){
+  let submit,clicked=false,sent;const values=new Map([['brand','QA Brand'],['email','qa@example.com'],['product','https://example.com'],['format','Reel, $300 USD'],['usage','Organic publication'],['deadline',''],['notes','x'],['website','']]);
+  const link={hidden:true,click(){clicked=true;}},status={},button={disabled:false};
+  const form={dataset:{sending:'s',sent:'received',fail:'draft ready'},addEventListener(name,fn){submit=fn;},reportValidity:()=>true,querySelector:()=>button,reset(){}};
+  const ctx={document:{referrer:'',documentElement:{lang:'en'},getElementById:id=>id==='brief-form'?form:id==='draft-link'?link:status,querySelectorAll:()=>[]},location:{hostname:'127.0.0.1',pathname:'/',search:'',hash:''},window:{},URL,URLSearchParams,AbortSignal,FormData:class{get(key){return values.get(key);}},fetch:async(url,init)=>{sent={url,body:JSON.parse(init.body)};return{ok,json:async()=>({ok})};}};
+  runInNewContext(js,ctx);submit({preventDefault(){}});for(let i=0;i<4;i++)await new Promise(resolve=>setImmediate(resolve));
+  assert(sent.url.endsWith('/functions/v1/ugc-lead'));assert.equal(sent.body.email,'qa@example.com');assert.equal(sent.body.channel,'ugc-onur-portfolio');
+  assert.equal(clicked,!ok,'The draft opens only when the server did not confirm');assert.equal(status.textContent,ok?'received':'draft ready');assert.equal(button.disabled,false);
+ }
+});

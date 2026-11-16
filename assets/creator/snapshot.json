@@ -1,19 +1,19 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 9253,
-  "measuredAt": "2026-11-16T06:29:40.803Z",
+  "followers": 9254,
+  "measuredAt": "2026-11-16T06:55:10.315Z",
   "days": 30,
   "startDate": "2026-10-17",
   "endDate": "2026-11-15",
   "metrics": {
-    "views": 1827883,
+    "views": 1828139,
     "reach": 813440,
-    "comments": 11574,
-    "likes": 18671,
-    "saves": 69050,
-    "shares": 37987,
-    "total_interactions": 176293
+    "comments": 11588,
+    "likes": 18673,
+    "saves": 69059,
+    "shares": 37988,
+    "total_interactions": 176320
   },
   "daily": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-11-14",
-      "value": 8067
+      "value": 8192
     }
   ],
   "campaigns": [
@@ -166,7 +166,7 @@
       "poster": "assets/creator/17961609438230427.jpg",
       "video": "assets/creator/17961609438230427.mp4",
       "metrics": {
-        "views": 6086,
+        "views": 6087,
         "reach": 2605,
         "saved": 37,
         "shares": 70,
@@ -186,12 +186,12 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 207645,
+        "views": 207681,
         "reach": 147330,
         "saved": 9542,
-        "shares": 6299,
+        "shares": 6304,
         "follows": 554,
-        "likes": 1884,
+        "likes": 1885,
         "comments": 1191
       }
     },
@@ -292,7 +292,7 @@
   ],
   "peaks": {
     "median": {
-      "views": 25245,
+      "views": 25247,
       "sample": 12
     },
     "items": [
@@ -300,7 +300,7 @@
         "key": "industry",
         "publishedAt": "2026-10-16T16:36:56+0000",
         "metrics": {
-          "views": 822009,
+          "views": 822023,
           "reach": 601725,
           "saved": 28778,
           "shares": 17282,
@@ -313,15 +313,171 @@
         "key": "pricing",
         "publishedAt": "2026-10-20T16:16:51+0000",
         "metrics": {
-          "views": 205517,
+          "views": 205542,
           "reach": 140919,
-          "saved": 9540,
-          "shares": 3611,
+          "saved": 9544,
+          "shares": 3613,
           "follows": 836,
           "likes": 2239,
           "comments": 1312
         }
       }
     ]
+  },
+  "audience": {
+    "followers": {
+      "country": {
+        "total": 9169,
+        "rows": [
+          {
+            "key": "TR",
+            "value": 7862
+          },
+          {
+            "key": "AZ",
+            "value": 307
+          },
+          {
+            "key": "DE",
+            "value": 305
+          },
+          {
+            "key": "US",
+            "value": 103
+          },
+          {
+            "key": "CY",
+            "value": 70
+          }
+        ]
+      },
+      "age": {
+        "total": 9218,
+        "rows": [
+          {
+            "key": "35-44",
+            "value": 2807
+          },
+          {
+            "key": "25-34",
+            "value": 2610
+          },
+          {
+            "key": "45-54",
+            "value": 2152
+          },
+          {
+            "key": "18-24",
+            "value": 725
+          },
+          {
+            "key": "55-64",
+            "value": 682
+          },
+          {
+            "key": "65+",
+            "value": 191
+          },
+          {
+            "key": "13-17",
+            "value": 51
+          }
+        ]
+      },
+      "gender": {
+        "total": 9218,
+        "rows": [
+          {
+            "key": "M",
+            "value": 6455
+          },
+          {
+            "key": "U",
+            "value": 1896
+          },
+          {
+            "key": "F",
+            "value": 867
+          }
+        ]
+      }
+    },
+    "engaged": {
+      "country": {
+        "total": 91327,
+        "rows": [
+          {
+            "key": "TR",
+            "value": 82286
+          },
+          {
+            "key": "AZ",
+            "value": 2986
+          },
+          {
+            "key": "DE",
+            "value": 1589
+          },
+          {
+            "key": "CY",
+            "value": 575
+          },
+          {
+            "key": "US",
+            "value": 523
+          }
+        ]
+      },
+      "age": {
+        "total": 91602,
+        "rows": [
+          {
+            "key": "25-34",
+            "value": 37195
+          },
+          {
+            "key": "35-44",
+            "value": 22926
+          },
+          {
+            "key": "18-24",
+            "value": 15154
+          },
+          {
+            "key": "45-54",
+            "value": 11670
+          },
+          {
+            "key": "55-64",
+            "value": 2942
+          },
+          {
+            "key": "65+",
+            "value": 1014
+          },
+          {
+            "key": "13-17",
+            "value": 701
+          }
+        ]
+      },
+      "gender": {
+        "total": 91602,
+        "rows": [
+          {
+            "key": "M",
+            "value": 63287
+          },
+          {
+            "key": "U",
+            "value": 20677
+          },
+          {
+            "key": "F",
+            "value": 7638
+          }
+        ]
+      }
+    }
   }
 }

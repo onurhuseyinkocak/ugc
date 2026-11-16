@@ -23,6 +23,14 @@ The snapshot also carries three carousels and three Reels as an editorial showca
 
 The daily GitHub workflow refreshes the snapshot, rebuilds the pages and discovery files, checks the exact output and commits everything together; that commit deploys like any other, so the live site is rebuilt once a day. The page reads its figures from its own origin and does not depend on the repository being public.
 
+## Brief form
+
+The form posts to the existing `ugc-lead` Supabase function (stored in `ugc_leads`, emailed to the owner). If the request fails or is rejected, the visitor's email app opens with the same answers. A hidden honeypot field drops automated submissions in the browser.
+
+## Audience
+
+The sync stores follower and engaged-audience demographics (country, age, gender) from the Meta Graph API. Shares are of the rows Meta returns and carry the measurement date.
+
 ## Rates and rights
 
 Reel: 300 USD. Carousel: 100 USD. Scope and publication channel are agreed in writing. Paid ads and extra usage are separately licensed. Current HTML, AI profile and PDF use the same prices.

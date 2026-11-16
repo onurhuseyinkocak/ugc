@@ -9,18 +9,30 @@
     if(!form.reportValidity())return;
     const data=new FormData(form),product=new URL(String(data.get('product')));
     if(!['https:','http:'].includes(product.protocol)){document.getElementById('form-status').textContent=document.documentElement.lang==='tr'?'HTTP veya HTTPS ürün bağlantısı kullanın.':'Use an HTTP or HTTPS product link.';return;}
-    const fields=['brand','product','format','usage','deadline','notes'];
+    const fields=['brand','email','product','format','usage','deadline','notes'];
     const body=fields.map(name=>name+': '+String(data.get(name)||'').trim()).join('\n');
-    const link=document.getElementById('draft-link');
+    const link=document.getElementById('draft-link'),status=document.getElementById('form-status'),tr=document.documentElement.lang==='tr';
     link.href='mailto:info@vibecodingturkey.com?subject='+encodeURIComponent('Tech UGC brief - '+String(data.get('brand')))+'&body='+encodeURIComponent(body);
-    link.hidden=false;
-    window.gtag?.('event','contact_click',{channel:'email_draft',page_type:'tech_ugc_portfolio'});
-    document.getElementById('form-status').textContent=document.documentElement.lang==='tr'?'E-posta taslağınız hazır. Açılan uygulamadan gönderin; açılmazsa aşağıdaki bağlantıyı kullanın.':'Your email draft is ready. Send it from your email app; use the link below if it did not open.';
-    link.click();
+    // Fallback: the visitor's own email app, with the answers already written.
+    const draft=()=>{
+      link.hidden=false;
+      window.gtag?.('event','contact_click',{channel:'email_draft',page_type:'tech_ugc_portfolio'});
+      status.textContent=form.dataset?.fail||(tr?'E-posta taslağınız hazır. Açılan uygulamadan gönderin; açılmazsa aşağıdaki bağlantıyı kullanın.':'Your email draft is ready. Send it from your email app; use the link below if it did not open.');
+      link.click();
+    };
+    if(String(data.get('website')||'')){status.textContent=form.dataset?.sent||'';return;}
+    if(typeof fetch!=='function'||!form.dataset){draft();return;}
+    const button=form.querySelector('button[type="submit"]'),text=name=>String(data.get(name)||'').trim();
+    button.disabled=true;status.textContent=form.dataset.sending;
+    fetch('https://bajrnvusqzllvsvipitr.supabase.co/functions/v1/ugc-lead',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(12000),body:JSON.stringify({action:'submit',kind:'booking',lang:tr?'tr':'en',name:text('brand'),company:text('brand'),email:text('email'),product:text('product'),goal:text('format'),timeframe:text('deadline'),message:body,channel:'ugc-onur-portfolio',entry_referrer:document.referrer||''})})
+      .then(response=>response.json().then(result=>{if(!response.ok||!result.ok)throw Error('rejected');}))
+      .then(()=>{status.textContent=form.dataset.sent;form.reset();window.gtag?.('event','contact_click',{channel:'brief_form',page_type:'tech_ugc_portfolio'});})
+      .catch(draft)
+      .finally(()=>{button.disabled=false;});
   });
   const videos=[...document.querySelectorAll('video')];
   for(const video of videos)video.addEventListener('play',()=>{if(!video.muted)videos.forEach(other=>{if(other!==video)other.pause();});});
-  document.querySelectorAll('[data-format]').forEach(a=>a.addEventListener('click',()=>{const select=form?.querySelector('select[name="format"]');if(select)select.selectedIndex=Number(a.dataset.format);}));
+  document.querySelectorAll('[data-format]').forEach(a=>a.addEventListener('click',()=>{const select=form?.querySelector('select[name="format"]');if(select)select.selectedIndex=Number(a.dataset.format);form?.querySelector('input')?.focus({preventScroll:true});}));
   const page=document.documentElement,calm=!window.matchMedia||window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   // Enhancements only; the page is complete without them (no observer support, reduced motion or data saver).
   if(window.IntersectionObserver&&page.classList){

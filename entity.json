@@ -15,7 +15,7 @@
         "Tech UGC Creator",
         "Software Developer"
       ],
-      "description": "Onur Hüseyin Koçak, a software builder and tech creator in Bangkok. I use your product first, then explain it in Reels and carousels people save, in Turkish and English.",
+      "description": "Onur Hüseyin Koçak, a software builder and tech creator. I use your product first, then explain it in Turkish Reels and carousels that Turkey’s tech audience saves and shares. English on request.",
       "image": {
         "@type": "ImageObject",
         "@id": "https://ugc-onur.vibecodingturkey.com/#portrait",
@@ -64,7 +64,7 @@
       "mainEntity": {
         "@id": "https://vibecodingturkey.com/onur-huseyin-kocak#person"
       },
-      "dateModified": "2026-11-16T06:29:40.803Z"
+      "dateModified": "2026-11-16T06:55:10.315Z"
     },
     {
       "@type": "WebSite",

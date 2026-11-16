@@ -17,7 +17,7 @@ let token = process.env.INSTAGRAM_PAGE_TOKEN;
 if(!token){try{token=JSON.parse(readFileSync(join(homedir(),'.local/share/claude-design/igbot/page-tokens.json'),'utf8'))['onurhuseyinkocak.ai']?.page_token;}catch{throw new Error('Local Instagram credential could not be read');}}
 if (!token) throw new Error('Instagram credential unavailable');
 async function graph(path, params = {}) {
-  if (++calls > 48) throw new Error('Read budget reached');
+  if (++calls > 60) throw new Error('Read budget reached');
   const url = new URL(base + path);
   for (const [name,value] of Object.entries(params)) url.searchParams.set(name,String(value));
   const response = await fetch(url,{headers:{Authorization:'Bearer '+token},signal:AbortSignal.timeout(15000)});
@@ -82,6 +82,18 @@ async function main() {
     sample.sort((a,b)=>a-b);
     peaks={median:{views:sample.length%2?sample[(sample.length-1)/2]:Math.round((sample[sample.length/2-1]+sample[sample.length/2])/2),sample:sample.length},items:peakItems};
   }
+  // Audience make-up as Meta reports it: followers (lifetime) and accounts engaged this month. Shares are of the rows Meta returns.
+  async function demographics(metric,extra){
+    const result={};
+    for(const breakdown of ['country','age','gender']){
+      const r=await graph(accountId+'/insights',{metric,period:'lifetime',metric_type:'total_value',breakdown,...extra});
+      const rows=(r.data?.[0]?.total_value?.breakdowns?.[0]?.results??[]).map(row=>({key:String(row.dimension_values?.[0]??''),value:row.value})).filter(row=>/^[\w+-]{1,8}$/.test(row.key)&&numeric(row.value));
+      if(!rows.length)throw new Error('Audience metric unavailable');
+      result[breakdown]={total:rows.reduce((sum,row)=>sum+row.value,0),rows:rows.sort((a,b)=>b.value-a.value).slice(0,breakdown==='country'?5:7)};
+    }
+    return result;
+  }
+  const audience={followers:await demographics('follower_demographics'),engaged:await demographics('engaged_audience_demographics',{timeframe:'this_month'})};
   mkdirSync(new URL('assets/creator/',root),{recursive:true});
   async function publicItem(item){
     const poster='assets/creator/'+item.id+'.jpg';await download(item.thumbnail_url||item.media_url,poster,'image/',5*1024*1024);
@@ -91,7 +103,7 @@ async function main() {
   const cleanProjects=[];for(const p of projects)cleanProjects.push(await publicItem(p));
   const cleanGallery=[];for(const p of gallery)cleanGallery.push(await publicItem(p));
   const cleanReels=[];for(const p of reels)cleanReels.push(await publicItem(p));
-  const snapshot={source:'Meta Graph API',username:profile.username,followers:profile.followers_count,measuredAt:new Date().toISOString(),days:30,startDate:new Date(since*1000).toISOString().slice(0,10),endDate:new Date((until-1)*1000).toISOString().slice(0,10),metrics,daily,campaigns:cleanProjects,carousels:cleanGallery,reels:cleanReels,peaks};
+  const snapshot={source:'Meta Graph API',username:profile.username,followers:profile.followers_count,measuredAt:new Date().toISOString(),days:30,startDate:new Date(since*1000).toISOString().slice(0,10),endDate:new Date((until-1)*1000).toISOString().slice(0,10),metrics,daily,campaigns:cleanProjects,carousels:cleanGallery,reels:cleanReels,peaks,audience};
   validateSnapshot(snapshot);
   writeFileSync(new URL('assets/creator/snapshot.json',root),JSON.stringify(snapshot,null,2)+'\n');
   console.log(JSON.stringify({ok:true,reads:calls,username:snapshot.username,metrics,followers:snapshot.followers,projects:cleanProjects.map(p=>({brand:p.brand,metrics:p.metrics})),carousels:cleanGallery.map(p=>({id:p.id,metrics:p.metrics})),reels:cleanReels.map(p=>({id:p.id,metrics:p.metrics}))}));
