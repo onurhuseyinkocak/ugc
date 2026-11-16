@@ -5,11 +5,11 @@
   "outputDirectory": ".site-output",
   "redirects": [
     { "source": "/services/ai-tool-ugc", "destination": "/ai-saas-ugc-creator/", "permanent": true },
-    { "source": "/services/ai-tool-ugc/:path*", "destination": "/ai-saas-ugc-creator/", "permanent": true },
+    { "source": "/services/ai-tool-ugc/(.*)", "destination": "/ai-saas-ugc-creator/", "permanent": true },
     { "source": "/services/app-launch-ugc", "destination": "/mobile-app-ugc-creator/", "permanent": true },
-    { "source": "/services/app-launch-ugc/:path*", "destination": "/mobile-app-ugc-creator/", "permanent": true },
+    { "source": "/services/app-launch-ugc/(.*)", "destination": "/mobile-app-ugc-creator/", "permanent": true },
     { "source": "/ai-cevaplar", "destination": "/", "permanent": true },
-    { "source": "/ai-cevaplar/:path*", "destination": "/", "permanent": true }
+    { "source": "/ai-cevaplar/(.*)", "destination": "/", "permanent": true }
   ],
   "headers": [
     {
