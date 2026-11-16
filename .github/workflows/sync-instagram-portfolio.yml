@@ -34,6 +34,9 @@ jobs:
       - name: Rebuild the pages and discovery files from the new snapshot
         run: node scripts/build-creator.mjs && node --test scripts/test-creator.mjs
 
+      - name: Check the exact output that will be published
+        run: node scripts/prepare-site.mjs && node scripts/verify-public.mjs
+
       - name: Commit only validated portfolio changes
         run: |
           git add -A
@@ -43,5 +46,5 @@ jobs:
           fi
           git config user.name "ugc-portfolio-sync[bot]"
           git config user.email "ugc-portfolio-sync[bot]@users.noreply.github.com"
-          git commit -m "chore: refresh verified creator measurements [skip-vercel]"
+          git commit -m "chore: refresh verified creator measurements"
           git push

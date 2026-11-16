@@ -7,7 +7,7 @@ const fixed=['creator.css','creator.js','vct-control.js','robots.txt','sitemap.x
 export function publicFiles(root){
   const files=new Set([...pages,...fixed,...readdirSync(root).filter(name=>/^([0-9a-f]{32}\.txt|google[0-9a-f]+\.html)$/.test(name))]);
   // Media, fonts and logos are published only when a published page, stylesheet or discovery file points at them.
-  for(const name of [...files].filter(name=>/\.(html|css|txt|json|md)$/.test(name)&&name!=='assets/creator/snapshot.json'))
+  for(const name of [...files].filter(name=>/\.(html|css|txt|json|md)$/.test(name)))
     for(const match of readFileSync(join(root,name),'utf8').matchAll(/\/(assets\/[\w./-]+\.(?:webp|jpe?g|png|svg|mp4|woff2))/g))files.add(match[1]);
   return [...files].filter(name=>existsSync(join(root,name))).sort();
 }

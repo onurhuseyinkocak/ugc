@@ -1,19 +1,19 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 9250,
-  "measuredAt": "2026-11-16T05:35:38.785Z",
+  "followers": 9251,
+  "measuredAt": "2026-11-16T05:47:52.471Z",
   "days": 30,
   "startDate": "2026-10-17",
   "endDate": "2026-11-15",
   "metrics": {
-    "views": 1827395,
+    "views": 1827553,
     "reach": 813440,
     "comments": 11546,
     "likes": 18665,
-    "saves": 69036,
-    "shares": 37976,
-    "total_interactions": 176222
+    "saves": 69039,
+    "shares": 37978,
+    "total_interactions": 176229
   },
   "daily": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-11-14",
-      "value": 7786
+      "value": 7867
     }
   ],
   "campaigns": [
@@ -177,25 +177,6 @@
   ],
   "carousels": [
     {
-      "id": "18644050693029570",
-      "brand": null,
-      "caption": "Çin yapay zekâ tarafında artık “ucuz alternatif” dönemini geçti. Birçok araç doğrudan ChatGPT, Claude ve Gemini’nin karşısına konumlanıyor; üstelik bazıları ücretsiz erişim sunuyor.\n\nBu listede farklı işler için kullanabileceğin güçlü seçenekler var:\n\nXiaomi MiMo → uzun görevler, multimodal işler ve ajanlar\nDreamina → görsel ve video üretimi\nQwen Studio → yazı, araştırma, kodlama ve dosya analizi\nLing 3.1 Flash → hızlı ve düşük maliyetli model kullanımı\nGLM 5.3 Flash → kodlama, reasoning ve ajan görevleri\nKimi → uzun dokümanlar, araştırma, rapor ve sunum\nDeepSeek → reasoning, kodlama ve tool use\nErnie → arama, uzun doküman ve görsel üretimi\nDoubao → sohbet, çeviri, kodlama, görsel ve video\n\nArtık tek bir yapay zekâ aracına bağlı kalmak mantıklı değil. Kod yazacaksan başka, araştırma yapacaksan başka, görsel üreteceksen başka modeli kullan.\n\nEn iyi sonuç, “en popüler modeli” seçmekten değil, doğru işi doğru modele vermekten geliyor.\n\nBu araçların linklerini istiyorsan yoruma “ÇİN” yaz. Hepsini DM’den göndereceğim.\n\nKaydet, arkadaşına gönder ve bu tarz ücretsiz AI araçları için takip et.\n\n#yapayzeka #ai #vibecoding #chatgpt #teknoloji",
-      "permalink": "https://www.instagram.com/p/Dej-mRjkpy4/",
-      "publishedAt": "2026-10-16T16:36:56+0000",
-      "mediaType": "CAROUSEL_ALBUM",
-      "poster": "assets/creator/18644050693029570.jpg",
-      "video": null,
-      "metrics": {
-        "views": 821987,
-        "reach": 601725,
-        "saved": 28778,
-        "shares": 17282,
-        "follows": 2377,
-        "likes": 6901,
-        "comments": 2034
-      }
-    },
-    {
       "id": "18107535647276122",
       "brand": null,
       "caption": "Yapay zekâ araçlarına her ay yüzlerce dolar ödemene gerek olmayabilir. 👀\n\nÇünkü ücretli araçların yaptığı birçok işi ücretsiz erişim sunan alternatiflerle de yapabilirsin.\n\nBu gönderide 5 farklı kategoriyi karşılaştırdım:\n\n🎭 Avatar oluşturma\nHeyGen → Hedra\n\n🎨 Görsel üretimi\nMidjourney → Nano Banana\n\n🎬 Video üretimi\nHiggsfield → Hailuo\n\n🎥 Sinematik içerik\nRunway → WAN 2.1\n\n🎙️ Yapay zekâ seslendirme\nElevenLabs → MiniMax\n\nAma önemli bir detay var: Ücretsiz demek her zaman sınırsız demek değil. Bazı platformlar belirli miktarda kredi veriyor, bazıları kullanım limiti uyguluyor. Ayrıca bu araçların özellikleri birebir aynı değil. Örneğin Stable Diffusion tek başına Runway’in tüm video özelliklerini karşılamıyor.\n\nÖnemli olan en pahalı aracı kullanmak değil, ihtiyacını karşılayan aracı seçmek.\n\n🔗 Peki bu araçlara nereden ulaşacaksın?\n\nHepsinin bağlantılarına ulaşmak için:\n\n✅ Bu hesabı takip et.\n\n💬 Yorumlara ALTERNATİF yaz.\n\n📩 Linkleri DM’den göndereyim.\n\nNot: Hesabı takip etmiyorsan otomatik mesaj sana ulaşmayabilir.\n\n#YapayZeka #ÜcretsizYapayZeka #AITools #VibeCoding #YapayZekaAraçları",
@@ -205,32 +186,51 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 207538,
+        "views": 207569,
         "reach": 147330,
         "saved": 9539,
-        "shares": 6296,
+        "shares": 6298,
         "follows": 553,
         "likes": 1882,
         "comments": 1167
       }
     },
     {
-      "id": "18096907886123336",
+      "id": "17995140194843320",
       "brand": null,
-      "caption": "YAPAY ZEKÂLARA PARA ÖDEMEYİ BIRAK! 💻\n\nOyun bilgisayarın varsa, her ay yapay zekâ aboneliklerine para harcamak zorunda değilsin.\n\nÇünkü ChatGPT, Claude, Midjourney ve diğer popüler AI servislerinin yaptığı birçok işi kendi bilgisayarında çalıştırabileceğin açık modellerle yapabilirsin.\n\nİşte 7 yerel AI alternatifi:\n\n🧠 Claude → Qwen2.5-Coder\nKod yazma, hata düzeltme ve yazılım geliştirme.\n\n💬 ChatGPT → GPT-OSS 20B\nSohbet, analiz ve problem çözme.\n\n🎬 Higgsfield → Wan 2.1\nYapay zekâyla video üretimi.\n\n🎨 Midjourney → FLUX.1 Schnell\nMetinden etkileyici görseller oluşturma.\n\n🎙️ ElevenLabs → Kokoro\nMetinleri doğal seslendirmelere dönüştürme.\n\n🎵 Suno → ACE-Step 1.5\nYapay zekâyla müzik üretimi.\n\n⚡ Gemini → Gemma 3\nGünlük AI görevleri, metin üretimi ve analiz.\n\nEn güzel tarafı ne?\n\n✅ Aylık abonelik zorunluluğu yok.\n\n✅ Kullanım başına API ücreti yok.\n\n✅ Modelleri bilgisayarında çalıştırabilirsin.\n\n✅ Verilerini üçüncü taraf sunuculara göndermeden kullanabilirsin.\n\nTek ihtiyacın, seçtiğin modeli çalıştırabilecek donanıma sahip bir bilgisayar. Modeller ücretli servislerle birebir aynı özellikleri sunmasa da pek çok görev için güçlü alternatifler.\n\n🔥 7 modelin tamamının bağlantılarını ve kurulum rehberini istiyorsan:\n\n👉 Hesabımı takip et.\n\n💬 Yorumlara GAMER yaz.\n\n📩 Tüm bağlantıları ve kurulum rehberini sana DM’den göndereyim!\n\n#YapayZeka #LocalAI #VibeCoding #Ollama #OpenSource",
-      "permalink": "https://www.instagram.com/p/DeuPewWkimo/",
-      "publishedAt": "2026-10-20T16:16:51+0000",
+      "caption": "Claude Code ve Codex kullanırken farkında olmadan gereksiz yere token harcıyor olabilirsin.\n\nSorun her zaman kullandığın model değil. Bazen yapay zekânın çalışma biçimi, gereksiz uzun cevapları, tekrar tekrar okuduğu dosyalar ve şişen bağlam penceresi maliyetini artırıyor.\n\nÜstelik bu sorunları azaltmak için ücretli araçlara ihtiyacın yok.\n\nGitHub’da ücretsiz kullanabileceğin 5 açık kaynak proje var:\n\n1. Context Mode — Gereksiz veriyi azalt.\n\nAraçların ürettiği uzun çıktıları filtreleyerek bağlam penceresinin gereksiz bilgilerle dolmasını engellemeyi hedefliyor. Paylaşılan bir örnekte 315 KB veri 5,4 KB’a düşüyor. Bu, doğrudan %98 fatura indirimi anlamına gelmiyor.\n\n2. Codeburn — Paran nereye gidiyor, gör.\n\nHangi projede, hangi modelle, ne kadar token tükettiğini ve tahmini maliyetini analiz et. Nereye para harcadığını bilmeden optimizasyon yapamazsın.\n\n3. Planning with Files — Yapay zekâ planını unutmasın.\n\nUzun projelerde bağlam sıkıştığında önemli kararlar ve yapılacak işler kaybolabiliyor. Bu araç planları, bulguları ve ilerlemeyi dosyalarda saklayarak çalışmanın devamlılığını artırıyor.\n\n4. I Have ADHD — Gereksiz açıklamaları azalt.\n\nUzun girişler, tekrar eden cümleler ve konudan uzaklaşan cevaplar yerine doğrudan sonuca odaklanan bir çalışma biçimi sağlıyor.\n\n5. Ponytail — Daha fazla kod, daha iyi yazılım demek değil.\n\nYapay zekâ ajanlarını gereksiz karmaşıklıktan uzaklaştırıp daha sade çözümler üretmeye yönlendiriyor. Geliştiricinin yayımladığı testlerde daha az kod ve daha düşük maliyet raporlanmış.\n\nBuradaki önemli nokta şu: Bu araçlar her projede aynı miktarda tasarruf sağlamaz. Ama token tüketimini kontrol etmek, bağlamı yönetmek ve gereksiz işlemleri azaltmak için değerlendirilmeye değer.\n\nBenim önerim: Önce tüketimini ölç, sonra gereksiz harcamayı azalt.\n\nYorumlara “TOKEN” yaz.\n\n5 ücretsiz GitHub reposunun bağlantılarını, kurulum komutlarını ve önerdiğim kullanım sırasını paylaşayım.\n\nKaydet. Bir sonraki projenin bütçesini daha bilinçli yönet.\n\n#ClaudeCode #OpenAICodex #VibeCoding #YapayZeka #GitHub",
+      "permalink": "https://www.instagram.com/p/DehcRpWkhTu/",
+      "publishedAt": "2026-10-15T16:58:32+0000",
       "mediaType": "CAROUSEL_ALBUM",
-      "poster": "assets/creator/18096907886123336.jpg",
+      "poster": "assets/creator/17995140194843320.jpg",
       "video": null,
       "metrics": {
-        "views": 205475,
-        "reach": 140919,
-        "saved": 9538,
-        "shares": 3611,
-        "follows": 835,
-        "likes": 2238,
-        "comments": 1312
+        "views": 60311,
+        "reach": 36655,
+        "saved": 2068,
+        "shares": 843,
+        "follows": 80,
+        "likes": 552,
+        "comments": 566
+      }
+    },
+    {
+      "id": "18135992308643364",
+      "brand": null,
+      "caption": "Claude Code’la para kazanmanın en mantıklı yolu “AI ajansı kurdum” diye gezinmek değil. İnsanların para verdiği sıkıcı işleri daha hızlı çözmek.\n\nBu posttaki 7 repo tam olarak bunun için işe yarıyor:\n\nPipecat → telefonlara cevap veren, randevu alan sesli ajanlar\nCline → web sitesi ve uygulama işlerini daha hızlı teslim etmek\nPostiz → sosyal medya planlama ve otomatik dağıtım\nAnythingLLM → şirket dokümanlarıyla çalışan özel AI asistanları\nCrewAI → görev paylaşan çoklu ajan sistemleri\nBrowser-use → tarayıcıda tekrar eden işleri otomatikleştirmek\nFirecrawl → web sitelerinden veri çekmek, araştırma ve lead toplamak\n\nBuradaki mesele “repo buldum, zengin oldum” değil.\n\nMüşterinin derdini buluyorsun.\nUygun repoyu seçiyorsun.\nClaude Code’la özelleştiriyorsun.\nÇalışan sistemi teslim ediyorsun.\n\nMesela bir klinik telefonlara yetişemiyorsa Pipecat tabanlı randevu ajanı kurarsın.\n\nBir işletme her hafta aynı sitelerden veri topluyorsa Browser-use veya Firecrawl ile otomatikleştirirsin.\n\nBir şirketin ekibi aynı dokümanlarda bilgi arıyorsa AnythingLLM ile kendi iç asistanını kurarsın.\n\nPara koddan değil, çözdüğün problemden geliyor.\n\nBu yüzden bu repolara “ücretsiz araç” diye değil, hazır başlangıç noktası diye bak.\n\n7 repo + linkler + her biriyle ne satabileceğini istiyorsan yoruma “PAYDAY” yaz.\n\n#ClaudeCode #VibeCoding #OpenSource #GitHub #AITools",
+      "permalink": "https://www.instagram.com/p/DeJj6ERlCot/",
+      "publishedAt": "2026-10-06T10:23:27+0000",
+      "mediaType": "CAROUSEL_ALBUM",
+      "poster": "assets/creator/18135992308643364.jpg",
+      "video": null,
+      "metrics": {
+        "views": 50355,
+        "reach": 48627,
+        "saved": 3458,
+        "shares": 1700,
+        "follows": 286,
+        "likes": 754,
+        "comments": 727
       }
     }
   ],

@@ -25,10 +25,10 @@
   // Enhancements only; the page is complete without them (no observer support, reduced motion or data saver).
   if(window.IntersectionObserver&&page.classList){
     const lite=calm||window.navigator?.connection?.saveData;
-    const watch=new IntersectionObserver(entries=>{for(const entry of entries){const v=entry.target;if(v.dataset.full)continue;if(entry.isIntersecting){if(v.dataset.preview&&!v.dataset.on){v.dataset.on='1';v.src=v.dataset.preview;}v.play().catch(()=>{});}else v.pause();}},{threshold:.5});
+    const watch=new IntersectionObserver(entries=>{for(const entry of entries){const v=entry.target;if(v.dataset.full)continue;if(entry.isIntersecting){if(v.dataset.held)continue;if(v.dataset.preview&&!v.dataset.on){v.dataset.on='1';v.src=v.dataset.preview;}v.play().catch(()=>{});}else v.pause();}},{threshold:.5});
     // Silent previews play once and stop; a visible button, a click or Space/Enter pauses and resumes them.
     const loops=v=>{
-      const tr=page.lang==='tr',button=document.createElement('button'),toggle=()=>{if(v.paused)v.play().catch(()=>{});else v.pause();};
+      const tr=page.lang==='tr',button=document.createElement('button'),toggle=()=>{if(v.paused){delete v.dataset.held;v.play().catch(()=>{});}else{v.dataset.held='1';v.pause();}};
       const label=()=>{const text=v.paused?(tr?'Oynat':'Play'):(tr?'Duraklat':'Pause');button.textContent=text;button.setAttribute('aria-label',text+': '+v.getAttribute('aria-label'));};
       button.type='button';button.className='pause';button.addEventListener('click',toggle);
       v.tabIndex=0;v.addEventListener('click',()=>{if(!v.controls)toggle();});
@@ -70,12 +70,12 @@
     if(form){const control=document.createElement('script');control.src='/vct-control.js';control.dataset.site='ugc-onur';document.head.appendChild(control);}
     window.dataLayer=window.dataLayer||[];
     window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
-    window.gtag('js',new Date());window.gtag('config','G-K9XZ9B08V9',{anonymize_ip:true});
+    window.gtag('js',new Date());window.gtag('config','G-K9XZ9B08V9',{anonymize_ip:true,allow_google_signals:false,allow_ad_personalization_signals:false});
     // Analytics waits for the page to finish loading so it never competes with the hero image.
     const analytics=()=>{const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id=G-K9XZ9B08V9';document.head.appendChild(script);};
     if(document.readyState==='complete'||!window.addEventListener)analytics();else window.addEventListener('load',()=>setTimeout(analytics,1200),{once:true});
     document.querySelectorAll('a[href^="mailto:"]').forEach(a=>a.addEventListener('click',()=>window.gtag('event','contact_click',{channel:'email',page_type:'tech_ugc_portfolio'})));
-    fetch('https://raw.githubusercontent.com/onurhuseyinkocak/ugc/main/assets/creator/snapshot.json',{signal:AbortSignal.timeout(5000)})
+    fetch('/assets/creator/snapshot.json',{signal:AbortSignal.timeout(5000)})
       .then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{
         const old=document.querySelector('[data-measured]');
         if(d.username!=='onurhuseyinkocak.ai'||d.source!=='Meta Graph API'||d.days!==30||!old||

@@ -1,7 +1,7 @@
 import {readFileSync,writeFileSync,existsSync,mkdirSync} from 'node:fs';
 import {join} from 'node:path';
 import {homedir} from 'node:os';
-import {validateSnapshot} from './build-creator.mjs';
+import {validateSnapshot,approved} from './build-creator.mjs';
 
 const root = new URL('../', import.meta.url);
 // Instagram-login tokens use graph.instagram.com and address the account as "me".
@@ -61,20 +61,14 @@ async function main() {
   if(daily.length<2)throw new Error('Daily metric unavailable');
   const projects=[];
   for(const c of campaigns){const item=await media(c.id);if(!item.caption?.toLowerCase().includes(c.brand.toLowerCase()))throw new Error('Campaign caption mismatch');projects.push({...item,brand:c.brand});}
-  // Showcase: the published selection stays fixed between runs, because the live page only refreshes numbers for the posts it was built with.
-  // RESELECT=1 re-picks it: the six most-engaged recent posts per format are measured and the three with most views are kept. Rebuild and deploy afterwards.
-  const previous=existsSync(new URL('assets/creator/snapshot.json',root))?JSON.parse(readFileSync(new URL('assets/creator/snapshot.json',root),'utf8')):null;
-  const keep=process.env.RESELECT!=='1'&&previous?.carousels?.length===3&&previous?.reels?.length===3;
-  const recent=keep?null:await graph(accountId+'/media',{fields:'id,media_type,caption,like_count,comments_count',limit:100});
-  const sponsored=new Set(campaigns.map(c=>c.id)),paid=/i[sş]\s?birli[gğ]i|sponsor|reklam|#ad\b|paid partnership/i,engagement=m=>(m.like_count??0)+(m.comments_count??0);
-  async function top(type,kept){
+  // Showcase: only posts whose covers were reviewed by a person (approved in build-creator.mjs) are measured; the three with most views per format are published.
+  async function top(type,ids){
     const items=[];
-    if(keep){for(const p of kept){const item=await media(p.id);if(item.media_type!==type)throw new Error('Showcase mismatch; rerun with RESELECT=1');items.push(item);}return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1));}
-    for(const m of (recent.data??[]).filter(m=>m.media_type===type&&!sponsored.has(m.id)&&!paid.test(m.caption??'')).sort((a,b)=>engagement(b)-engagement(a)).slice(0,6))items.push(await media(m.id));
+    for(const id of ids){const item=await media(id);if(item.media_type!==type)throw new Error('Showcase mismatch');items.push(item);}
     if(items.length<3)throw new Error('Showcase unavailable');
     return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1)).slice(0,3);
   }
-  const gallery=await top('CAROUSEL_ALBUM',previous?.carousels),reels=await top('VIDEO',previous?.reels);
+  const gallery=await top('CAROUSEL_ALBUM',approved.carousels),reels=await top('VIDEO',approved.reels);
   mkdirSync(new URL('assets/creator/',root),{recursive:true});
   async function publicItem(item){
     const poster='assets/creator/'+item.id+'.jpg';await download(item.thumbnail_url||item.media_url,poster,'image/',5*1024*1024);

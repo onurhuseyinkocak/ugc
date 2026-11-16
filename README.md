@@ -19,9 +19,9 @@ Publishing is an allowlist (`scripts/public-files.mjs`): the generated pages, th
 
 `node scripts/sync-creator.mjs` uses the existing `INSTAGRAM_PAGE_TOKEN` secret, or the registered local account file in memory. It checks the exact account and post owners, bounds request count and Meta usage, and preserves the previous snapshot on failure. Never print credentials.
 
-The snapshot also carries three carousels and three Reels as an editorial showcase, never as client results or account-wide rankings. The selection is fixed between runs; `RESELECT=1 node scripts/sync-creator.mjs` re-picks it (by views, from the six most-engaged recent posts per format) and must be followed by a rebuild and deploy. Set `INSTAGRAM_GRAPH_BASE=https://graph.instagram.com/v23.0/` when the credential is an Instagram-login token.
+The snapshot also carries three carousels and three Reels as an editorial showcase, never as client results or account-wide rankings. Only posts listed in `approved` in `scripts/build-creator.mjs` are measured and shown; add a post there only after a person has checked that its cover has no third-party people, logos or political imagery. The published copy of the snapshot is reduced to figures, links and approved titles.
 
-The daily GitHub workflow refreshes the snapshot, rebuilds the pages and discovery files and commits them together. Its exact metrics-only commit message is excluded from full Vercel builds. The production page reads the updated public snapshot with validated numeric values and dated fallback. No background polling runs in the browser.
+The daily GitHub workflow refreshes the snapshot, rebuilds the pages and discovery files, checks the exact output and commits everything together; that commit deploys like any other, so the live site is rebuilt once a day. The page reads its figures from its own origin and does not depend on the repository being public.
 
 ## Rates and rights
 

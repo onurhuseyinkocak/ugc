@@ -2,6 +2,7 @@ import {readFileSync,existsSync,readdirSync} from 'node:fs';
 import {join,resolve,relative} from 'node:path';
 import assert from 'node:assert/strict';
 import {pages,publicFiles} from './public-files.mjs';
+import {approved} from './build-creator.mjs';
 const root=resolve(import.meta.dirname,'..'),dir=join(root,'.site-output'),out=new URL('../.site-output/',import.meta.url),site='https://ugc-onur.vibecodingturkey.com';
 const walk=folder=>readdirSync(folder,{withFileTypes:true}).flatMap(item=>item.isDirectory()?walk(join(folder,item.name)):[relative(dir,join(folder,item.name))]);
 const published=walk(dir).filter(name=>name!=='.generated-creator-site').sort();
@@ -15,10 +16,16 @@ for(const page of pages){const html=readFileSync(new URL(page,out),'utf8');
 }
 // Retired offers, unevidenced sponsors, undated "12K+" style figures and superlatives must not reach the public output.
 const retired=/Custom quote|Retainer|per slide|\$200|custom per project|FreeBuff|\b\d+(?:[.,]\d+)?K\+|best UGC creator|AI Search Visibility Architect|designs every video for conversion|slayt başı/i;
-for(const name of published.filter(name=>/\.(html|css|js|txt|md|json|xml)$/.test(name)&&name!=='assets/creator/snapshot.json')){
+for(const name of published.filter(name=>/\.(html|css|js|txt|md|json|xml)$/.test(name))){
  const hit=readFileSync(join(dir,name),'utf8').match(retired);
  assert(!hit,name+' contains retired or unverifiable wording: '+hit?.[0]);
 }
+// The published snapshot carries figures only, and every post image in the output belongs to a sponsor case or a reviewed cover.
+const snapshot=JSON.parse(readFileSync(new URL('assets/creator/snapshot.json',out),'utf8')),posts=[...snapshot.campaigns,...snapshot.carousels,...snapshot.reels];
+for(const post of posts)assert.deepEqual(Object.keys(post).sort(),['brand','id','metrics','permalink','publishedAt','title'],'Published snapshot exposes more than figures');
+const reviewed=new Set([...snapshot.campaigns.map(p=>p.id),...approved.carousels,...approved.reels]);
+for(const name of published)for(const m of name.matchAll(/^assets\/creator\/(\d+)/g))assert(reviewed.has(m[1]),'Unreviewed post media published: '+name);
+assert(!/raw\.githubusercontent/.test(readFileSync(new URL('creator.js',out),'utf8')),'The page must not depend on the repository being public');
 const urls=[...readFileSync(new URL('sitemap.xml',out),'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 assert.equal(urls.length,new Set(urls).size,'Duplicate sitemap URL');
 assert(urls.includes(site+'/tr/'));

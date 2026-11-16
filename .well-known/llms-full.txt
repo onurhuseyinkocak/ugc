@@ -31,11 +31,11 @@ Every figure below is dated Meta Graph API data for the Instagram account @onurh
 
 ## Instagram account, 2026-10-17 to 2026-11-15
 
-- Views: 1,827,395
+- Views: 1,827,553
 - Accounts reached: 813,440
-- Saves: 69,036; shares: 37,976; comments: 11,546; likes: 18,665
-- Current followers: 9,250
-- Measured: 2026-11-16T05:35:38.785Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
+- Saves: 69,039; shares: 37,978; comments: 11,546; likes: 18,665
+- Current followers: 9,251
+- Measured: 2026-11-16T05:47:52.471Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
 
 ## Pages
 
@@ -62,9 +62,9 @@ Every figure below is dated Meta Graph API data for the Instagram account @onurh
 
 ## Selected editorial posts (own channel, not client work)
 
-- AI tools from China: 821,987 views, 28,778 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/Dej-mRjkpy4/
-- Free alternatives to paid AI tools: 207,538 views, 9,539 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/De6u9QLlG5Z/
-- Free local AI models: 205,475 views, 9,538 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/DeuPewWkimo/
+- Free alternatives to paid AI tools: 207,569 views, 9,539 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/De6u9QLlG5Z/
+- Five free repos that cut Claude Code and Codex token waste: 60,311 views, 2,068 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/DehcRpWkhTu/
+- Seven free repos to build with Claude Code: 50,355 views, 3,458 saves (lifetime, measured 2026-11-16). https://www.instagram.com/p/DeJj6ERlCot/
 - SEO vs GEO: what changes: 83,355 views, 2,009 saves (lifetime, measured 2026-11-16). https://www.instagram.com/reel/DZku2Dxuh6L/
 - GEO explained: 1,500 clicks in a week: 61,074 views, 2,650 saves (lifetime, measured 2026-11-16). https://www.instagram.com/reel/DZUrR_Iuzrd/
 - Why a login screen is not enough: 12,063 views, 444 saves (lifetime, measured 2026-11-16). https://www.instagram.com/reel/DcN2LgOB331/
