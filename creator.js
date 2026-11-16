@@ -32,7 +32,7 @@
   });
   const videos=[...document.querySelectorAll('video')];
   for(const video of videos)video.addEventListener('play',()=>{if(!video.muted)videos.forEach(other=>{if(other!==video)other.pause();});});
-  document.querySelectorAll('[data-format]').forEach(a=>a.addEventListener('click',()=>{const select=form?.querySelector('select[name="format"]');if(select)select.selectedIndex=Number(a.dataset.format);form?.querySelector('input')?.focus({preventScroll:true});}));
+  document.querySelectorAll('[data-format]').forEach(a=>a.addEventListener('click',()=>{const select=form?.querySelector('select[name="format"]');if(select)select.selectedIndex=Number(a.dataset.format);setTimeout(()=>form?.querySelector('input')?.focus({preventScroll:true}),60);}));
   const page=document.documentElement,calm=!window.matchMedia||window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   // Enhancements only; the page is complete without them (no observer support, reduced motion or data saver).
   if(window.IntersectionObserver&&page.classList){

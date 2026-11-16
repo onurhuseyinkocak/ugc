@@ -18,7 +18,7 @@ button,a,input,select,textarea,summary{-webkit-tap-highlight-color:transparent;t
 
 h1,h2,.rate h3,.steps h3,.lead-metric>strong,.rate-price span,.rank-views,.case-metrics dd,.metrics dd,.proof-stats dd{font-family:var(--display);font-stretch:68%;font-weight:800;line-height:.94;letter-spacing:-.005em;font-variant-numeric:tabular-nums lining-nums}
 h1,h2,.rate h3,.steps h3{text-transform:uppercase;text-wrap:balance}
-h1{font-size:clamp(40px,6.4vw,92px);line-height:.92}
+h1{font-size:clamp(46px,6.6vw,96px);line-height:.96}
 h2{font-size:clamp(36px,5.2vw,72px);max-width:14ch}
 h3{font-family:var(--display);font-stretch:100%;font-weight:650;font-size:clamp(22px,2.2vw,30px);line-height:1.15;letter-spacing:-.015em;text-wrap:balance}
 .eyebrow,.label,.case-story dt,.shelf>h3,.case-tags{font-family:var(--display);font-stretch:100%;font-size:12px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;line-height:1.4;color:var(--muted)}
