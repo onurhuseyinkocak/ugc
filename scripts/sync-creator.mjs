@@ -8,6 +8,8 @@ const root = new URL('../', import.meta.url);
 const base = process.env.INSTAGRAM_GRAPH_BASE || 'https://graph.facebook.com/v23.0/';
 if (!/^https:\/\/graph\.(facebook|instagram)\.com\/v\d+\.\d+\/$/.test(base)) throw new Error('Untrusted Graph base');
 const accountId = base.includes('graph.instagram.com') ? 'me' : '17841428045192826';
+// Shown only as figures in a chart: these posts are never linked, named or pictured on the site.
+const peakIds = {industry:'18644050693029570', pricing:'18096907886123336'};
 const campaigns = [{brand:'Brantial',id:'18211971262345987'}, {brand:'Mostdomain',id:'17961609438230427'}];
 let calls = 0;
 let token = process.env.INSTAGRAM_PAGE_TOKEN;
@@ -69,6 +71,13 @@ async function main() {
     return items.sort((a,b)=>(b.metrics.views??-1)-(a.metrics.views??-1)).slice(0,3);
   }
   const gallery=await top('CAROUSEL_ALBUM',approved.carousels),reels=await top('VIDEO',approved.reels);
+  const peakItems=[];for(const[key,id]of Object.entries(peakIds)){const item=await media(id);peakItems.push({key,publishedAt:item.timestamp,metrics:item.metrics});}
+  // Yardstick for the chart: median lifetime views of the twelve most recent carousels.
+  const recent=await graph(accountId+'/media',{fields:'id,media_type',limit:60}),sample=[];
+  for(const m of (recent.data??[]).filter(m=>m.media_type==='CAROUSEL_ALBUM').slice(0,12)){const r=await graph(m.id+'/insights',{metric:'views'}),v=r.data?.[0]?.values?.[0]?.value??r.data?.[0]?.total_value?.value;if(numeric(v))sample.push(v);}
+  if(sample.length<8)throw new Error('Median unavailable');
+  sample.sort((a,b)=>a-b);
+  const peaks={median:{views:sample.length%2?sample[(sample.length-1)/2]:Math.round((sample[sample.length/2-1]+sample[sample.length/2])/2),sample:sample.length},items:peakItems};
   mkdirSync(new URL('assets/creator/',root),{recursive:true});
   async function publicItem(item){
     const poster='assets/creator/'+item.id+'.jpg';await download(item.thumbnail_url||item.media_url,poster,'image/',5*1024*1024);
@@ -78,7 +87,7 @@ async function main() {
   const cleanProjects=[];for(const p of projects)cleanProjects.push(await publicItem(p));
   const cleanGallery=[];for(const p of gallery)cleanGallery.push(await publicItem(p));
   const cleanReels=[];for(const p of reels)cleanReels.push(await publicItem(p));
-  const snapshot={source:'Meta Graph API',username:profile.username,followers:profile.followers_count,measuredAt:new Date().toISOString(),days:30,startDate:new Date(since*1000).toISOString().slice(0,10),endDate:new Date((until-1)*1000).toISOString().slice(0,10),metrics,daily,campaigns:cleanProjects,carousels:cleanGallery,reels:cleanReels};
+  const snapshot={source:'Meta Graph API',username:profile.username,followers:profile.followers_count,measuredAt:new Date().toISOString(),days:30,startDate:new Date(since*1000).toISOString().slice(0,10),endDate:new Date((until-1)*1000).toISOString().slice(0,10),metrics,daily,campaigns:cleanProjects,carousels:cleanGallery,reels:cleanReels,peaks};
   validateSnapshot(snapshot);
   writeFileSync(new URL('assets/creator/snapshot.json',root),JSON.stringify(snapshot,null,2)+'\n');
   console.log(JSON.stringify({ok:true,reads:calls,username:snapshot.username,metrics,followers:snapshot.followers,projects:cleanProjects.map(p=>({brand:p.brand,metrics:p.metrics})),carousels:cleanGallery.map(p=>({id:p.id,metrics:p.metrics})),reels:cleanReels.map(p=>({id:p.id,metrics:p.metrics}))}));

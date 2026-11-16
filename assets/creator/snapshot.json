@@ -1,19 +1,19 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 9251,
-  "measuredAt": "2026-11-16T05:47:52.471Z",
+  "followers": 9252,
+  "measuredAt": "2026-11-16T05:58:39.992Z",
   "days": 30,
   "startDate": "2026-10-17",
   "endDate": "2026-11-15",
   "metrics": {
-    "views": 1827553,
+    "views": 1827632,
     "reach": 813440,
-    "comments": 11546,
-    "likes": 18665,
-    "saves": 69039,
-    "shares": 37978,
-    "total_interactions": 176229
+    "comments": 11548,
+    "likes": 18666,
+    "saves": 69041,
+    "shares": 37979,
+    "total_interactions": 176236
   },
   "daily": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-11-14",
-      "value": 7867
+      "value": 7898
     }
   ],
   "campaigns": [
@@ -186,13 +186,13 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 207569,
+        "views": 207591,
         "reach": 147330,
-        "saved": 9539,
+        "saved": 9540,
         "shares": 6298,
         "follows": 553,
         "likes": 1882,
-        "comments": 1167
+        "comments": 1173
       }
     },
     {
@@ -289,5 +289,39 @@
         "comments": 11
       }
     }
-  ]
+  ],
+  "peaks": {
+    "median": {
+      "views": 25244,
+      "sample": 12
+    },
+    "items": [
+      {
+        "key": "industry",
+        "publishedAt": "2026-10-16T16:36:56+0000",
+        "metrics": {
+          "views": 821996,
+          "reach": 601725,
+          "saved": 28778,
+          "shares": 17282,
+          "follows": 2377,
+          "likes": 6901,
+          "comments": 2034
+        }
+      },
+      {
+        "key": "pricing",
+        "publishedAt": "2026-10-20T16:16:51+0000",
+        "metrics": {
+          "views": 205492,
+          "reach": 140919,
+          "saved": 9538,
+          "shares": 3611,
+          "follows": 835,
+          "likes": 2238,
+          "comments": 1312
+        }
+      }
+    ]
+  }
 }

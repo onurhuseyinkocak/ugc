@@ -1,6 +1,6 @@
 {
   "profile_type": "creator",
-  "last_updated": "2026-11-16T05:47:52.471Z",
+  "last_updated": "2026-11-16T05:58:39.992Z",
   "canonical_url": "https://ugc-onur.vibecodingturkey.com/",
   "entity": {
     "name": "Onur Hüseyin Koçak",
@@ -51,25 +51,25 @@
     "period_days": 30,
     "start_date": "2026-10-17",
     "end_date": "2026-11-15",
-    "measured_at": "2026-11-16T05:47:52.471Z"
+    "measured_at": "2026-11-16T05:58:39.992Z"
   },
   "verified_measurements": {
     "source": "Meta Graph API",
-    "measured_at": "2026-11-16T05:47:52.471Z",
+    "measured_at": "2026-11-16T05:58:39.992Z",
     "account": {
       "period_days": 30,
       "start_date": "2026-10-17",
       "end_date": "2026-11-15",
       "metrics": {
-        "views": 1827553,
+        "views": 1827632,
         "reach": 813440,
-        "comments": 11546,
-        "likes": 18665,
-        "saves": 69039,
-        "shares": 37978,
-        "total_interactions": 176229
+        "comments": 11548,
+        "likes": 18666,
+        "saves": 69041,
+        "shares": 37979,
+        "total_interactions": 176236
       },
-      "followers_current": 9251
+      "followers_current": 9252
     },
     "sponsored_campaigns": [
       {
