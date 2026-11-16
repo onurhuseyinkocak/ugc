@@ -31,11 +31,11 @@ Every figure below is dated Meta Graph API data for the Instagram account @onurh
 
 ## Instagram account, 2026-10-17 to 2026-11-15
 
-- Views: 1,827,632
+- Views: 1,827,883
 - Accounts reached: 813,440
-- Saves: 69,041; shares: 37,979; comments: 11,548; likes: 18,666
-- Current followers: 9,252
-- Measured: 2026-11-16T05:58:39.992Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
+- Saves: 69,050; shares: 37,987; comments: 11,574; likes: 18,671
+- Current followers: 9,253
+- Measured: 2026-11-16T06:29:40.803Z. Source file: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json
 
 ## Pages
 

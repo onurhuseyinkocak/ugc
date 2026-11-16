@@ -1,19 +1,19 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 9252,
-  "measuredAt": "2026-11-16T05:58:39.992Z",
+  "followers": 9253,
+  "measuredAt": "2026-11-16T06:29:40.803Z",
   "days": 30,
   "startDate": "2026-10-17",
   "endDate": "2026-11-15",
   "metrics": {
-    "views": 1827632,
+    "views": 1827883,
     "reach": 813440,
-    "comments": 11548,
-    "likes": 18666,
-    "saves": 69041,
-    "shares": 37979,
-    "total_interactions": 176236
+    "comments": 11574,
+    "likes": 18671,
+    "saves": 69050,
+    "shares": 37987,
+    "total_interactions": 176293
   },
   "daily": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-11-14",
-      "value": 7898
+      "value": 8067
     }
   ],
   "campaigns": [
@@ -186,13 +186,13 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 207591,
+        "views": 207645,
         "reach": 147330,
-        "saved": 9540,
-        "shares": 6298,
-        "follows": 553,
-        "likes": 1882,
-        "comments": 1173
+        "saved": 9542,
+        "shares": 6299,
+        "follows": 554,
+        "likes": 1884,
+        "comments": 1191
       }
     },
     {
@@ -292,7 +292,7 @@
   ],
   "peaks": {
     "median": {
-      "views": 25244,
+      "views": 25245,
       "sample": 12
     },
     "items": [
@@ -300,7 +300,7 @@
         "key": "industry",
         "publishedAt": "2026-10-16T16:36:56+0000",
         "metrics": {
-          "views": 821996,
+          "views": 822009,
           "reach": 601725,
           "saved": 28778,
           "shares": 17282,
@@ -313,12 +313,12 @@
         "key": "pricing",
         "publishedAt": "2026-10-20T16:16:51+0000",
         "metrics": {
-          "views": 205492,
+          "views": 205517,
           "reach": 140919,
-          "saved": 9538,
+          "saved": 9540,
           "shares": 3611,
-          "follows": 835,
-          "likes": 2238,
+          "follows": 836,
+          "likes": 2239,
           "comments": 1312
         }
       }
