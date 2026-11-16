@@ -106,3 +106,8 @@ test('niche pages are distinct, evidenced and structurally valid; overlapping se
   for(const id of shown)assert([...d.campaigns,...d.carousels,...d.reels].some(p=>p.id===id),'Only sponsor cases and reviewed showcase covers are pictured');
   assert(html.includes('class="peak"')&&html.includes(d.peaks.items[0].metrics.views.toLocaleString(lang==='tr'?'tr-TR':'en-US')),'Peak figures are shown as dated data');assert(!html.includes('style="'),'Inline styles would break the content security policy');}
 });
+test('daily chart range offset from the metric period is disclosed',()=>{
+ const shift=(a,b)=>(Date.parse(a)-Date.parse(b))/86400000;
+ assert.equal(shift(d.startDate,d.daily[0].date),1);
+ for(const lang of ['en','tr'])assert(/one day|bir gün/.test(render(d,lang)));
+});
