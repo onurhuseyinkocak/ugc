@@ -102,5 +102,7 @@ test('niche pages are distinct, evidenced and structurally valid; overlapping se
  for(const file of ['llms.txt','llms-full.txt','ai-answers-onur.json','brand-faq.json','ai-search-profile.json','entity.json'])assert(!/\d+K\+|Visibility Architect|for conversion|custom per project|\$200/i.test(read(file)),file+' carries an undated or retired claim');
  assert(read('llms.txt').includes(d.metrics.views.toLocaleString('en-US'))&&read('llms.txt').includes(d.measuredAt),'Discovery text carries the dated account figures');
  assert(/<h1><span lang="tr">[^<]+<\/span><\/h1>/.test(read('onur-huseyin-kocak/index.html')),'Turkish casing for the uppercase name on English pages');
- for(const id of ['18644050693029570','18096907886123336'])assert(!render(d,'en').includes('/assets/creator/'+id),'Covers picturing public figures stay out of the page');
+ for(const lang of ['en','tr']){const html=render(d,lang),shown=new Set([...html.matchAll(/\/assets\/creator\/(\d+)/g)].map(m=>m[1]));
+  for(const id of shown)assert([...d.campaigns,...d.carousels,...d.reels].some(p=>p.id===id),'Only sponsor cases and reviewed showcase covers are pictured');
+  assert(html.includes('class="peak"')&&html.includes(d.peaks.items[0].metrics.views.toLocaleString(lang==='tr'?'tr-TR':'en-US')),'Peak figures are shown as dated data');assert(!html.includes('style="'),'Inline styles would break the content security policy');}
 });

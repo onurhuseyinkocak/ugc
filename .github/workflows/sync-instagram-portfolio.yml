@@ -29,6 +29,7 @@ jobs:
         env:
           INSTAGRAM_PAGE_TOKEN: ${{ secrets.INSTAGRAM_PAGE_TOKEN }}
           INSTAGRAM_GRAPH_BASE: ${{ vars.INSTAGRAM_GRAPH_BASE }}
+          INSTAGRAM_PEAK_IDS: ${{ vars.INSTAGRAM_PEAK_IDS }}
         run: node scripts/sync-creator.mjs
 
       - name: Rebuild the pages and discovery files from the new snapshot

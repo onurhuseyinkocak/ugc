@@ -19,7 +19,7 @@ Publishing is an allowlist (`scripts/public-files.mjs`): the generated pages, th
 
 `node scripts/sync-creator.mjs` uses the existing `INSTAGRAM_PAGE_TOKEN` secret, or the registered local account file in memory. It checks the exact account and post owners, bounds request count and Meta usage, and preserves the previous snapshot on failure. Never print credentials.
 
-The snapshot also carries three carousels and three Reels as an editorial showcase, never as client results or account-wide rankings. Only posts listed in `approved` in `scripts/build-creator.mjs` are measured and shown; add a post there only after a person has checked that its cover has no third-party people, logos or political imagery. The published copy of the snapshot is reduced to figures, links and approved titles.
+The snapshot also carries three carousels and three Reels as an editorial showcase, never as client results or account-wide rankings. Only posts listed in `approved` in `scripts/build-creator.mjs` are measured and shown; add a post there only after a person has checked that its cover has no third-party people, logos or political imagery. The published copy of the snapshot is reduced to figures, links and approved titles. Two high-performing posts are shown only as figures in the results chart; their media ids are kept in the repository variable `INSTAGRAM_PEAK_IDS`, not in the code.
 
 The daily GitHub workflow refreshes the snapshot, rebuilds the pages and discovery files, checks the exact output and commits everything together; that commit deploys like any other, so the live site is rebuilt once a day. The page reads its figures from its own origin and does not depend on the repository being public.
 
