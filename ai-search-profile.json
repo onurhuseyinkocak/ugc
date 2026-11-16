@@ -1,6 +1,6 @@
 {
   "profile_type": "ai_search_entity_profile",
-  "last_updated": "2026-11-16T04:48:53.599Z",
+  "last_updated": "2026-11-16T04:50:50.424Z",
   "canonical_url": "https://ugc-onur.vibecodingturkey.com/",
   "entity": {
     "name": "Onur Hüseyin Koçak",
@@ -74,9 +74,9 @@
   },
   "proof_points": [
     "1,827,189 account views and 813,440 accounts reached over 2026-10-17–2026-11-15; source: Meta Graph API.",
-    "9,251 current followers, measured 2026-11-16T04:48:53.599Z.",
-    "Brantial: 7104 lifetime post views, measured 2026-11-16T04:48:53.599Z; https://www.instagram.com/reel/Dbm-NzGBpAW/",
-    "Mostdomain: 6085 lifetime post views, measured 2026-11-16T04:48:53.599Z; https://www.instagram.com/reel/De1X_KdB12-/"
+    "9,251 current followers, measured 2026-11-16T04:50:50.424Z.",
+    "Brantial: 7104 lifetime post views, measured 2026-11-16T04:50:50.424Z; https://www.instagram.com/reel/Dbm-NzGBpAW/",
+    "Mostdomain: 6085 lifetime post views, measured 2026-11-16T04:50:50.424Z; https://www.instagram.com/reel/De1X_KdB12-/"
   ],
   "creator_network": [
     {
@@ -127,11 +127,11 @@
     "period_days": 30,
     "start_date": "2026-10-17",
     "end_date": "2026-11-15",
-    "measured_at": "2026-11-16T04:48:53.599Z"
+    "measured_at": "2026-11-16T04:50:50.424Z"
   },
   "verified_measurements": {
     "source": "Meta Graph API",
-    "measured_at": "2026-11-16T04:48:53.599Z",
+    "measured_at": "2026-11-16T04:50:50.424Z",
     "account": {
       "period_days": 30,
       "start_date": "2026-10-17",
@@ -139,11 +139,11 @@
       "metrics": {
         "views": 1827189,
         "reach": 813440,
-        "comments": 11507,
+        "comments": 11513,
         "likes": 18664,
         "saves": 69021,
         "shares": 37974,
-        "total_interactions": 176163
+        "total_interactions": 176169
       },
       "followers_current": 9251
     },

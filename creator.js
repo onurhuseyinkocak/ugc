@@ -62,7 +62,9 @@
     window.dataLayer=window.dataLayer||[];
     window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
     window.gtag('js',new Date());window.gtag('config','G-K9XZ9B08V9',{anonymize_ip:true});
-    const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id=G-K9XZ9B08V9';document.head.appendChild(script);
+    // Analytics waits for the page to finish loading so it never competes with the hero image.
+    const analytics=()=>{const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id=G-K9XZ9B08V9';document.head.appendChild(script);};
+    if(document.readyState==='complete'||!window.addEventListener)analytics();else window.addEventListener('load',()=>setTimeout(analytics,1200),{once:true});
     document.querySelectorAll('a[href^="mailto:"]').forEach(a=>a.addEventListener('click',()=>window.gtag('event','contact_click',{channel:'email',page_type:'tech_ugc_portfolio'})));
     fetch('https://raw.githubusercontent.com/onurhuseyinkocak/ugc/main/assets/creator/snapshot.json',{signal:AbortSignal.timeout(5000)})
       .then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{

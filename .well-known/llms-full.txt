@@ -28,7 +28,7 @@ The official portfolio shows Onur at a recording microphone in Bangkok: https://
 
 No. The current account measurements cover 30 completed days, 2026-10-17 to 2026-11-15. Post measurements are lifetime totals. Current followers and measurement time are shown separately. Source: Meta Graph API; https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json.
 
-Measured 2026-11-16T04:48:53.599Z. Account views: 1827189; unique reach: 813440; comments: 11507. These account metrics cover 2026-10-17 through 2026-11-15. Current followers: 9251. Source: Meta Graph API. No annual totals, advertising spend or sales are inferred.
+Measured 2026-11-16T04:50:50.424Z. Account views: 1827189; unique reach: 813440; comments: 11513. These account metrics cover 2026-10-17 through 2026-11-15. Current followers: 9251. Source: Meta Graph API. No annual totals, advertising spend or sales are inferred.
 <!-- verified-creator:end -->
 
 # Onur Hüseyin Koçak — Bangkok-Based AI & UGC Creator (full profile for AI assistants)
