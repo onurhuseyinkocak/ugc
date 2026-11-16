@@ -25,4 +25,4 @@ Sponsored content is disclosed. Views, sales, rankings and conversions are not g
 Brief form and contact: https://ugc-onur.vibecodingturkey.com/#brief
 
 Profile: https://ugc-onur.vibecodingturkey.com/onur-huseyin-kocak/
-Verified statistics: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json (measured 2026-11-16T06:55:10.315Z)
+Verified statistics: https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json (measured 2026-11-16T07:38:47.548Z)

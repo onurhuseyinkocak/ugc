@@ -1,6 +1,6 @@
 {
   "profile_type": "creator",
-  "last_updated": "2026-11-16T06:55:10.315Z",
+  "last_updated": "2026-11-16T07:38:47.548Z",
   "canonical_url": "https://ugc-onur.vibecodingturkey.com/",
   "entity": {
     "name": "Onur Hüseyin Koçak",
@@ -52,25 +52,25 @@
     "period_days": 30,
     "start_date": "2026-10-17",
     "end_date": "2026-11-15",
-    "measured_at": "2026-11-16T06:55:10.315Z"
+    "measured_at": "2026-11-16T07:38:47.548Z"
   },
   "verified_measurements": {
     "source": "Meta Graph API",
-    "measured_at": "2026-11-16T06:55:10.315Z",
+    "measured_at": "2026-11-16T07:38:47.548Z",
     "account": {
       "period_days": 30,
       "start_date": "2026-10-17",
       "end_date": "2026-11-15",
       "metrics": {
-        "views": 1828139,
+        "views": 1828493,
         "reach": 813440,
-        "comments": 11588,
-        "likes": 18673,
-        "saves": 69059,
-        "shares": 37988,
-        "total_interactions": 176320
+        "comments": 11601,
+        "likes": 18675,
+        "saves": 69071,
+        "shares": 37995,
+        "total_interactions": 176361
       },
-      "followers_current": 9254
+      "followers_current": 9253
     },
     "sponsored_campaigns": [
       {
@@ -80,7 +80,7 @@
         "published_at": "2026-08-04T07:01:16+0000",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 7108,
+          "views": 7109,
           "reach": 5324,
           "saved": 138,
           "shares": 162,
@@ -95,7 +95,7 @@
         "published_at": "2026-10-23T10:49:41+0000",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 6087,
+          "views": 6088,
           "reach": 2605,
           "saved": 37,
           "shares": 70,
