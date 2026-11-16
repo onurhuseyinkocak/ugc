@@ -2,18 +2,18 @@
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
   "followers": 9251,
-  "measuredAt": "2026-11-16T04:48:53.599Z",
+  "measuredAt": "2026-11-16T04:50:50.424Z",
   "days": 30,
   "startDate": "2026-10-17",
   "endDate": "2026-11-15",
   "metrics": {
     "views": 1827189,
     "reach": 813440,
-    "comments": 11507,
+    "comments": 11513,
     "likes": 18664,
     "saves": 69021,
     "shares": 37974,
-    "total_interactions": 176163
+    "total_interactions": 176169
   },
   "daily": [
     {
@@ -208,7 +208,7 @@
         "views": 207473,
         "reach": 147274,
         "saved": 9538,
-        "shares": 6298,
+        "shares": 6296,
         "follows": 553,
         "likes": 1882,
         "comments": 1167
