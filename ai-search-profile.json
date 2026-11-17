@@ -1,6 +1,6 @@
 {
   "profile_type": "creator",
-  "last_updated": "2026-11-16T07:59:16.388Z",
+  "last_updated": "2026-11-17T09:13:42.648Z",
   "canonical_url": "https://ugc-onur.vibecodingturkey.com/",
   "entity": {
     "name": "Onur Hüseyin Koçak",
@@ -50,27 +50,27 @@
     "url": "https://ugc-onur.vibecodingturkey.com/assets/creator/snapshot.json",
     "source": "Meta Graph API",
     "period_days": 30,
-    "start_date": "2026-10-17",
-    "end_date": "2026-11-15",
-    "measured_at": "2026-11-16T07:59:16.388Z"
+    "start_date": "2026-10-18",
+    "end_date": "2026-11-16",
+    "measured_at": "2026-11-17T09:13:42.648Z"
   },
   "verified_measurements": {
     "source": "Meta Graph API",
-    "measured_at": "2026-11-16T07:59:16.388Z",
+    "measured_at": "2026-11-17T09:13:42.648Z",
     "account": {
       "period_days": 30,
-      "start_date": "2026-10-17",
-      "end_date": "2026-11-15",
+      "start_date": "2026-10-18",
+      "end_date": "2026-11-16",
       "metrics": {
-        "views": 1828734,
-        "reach": 813440,
-        "comments": 11621,
-        "likes": 18675,
-        "saves": 69077,
-        "shares": 38000,
-        "total_interactions": 176397
+        "views": 1473083,
+        "reach": 626961,
+        "comments": 10976,
+        "likes": 15572,
+        "saves": 57550,
+        "shares": 30862,
+        "total_interactions": 146713
       },
-      "followers_current": 9254
+      "followers_current": 9266
     },
     "sponsored_campaigns": [
       {
@@ -80,8 +80,8 @@
         "published_at": "2026-08-04T07:01:16+0000",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 7109,
-          "reach": 5324,
+          "views": 7119,
+          "reach": 5328,
           "saved": 138,
           "shares": 162,
           "likes": 122,
@@ -95,8 +95,8 @@
         "published_at": "2026-10-23T10:49:41+0000",
         "measurement_period": "lifetime",
         "metrics": {
-          "views": 6088,
-          "reach": 2609,
+          "views": 6103,
+          "reach": 2623,
           "saved": 37,
           "shares": 70,
           "likes": 49,
