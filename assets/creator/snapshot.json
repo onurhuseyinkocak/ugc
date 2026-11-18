@@ -1,25 +1,21 @@
 {
   "source": "Meta Graph API",
   "username": "onurhuseyinkocak.ai",
-  "followers": 9266,
-  "measuredAt": "2026-11-17T09:13:42.648Z",
+  "followers": 9309,
+  "measuredAt": "2026-11-18T08:33:03.371Z",
   "days": 30,
-  "startDate": "2026-10-18",
-  "endDate": "2026-11-16",
+  "startDate": "2026-10-19",
+  "endDate": "2026-11-17",
   "metrics": {
-    "views": 1473083,
-    "reach": 626961,
-    "comments": 10976,
-    "likes": 15572,
-    "saves": 57550,
-    "shares": 30862,
-    "total_interactions": 146713
+    "views": 1390564,
+    "reach": 581328,
+    "comments": 10802,
+    "likes": 14567,
+    "saves": 53576,
+    "shares": 28872,
+    "total_interactions": 137534
   },
   "daily": [
-    {
-      "date": "2026-10-17",
-      "value": 74426
-    },
     {
       "date": "2026-10-18",
       "value": 55797
@@ -134,7 +130,11 @@
     },
     {
       "date": "2026-11-15",
-      "value": 5382
+      "value": 5383
+    },
+    {
+      "date": "2026-11-16",
+      "value": 9816
     }
   ],
   "campaigns": [
@@ -148,8 +148,8 @@
       "poster": "assets/creator/18211971262345987.jpg",
       "video": "assets/creator/18211971262345987.mp4",
       "metrics": {
-        "views": 7119,
-        "reach": 5328,
+        "views": 7131,
+        "reach": 5330,
         "saved": 138,
         "shares": 162,
         "likes": 122,
@@ -166,8 +166,8 @@
       "poster": "assets/creator/17961609438230427.jpg",
       "video": "assets/creator/17961609438230427.mp4",
       "metrics": {
-        "views": 6103,
-        "reach": 2623,
+        "views": 6112,
+        "reach": 2637,
         "saved": 37,
         "shares": 70,
         "likes": 49,
@@ -186,13 +186,13 @@
       "poster": "assets/creator/18107535647276122.jpg",
       "video": null,
       "metrics": {
-        "views": 209385,
-        "reach": 148715,
-        "saved": 9578,
-        "shares": 6341,
-        "follows": 559,
-        "likes": 1893,
-        "comments": 1261
+        "views": 210233,
+        "reach": 149954,
+        "saved": 9675,
+        "shares": 6422,
+        "follows": 561,
+        "likes": 1917,
+        "comments": 1264
       }
     },
     {
@@ -205,13 +205,13 @@
       "poster": "assets/creator/17995140194843320.jpg",
       "video": null,
       "metrics": {
-        "views": 60342,
+        "views": 60364,
         "reach": 36669,
-        "saved": 2069,
+        "saved": 2067,
         "shares": 843,
         "follows": 80,
         "likes": 552,
-        "comments": 576
+        "comments": 575
       }
     },
     {
@@ -224,10 +224,10 @@
       "poster": "assets/creator/18135992308643364.jpg",
       "video": null,
       "metrics": {
-        "views": 50389,
-        "reach": 48650,
-        "saved": 3460,
-        "shares": 1701,
+        "views": 50404,
+        "reach": 48693,
+        "saved": 3461,
+        "shares": 1702,
         "follows": 286,
         "likes": 752,
         "comments": 729
@@ -245,7 +245,7 @@
       "poster": "assets/creator/18128790184621531.jpg",
       "video": null,
       "metrics": {
-        "views": 83356,
+        "views": 83360,
         "reach": 71453,
         "saved": 2009,
         "shares": 1887,
@@ -263,9 +263,9 @@
       "poster": "assets/creator/18127658746529604.jpg",
       "video": null,
       "metrics": {
-        "views": 61096,
+        "views": 61113,
         "reach": 43967,
-        "saved": 2650,
+        "saved": 2651,
         "shares": 1441,
         "likes": 829,
         "comments": 5145
@@ -281,7 +281,7 @@
       "poster": "assets/creator/17951586627240097.jpg",
       "video": null,
       "metrics": {
-        "views": 12067,
+        "views": 12069,
         "reach": 9886,
         "saved": 444,
         "shares": 168,
@@ -292,7 +292,7 @@
   ],
   "peaks": {
     "median": {
-      "views": 25328,
+      "views": 17568,
       "sample": 12
     },
     "items": [
@@ -300,12 +300,12 @@
         "key": "industry",
         "publishedAt": "2026-10-16T16:36:56+0000",
         "metrics": {
-          "views": 822432,
+          "views": 822760,
           "reach": 601725,
-          "saved": 28777,
-          "shares": 17286,
+          "saved": 28773,
+          "shares": 17294,
           "follows": 2379,
-          "likes": 6904,
+          "likes": 6905,
           "comments": 2040
         }
       },
@@ -313,13 +313,13 @@
         "key": "pricing",
         "publishedAt": "2026-10-20T16:16:51+0000",
         "metrics": {
-          "views": 206338,
-          "reach": 141022,
-          "saved": 9567,
-          "shares": 3623,
-          "follows": 841,
-          "likes": 2244,
-          "comments": 1334
+          "views": 206701,
+          "reach": 141211,
+          "saved": 9576,
+          "shares": 3625,
+          "follows": 845,
+          "likes": 2246,
+          "comments": 1335
         }
       }
     ]
@@ -327,19 +327,19 @@
   "audience": {
     "followers": {
       "country": {
-        "total": 9198,
+        "total": 9213,
         "rows": [
           {
             "key": "TR",
-            "value": 7886
+            "value": 7901
           },
           {
             "key": "AZ",
-            "value": 307
+            "value": 309
           },
           {
             "key": "DE",
-            "value": 306
+            "value": 305
           },
           {
             "key": "US",
@@ -352,19 +352,19 @@
         ]
       },
       "age": {
-        "total": 9247,
+        "total": 9262,
         "rows": [
           {
             "key": "35-44",
-            "value": 2820
+            "value": 2828
           },
           {
             "key": "25-34",
-            "value": 2613
+            "value": 2619
           },
           {
             "key": "45-54",
-            "value": 2162
+            "value": 2163
           },
           {
             "key": "18-24",
@@ -372,7 +372,7 @@
           },
           {
             "key": "55-64",
-            "value": 681
+            "value": 682
           },
           {
             "key": "65+",
@@ -380,101 +380,101 @@
           },
           {
             "key": "13-17",
-            "value": 52
+            "value": 51
           }
         ]
       },
       "gender": {
-        "total": 9247,
+        "total": 9262,
         "rows": [
           {
             "key": "M",
-            "value": 6471
+            "value": 6484
           },
           {
             "key": "U",
-            "value": 1904
+            "value": 1905
           },
           {
             "key": "F",
-            "value": 872
+            "value": 873
           }
         ]
       }
     },
     "engaged": {
       "country": {
-        "total": 90975,
+        "total": 89763,
         "rows": [
           {
             "key": "TR",
-            "value": 81975
+            "value": 80894
           },
           {
             "key": "AZ",
-            "value": 3026
+            "value": 3006
           },
           {
             "key": "DE",
-            "value": 1557
+            "value": 1531
           },
           {
             "key": "CY",
-            "value": 585
+            "value": 571
           },
           {
             "key": "US",
-            "value": 511
+            "value": 494
           }
         ]
       },
       "age": {
-        "total": 91152,
+        "total": 90013,
         "rows": [
           {
             "key": "25-34",
-            "value": 36924
+            "value": 36335
           },
           {
             "key": "35-44",
-            "value": 22774
+            "value": 22505
           },
           {
             "key": "18-24",
-            "value": 15100
+            "value": 14903
           },
           {
             "key": "45-54",
-            "value": 11671
+            "value": 11591
           },
           {
             "key": "55-64",
-            "value": 2981
+            "value": 2988
           },
           {
             "key": "65+",
-            "value": 1011
+            "value": 1006
           },
           {
             "key": "13-17",
-            "value": 691
+            "value": 685
           }
         ]
       },
       "gender": {
-        "total": 91152,
+        "total": 90013,
         "rows": [
           {
             "key": "M",
-            "value": 62500
+            "value": 61269
           },
           {
             "key": "U",
-            "value": 20747
+            "value": 20672
           },
           {
             "key": "F",
-            "value": 7905
+            "value": 8072
           }
         ]
       }
